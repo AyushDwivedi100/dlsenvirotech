@@ -1,0 +1,27 @@
+import ServiceCard from "@/components/ui/service-card";
+import { SERVICES } from "@/lib/constants";
+
+const ServicesOverview = () => {
+  return (
+    <section className="py-20 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-bold text-industrial-900 mb-4">
+            Our Specialized Services
+          </h2>
+          <p className="text-xl text-industrial-600 max-w-3xl mx-auto">
+            Comprehensive environmental technology solutions tailored for industrial and municipal water treatment needs
+          </p>
+        </div>
+        
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {SERVICES.map((service) => (
+            <ServiceCard key={service.id} service={service} />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default ServicesOverview;
