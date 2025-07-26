@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -6,6 +5,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
 import { Mail, Phone, MapPin } from "lucide-react";
+import { mockApi } from "@/lib/mockApi";
 
 export default function ContactSection() {
   const { toast } = useToast();
@@ -16,16 +16,25 @@ export default function ContactSection() {
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
-    // Simulate form submission
-    toast({
-      title: "Message Sent!",
-      description: "Thank you for your interest. We'll get back to you soon.",
-    });
-    
-    setFormData({ name: "", email: "", company: "", message: "" });
+
+    try {
+      await mockApi.createConsultation(formData);
+
+      toast({
+        title: "Message Sent!",
+        description: "Thank you for your interest. We'll get back to you soon.",
+      });
+
+      setFormData({ name: "", email: "", company: "", message: "" });
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "There was a problem submitting your message. Please try again.",
+        variant: "destructive",
+      });
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {

@@ -1,10 +1,11 @@
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { MessageCircle, Send, X } from "lucide-react";
+import { mockApi } from "@/lib/mockApi";
 
 interface ChatMessage {
   id: string;
@@ -24,8 +25,9 @@ export default function ChatbotWidget() {
     },
   ]);
   const [inputMessage, setInputMessage] = useState("");
+  const [sessionId] = useState(() => `session_${Date.now()}`);
 
-  const handleSendMessage = () => {
+  const handleSendMessage = async () => {
     if (!inputMessage.trim()) return;
 
     const userMessage: ChatMessage = {
@@ -36,19 +38,30 @@ export default function ChatbotWidget() {
     };
 
     setMessages(prev => [...prev, userMessage]);
+    const currentMessage = inputMessage;
+    setInputMessage("");
 
-    // Simple auto-response for demo
-    setTimeout(() => {
+    try {
+      // Send message to mock API
+      const response = await mockApi.sendChatMessage(currentMessage, sessionId);
+      
       const botResponse: ChatMessage = {
         id: (Date.now() + 1).toString(),
-        message: "Thank you for your message! This is a demo response. In a real application, this would connect to our AI system to provide detailed information about our water treatment solutions.",
+        message: response.response,
         isUser: false,
         timestamp: new Date(),
       };
+      
       setMessages(prev => [...prev, botResponse]);
-    }, 1000);
-
-    setInputMessage("");
+    } catch (error) {
+      const errorResponse: ChatMessage = {
+        id: (Date.now() + 1).toString(),
+        message: "I'm sorry, I'm having trouble responding right now. Please try again or contact us directly for assistance.",
+        isUser: false,
+        timestamp: new Date(),
+      };
+      setMessages(prev => [...prev, errorResponse]);
+    }
   };
 
   const handleKeyPress = (e: React.KeyboardEvent) => {

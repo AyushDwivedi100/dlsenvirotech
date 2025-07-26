@@ -10,6 +10,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
 import ChatbotWidget from "@/components/chatbot/chatbot-widget";
+import { mockApi } from "@/lib/mockApi";
 
 export default function Quote() {
   const { toast } = useToast();
@@ -25,25 +26,35 @@ export default function Quote() {
     description: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
-    toast({
-      title: "Quote Request Submitted!",
-      description: "Thank you for your request. We'll prepare your quote and get back to you within 24 hours.",
-    });
-    
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      company: "",
-      service: "",
-      capacity: "",
-      location: "",
-      timeline: "",
-      description: "",
-    });
+    try {
+      await mockApi.createQuote(formData);
+      
+      toast({
+        title: "Quote Request Submitted!",
+        description: "Thank you for your request. We'll prepare your quote and get back to you within 24 hours.",
+      });
+      
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        company: "",
+        service: "",
+        capacity: "",
+        location: "",
+        timeline: "",
+        description: "",
+      });
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "There was a problem submitting your quote request. Please try again.",
+        variant: "destructive",
+      });
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
