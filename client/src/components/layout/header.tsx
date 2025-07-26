@@ -10,11 +10,11 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navigation = [
-    { name: "Home", href: "/" },
+    { name: "About Us", href: "/about" },
     { name: "Services", href: "/services" },
-    { name: "Portfolio", href: "/portfolio" },
-    { name: "About", href: "/about" },
-    { name: "Contact", href: "/contact" },
+    { name: "Projects", href: "/portfolio" },
+    { name: "Gallery", href: "/gallery" },
+    { name: "Contact Us", href: "/contact" },
   ];
 
   const isActive = (href: string) => {
@@ -36,6 +36,16 @@ const Header = () => {
           </Link>
           
           <div className="hidden md:flex items-center space-x-8">
+            <Link
+              href="/"
+              className={`font-medium transition-colors ${
+                location === "/"
+                  ? "text-primary"
+                  : "text-industrial-700 hover:text-primary"
+              }`}
+            >
+              Home
+            </Link>
             {navigation.map((item) => (
               <Link
                 key={item.name}
@@ -50,7 +60,7 @@ const Header = () => {
               </Link>
             ))}
             <Button asChild>
-              <Link href="/contact">Contact Us</Link>
+              <Link href="/contact">Get Quote</Link>
             </Button>
           </div>
           
@@ -63,6 +73,17 @@ const Header = () => {
             </SheetTrigger>
             <SheetContent side="right" className="w-[300px] sm:w-[400px]">
               <div className="flex flex-col space-y-4 mt-8">
+                <Link
+                  href="/"
+                  className={`text-lg font-medium transition-colors ${
+                    location === "/"
+                      ? "text-primary"
+                      : "text-industrial-700 hover:text-primary"
+                  }`}
+                  onClick={() => setIsOpen(false)}
+                >
+                  Home
+                </Link>
                 {navigation.map((item) => (
                   <Link
                     key={item.name}
@@ -79,7 +100,7 @@ const Header = () => {
                 ))}
                 <Button asChild className="mt-4">
                   <Link href="/contact" onClick={() => setIsOpen(false)}>
-                    Contact Us
+                    Get Quote
                   </Link>
                 </Button>
               </div>
