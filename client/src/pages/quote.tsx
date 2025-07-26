@@ -94,23 +94,32 @@ const Quote = () => {
     "Sewage Treatment Plant (STP)",
     "Effluent Treatment Plant (ETP)",
     "Water Treatment Plant (WTP)",
-    "Reverse Osmosis (RO) Plant",
-    "Cooling Tower System",
-    "Bio-gas Plant",
-    "Chemical Processing Plant",
-    "Turnkey Project",
+    "Industrial RO Plant",
+    "Water Cooling Tower",
+    "Faecal Sludge Treatment Plant (FSTP)",
+    "Material Recovery Facility (MRF)",
+    "Solid Waste Management Plant",
+    "PSA Oxygen Plant",
+    "Industrial Air Pollution Solutions",
+    "Air Tower",
     "Other"
   ];
 
   const serviceOptions = [
-    "Design & Engineering",
-    "Installation & Commissioning",
+    "STP Design & Installation",
+    "ETP Design & Installation", 
+    "WTP Design & Installation",
+    "Industrial RO Plant Setup",
+    "Water Cooling Tower Installation",
+    "FSTP Implementation",
+    "MRF Setup",
+    "Solid Waste Management Solutions",
+    "PSA Oxygen Plant Installation",
+    "Air Pollution Control Systems",
+    "Air Tower Installation",
     "Operation & Maintenance",
-    "Upgradation & Retrofitting",
-    "Consultation Services",
-    "Training & Support",
     "Annual Maintenance Contract",
-    "Emergency Services"
+    "Emergency Repair Services"
   ];
 
   const budgetRanges = [

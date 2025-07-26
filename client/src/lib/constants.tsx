@@ -3,52 +3,92 @@ import { Droplets, Building2, Recycle, Gauge, Thermometer, Settings } from "luci
 
 export const SERVICES: ServiceType[] = [
   {
-    id: "wastewater-treatment",
-    title: "Wastewater Treatment",
-    description: "Advanced biological and chemical treatment processes for municipal and industrial wastewater management.",
-    features: ["SBR Technology", "MBR Systems", "Zero Liquid Discharge"],
+    id: "stp",
+    title: "Sewage Treatment Plants (STP)",
+    description: "Advanced biological and chemical treatment systems for municipal and residential wastewater management with high efficiency.",
+    features: ["Biological Treatment", "Chemical Treatment", "Sludge Management"],
     icon: "Droplets",
     category: "water-treatment"
   },
   {
-    id: "effluent-treatment",
-    title: "Effluent Treatment Plants",
+    id: "etp",
+    title: "Effluent Treatment Plants (ETP)",
     description: "Specialized industrial effluent treatment systems ensuring regulatory compliance and environmental protection.",
     features: ["Chemical Treatment", "Physical Separation", "Biological Processing"],
     icon: "Building2",
     category: "industrial"
   },
   {
-    id: "solid-waste-management",
-    title: "Solid Waste Management",
-    description: "Material Recovery Facilities and comprehensive solid waste processing solutions for sustainable waste management.",
-    features: ["MRF Systems", "Waste Sorting", "Resource Recovery"],
-    icon: "Recycle",
-    category: "waste-management"
-  },
-  {
-    id: "ro-dm-plants",
-    title: "RO & DM Plants",
-    description: "Industrial reverse osmosis and demineralization systems for high-quality water production and purification.",
-    features: ["Industrial RO Systems", "Demineralization", "Process Water"],
-    icon: "Gauge",
+    id: "wtp",
+    title: "Water Treatment Plants (WTP)",
+    description: "Comprehensive water purification systems for municipal and industrial applications with advanced filtration technology.",
+    features: ["Multi-stage Filtration", "Chemical Dosing", "Quality Monitoring"],
+    icon: "Droplets",
     category: "water-treatment"
   },
   {
-    id: "cooling-towers",
-    title: "Cooling Tower Systems",
-    description: "Advanced cooling tower solutions for industrial process cooling and heat rejection applications.",
-    features: ["Cross Flow Towers", "Counter Flow Systems", "Custom Solutions"],
+    id: "industrial-ro",
+    title: "Industrial RO Plants",
+    description: "High-capacity reverse osmosis plants for industrial water purification and process water treatment.",
+    features: ["Multi-stage Filtration", "High Recovery Rate", "Automated Controls"],
+    icon: "Gauge",
+    category: "industrial"
+  },
+  {
+    id: "water-cooling-tower",
+    title: "Water Cooling Towers",
+    description: "Industrial cooling tower systems for heat rejection in power plants, manufacturing facilities, and HVAC applications.",
+    features: ["Counter Flow Design", "High Efficiency", "Corrosion Resistant"],
     icon: "Thermometer",
     category: "industrial"
   },
   {
-    id: "turnkey-solutions",
-    title: "Turnkey Solutions",
-    description: "Complete project implementation from design to commissioning for specialized industrial applications.",
-    features: ["Design Engineering", "Project Management", "Commissioning"],
+    id: "fstp",
+    title: "Faecal Sludge Treatment Plants (FSTP)",
+    description: "Specialized treatment systems for faecal sludge management with advanced processing and sanitization technology.",
+    features: ["Sludge Dewatering", "Pathogen Removal", "Resource Recovery"],
+    icon: "Recycle",
+    category: "water-treatment"
+  },
+  {
+    id: "mrf",
+    title: "Material Recovery Facilities (MRF)",
+    description: "Advanced sorting and processing facilities for recyclable materials with automated separation technology.",
+    features: ["Automated Sorting", "Material Recovery", "Quality Control"],
+    icon: "Recycle",
+    category: "waste-management"
+  },
+  {
+    id: "solid-waste-management",
+    title: "Solid Waste Management Plants",
+    description: "Comprehensive solid waste processing facilities including composting, recycling, and waste-to-energy solutions.",
+    features: ["Waste Processing", "Composting", "Energy Recovery"],
+    icon: "Recycle",
+    category: "waste-management"
+  },
+  {
+    id: "psa-oxygen",
+    title: "PSA Oxygen Plants",
+    description: "Pressure Swing Adsorption oxygen generation plants for medical, industrial, and aquaculture applications.",
+    features: ["High Purity Oxygen", "Energy Efficient", "Automated Operation"],
     icon: "Settings",
-    category: "consulting"
+    category: "industrial"
+  },
+  {
+    id: "air-pollution-solutions",
+    title: "Industrial Air Pollution Solutions",
+    description: "Advanced air pollution control systems including scrubbers, baghouse filters, and emission monitoring.",
+    features: ["Emission Control", "Air Scrubbers", "Monitoring Systems"],
+    icon: "Settings",
+    category: "industrial"
+  },
+  {
+    id: "air-tower",
+    title: "Air Towers",
+    description: "Industrial air circulation and ventilation tower systems for improved air quality and environmental control.",
+    features: ["Air Circulation", "Ventilation Control", "Environmental Management"],
+    icon: "Settings",
+    category: "industrial"
   }
 ];
 
