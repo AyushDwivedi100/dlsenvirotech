@@ -2,7 +2,8 @@ import { useState } from "react";
 import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Menu, Factory } from "lucide-react";
+import { Menu } from "lucide-react";
+import dlsLogo from "@assets/dlsLogo-removebg-preview_1753515549861.png";
 
 const Header = () => {
   const [location] = useLocation();
@@ -27,13 +28,11 @@ const Header = () => {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Main navigation">
         <div className="flex justify-between items-center h-20">
           <Link href="/" className="flex items-center space-x-4">
-            <div className="bg-primary text-white p-3 rounded-lg">
-              <Factory className="h-6 w-6" aria-hidden="true" />
-            </div>
-            <div>
-              <h1 className="text-2xl font-bold text-industrial-900">DLS Envirotech</h1>
-              <p className="text-sm text-industrial-600">Environmental Solutions</p>
-            </div>
+            <img 
+              src={dlsLogo} 
+              alt="DLS Envirotech Corporation Logo" 
+              className="h-16 w-auto"
+            />
           </Link>
           
           <div className="hidden md:flex items-center space-x-8">

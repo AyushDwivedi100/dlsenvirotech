@@ -4,7 +4,7 @@ import { ServiceType } from "@/types";
 import { Link } from "wouter";
 import { 
   Droplets, 
-  Factory, 
+  Building2, 
   Recycle, 
   Gauge, 
   Thermometer, 
@@ -19,7 +19,7 @@ interface ServiceCardProps {
 
 const iconMap = {
   Droplets,
-  Factory,
+  Building2,
   Recycle,
   Gauge,
   Thermometer,

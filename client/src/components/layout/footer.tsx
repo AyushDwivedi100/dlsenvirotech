@@ -1,5 +1,6 @@
 import { Link } from "wouter";
-import { Factory, Linkedin, Twitter, Facebook, Youtube } from "lucide-react";
+import { Linkedin, Twitter, Facebook, Youtube } from "lucide-react";
+import dlsLogo from "@assets/dlsLogo-removebg-preview_1753515549861.png";
 
 const Footer = () => {
   const services = [
@@ -25,13 +26,11 @@ const Footer = () => {
           {/* Company Information */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-4 mb-6">
-              <div className="bg-primary text-white p-3 rounded-lg">
-                <Factory className="h-6 w-6" />
-              </div>
-              <div>
-                <h3 className="text-2xl font-bold">DLS Envirotech Corporation</h3>
-                <p className="text-industrial-400">Environmental Solutions</p>
-              </div>
+              <img 
+                src={dlsLogo} 
+                alt="DLS Envirotech Corporation Logo" 
+                className="h-20 w-auto filter brightness-0 invert"
+              />
             </div>
             <p className="text-industrial-300 mb-6 leading-relaxed">
               Leading provider of comprehensive water treatment solutions with 15+ years of expertise in 

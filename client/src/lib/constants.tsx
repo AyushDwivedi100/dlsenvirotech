@@ -1,5 +1,5 @@
 import { ServiceType, PortfolioProject, TestimonialType } from "@/types";
-import { Droplets, Factory, Recycle, Gauge, Thermometer, Settings } from "lucide-react";
+import { Droplets, Building2, Recycle, Gauge, Thermometer, Settings } from "lucide-react";
 
 export const SERVICES: ServiceType[] = [
   {
@@ -15,7 +15,7 @@ export const SERVICES: ServiceType[] = [
     title: "Effluent Treatment Plants",
     description: "Specialized industrial effluent treatment systems ensuring regulatory compliance and environmental protection.",
     features: ["Chemical Treatment", "Physical Separation", "Biological Processing"],
-    icon: "Factory",
+    icon: "Building2",
     category: "industrial"
   },
   {
