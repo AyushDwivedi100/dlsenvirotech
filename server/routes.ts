@@ -1,7 +1,7 @@
 import type { Express } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
-import { insertConsultationSchema, insertChatMessageSchema } from "@shared/schema";
+import { insertConsultationSchema, insertChatMessageSchema, insertQuoteSchema } from "@shared/schema";
 
 export async function registerRoutes(app: Express): Promise<Server> {
   // Consultation endpoints
@@ -65,6 +65,41 @@ export async function registerRoutes(app: Express): Promise<Server> {
       res.json(messages);
     } catch (error) {
       res.status(500).json({ error: "Failed to fetch chat messages" });
+    }
+  });
+
+  // Quote endpoints
+  app.post("/api/quotes", async (req, res) => {
+    try {
+      const quote = insertQuoteSchema.parse(req.body);
+      const created = await storage.createQuote(quote);
+      res.json(created);
+    } catch (error) {
+      res.status(400).json({ error: "Invalid quote data" });
+    }
+  });
+
+  app.get("/api/quotes", async (req, res) => {
+    try {
+      const quotes = await storage.getQuotes();
+      res.json(quotes);
+    } catch (error) {
+      res.status(500).json({ error: "Failed to fetch quotes" });
+    }
+  });
+
+  app.patch("/api/quotes/:id/status", async (req, res) => {
+    try {
+      const { id } = req.params;
+      const { status } = req.body;
+      const updated = await storage.updateQuoteStatus(id, status);
+      if (updated) {
+        res.json(updated);
+      } else {
+        res.status(404).json({ error: "Quote not found" });
+      }
+    } catch (error) {
+      res.status(500).json({ error: "Failed to update quote" });
     }
   });
 

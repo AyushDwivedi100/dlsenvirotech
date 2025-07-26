@@ -10,6 +10,7 @@ import Portfolio from "@/pages/portfolio";
 import Gallery from "@/pages/gallery";
 import About from "@/pages/about";
 import Contact from "@/pages/contact";
+import Quote from "@/pages/quote";
 
 function Router() {
   return (
@@ -20,6 +21,7 @@ function Router() {
       <Route path="/gallery" component={Gallery} />
       <Route path="/about" component={About} />
       <Route path="/contact" component={Contact} />
+      <Route path="/quote" component={Quote} />
       <Route component={NotFound} />
     </Switch>
   );

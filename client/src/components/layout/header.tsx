@@ -53,7 +53,7 @@ const Header = () => {
               </Link>
             ))}
             <Button asChild>
-              <Link href="/contact">Get Quote</Link>
+              <Link href="/quote">Get Quote</Link>
             </Button>
           </div>
           
@@ -81,7 +81,7 @@ const Header = () => {
                   </Link>
                 ))}
                 <Button asChild className="mt-4">
-                  <Link href="/contact" onClick={() => setIsOpen(false)}>
+                  <Link href="/quote" onClick={() => setIsOpen(false)}>
                     Get Quote
                   </Link>
                 </Button>
