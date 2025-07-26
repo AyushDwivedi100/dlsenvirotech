@@ -50,7 +50,7 @@ const HeroSection = () => {
         
         <div className="relative">
           <img 
-            src="https://pixabay.com/get/ga96f7e4b519f1d8e770055a7a6a221d9f9dd5522a0169fb1b2a7b58d623cd8de6e468d0afc4eaa502a22c75661a3f1b01abb1d16c5679a71c819ae88e1ef12dc_1280.jpg"
+            src="https://images.unsplash.com/photo-1596591606975-97ee5ccd3aa6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
             alt="Modern sewage treatment plant facility with advanced filtration systems" 
             className="rounded-2xl shadow-2xl w-full h-auto" 
           />

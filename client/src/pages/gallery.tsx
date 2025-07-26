@@ -12,63 +12,63 @@ const Gallery = () => {
       id: 1,
       title: "Municipal STP - 50 MLD Capacity",
       category: "Sewage Treatment",
-      image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+      image: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
       description: "Advanced biological treatment system for municipal wastewater"
     },
     {
       id: 2,
       title: "Industrial ETP System",
       category: "Effluent Treatment",
-      image: "https://pixabay.com/get/gdfd372825190f527a6ed096f15189871e818992e0f9e7f8dcb088d69ae7d20e87311e376a3fea8647a087220dd437d1d007e0fcdf9190368d28bafbaced5115e_1280.jpg",
+      image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
       description: "Zero Liquid Discharge system for textile manufacturing facility"
     },
     {
       id: 3,
       title: "RO Plant Installation",
       category: "Water Purification",
-      image: "https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+      image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
       description: "High-purity water production system for pharmaceutical use"
     },
     {
       id: 4,
       title: "Cooling Tower System",
       category: "Industrial Cooling",
-      image: "https://pixabay.com/get/g24db2ab58bacd7159dc7b2822ec0b43adf618f3f56d5d441e0e2e4238035c5de2f71d64a8406e3063a2bc932172dc7d327022a49c345e951804e6d96097ba11d_1280.jpg",
+      image: "https://images.unsplash.com/photo-1473116763246-b726752ebc2f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
       description: "Large-scale cooling tower for thermal power plant"
     },
     {
       id: 5,
       title: "CETP Construction",
       category: "Common Treatment",
-      image: "https://pixabay.com/get/g818b8a11193415799e28325a74ff1f010380388c8ea146c5c5bfcefedc04a2df1d6b14407c80e3d4b1517b9bd714e178352747e0e79879a38e476cd199b1f1e9_1280.jpg",
+      image: "https://images.unsplash.com/photo-1621335223658-0ebd89004d51?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
       description: "Centralized treatment facility for industrial cluster"
     },
     {
       id: 6,
       title: "Smart STP with IoT",
       category: "Smart Technology",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+      image: "https://images.unsplash.com/photo-1599586120429-48281b6f0ece?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
       description: "Next-generation sewage treatment with automated monitoring"
     },
     {
       id: 7,
       title: "Waste Heat Recovery",
       category: "Energy Recovery",
-      image: "https://images.unsplash.com/photo-1581092921461-eab62e51-ea2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+      image: "https://images.unsplash.com/photo-1596591606975-97ee5ccd3aa6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
       description: "Energy-efficient heat recovery system implementation"
     },
     {
       id: 8,
       title: "Bio-gas Plant",
       category: "Renewable Energy",
-      image: "https://pixabay.com/get/g24db2ab58bacd7159dc7b2822ec0b43adf618f3f56d5d441e0e2e4238035c5de2f71d64a8406e3063a2bc932172dc7d327022a49c345e951804e6d96097ba11d_1280.jpg",
+      image: "https://images.unsplash.com/photo-1466611653911-95081537e5b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
       description: "Sustainable bio-gas generation from organic waste"
     },
     {
       id: 9,
       title: "Chemical Plant Setup",
       category: "Chemical Processing",
-      image: "https://images.unsplash.com/photo-1518709268805-4e9042af2d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+      image: "https://images.unsplash.com/photo-1565793298595-6a879b1d9492?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
       description: "Complete chemical processing plant installation"
     }
   ];
