@@ -36,16 +36,6 @@ const Header = () => {
           </Link>
           
           <div className="hidden md:flex items-center space-x-8">
-            <Link
-              href="/"
-              className={`font-medium transition-colors ${
-                location === "/"
-                  ? "text-primary"
-                  : "text-industrial-700 hover:text-primary"
-              }`}
-            >
-              Home
-            </Link>
             {navigation.map((item) => (
               <Link
                 key={item.name}
@@ -73,17 +63,6 @@ const Header = () => {
             </SheetTrigger>
             <SheetContent side="right" className="w-[300px] sm:w-[400px]">
               <div className="flex flex-col space-y-4 mt-8">
-                <Link
-                  href="/"
-                  className={`text-lg font-medium transition-colors ${
-                    location === "/"
-                      ? "text-primary"
-                      : "text-industrial-700 hover:text-primary"
-                  }`}
-                  onClick={() => setIsOpen(false)}
-                >
-                  Home
-                </Link>
                 {navigation.map((item) => (
                   <Link
                     key={item.name}
