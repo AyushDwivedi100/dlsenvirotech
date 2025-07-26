@@ -40,13 +40,16 @@ const Header = () => {
               <Link
                 key={item.name}
                 href={item.href}
-                className={`font-medium transition-colors ${
+                className={`font-medium transition-colors relative ${
                   isActive(item.href)
-                    ? "text-primary"
+                    ? "text-primary font-semibold"
                     : "text-industrial-700 hover:text-primary"
                 }`}
               >
                 {item.name}
+                {isActive(item.href) && (
+                  <span className="absolute -bottom-1 left-0 right-0 h-0.5 bg-primary rounded-full"></span>
+                )}
               </Link>
             ))}
             <Button asChild>
@@ -67,10 +70,10 @@ const Header = () => {
                   <Link
                     key={item.name}
                     href={item.href}
-                    className={`text-lg font-medium transition-colors ${
+                    className={`text-lg font-medium transition-colors relative ${
                       isActive(item.href)
-                        ? "text-primary"
-                        : "text-industrial-700 hover:text-primary"
+                        ? "text-primary font-semibold bg-primary/10 px-3 py-2 rounded-md"
+                        : "text-industrial-700 hover:text-primary px-3 py-2 hover:bg-industrial-50 rounded-md"
                     }`}
                     onClick={() => setIsOpen(false)}
                   >

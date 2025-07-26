@@ -4,6 +4,16 @@
 
 This is a full-stack web application for DLS Envirotech Corporation, a water treatment solutions company. The application serves as a comprehensive business website showcasing their services, portfolio, and providing client interaction capabilities through consultation requests and an AI chatbot.
 
+## Recent Changes (January 2025)
+
+✓ Replaced placeholder factory icons with actual DLS company logo throughout the site
+✓ Updated navigation menu structure: About Us, Services, Projects, Gallery, Contact Us, Get Quote
+✓ Removed Home link from navigation (logo serves as home link)
+✓ Added visual active state indicators for current page in navigation
+✓ Replaced all placeholder images with high-quality professional water treatment facility photos
+✓ Created comprehensive Gallery page with project installation images
+✓ Enhanced navigation with underline indicators and background highlights for active states
+
 ## User Preferences
 
 Preferred communication style: Simple, everyday language.
