@@ -12,8 +12,14 @@ const PortfolioShowcase = () => {
     { id: "all", label: "All Projects" },
     { id: "stp", label: "STP Systems" },
     { id: "etp", label: "ETP Plants" },
-    { id: "industrial", label: "Industrial" },
-    { id: "municipal", label: "Municipal" },
+    { id: "wtp", label: "WTP Systems" },
+    { id: "fstp", label: "FSTP Systems" },
+    { id: "mrf", label: "MRF Systems" },
+    { id: "ats", label: "Air Tower Systems" },
+    { id: "psa", label: "PSA Oxygen Generator" },
+    { id: "wwtp", label: "Wastewater Treatment Plants" },
+    { id: "iwf", label: "Industrial Water Filtration" },
+    { id: "wsp", label: "Water Softening Plant" },
   ];
 
   const filteredProjects = PORTFOLIO_PROJECTS.filter(project => {

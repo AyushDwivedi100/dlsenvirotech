@@ -188,7 +188,34 @@ export const TESTIMONIALS: TestimonialType[] = [
     content: "Outstanding technical support and maintenance services. Their RO system consistently produces pharmaceutical-grade water that exceeds USP standards. Highly recommended for critical applications.",
     rating: 5,
     project: "Pharmaceutical Water System"
-  }
+  },
+  {
+    id: "testimonial-4",
+    name: "Priya Sharma",
+    position: "Municipal Engineer",
+    company: "City Corporation",
+    content: "The 50 MLD STP project was completed ahead of schedule with excellent quality. The automated monitoring system has significantly reduced our operational costs and improved treatment efficiency.",
+    rating: 5,
+    project: "Municipal STP Project"
+  },
+  {
+    id: "testimonial-5",
+    name: "Priya Sharma",
+    position: "Municipal Engineer",
+    company: "City Corporation",
+    content: "The 50 MLD STP project was completed ahead of schedule with excellent quality. The automated monitoring system has significantly reduced our operational costs and improved treatment efficiency.",
+    rating: 5,
+    project: "Municipal STP Project"
+  },
+  {
+    id: "testimonial-6",
+    name: "Priya Sharma",
+    position: "Municipal Engineer",
+    company: "City Corporation",
+    content: "The 50 MLD STP project was completed ahead of schedule with excellent quality. The automated monitoring system has significantly reduced our operational costs and improved treatment efficiency.",
+    rating: 5,
+    project: "Municipal STP Project"
+  },
 ];
 
 export const QUICK_CHAT_MESSAGES = [

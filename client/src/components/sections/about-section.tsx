@@ -4,7 +4,7 @@ const AboutSection = () => {
   const stats = [
     { value: "2500+", label: "Systems Installed" },
     { value: "22", label: "Countries Served" },
-    { value: "15+", label: "Years Experience" },
+    { value: "10+", label: "Years Experience" },
     { value: "100+", label: "Team Members" },
   ];
 
@@ -22,7 +22,7 @@ const AboutSection = () => {
           <div>
             <div className="mb-8">
               <h2 className="text-4xl font-bold text-industrial-900 mb-6">
-                15+ Years of Environmental Engineering Excellence
+                10+ Years of Environmental Engineering Excellence
               </h2>
               <p className="text-xl text-industrial-600 leading-relaxed mb-6">
                 DLS Envirotech Corporation has established itself as a trusted leader in water treatment technology, 
@@ -62,7 +62,7 @@ const AboutSection = () => {
             
             <div className="absolute -bottom-8 -right-8 bg-primary text-white p-8 rounded-2xl shadow-xl">
               <div className="text-center">
-                <div className="text-4xl font-bold mb-2">15+</div>
+                <div className="text-4xl font-bold mb-2">10+</div>
                 <div className="text-lg font-semibold">Years</div>
                 <div className="text-sm opacity-90">Experience</div>
               </div>

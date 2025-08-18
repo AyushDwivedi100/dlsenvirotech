@@ -6,7 +6,10 @@ import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
 
 export default defineConfig({
   plugins: [
-    react(),
+    react({
+      // Enable React fast refresh and automatic JSX runtime
+      jsxRuntime: "automatic",
+    }),
     runtimeErrorOverlay(),
     ...(process.env.NODE_ENV !== "production" &&
     process.env.REPL_ID !== undefined
@@ -26,7 +29,28 @@ export default defineConfig({
   server: {
     host: '0.0.0.0',
     port: 5000,
-    allowedHosts: 'all'
+    allowedHosts: ['all']
+  },
+  build: {
+    target: "esnext",
+    minify: "esbuild",
+    sourcemap: false,
+    chunkSizeWarningLimit: 500,
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          if (id.includes("node_modules")) {
+            if (id.includes("react")) {
+              return "vendor_react";
+            }
+            if (id.includes("gsap")) {
+              return "vendor_gsap";
+            }
+            return "vendor";
+          }
+        },
+      },
+    },
   },
   root: "client"
 });
