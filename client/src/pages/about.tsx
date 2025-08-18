@@ -7,7 +7,7 @@ import ChatbotWidget from "@/components/chatbot/chatbot-widget";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { Phone, Award, Users, Globe, Zap, AlertCircle } from "lucide-react";
-import ResponsiveTimeline from "@/components/ui/responsive-timeline";
+import Timeline from "@/components/ui/timeline";
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import dlsLogo from "@assets/dlsLogo-removebg-preview_1753515549861.png";
@@ -156,7 +156,7 @@ const About = () => {
           </section>
 
           {/* Timeline */}
-          <ResponsiveTimeline milestones={milestones} />
+          <Timeline milestones={milestones} />
 
           {/* Testimonials */}
           <TestimonialsSection />

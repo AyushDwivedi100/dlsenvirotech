@@ -15,6 +15,7 @@ const Header = () => {
     { name: "Projects", href: "/portfolio" },
     { name: "Gallery", href: "/gallery" },
     { name: "Contact Us", href: "/contact" },
+    { name: "News & Updates", href: "/news" },
   ];
 
   const isActive = (href: string) => {

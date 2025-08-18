@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { cn } from "@/lib/utils";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -14,7 +15,7 @@ interface ResponsiveTimelineProps {
   milestones: Milestone[];
 }
 
-const ResponsiveTimeline: React.FC<ResponsiveTimelineProps> = ({
+const Timeline: React.FC<ResponsiveTimelineProps> = ({
   milestones,
 }) => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -37,7 +38,7 @@ const ResponsiveTimeline: React.FC<ResponsiveTimelineProps> = ({
         scrub: 1,
         end: () => `+=${container.offsetWidth * (sections.length - 1)}`,
         snap: 1 / (sections.length - 1),
-        markers: true,
+        // markers: true,
       },
     });
 
@@ -81,7 +82,7 @@ const ResponsiveTimeline: React.FC<ResponsiveTimelineProps> = ({
     <div className="wrapper overflow-x-hidden relative">
       <div
         className="container scrollx flex"
-        style={{ width: `${milestones.length * 85}vw` }}
+        style={{ width: `${milestones.length * 100}vw` }}
         ref={containerRef}
       >
         <svg
@@ -92,8 +93,8 @@ const ResponsiveTimeline: React.FC<ResponsiveTimelineProps> = ({
           style={{ top: "12em", left: "10vw", width: "50vw" }}
         >
           <path
-            d="M9.89998 6C9.43671 8.28224 7.41896 10 5 10C2.23858 10 0 7.76142 0 5C0 2.23858 2.23858 0 5 0C7.41896 0 9.43671 1.71776 9.89998 4H445.1C445.563 1.71776 447.581 0 450 0C452.419 0 454.437 1.71776 454.9 4H890.1C890.563 1.71776 892.581 0 895 0C897.761 0 900 2.23858 900 5C900 7.76142 897.761 10 895 10C892.581 10 890.563 8.28224 890.1 6H454.9C454.437 8.28224 452.419 10 450 10C447.581 10 445.563 8.28224 445.1 6H9.89998Z"
-            fill="#D9D9D9"
+            d="M9.89998 6C9.43671 8.28224 7.41896 10 5 10C2.23858 10 0 7.76142 0 5C0 2.23858 2.23858 0 5 0C7.41896 0 9.43671 1.71776 9.89998 4H150C150.563 1.71776 152.581 0 155 0C157.419 0 159.437 1.71776 159.9 4H300C300.563 1.71776 302.581 0 305 0C307.419 0 309.437 1.71776 309.9 4H445.1C445.563 1.71776 447.581 0 450 0C452.419 0 454.437 1.71776 454.9 4H590C590.563 1.71776 592.581 0 595 0C597.419 0 599.437 1.71776 599.9 4H730C730.563 1.71776 732.581 0 735 0C737.419 0 739.437 1.71776 739.9 4H890.1C890.563 1.71776 892.581 0 895 0C897.761 0 900 2.23858 900 5C900 7.76142 897.761 10 895 10C892.581 10 890.563 8.28224 890.1 6H739.9C739.437 8.28224 737.419 10 735 10C732.581 10 730.563 8.28224 730 6H599.9C599.437 8.28224 597.419 10 595 10C592.581 10 590.563 8.28224 590 6H454.9C454.437 8.28224 452.419 10 450 10C447.581 10 445.563 8.28224 445.1 6H309.9C309.437 8.28224 307.419 10 305 10C302.581 10 300.563 8.28224 300 6H159.9C159.437 8.28224 157.419 10 155 10C152.581 10 150.563 8.28224 150 6H9.89998Z"
+            fill="var(--industrial-300)"
           />
           <mask
             id="mask0_0_1"
@@ -105,7 +106,7 @@ const ResponsiveTimeline: React.FC<ResponsiveTimelineProps> = ({
             height={10}
           >
             <path
-              d="M9.89998 6C9.43671 8.28224 7.41896 10 5 10C2.23858 10 0 7.76142 0 5C0 2.23858 2.23858 0 5 0C7.41896 0 9.43671 1.71776 9.89998 4H445.1C445.563 1.71776 447.581 0 450 0C452.419 0 454.437 1.71776 454.9 4H890.1C890.563 1.71776 892.581 0 895 0C897.761 0 900 2.23858 900 5C900 7.76142 897.761 10 895 10C892.581 10 890.563 8.28224 890.1 6H454.9C454.437 8.28224 452.419 10 450 10C447.581 10 445.563 8.28224 445.1 6H9.89998Z"
+              d="M9.89998 6C9.43671 8.28224 7.41896 10 5 10C2.23858 10 0 7.76142 0 5C0 2.23858 2.23858 0 5 0C7.41896 0 9.43671 1.71776 9.89998 4H150C150.563 1.71776 152.581 0 155 0C157.419 0 159.437 1.71776 159.9 4H300C300.563 1.71776 302.581 0 305 0C307.419 0 309.437 1.71776 309.9 4H445.1C445.563 1.71776 447.581 0 450 0C452.419 0 454.437 1.71776 454.9 4H590C590.563 1.71776 592.581 0 595 0C597.419 0 599.437 1.71776 599.9 4H730C730.563 1.71776 732.581 0 735 0C737.419 0 739.437 1.71776 739.9 4H890.1C890.563 1.71776 892.581 0 895 0C897.761 0 900 2.23858 900 5C900 7.76142 897.761 10 895 10C892.581 10 890.563 8.28224 890.1 6H739.9C739.437 8.28224 737.419 10 735 10C732.581 10 730.563 8.28224 730 6H599.9C599.437 8.28224 597.419 10 595 10C592.581 10 590.563 8.28224 590 6H454.9C454.437 8.28224 452.419 10 450 10C447.581 10 445.563 8.28224 445.1 6H309.9C309.437 8.28224 307.419 10 305 10C302.581 10 300.563 8.28224 300 6H159.9C159.437 8.28224 157.419 10 155 10C152.581 10 150.563 8.28224 150 6H9.89998Z"
               fill="#D9D9D9"
             />
           </mask>
@@ -114,7 +115,7 @@ const ResponsiveTimeline: React.FC<ResponsiveTimelineProps> = ({
               className="mask"
               y={-49}
               height={99}
-              fill="black"
+              fill="var(--primary)"
               ref={maskRef}
               style={{ width: 0 }}
             />
@@ -124,30 +125,40 @@ const ResponsiveTimeline: React.FC<ResponsiveTimelineProps> = ({
         {milestones.map((milestone, index) => (
           <section
             key={milestone.year}
-            className="pin w-[85vw] p-[20vw_10vw] h-screen flex-shrink-0"
+            className="pin w-[100vw] p-[20vw_10vw] h-screen flex-shrink-0"
           >
-            <span className={index > 0 ? "anim" : undefined}>Advanced</span>
+            <span
+              className={cn(
+                "text-2xl font-bold text-primary dark:text-secondary",
+                { anim: index > 0 }
+              )}
+            >
+              {milestone.year}
+            </span>
             <h1
-              className={
-                index > 0
-                  ? "anim text-6xl font-playfair-display"
-                  : "text-6xl font-playfair-display"
-              }
+              className={cn(
+                "text-6xl font-bold font-playfair-display text-industrial-900 dark:text-primary-foreground",
+                { anim: index > 0 }
+              )}
             >
               {milestone.title}
             </h1>
 
             <div
-              className={index > 0 ? "col anim flex gap-12" : "col flex gap-12"}
+              className={cn(
+                "col flex gap-12 text-industrial-600 dark:text-industrial-400",
+                { anim: index > 0 }
+              )}
             >
-              <p className="text-sm max-w-[50vw]">{milestone.description}</p>
+              <p className="text-sm max-w-[50vw] mt-4">
+                {milestone.description}
+              </p>
             </div>
           </section>
         ))}
       </div>
-      <section style={{ backgroundColor: "lightblue" }}></section>
     </div>
   );
 };
 
-export default ResponsiveTimeline;
+export default Timeline;
