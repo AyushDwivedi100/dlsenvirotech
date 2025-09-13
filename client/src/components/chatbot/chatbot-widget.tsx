@@ -29,6 +29,7 @@ export default function ChatbotWidget() {
   const [inputMessage, setInputMessage] = useState("");
   const [sessionId] = useState(() => `session_${Date.now()}`);
   const inputRef = useRef<HTMLInputElement>(null);
+  const [chatHeight, setChatHeight] = useState("500px");
 
   useEffect(() => {
     const scroll = scrollRef.current;
@@ -38,6 +39,26 @@ export default function ChatbotWidget() {
       }, 500);
     }
   }, [messages, isOpen]);
+
+  useEffect(() => {
+    const calculateChatHeight = () => {
+      const header = document.querySelector('header');
+      const headerHeight = header ? header.offsetHeight : 80; // Default to 80px if header not found
+      const buttonSpace = 96; // Space for toggle button (h-14 = 56px) + margins (bottom-6 = 24px) + chat window margin (bottom-24 = 96px)
+      const topBarHeight = 40; // Approximate height of top bar
+      const availableHeight = window.innerHeight - headerHeight - topBarHeight - buttonSpace;
+      const maxHeight = Math.min(availableHeight, 600); // Cap at 600px max
+      const minHeight = Math.max(maxHeight, 300); // Ensure minimum 300px
+      setChatHeight(`${minHeight}px`);
+    };
+
+    calculateChatHeight();
+    window.addEventListener('resize', calculateChatHeight);
+    
+    return () => {
+      window.removeEventListener('resize', calculateChatHeight);
+    };
+  }, []);
 
   const handleSendMessage = async () => {
     if (!inputMessage.trim()) return;
@@ -113,7 +134,7 @@ export default function ChatbotWidget() {
 
       {/* Chat Window */}
       {isOpen && (
-        <Card className="fixed bottom-24 right-2 left-2 sm:right-6 sm:left-auto w-auto sm:w-80 md:w-96 max-w-full h-[70vh] max-h-[500px] shadow-xl z-50 flex flex-col transition-all duration-300 ease-in-out transform scale-95 opacity-0 animate-fade-in opacity-100 scale-100">
+        <Card className="fixed bottom-24 right-2 left-2 sm:right-6 sm:left-auto w-auto sm:w-80 md:w-96 max-w-full shadow-xl z-50 flex flex-col transition-all duration-300 ease-in-out transform scale-95 opacity-0 animate-fade-in opacity-100 scale-100" style={{ height: chatHeight }}>
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2 bg-[whitesmoke] rounded-lg">
             <div className="flex items-center gap-2">
               <img src={dlsLogo} alt="DLS Envirotech" className="h-6 w-auto" />
