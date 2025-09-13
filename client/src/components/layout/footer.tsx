@@ -103,15 +103,9 @@ const Footer = () => {
               © 2024 DLS Envirotech Corporation. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
-              <a href="#" className="text-industrial-400 hover:text-white text-sm transition-colors">
-                Privacy Policy
-              </a>
-              <a href="#" className="text-industrial-400 hover:text-white text-sm transition-colors">
-                Terms of Service
-              </a>
-              <a href="#" className="text-industrial-400 hover:text-white text-sm transition-colors">
+              <Link href="/sitemap" className="text-industrial-400 hover:text-white text-sm transition-colors">
                 Sitemap
-              </a>
+              </Link>
             </div>
           </div>
         </div>
