@@ -104,11 +104,11 @@ const Footer = () => {
             <p className="text-industrial-400 dark:text-industrial-500 text-sm">
               © 2024 DLS Envirotech Corporation. All rights reserved.
             </p>
-            <div className="flex items-center space-x-6 mt-4 md:mt-0">
+            <div className="flex items-center space-x-6 mt-4 md:mt-0 mr-16">
+              <ThemeToggle />
               <Link href="/sitemap" className="text-industrial-400 dark:text-industrial-500 hover:text-white text-sm transition-colors">
                 Sitemap
               </Link>
-              <ThemeToggle />
             </div>
           </div>
         </div>
