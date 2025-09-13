@@ -1,6 +1,7 @@
 
 import { useState } from "react";
 import { Helmet } from "react-helmet";
+import TopBar from "@/components/layout/top-bar";
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
 import { Button } from "@/components/ui/button";
@@ -78,9 +79,11 @@ export default function Quote() {
         <meta name="description" content="Request a customized quote for your water treatment solution. Fast turnaround, competitive pricing." />
       </Helmet>
       
-      <Header />
-      
-      <main className="min-h-screen pt-20">
+      <div className="min-h-screen bg-gray-50 dark:bg-background">
+        <TopBar />
+        <Header />
+        
+        <main className="pt-20">
         <div className="container mx-auto px-4 py-12">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
@@ -186,10 +189,11 @@ export default function Quote() {
             </Card>
           </div>
         </div>
-      </main>
-
-      <Footer />
-      <ChatbotWidget />
+        </main>
+        
+        <Footer />
+        <ChatbotWidget />
+      </div>
     </>
   );
 }

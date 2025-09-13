@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet";
+import TopBar from "@/components/layout/top-bar";
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
 import ServiceCard from "@/components/ui/service-card";
@@ -17,7 +18,8 @@ const Services = () => {
         <meta name="keywords" content="STP, ETP, sewage treatment plant, effluent treatment plant, RO plant, cooling tower, water treatment services" />
       </Helmet>
       
-      <div className="min-h-screen bg-white">
+      <div className="min-h-screen bg-white dark:bg-background">
+        <TopBar />
         <Header />
         <main>
           {/* Hero Section */}

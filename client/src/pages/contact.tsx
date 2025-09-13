@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet";
+import TopBar from "@/components/layout/top-bar";
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
 import ContactSection from "@/components/sections/contact-section";
@@ -13,7 +14,8 @@ const Contact = () => {
         <meta name="keywords" content="contact water treatment company, environmental technology consultation, STP ETP consultation, water treatment expert" />
       </Helmet>
       
-      <div className="min-h-screen bg-white">
+      <div className="min-h-screen bg-white dark:bg-background">
+        <TopBar />
         <Header />
         <main>
           {/* Hero Section */}

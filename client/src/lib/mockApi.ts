@@ -240,4 +240,22 @@ export const mockApi = {
   async getChatHistory(sessionId: string) {
     return mockStorage.getChatMessages(sessionId);
   },
+
+  async createQuote(formData: any) {
+    // Simulate API delay
+    await new Promise(resolve => setTimeout(resolve, 1000));
+    
+    // Store quote request in localStorage
+    const quotes = JSON.parse(localStorage.getItem('dls_quotes') || '[]');
+    const quoteRequest = {
+      id: Date.now().toString(),
+      ...formData,
+      timestamp: new Date().toISOString(),
+      status: 'pending'
+    };
+    quotes.push(quoteRequest);
+    localStorage.setItem('dls_quotes', JSON.stringify(quotes));
+    
+    return quoteRequest;
+  },
 };

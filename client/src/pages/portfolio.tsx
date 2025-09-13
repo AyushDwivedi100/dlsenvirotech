@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Helmet } from "react-helmet";
+import TopBar from "@/components/layout/top-bar";
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
 import PortfolioCard from "@/components/ui/portfolio-card";
@@ -33,7 +34,8 @@ const Portfolio = () => {
         <meta name="keywords" content="water treatment projects, case studies, STP projects, ETP implementation, industrial water treatment portfolio" />
       </Helmet>
       
-      <div className="min-h-screen bg-white">
+      <div className="min-h-screen bg-white dark:bg-background">
+        <TopBar />
         <Header />
         <main>
           {/* Hero Section */}

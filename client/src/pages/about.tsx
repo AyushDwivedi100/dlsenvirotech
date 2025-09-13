@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet";
+import TopBar from "@/components/layout/top-bar";
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
 import AboutSection from "@/components/sections/about-section";
@@ -95,7 +96,8 @@ const About = () => {
         />
       </Helmet>
 
-      <div className="min-h-screen bg-white">
+      <div className="min-h-screen bg-white dark:bg-background">
+        <TopBar />
         <Header />
         <main>
           {/* Hero Section */}

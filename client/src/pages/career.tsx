@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet";
+import TopBar from "@/components/layout/top-bar";
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
 import ChatbotWidget from "@/components/chatbot/chatbot-widget";
@@ -109,7 +110,8 @@ const Career = () => {
         <meta property="og:type" content="website" />
       </Helmet>
       
-      <div className="min-h-screen bg-white">
+      <div className="min-h-screen bg-white dark:bg-background">
+        <TopBar />
         <Header />
         <main className="bg-gray-50">
           {/* Hero Section */}
