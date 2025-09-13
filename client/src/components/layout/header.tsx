@@ -3,7 +3,7 @@ import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
-import dlsLogo from "@assets/DLS-Full-Logo_1757760050339.png";
+import dlsLogo from "@assets/DLS-Short-Logo_1757761870662.png";
 
 const Header = () => {
   const [location] = useLocation();
@@ -33,7 +33,7 @@ const Header = () => {
             <img 
               src={dlsLogo} 
               alt="DLS Envirotech Corporation Logo" 
-              className="h-12 md:h-14 lg:h-16 xl:h-[72px] w-48 md:w-56 lg:w-64 xl:w-72 object-contain"
+              className="h-12 md:h-14 lg:h-16 xl:h-[72px] w-auto object-contain"
             />
           </Link>
           

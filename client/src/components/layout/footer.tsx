@@ -1,7 +1,7 @@
 import { Link } from "wouter";
 import { Linkedin, Twitter, Facebook, Youtube } from "lucide-react";
 import { ThemeToggle } from "@/components/ui/theme-toggle";
-import dlsLogo from "@assets/DLS-Full-Logo_1757760050339.png";
+import dlsLogo from "@assets/DLS-Short-Logo_1757761870662.png";
 
 const Footer = () => {
   const services = [
@@ -31,7 +31,7 @@ const Footer = () => {
               <img 
                 src={dlsLogo} 
                 alt="DLS Envirotech Corporation Logo" 
-                className="h-16 w-48 md:w-56 lg:w-64 xl:w-72 object-contain"
+                className="h-16 w-auto object-contain"
               />
             </div>
             <p className="text-industrial-300 dark:text-industrial-400 mb-6 leading-relaxed">
