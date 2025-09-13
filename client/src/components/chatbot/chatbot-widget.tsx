@@ -112,10 +112,11 @@ export default function ChatbotWidget() {
 
   return (
     <>
-      {/* Fullscreen blur overlay */}
+      {/* Blur overlay excluding top bar */}
       {isOpen && (
         <div
           className="fixed inset-0 bg-black bg-opacity-30 backdrop-blur-sm z-40 transition-all"
+          style={{ top: '120px' }} // Start below top bar and header
           onClick={() => setIsOpen(false)} // Clicking the blurred background closes the chat
         ></div>
       )}

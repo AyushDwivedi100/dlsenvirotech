@@ -85,16 +85,6 @@ const Footer = () => {
                   </Link>
                 </li>
               ))}
-              <li>
-                <a href="#" className="text-industrial-300 dark:text-industrial-400 hover:text-white transition-colors">
-                  Quality Policy
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-industrial-300 dark:text-industrial-400 hover:text-white transition-colors">
-                  Certifications
-                </a>
-              </li>
             </ul>
           </div>
         </div>
