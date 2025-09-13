@@ -32,7 +32,7 @@ const Header = () => {
             <img 
               src={dlsLogo} 
               alt="DLS Envirotech Corporation Logo" 
-              className="h-16 w-auto"
+              className="h-12 md:h-14 lg:h-16 xl:h-[72px] w-auto"
             />
           </Link>
           
