@@ -3,7 +3,7 @@ import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
-import dlsLogo from "@assets/dlsLogo-removebg-preview_1753515549861.png";
+import dlsLogo from "@assets/DLS-Full-Logo_1757759427273.png";
 
 const Header = () => {
   const [location] = useLocation();

@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { MessageCircle, Send, X } from "lucide-react";
 import { mockApi } from "@/lib/mockApi";
+import dlsLogo from "@assets/DLS-Full-Logo_1757759427273.png";
 
 interface ChatMessage {
   id: string;
@@ -114,7 +115,10 @@ export default function ChatbotWidget() {
       {isOpen && (
         <Card className="fixed bottom-24 right-2 left-2 sm:right-6 sm:left-auto w-auto sm:w-80 md:w-96 max-w-full h-[70vh] max-h-[500px] shadow-xl z-50 flex flex-col transition-all duration-300 ease-in-out transform scale-95 opacity-0 animate-fade-in opacity-100 scale-100">
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2 bg-[whitesmoke] rounded-lg">
-            <CardTitle className="text-sm">DLS Support Chat</CardTitle>
+            <div className="flex items-center gap-2">
+              <img src={dlsLogo} alt="DLS Envirotech" className="h-6 w-auto" />
+              <CardTitle className="text-sm">DLS Support Chat</CardTitle>
+            </div>
             <Button variant="ghost" size="sm" onClick={() => setIsOpen(false)}>
               <X className="h-4 w-4" />
             </Button>

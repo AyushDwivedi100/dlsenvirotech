@@ -1,6 +1,6 @@
 import { Link } from "wouter";
 import { Linkedin, Twitter, Facebook, Youtube } from "lucide-react";
-import dlsLogo from "@assets/dlsLogo-removebg-preview_1753515549861.png";
+import dlsLogo from "@assets/DLS-Full-Logo_1757759427273.png";
 
 const Footer = () => {
   const services = [
