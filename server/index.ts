@@ -16,11 +16,12 @@ const clientDir = resolve(__dirname, "..", "client");
 // Set environment variables for proper Vite operation
 process.env.NODE_ENV = 'development';
 process.env.VITE_PORT = '5000';
+process.env.VITE_HOST = '0.0.0.0';
 
 console.log(`📁 Starting Vite dev server from: ${clientDir}`);
 
-// Start Vite development server with proper configuration
-const viteProcess = spawn('npx', ['vite', '--host', '0.0.0.0', '--port', '5000', '--strictPort'], {
+// Start Vite development server with proper configuration using dev config
+const viteProcess = spawn('npx', ['vite', '--config', 'vite.config.dev.ts', '--host', '0.0.0.0', '--port', '5000', '--strictPort'], {
   cwd: clientDir,
   stdio: 'inherit',
   env: {
