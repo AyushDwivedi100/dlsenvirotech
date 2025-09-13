@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { ThemeToggle } from "@/components/ui/theme-toggle";
 import { Menu } from "lucide-react";
 import dlsLogo from "@assets/DLS-Full-Logo_1757760050339.png";
 
@@ -26,14 +27,14 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-white shadow-lg sticky top-0 z-50" role="banner">
+    <header className="bg-white dark:bg-industrial-900 shadow-lg sticky top-0 z-50 transition-colors" role="banner">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Main navigation">
         <div className="flex justify-between items-center h-20">
           <Link href="/" className="flex items-center space-x-4">
             <img 
               src={dlsLogo} 
               alt="DLS Envirotech Corporation Logo" 
-              className="h-12 md:h-14 lg:h-16 xl:h-[72px] w-32 md:w-40 lg:w-48 xl:w-56 object-contain"
+              className="h-12 md:h-14 lg:h-16 xl:h-[72px] w-32 md:w-40 lg:w-48 xl:w-56 object-contain dark:filter dark:brightness-0 dark:invert"
             />
           </Link>
           
@@ -45,7 +46,7 @@ const Header = () => {
                 className={`font-medium transition-colors relative ${
                   isActive(item.href)
                     ? "text-primary font-semibold"
-                    : "text-industrial-700 hover:text-primary"
+                    : "text-industrial-700 dark:text-industrial-300 hover:text-primary dark:hover:text-primary"
                 }`}
               >
                 {item.name}
@@ -54,42 +55,48 @@ const Header = () => {
                 )}
               </Link>
             ))}
-            <Button asChild>
-              <Link href="/quote">Get Quote</Link>
-            </Button>
+            <div className="flex items-center space-x-4">
+              <ThemeToggle />
+              <Button asChild>
+                <Link href="/quote">Get Quote</Link>
+              </Button>
+            </div>
           </div>
           
-          <Sheet open={isOpen} onOpenChange={setIsOpen}>
-            <SheetTrigger asChild>
-              <Button variant="ghost" size="icon" className="md:hidden">
-                <Menu className="h-6 w-6" />
-                <span className="sr-only">Toggle mobile menu</span>
-              </Button>
-            </SheetTrigger>
-            <SheetContent side="right" className="w-[300px] sm:w-[400px]">
-              <div className="flex flex-col space-y-4 mt-8">
-                {navigation.map((item) => (
-                  <Link
-                    key={item.name}
-                    href={item.href}
-                    className={`text-lg font-medium transition-colors relative ${
-                      isActive(item.href)
-                        ? "text-primary font-semibold bg-primary/10 px-3 py-2 rounded-md"
-                        : "text-industrial-700 hover:text-primary px-3 py-2 hover:bg-industrial-50 rounded-md"
-                    }`}
-                    onClick={() => setIsOpen(false)}
-                  >
-                    {item.name}
-                  </Link>
-                ))}
-                <Button asChild className="mt-4">
-                  <Link href="/quote" onClick={() => setIsOpen(false)}>
-                    Get Quote
-                  </Link>
+          <div className="flex items-center space-x-2 md:hidden">
+            <ThemeToggle />
+            <Sheet open={isOpen} onOpenChange={setIsOpen}>
+              <SheetTrigger asChild>
+                <Button variant="ghost" size="icon">
+                  <Menu className="h-6 w-6" />
+                  <span className="sr-only">Toggle mobile menu</span>
                 </Button>
-              </div>
-            </SheetContent>
-          </Sheet>
+              </SheetTrigger>
+              <SheetContent side="right" className="w-[300px] sm:w-[400px]">
+                <div className="flex flex-col space-y-4 mt-8">
+                  {navigation.map((item) => (
+                    <Link
+                      key={item.name}
+                      href={item.href}
+                      className={`text-lg font-medium transition-colors relative ${
+                        isActive(item.href)
+                          ? "text-primary font-semibold bg-primary/10 px-3 py-2 rounded-md"
+                          : "text-industrial-700 dark:text-industrial-300 hover:text-primary px-3 py-2 hover:bg-industrial-50 dark:hover:bg-industrial-800 rounded-md"
+                      }`}
+                      onClick={() => setIsOpen(false)}
+                    >
+                      {item.name}
+                    </Link>
+                  ))}
+                  <Button asChild className="mt-4">
+                    <Link href="/quote" onClick={() => setIsOpen(false)}>
+                      Get Quote
+                    </Link>
+                  </Button>
+                </div>
+              </SheetContent>
+            </Sheet>
+          </div>
         </div>
       </nav>
     </header>

@@ -131,4 +131,7 @@
   .bg-industrial-900 {
     background-color: hsl(222, 84%, 4%);
   }
+  .bg-industrial-950 {
+    background-color: hsl(222, 84%, 2%);
+  }
 }
