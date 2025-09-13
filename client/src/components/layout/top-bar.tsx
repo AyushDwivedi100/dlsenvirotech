@@ -1,4 +1,5 @@
 import { Phone, Mail, MapPin } from "lucide-react";
+import { ThemeToggle } from "@/components/ui/theme-toggle";
 
 const TopBar = () => {
   return (
@@ -15,9 +16,13 @@ const TopBar = () => {
               <span>contact@dlsenvirotech.com</span>
             </div>
           </div>
-          <div className="flex items-center gap-2" data-testid="topbar-address">
-            <MapPin className="h-3 w-3" />
-            <span>123 Industrial Way, Water City, WC 12345</span>
+          <div className="flex items-center gap-4">
+            <div className="flex items-center gap-2" data-testid="topbar-address">
+              <MapPin className="h-3 w-3" />
+              <span className="hidden sm:inline">123 Industrial Way, Water City, WC 12345</span>
+              <span className="sm:hidden">Water City, WC</span>
+            </div>
+            <ThemeToggle />
           </div>
         </div>
       </div>

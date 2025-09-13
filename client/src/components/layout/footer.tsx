@@ -1,5 +1,6 @@
 import { Link } from "wouter";
 import { Linkedin, Twitter, Facebook, Youtube } from "lucide-react";
+import { ThemeToggle } from "@/components/ui/theme-toggle";
 import dlsLogo from "@assets/DLS-Full-Logo_1757760050339.png";
 
 const Footer = () => {
@@ -103,10 +104,11 @@ const Footer = () => {
             <p className="text-industrial-400 dark:text-industrial-500 text-sm">
               © 2024 DLS Envirotech Corporation. All rights reserved.
             </p>
-            <div className="flex space-x-6 mt-4 md:mt-0">
+            <div className="flex items-center space-x-6 mt-4 md:mt-0">
               <Link href="/sitemap" className="text-industrial-400 dark:text-industrial-500 hover:text-white text-sm transition-colors">
                 Sitemap
               </Link>
+              <ThemeToggle />
             </div>
           </div>
         </div>
