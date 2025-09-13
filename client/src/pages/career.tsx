@@ -1,3 +1,7 @@
+import { Helmet } from "react-helmet";
+import Header from "@/components/layout/header";
+import Footer from "@/components/layout/footer";
+import ChatbotWidget from "@/components/chatbot/chatbot-widget";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -95,133 +99,149 @@ const Career = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      {/* Hero Section */}
-      <section className="bg-gradient-to-r from-industrial-900 to-industrial-700 text-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6" data-testid="text-career-hero-title">
-            Join Our Team
-          </h1>
-          <p className="text-xl text-industrial-200 max-w-3xl mx-auto" data-testid="text-career-hero-description">
-            Build your career with a leading environmental technology company. 
-            Be part of our mission to create sustainable water treatment solutions.
-          </p>
-        </div>
-      </section>
-
-      {/* Why Work With Us */}
-      <section className="py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-industrial-900 mb-4" data-testid="text-why-work-title">
-              Why Work With Us?
-            </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto" data-testid="text-why-work-description">
-              Join a company that values innovation, sustainability, and professional growth
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8 mb-16">
-            {values.map((value, index) => (
-              <Card key={index} className="text-center" data-testid={`card-value-${index}`}>
-                <CardHeader>
-                  <div className="flex justify-center mb-4">
-                    {value.icon}
-                  </div>
-                  <CardTitle>{value.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription>{value.description}</CardDescription>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-
-          {/* Benefits */}
-          <div className="bg-white rounded-lg p-8 shadow-lg">
-            <h3 className="text-2xl font-bold text-industrial-900 mb-6" data-testid="text-benefits-title">
-              Employee Benefits
-            </h3>
-            <div className="grid md:grid-cols-2 gap-4">
-              {benefits.map((benefit, index) => (
-                <div key={index} className="flex items-center space-x-3" data-testid={`benefit-${index}`}>
-                  <div className="w-2 h-2 bg-primary rounded-full"></div>
-                  <span className="text-gray-700">{benefit}</span>
-                </div>
-              ))}
+    <>
+      <Helmet>
+        <title>Careers - DLS Envirotech Corporation | Join Our Environmental Technology Team</title>
+        <meta name="description" content="Explore exciting career opportunities at DLS Envirotech Corporation. Join our team of environmental technology experts and help create sustainable water treatment solutions." />
+        <meta name="keywords" content="careers, jobs, environmental technology, water treatment, DLS Envirotech, engineering careers" />
+        <meta property="og:title" content="Careers - DLS Envirotech Corporation" />
+        <meta property="og:description" content="Explore exciting career opportunities at DLS Envirotech Corporation. Join our team of environmental technology experts." />
+        <meta property="og:type" content="website" />
+      </Helmet>
+      
+      <div className="min-h-screen bg-white">
+        <Header />
+        <main className="bg-gray-50">
+          {/* Hero Section */}
+          <section className="bg-gradient-to-r from-industrial-900 to-industrial-700 text-white py-20">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+              <h1 className="text-4xl md:text-5xl font-bold mb-6" data-testid="text-career-hero-title">
+                Join Our Team
+              </h1>
+              <p className="text-xl text-industrial-200 max-w-3xl mx-auto" data-testid="text-career-hero-description">
+                Build your career with a leading environmental technology company. 
+                Be part of our mission to create sustainable water treatment solutions.
+              </p>
             </div>
-          </div>
-        </div>
-      </section>
+          </section>
 
-      {/* Current Openings */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-industrial-900 mb-4" data-testid="text-openings-title">
-              Current Openings
-            </h2>
-            <p className="text-lg text-gray-600" data-testid="text-openings-description">
-              Explore exciting career opportunities with our growing team
-            </p>
-          </div>
+          {/* Why Work With Us */}
+          <section className="py-16">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl font-bold text-industrial-900 mb-4" data-testid="text-why-work-title">
+                  Why Work With Us?
+                </h2>
+                <p className="text-lg text-gray-600 max-w-2xl mx-auto" data-testid="text-why-work-description">
+                  Join a company that values innovation, sustainability, and professional growth
+                </p>
+              </div>
 
-          <div className="grid gap-6">
-            {jobOpenings.map((job) => (
-              <Card key={job.id} className="hover:shadow-lg transition-shadow" data-testid={`card-job-${job.id}`}>
-                <CardHeader>
-                  <div className="flex justify-between items-start">
-                    <div>
-                      <CardTitle className="text-xl mb-2">{job.title}</CardTitle>
-                      <div className="flex flex-wrap gap-2 mb-3">
-                        <Badge variant="secondary">{job.department}</Badge>
-                        <Badge variant="outline">{job.type}</Badge>
-                        <Badge variant="outline">{job.experience}</Badge>
+              <div className="grid md:grid-cols-3 gap-8 mb-16">
+                {values.map((value, index) => (
+                  <Card key={index} className="text-center" data-testid={`card-value-${index}`}>
+                    <CardHeader>
+                      <div className="flex justify-center mb-4">
+                        {value.icon}
                       </div>
-                      <div className="flex items-center text-gray-600 text-sm">
-                        <MapPin className="h-4 w-4 mr-1" />
-                        {job.location}
-                      </div>
+                      <CardTitle>{value.title}</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <CardDescription>{value.description}</CardDescription>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+
+              {/* Benefits */}
+              <div className="bg-white rounded-lg p-8 shadow-lg">
+                <h3 className="text-2xl font-bold text-industrial-900 mb-6" data-testid="text-benefits-title">
+                  Employee Benefits
+                </h3>
+                <div className="grid md:grid-cols-2 gap-4">
+                  {benefits.map((benefit, index) => (
+                    <div key={index} className="flex items-center space-x-3" data-testid={`benefit-${index}`}>
+                      <div className="w-2 h-2 bg-primary rounded-full"></div>
+                      <span className="text-gray-700">{benefit}</span>
                     </div>
-                    <Button data-testid={`button-apply-${job.id}`}>
-                      Apply Now
-                    </Button>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription className="mb-4">
-                    {job.description}
-                  </CardDescription>
-                  <div>
-                    <h4 className="font-semibold mb-2">Requirements:</h4>
-                    <ul className="list-disc list-inside text-sm text-gray-600 space-y-1">
-                      {job.requirements.map((req, index) => (
-                        <li key={index}>{req}</li>
-                      ))}
-                    </ul>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </section>
 
-      {/* Call to Action */}
-      <section className="py-16 bg-primary text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold mb-4" data-testid="text-cta-title">
-            Don't See a Perfect Match?
-          </h2>
-          <p className="text-xl mb-8 text-primary-100" data-testid="text-cta-description">
-            We're always looking for talented individuals. Send us your resume and we'll keep you in mind for future opportunities.
-          </p>
-          <Button variant="secondary" size="lg" data-testid="button-send-resume">
-            Send Your Resume
-          </Button>
-        </div>
-      </section>
-    </div>
+          {/* Current Openings */}
+          <section className="py-16 bg-white">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl font-bold text-industrial-900 mb-4" data-testid="text-openings-title">
+                  Current Openings
+                </h2>
+                <p className="text-lg text-gray-600" data-testid="text-openings-description">
+                  Explore exciting career opportunities with our growing team
+                </p>
+              </div>
+
+              <div className="grid gap-6">
+                {jobOpenings.map((job) => (
+                  <Card key={job.id} className="hover:shadow-lg transition-shadow" data-testid={`card-job-${job.id}`}>
+                    <CardHeader>
+                      <div className="flex justify-between items-start">
+                        <div>
+                          <CardTitle className="text-xl mb-2">{job.title}</CardTitle>
+                          <div className="flex flex-wrap gap-2 mb-3">
+                            <Badge variant="secondary">{job.department}</Badge>
+                            <Badge variant="outline">{job.type}</Badge>
+                            <Badge variant="outline">{job.experience}</Badge>
+                          </div>
+                          <div className="flex items-center text-gray-600 text-sm">
+                            <MapPin className="h-4 w-4 mr-1" />
+                            {job.location}
+                          </div>
+                        </div>
+                        <Button data-testid={`button-apply-${job.id}`}>
+                          Apply Now
+                        </Button>
+                      </div>
+                    </CardHeader>
+                    <CardContent>
+                      <CardDescription className="mb-4">
+                        {job.description}
+                      </CardDescription>
+                      <div>
+                        <h4 className="font-semibold mb-2">Requirements:</h4>
+                        <ul className="list-disc list-inside text-sm text-gray-600 space-y-1">
+                          {job.requirements.map((req, index) => (
+                            <li key={index}>{req}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </div>
+          </section>
+
+          {/* Call to Action */}
+          <section className="py-16 bg-primary text-white">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+              <h2 className="text-3xl font-bold mb-4" data-testid="text-cta-title">
+                Don't See a Perfect Match?
+              </h2>
+              <p className="text-xl mb-8 text-primary-100" data-testid="text-cta-description">
+                We're always looking for talented individuals. Send us your resume and we'll keep you in mind for future opportunities.
+              </p>
+              <Button variant="secondary" size="lg" data-testid="button-send-resume">
+                Send Your Resume
+              </Button>
+            </div>
+          </section>
+        </main>
+        <Footer />
+        <ChatbotWidget />
+      </div>
+    </>
   );
 };
 
