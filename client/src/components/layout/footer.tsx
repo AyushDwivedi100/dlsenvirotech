@@ -31,7 +31,7 @@ const Footer = () => {
               <img 
                 src={dlsLogo} 
                 alt="DLS Envirotech Corporation Logo" 
-                className="h-16 w-48 md:w-56 lg:w-64 object-contain filter brightness-0 invert"
+                className="h-16 w-48 md:w-56 lg:w-64 xl:w-72 object-contain"
               />
             </div>
             <p className="text-industrial-300 dark:text-industrial-400 mb-6 leading-relaxed">
