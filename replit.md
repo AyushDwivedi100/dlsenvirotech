@@ -4,7 +4,13 @@
 
 This is a full-stack web application for DLS Envirotech Corporation, a water treatment solutions company. The application serves as a comprehensive business website showcasing their services, portfolio, and providing client interaction capabilities through consultation requests and an AI chatbot.
 
-## Recent Changes (January 2025)
+## Recent Changes (October 2025)
+
+✓ Updated company logo to new DLS Envirotech branding (dls-envirotech-logo.png)
+✓ Updated primary contact phone number to +919568572005 across all pages
+✓ Added createConsultation method to mockApi for contact form functionality
+
+## Previous Changes (January 2025)
 
 ✓ Replaced placeholder factory icons with actual DLS company logo throughout the site
 ✓ Updated navigation menu structure: About Us, Services, Projects, Gallery, Contact Us, Get Quote
