@@ -8,19 +8,38 @@ import PortfolioShowcase from "@/components/sections/portfolio-showcase";
 import AboutSection from "@/components/sections/about-section";
 import TestimonialsSection from "@/components/sections/testimonials-section";
 import ContactSection from "@/components/sections/contact-section";
+import { SEOHead, organizationSchema, localBusinessSchema, createFAQSchema } from "@/components/seo/seo-head";
 
 const Home = () => {
+  const faqSchema = createFAQSchema([
+    {
+      question: "What is the difference between STP and ETP?",
+      answer: "STP (Sewage Treatment Plant) treats domestic wastewater from homes and offices, while ETP (Effluent Treatment Plant) treats industrial wastewater containing chemicals and pollutants. STPs use biological processes, while ETPs may require chemical and physical treatments."
+    },
+    {
+      question: "How much does a water treatment plant cost?",
+      answer: "Water treatment plant costs vary based on capacity, technology, and application. Small residential STPs start from ₹2-3 lakhs, while industrial ETP plants can range from ₹10 lakhs to several crores. Contact us for a customized quote."
+    },
+    {
+      question: "What water treatment services does DLS Envirotech provide?",
+      answer: "DLS Envirotech provides comprehensive water treatment solutions including STP, ETP, RO plants, industrial wastewater treatment, zero liquid discharge systems, cooling towers, and complete turnkey projects with installation and maintenance."
+    }
+  ]);
+
+  const combinedSchema = {
+    "@context": "https://schema.org",
+    "@graph": [organizationSchema, localBusinessSchema, faqSchema]
+  };
+
   return (
     <>
-      <Helmet>
-        <title>DLS Envirotech Corporation - Water Treatment Solutions | Professional Environmental Technology</title>
-        <meta name="description" content="Leading provider of water treatment plants, sewage treatment systems, and effluent treatment solutions with 15+ years of expertise in environmental technology." />
-        <meta name="keywords" content="water treatment plants, sewage treatment, effluent treatment, environmental technology, industrial water solutions" />
-        <meta property="og:title" content="DLS Envirotech Corporation - Water Treatment Solutions" />
-        <meta property="og:description" content="Leading provider of water treatment plants, sewage treatment systems, and effluent treatment solutions with 15+ years of expertise in environmental technology." />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://dlsenvirotech.com" />
-      </Helmet>
+      <SEOHead
+        title="Best Water Treatment Company India - STP, ETP & Industrial Wastewater Solutions"
+        description="Leading water treatment company in India specializing in STP, ETP, RO plants & industrial wastewater treatment. 2500+ installations across 22 countries. ISO certified. Get free consultation & quote today!"
+        keywords="water treatment company India, STP plant manufacturer, ETP plant manufacturer, sewage treatment plant, effluent treatment plant, industrial water treatment, wastewater treatment company, RO plant installation, zero liquid discharge, biological wastewater treatment, water purification system, best water treatment company"
+        canonical="https://dlsenvirotech.com/"
+        schema={combinedSchema}
+      />
       
       <div className="min-h-screen bg-white dark:bg-background">
         <TopBar />

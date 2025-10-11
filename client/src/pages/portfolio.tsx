@@ -8,6 +8,7 @@ import { PORTFOLIO_PROJECTS } from "@/lib/constants";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { Phone } from "lucide-react";
+import { SEOHead, organizationSchema, createBreadcrumbSchema } from "@/components/seo/seo-head";
 
 const Portfolio = () => {
   const [activeFilter, setActiveFilter] = useState("all");
@@ -25,13 +26,25 @@ const Portfolio = () => {
     return project.category.includes(activeFilter);
   });
 
+  const breadcrumbSchema = createBreadcrumbSchema([
+    { name: "Home", url: "https://dlsenvirotech.com/" },
+    { name: "Projects", url: "https://dlsenvirotech.com/portfolio" }
+  ]);
+
+  const combinedSchema = {
+    "@context": "https://schema.org",
+    "@graph": [organizationSchema, breadcrumbSchema]
+  };
+
   return (
     <>
-      <Helmet>
-        <title>Project Portfolio - Water Treatment Case Studies | DLS Envirotech</title>
-        <meta name="description" content="Explore our successful water treatment project implementations across 22 countries. Detailed case studies of STP, ETP, and industrial water treatment systems." />
-        <meta name="keywords" content="water treatment projects, case studies, STP projects, ETP implementation, industrial water treatment portfolio" />
-      </Helmet>
+      <SEOHead
+        title="Water Treatment Projects Portfolio - 2500+ STP, ETP Case Studies & Installations"
+        description="Explore 2500+ successful water treatment projects across 22 countries. Detailed case studies of STP, ETP, RO plants, and industrial wastewater systems. View our proven track record in sewage and effluent treatment implementations."
+        keywords="water treatment projects, STP projects, ETP case studies, wastewater treatment portfolio, sewage treatment installations, effluent treatment implementation, industrial water treatment projects, water treatment company track record, successful STP installations"
+        canonical="https://dlsenvirotech.com/portfolio"
+        schema={combinedSchema}
+      />
       
       <div className="min-h-screen bg-white dark:bg-background">
         <TopBar />

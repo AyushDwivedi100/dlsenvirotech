@@ -3,15 +3,28 @@ import TopBar from "@/components/layout/top-bar";
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
 import ContactSection from "@/components/sections/contact-section";
+import { SEOHead, organizationSchema, createBreadcrumbSchema } from "@/components/seo/seo-head";
 
 const Contact = () => {
+  const breadcrumbSchema = createBreadcrumbSchema([
+    { name: "Home", url: "https://dlsenvirotech.com/" },
+    { name: "Contact Us", url: "https://dlsenvirotech.com/contact" }
+  ]);
+
+  const combinedSchema = {
+    "@context": "https://schema.org",
+    "@graph": [organizationSchema, breadcrumbSchema]
+  };
+
   return (
     <>
-      <Helmet>
-        <title>Contact Us - Get Water Treatment Consultation | DLS Envirotech</title>
-        <meta name="description" content="Contact DLS Envirotech for professional water treatment consultation. Call +919568572005 or email contact@dlsenvirotech.com for expert environmental solutions." />
-        <meta name="keywords" content="contact water treatment company, environmental technology consultation, STP ETP consultation, water treatment expert" />
-      </Helmet>
+      <SEOHead
+        title="Contact Water Treatment Experts - Free Consultation for STP, ETP & Industrial Solutions"
+        description="Contact DLS Envirotech for professional water treatment consultation. Expert engineers available 24/7. Call +91-9568572005 or email contact@dlsenvirotech.com for STP, ETP, and industrial wastewater solutions. Free site visit and quote!"
+        keywords="contact water treatment company, water treatment consultation, STP expert, ETP consultant, industrial wastewater expert, water treatment engineer, free water treatment consultation India"
+        canonical="https://dlsenvirotech.com/contact"
+        schema={combinedSchema}
+      />
       
       <div className="min-h-screen bg-white dark:bg-background">
         <TopBar />

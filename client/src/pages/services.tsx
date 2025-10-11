@@ -7,15 +7,28 @@ import { SERVICES } from "@/lib/constants";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { Phone } from "lucide-react";
+import { SEOHead, organizationSchema, createBreadcrumbSchema } from "@/components/seo/seo-head";
 
 const Services = () => {
+  const breadcrumbSchema = createBreadcrumbSchema([
+    { name: "Home", url: "https://dlsenvirotech.com/" },
+    { name: "Services", url: "https://dlsenvirotech.com/services" }
+  ]);
+
+  const combinedSchema = {
+    "@context": "https://schema.org",
+    "@graph": [organizationSchema, breadcrumbSchema]
+  };
+
   return (
     <>
-      <Helmet>
-        <title>Water Treatment Services - STP, ETP, RO Plants | DLS Envirotech</title>
-        <meta name="description" content="Comprehensive water treatment services including sewage treatment plants, effluent treatment plants, RO systems, and industrial cooling towers. Professional environmental solutions." />
-        <meta name="keywords" content="STP, ETP, sewage treatment plant, effluent treatment plant, RO plant, cooling tower, water treatment services" />
-      </Helmet>
+      <SEOHead
+        title="Water Treatment Services - STP, ETP & Industrial Wastewater Solutions"
+        description="Professional water treatment services: Sewage Treatment Plants (STP), Effluent Treatment Plants (ETP), RO systems, and industrial wastewater solutions. ISO certified with 2500+ installations across 22 countries. Get free consultation!"
+        keywords="water treatment services, STP plant, ETP plant, sewage treatment plant, effluent treatment plant, industrial water treatment, wastewater treatment, RO plant, water purification system, biological treatment, zero liquid discharge, water treatment company India"
+        canonical="https://dlsenvirotech.com/services"
+        schema={combinedSchema}
+      />
       
       <div className="min-h-screen bg-white dark:bg-background">
         <TopBar />

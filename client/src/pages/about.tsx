@@ -11,8 +11,19 @@ import Timeline from "@/components/ui/timeline";
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import dlsLogo from "@assets/dls-envirotech-logo.png";
+import { SEOHead, organizationSchema, createBreadcrumbSchema } from "@/components/seo/seo-head";
 
 const About = () => {
+  const breadcrumbSchema = createBreadcrumbSchema([
+    { name: "Home", url: "https://dlsenvirotech.com/" },
+    { name: "About Us", url: "https://dlsenvirotech.com/about" }
+  ]);
+
+  const combinedSchema = {
+    "@context": "https://schema.org",
+    "@graph": [organizationSchema, breadcrumbSchema]
+  };
+
   const milestones = [
     {
       year: "2009",
@@ -81,19 +92,13 @@ const About = () => {
 
   return (
     <>
-      <Helmet>
-        <title>
-          About Us - 10+ Years Water Treatment Expertise | DLS Envirotech
-        </title>
-        <meta
-          name="description"
-          content="Learn about DLS Envirotech Corporation's 15+ years of expertise in water treatment technology. Our journey, values, and commitment to environmental solutions."
-        />
-        <meta
-          name="keywords"
-          content="about DLS Envirotech, water treatment company, environmental technology expertise, company history, water treatment experience"
-        />
-      </Helmet>
+      <SEOHead
+        title="About DLS Envirotech - 15+ Years Leading Water Treatment Company India"
+        description="Learn about DLS Envirotech Corporation's 15+ years of expertise in water treatment technology. ISO certified company with 2500+ installations across 22 countries. Our journey from 2009 to becoming a global leader in STP, ETP, and industrial wastewater solutions."
+        keywords="about DLS Envirotech, water treatment company India, environmental technology expertise, ISO certified water treatment, company history, water treatment experience, leading STP ETP manufacturer, wastewater treatment expert"
+        canonical="https://dlsenvirotech.com/about"
+        schema={combinedSchema}
+      />
 
       <div className="min-h-screen bg-white dark:bg-background">
         <TopBar />
