@@ -26,32 +26,32 @@ const Contact = () => {
         schema={combinedSchema}
       />
       
-      <div className="min-h-screen bg-white dark:bg-background">
+      <div className="min-h-screen bg-background">
         <TopBar />
         <Header />
         <main>
           {/* Hero Section */}
           <section className="bg-gradient-to-br from-industrial-50 to-industrial-100 py-12 md:py-16 lg:py-20">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-industrial-900 mb-4 md:mb-6">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4 md:mb-6">
                 Contact Our Water Treatment Experts
               </h1>
-              <p className="text-base sm:text-lg md:text-xl text-industrial-600 max-w-3xl mx-auto mb-6 md:mb-8">
+              <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-6 md:mb-8">
                 Get professional consultation for your water treatment requirements. Our team of experts 
                 is ready to provide customized solutions for your specific needs.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-8 max-w-2xl mx-auto">
-                <div className="text-center p-4 bg-white/50 rounded-lg">
+                <div className="text-center p-4 bg-background/50 rounded-lg">
                   <div className="text-xl md:text-2xl font-bold text-primary mb-2">24/7</div>
-                  <div className="text-sm md:text-base text-industrial-600">Support Available</div>
+                  <div className="text-sm md:text-base text-muted-foreground">Support Available</div>
                 </div>
-                <div className="text-center p-4 bg-white/50 rounded-lg">
+                <div className="text-center p-4 bg-background/50 rounded-lg">
                   <div className="text-xl md:text-2xl font-bold text-secondary mb-2">24hrs</div>
-                  <div className="text-sm md:text-base text-industrial-600">Response Time</div>
+                  <div className="text-sm md:text-base text-muted-foreground">Response Time</div>
                 </div>
-                <div className="text-center p-4 bg-white/50 rounded-lg">
+                <div className="text-center p-4 bg-background/50 rounded-lg">
                   <div className="text-xl md:text-2xl font-bold text-accent mb-2">Free</div>
-                  <div className="text-sm md:text-base text-industrial-600">Consultation</div>
+                  <div className="text-sm md:text-base text-muted-foreground">Consultation</div>
                 </div>
               </div>
             </div>

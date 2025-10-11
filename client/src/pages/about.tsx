@@ -100,17 +100,17 @@ const About = () => {
         schema={combinedSchema}
       />
 
-      <div className="min-h-screen bg-white dark:bg-background">
+      <div className="min-h-screen bg-background">
         <TopBar />
         <Header />
         <main>
           {/* Hero Section */}
           <section className="bg-gradient-to-br from-industrial-50 to-industrial-100 py-12 md:py-16 lg:py-20">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-industrial-900 mb-4 md:mb-6">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4 md:mb-6">
                 About DLS Envirotech Corporation
               </h1>
-              <p className="text-xl text-industrial-600 max-w-3xl mx-auto mb-8">
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
                 With over 10 years of excellence in water treatment technology,
                 we have established ourselves as a trusted partner for
                 environmental solutions worldwide.
@@ -128,13 +128,13 @@ const About = () => {
           <AboutSection />
 
           {/* Our Values */}
-          <section className="py-20 bg-industrial-50">
+          <section className="py-20 bg-muted">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center mb-16">
-                <h2 className="text-4xl font-bold text-industrial-900 mb-4">
+                <h2 className="text-4xl font-bold text-foreground mb-4">
                   Our Core Values
                 </h2>
-                <p className="text-xl text-industrial-600 max-w-3xl mx-auto">
+                <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
                   The principles that guide our commitment to excellence and
                   environmental responsibility
                 </p>
@@ -144,15 +144,15 @@ const About = () => {
                 {values.map((value) => (
                   <div
                     key={value.title}
-                    className="bg-white rounded-xl p-8 text-center shadow-lg hover:shadow-xl transition-shadow"
+                    className="bg-background rounded-xl p-8 text-center shadow-lg hover:shadow-xl transition-shadow"
                   >
                     <div className="bg-primary text-white p-4 rounded-xl w-16 h-16 flex items-center justify-center mx-auto mb-6">
                       <value.icon className="h-8 w-8" />
                     </div>
-                    <h3 className="text-xl font-bold text-industrial-900 mb-4">
+                    <h3 className="text-xl font-bold text-foreground mb-4">
                       {value.title}
                     </h3>
-                    <p className="text-industrial-600 leading-relaxed">
+                    <p className="text-muted-foreground leading-relaxed">
                       {value.description}
                     </p>
                   </div>
@@ -168,12 +168,12 @@ const About = () => {
           <TestimonialsSection />
 
           {/* Call to Action */}
-          <section className="py-20 bg-industrial-50">
+          <section className="py-20 bg-muted">
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-              <h2 className="text-3xl font-bold text-industrial-900 mb-6">
+              <h2 className="text-3xl font-bold text-foreground mb-6">
                 Ready to Experience Our Expertise?
               </h2>
-              <p className="text-lg text-industrial-600 mb-8">
+              <p className="text-lg text-muted-foreground mb-8">
                 Join thousands of satisfied clients who trust DLS Envirotech for
                 their critical water treatment infrastructure needs.
               </p>

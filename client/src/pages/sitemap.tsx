@@ -73,7 +73,7 @@ const Sitemap = () => {
           <h1 className="text-4xl font-bold text-industrial-900 mb-4">
             Website Sitemap
           </h1>
-          <p className="text-lg text-industrial-600">
+          <p className="text-lg text-muted-foreground">
             Navigate through all sections of our website
           </p>
         </div>
@@ -95,7 +95,7 @@ const Sitemap = () => {
                     </div>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-industrial-600 text-sm leading-relaxed">
+                    <p className="text-muted-foreground text-sm leading-relaxed">
                       {page.description}
                     </p>
                   </CardContent>
@@ -105,7 +105,7 @@ const Sitemap = () => {
           })}
         </div>
 
-        <div className="mt-12 p-6 bg-white rounded-lg shadow-sm">
+        <div className="mt-12 p-6 bg-background rounded-lg shadow-sm">
           <h2 className="text-2xl font-bold text-industrial-900 mb-4">
             Website Structure
           </h2>
@@ -114,7 +114,7 @@ const Sitemap = () => {
               <h3 className="text-lg font-semibold text-industrial-800 mb-3">
                 Main Pages
               </h3>
-              <ul className="space-y-2 text-industrial-600">
+              <ul className="space-y-2 text-muted-foreground">
                 <li>• Home - Landing page with company overview</li>
                 <li>• About Us - Company information and team</li>
                 <li>• Services - Water treatment solutions</li>
@@ -125,7 +125,7 @@ const Sitemap = () => {
               <h3 className="text-lg font-semibold text-industrial-800 mb-3">
                 Additional Resources
               </h3>
-              <ul className="space-y-2 text-industrial-600">
+              <ul className="space-y-2 text-muted-foreground">
                 <li>• Gallery - Project photos and facilities</li>
                 <li>• Contact Us - Get in touch with our team</li>
                 <li>• Get Quote - Request project estimates</li>
@@ -136,7 +136,7 @@ const Sitemap = () => {
         </div>
 
         <div className="mt-8 text-center">
-          <p className="text-industrial-500 text-sm">
+          <p className="text-muted-foreground text-sm">
             Need help finding something? <Link href="/contact" className="text-primary hover:underline">Contact us</Link> for assistance.
           </p>
         </div>

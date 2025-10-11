@@ -6,9 +6,11 @@ This is a full-stack web application for DLS Envirotech Corporation, a water tre
 
 ## Recent Changes (October 2025)
 
-✓ **Modern Scrollbar & UI Enhancements (Latest)** - Implemented modern slim scrollbar design:
+✓ **Brand Color Update & Modern Scrollbar (Latest)** - Changed accent color and implemented modern scrollbar:
+  - Replaced green accent color with professional light blue (hsl(207, 90%, 50%))
+  - Updated primary and secondary colors for brand consistency
   - Disabled horizontal scrollbar globally (overflow-x: hidden on html and body)
-  - Created slim 8px vertical scrollbar with gradient styling
+  - Created slim 8px vertical scrollbar with light blue gradient styling
   - Implemented smooth hover effects with color transitions
   - Full dark mode support with theme-aware colors
   - WebKit (Chrome/Safari/Edge) and Firefox browser compatibility

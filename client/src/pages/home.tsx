@@ -41,7 +41,7 @@ const Home = () => {
         schema={combinedSchema}
       />
       
-      <div className="min-h-screen bg-white dark:bg-background">
+      <div className="min-h-screen bg-background">
         <TopBar />
         <Header />
         <main>

@@ -17,13 +17,13 @@ export default function NotFound() {
               <img src={dlsLogo} alt="DLS Envirotech" className="h-12" />
               <div className="flex items-center gap-2">
                 <AlertCircle className="h-8 w-8 text-red-500" />
-                <h1 className="text-2xl font-bold text-gray-900">
+                <h1 className="text-2xl font-bold text-foreground">
                   404 - Page Not Found
                 </h1>
               </div>
             </div>
 
-            <p className="mt-4 text-sm text-gray-600 text-center">
+            <p className="mt-4 text-sm text-muted-foreground text-center">
               Sorry, we couldn’t find the page you were looking for. It may have
               been moved, deleted, or never existed.
             </p>

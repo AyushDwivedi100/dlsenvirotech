@@ -82,38 +82,38 @@ const Gallery = () => {
         <meta name="keywords" content="water treatment gallery, project photos, STP installation, ETP construction, industrial water treatment images" />
       </Helmet>
       
-      <div className="min-h-screen bg-white">
+      <div className="min-h-screen bg-background">
         <Header />
         <main>
           {/* Hero Section */}
           <section className="bg-gradient-to-br from-industrial-50 to-industrial-100 py-20">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-              <h1 className="text-5xl font-bold text-industrial-900 mb-6">
+              <h1 className="text-5xl font-bold text-foreground mb-6">
                 Project Gallery
               </h1>
-              <p className="text-xl text-industrial-600 max-w-3xl mx-auto mb-8">
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
                 Explore our extensive portfolio of successfully completed water treatment installations 
                 across various industries and applications worldwide.
               </p>
               <div className="grid md:grid-cols-3 gap-8 max-w-2xl mx-auto">
                 <div className="text-center">
                   <div className="text-3xl font-bold text-primary mb-2">2500+</div>
-                  <div className="text-industrial-600">Installations</div>
+                  <div className="text-muted-foreground">Installations</div>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-bold text-secondary mb-2">22</div>
-                  <div className="text-industrial-600">Countries</div>
+                  <div className="text-muted-foreground">Countries</div>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-bold text-accent mb-2">15+</div>
-                  <div className="text-industrial-600">Years Experience</div>
+                  <div className="text-muted-foreground">Years Experience</div>
                 </div>
               </div>
             </div>
           </section>
 
           {/* Gallery Grid */}
-          <section className="py-20 bg-white">
+          <section className="py-20 bg-background">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {galleryImages.map((item) => (
@@ -141,7 +141,7 @@ const Gallery = () => {
                       </div>
                       
                       <div className="absolute top-4 right-4">
-                        <div className="bg-white/20 backdrop-blur-sm rounded-full p-2">
+                        <div className="bg-background/20 backdrop-blur-sm rounded-full p-2">
                           <ZoomIn className="h-5 w-5 text-white" />
                         </div>
                       </div>
@@ -153,12 +153,12 @@ const Gallery = () => {
           </section>
 
           {/* Call to Action */}
-          <section className="py-20 bg-industrial-50">
+          <section className="py-20 bg-muted">
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-              <h2 className="text-3xl font-bold text-industrial-900 mb-6">
+              <h2 className="text-3xl font-bold text-foreground mb-6">
                 Ready to See Your Project Here?
               </h2>
-              <p className="text-lg text-industrial-600 mb-8">
+              <p className="text-lg text-muted-foreground mb-8">
                 Join our gallery of successful installations with a custom water treatment 
                 solution designed specifically for your requirements.
               </p>

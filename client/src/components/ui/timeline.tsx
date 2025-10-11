@@ -146,7 +146,7 @@ const Timeline: React.FC<ResponsiveTimelineProps> = ({
 
             <div
               className={cn(
-                "col flex gap-12 text-industrial-600 dark:text-industrial-400",
+                "col flex gap-12 text-muted-foreground",
                 { anim: index > 0 }
               )}
             >

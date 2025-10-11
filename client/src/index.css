@@ -13,10 +13,10 @@
   --card-foreground: hsl(222, 84%, 4%);
   --border: hsl(214, 32%, 91%);
   --input: hsl(214, 32%, 91%);
-  --primary: hsl(142, 76%, 36%);
-  --primary-foreground: hsl(210, 40%, 98%);
-  --secondary: hsl(207, 90%, 54%);
-  --secondary-foreground: hsl(210, 40%, 98%);
+  --primary: hsl(207, 90%, 42%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(207, 90%, 40%);
+  --secondary-foreground: hsl(0, 0%, 100%);
   --accent: hsl(0, 84%, 60%);
   --accent-foreground: hsl(210, 40%, 98%);
   --destructive: hsl(0, 84%, 60%);
@@ -48,9 +48,9 @@
   --card-foreground: hsl(210, 40%, 98%);
   --border: hsl(217, 33%, 17%);
   --input: hsl(217, 33%, 17%);
-  --primary: hsl(142, 76%, 36%);
+  --primary: hsl(207, 90%, 55%);
   --primary-foreground: hsl(222, 84%, 4%);
-  --secondary: hsl(207, 90%, 54%);
+  --secondary: hsl(207, 90%, 60%);
   --secondary-foreground: hsl(222, 84%, 4%);
   --accent: hsl(0, 84%, 60%);
   --accent-foreground: hsl(222, 84%, 4%);
@@ -87,13 +87,13 @@
   }
 
   ::-webkit-scrollbar-thumb {
-    background: linear-gradient(180deg, hsl(142, 76%, 36%), hsl(142, 76%, 45%));
+    background: linear-gradient(180deg, hsl(207, 90%, 42%), hsl(207, 90%, 50%));
     border-radius: 10px;
     transition: background 0.3s ease;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(180deg, hsl(142, 76%, 30%), hsl(142, 76%, 40%));
+    background: linear-gradient(180deg, hsl(207, 90%, 38%), hsl(207, 90%, 46%));
   }
 
   /* Dark mode scrollbar */
@@ -102,21 +102,21 @@
   }
 
   .dark ::-webkit-scrollbar-thumb {
-    background: linear-gradient(180deg, hsl(142, 76%, 40%), hsl(142, 76%, 50%));
+    background: linear-gradient(180deg, hsl(207, 90%, 55%), hsl(207, 90%, 65%));
   }
 
   .dark ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(180deg, hsl(142, 76%, 35%), hsl(142, 76%, 45%));
+    background: linear-gradient(180deg, hsl(207, 90%, 50%), hsl(207, 90%, 60%));
   }
 
   /* For Firefox */
   * {
     scrollbar-width: thin;
-    scrollbar-color: hsl(142, 76%, 36%) hsl(210, 40%, 98%);
+    scrollbar-color: hsl(207, 90%, 42%) hsl(210, 40%, 98%);
   }
 
   .dark * {
-    scrollbar-color: hsl(142, 76%, 40%) hsl(217, 33%, 17%);
+    scrollbar-color: hsl(207, 90%, 55%) hsl(217, 33%, 17%);
   }
 }
 

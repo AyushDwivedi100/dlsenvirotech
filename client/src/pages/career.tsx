@@ -109,7 +109,7 @@ const Career = () => {
         <meta property="og:type" content="website" />
       </Helmet>
       
-      <div className="min-h-screen bg-white dark:bg-background">
+      <div className="min-h-screen bg-background">
         <TopBar />
         <Header />
         <main className="bg-gray-50">
@@ -119,7 +119,7 @@ const Career = () => {
               <h1 className="text-4xl md:text-5xl font-bold mb-6" data-testid="text-career-hero-title">
                 Join Our Team
               </h1>
-              <p className="text-xl text-industrial-200 max-w-3xl mx-auto" data-testid="text-career-hero-description">
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto" data-testid="text-career-hero-description">
                 Build your career with a leading environmental technology company. 
                 Be part of our mission to create sustainable water treatment solutions.
               </p>
@@ -130,10 +130,10 @@ const Career = () => {
           <section className="py-16">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center mb-12">
-                <h2 className="text-3xl font-bold text-industrial-900 mb-4" data-testid="text-why-work-title">
+                <h2 className="text-3xl font-bold text-foreground mb-4" data-testid="text-why-work-title">
                   Why Work With Us?
                 </h2>
-                <p className="text-lg text-gray-600 max-w-2xl mx-auto" data-testid="text-why-work-description">
+                <p className="text-lg text-muted-foreground max-w-2xl mx-auto" data-testid="text-why-work-description">
                   Join a company that values innovation, sustainability, and professional growth
                 </p>
               </div>
@@ -155,15 +155,15 @@ const Career = () => {
               </div>
 
               {/* Benefits */}
-              <div className="bg-white rounded-lg p-8 shadow-lg">
-                <h3 className="text-2xl font-bold text-industrial-900 mb-6" data-testid="text-benefits-title">
+              <div className="bg-background rounded-lg p-8 shadow-lg">
+                <h3 className="text-2xl font-bold text-foreground mb-6" data-testid="text-benefits-title">
                   Employee Benefits
                 </h3>
                 <div className="grid md:grid-cols-2 gap-4">
                   {benefits.map((benefit, index) => (
                     <div key={index} className="flex items-center space-x-3" data-testid={`benefit-${index}`}>
                       <div className="w-2 h-2 bg-primary rounded-full"></div>
-                      <span className="text-gray-700">{benefit}</span>
+                      <span className="text-foreground">{benefit}</span>
                     </div>
                   ))}
                 </div>
@@ -172,13 +172,13 @@ const Career = () => {
           </section>
 
           {/* Current Openings */}
-          <section className="py-16 bg-white">
+          <section className="py-16 bg-background">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center mb-12">
-                <h2 className="text-3xl font-bold text-industrial-900 mb-4" data-testid="text-openings-title">
+                <h2 className="text-3xl font-bold text-foreground mb-4" data-testid="text-openings-title">
                   Current Openings
                 </h2>
-                <p className="text-lg text-gray-600" data-testid="text-openings-description">
+                <p className="text-lg text-muted-foreground" data-testid="text-openings-description">
                   Explore exciting career opportunities with our growing team
                 </p>
               </div>
@@ -195,7 +195,7 @@ const Career = () => {
                             <Badge variant="outline">{job.type}</Badge>
                             <Badge variant="outline">{job.experience}</Badge>
                           </div>
-                          <div className="flex items-center text-gray-600 text-sm">
+                          <div className="flex items-center text-muted-foreground text-sm">
                             <MapPin className="h-4 w-4 mr-1" />
                             {job.location}
                           </div>
@@ -211,7 +211,7 @@ const Career = () => {
                       </CardDescription>
                       <div>
                         <h4 className="font-semibold mb-2">Requirements:</h4>
-                        <ul className="list-disc list-inside text-sm text-gray-600 space-y-1">
+                        <ul className="list-disc list-inside text-sm text-muted-foreground space-y-1">
                           {job.requirements.map((req, index) => (
                             <li key={index}>{req}</li>
                           ))}
