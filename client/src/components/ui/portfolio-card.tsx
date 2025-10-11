@@ -30,33 +30,33 @@ const PortfolioCard = ({ project }: PortfolioCardProps) => {
           ))}
         </div>
         
-        <h3 className="text-xl font-bold text-industrial-900 mb-3">
+        <h3 className="text-xl font-bold text-foreground mb-3">
           {project.title}
         </h3>
         
-        <p className="text-industrial-600 mb-4 leading-relaxed">
+        <p className="text-muted-foreground mb-4 leading-relaxed">
           {project.description}
         </p>
         
         <div className="space-y-2 mb-4">
           <div className="flex justify-between">
-            <span className="text-industrial-600">Capacity:</span>
-            <span className="font-semibold">{project.capacity}</span>
+            <span className="text-muted-foreground">Capacity:</span>
+            <span className="font-semibold text-foreground">{project.capacity}</span>
           </div>
           <div className="flex justify-between">
-            <span className="text-industrial-600">Technology:</span>
-            <span className="font-semibold">{project.technology}</span>
+            <span className="text-muted-foreground">Technology:</span>
+            <span className="font-semibold text-foreground">{project.technology}</span>
           </div>
           {project.location && (
             <div className="flex justify-between">
-              <span className="text-industrial-600">Location:</span>
-              <span className="font-semibold">{project.location}</span>
+              <span className="text-muted-foreground">Location:</span>
+              <span className="font-semibold text-foreground">{project.location}</span>
             </div>
           )}
           {project.industry && (
             <div className="flex justify-between">
-              <span className="text-industrial-600">Industry:</span>
-              <span className="font-semibold">{project.industry}</span>
+              <span className="text-muted-foreground">Industry:</span>
+              <span className="font-semibold text-foreground">{project.industry}</span>
             </div>
           )}
         </div>

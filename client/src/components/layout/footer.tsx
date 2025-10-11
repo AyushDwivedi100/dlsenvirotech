@@ -22,7 +22,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-industrial-900 dark:bg-industrial-950 text-white py-12 md:py-16 transition-colors">
+    <footer className="bg-industrial-900 text-white py-12 md:py-16 transition-colors">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
           {/* Company Information */}
@@ -34,21 +34,21 @@ const Footer = () => {
                 className="h-16 w-auto object-contain"
               />
             </div>
-            <p className="text-industrial-300 dark:text-industrial-400 mb-6 leading-relaxed">
+            <p className="text-white/70 mb-6 leading-relaxed">
               Leading provider of comprehensive water treatment solutions with 15+ years of expertise in 
               environmental technology. Serving clients across 22 countries with innovative and sustainable solutions.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="bg-industrial-800 dark:bg-industrial-700 p-3 rounded-lg hover:bg-primary transition-colors">
+              <a href="#" className="bg-industrial-800 p-3 rounded-lg hover:bg-primary transition-colors">
                 <Linkedin className="h-5 w-5" />
               </a>
-              <a href="#" className="bg-industrial-800 dark:bg-industrial-700 p-3 rounded-lg hover:bg-primary transition-colors">
+              <a href="#" className="bg-industrial-800 p-3 rounded-lg hover:bg-primary transition-colors">
                 <Twitter className="h-5 w-5" />
               </a>
-              <a href="#" className="bg-industrial-800 dark:bg-industrial-700 p-3 rounded-lg hover:bg-primary transition-colors">
+              <a href="#" className="bg-industrial-800 p-3 rounded-lg hover:bg-primary transition-colors">
                 <Facebook className="h-5 w-5" />
               </a>
-              <a href="#" className="bg-industrial-800 dark:bg-industrial-700 p-3 rounded-lg hover:bg-primary transition-colors">
+              <a href="#" className="bg-industrial-800 p-3 rounded-lg hover:bg-primary transition-colors">
                 <Youtube className="h-5 w-5" />
               </a>
             </div>
@@ -62,7 +62,7 @@ const Footer = () => {
                 <li key={service}>
                   <Link 
                     href="/services" 
-                    className="text-industrial-300 dark:text-industrial-400 hover:text-white transition-colors"
+                    className="text-white/70 hover:text-white transition-colors"
                   >
                     {service}
                   </Link>
@@ -79,7 +79,7 @@ const Footer = () => {
                 <li key={item.name}>
                   <Link 
                     href={item.href} 
-                    className="text-industrial-300 dark:text-industrial-400 hover:text-white transition-colors"
+                    className="text-white/70 hover:text-white transition-colors"
                   >
                     {item.name}
                   </Link>
@@ -89,14 +89,14 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="border-t border-industrial-800 dark:border-industrial-700 mt-8 md:mt-12 pt-6 md:pt-8">
+        <div className="border-t border-industrial-800 mt-8 md:mt-12 pt-6 md:pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-industrial-400 dark:text-industrial-500 text-xs sm:text-sm text-center md:text-left">
+            <p className="text-white/60 text-xs sm:text-sm text-center md:text-left">
               © 2024 DLS Envirotech Corporation. All rights reserved.
             </p>
             <div className="flex items-center space-x-4 md:space-x-6">
               <ThemeToggle />
-              <Link href="/sitemap" className="text-industrial-400 dark:text-industrial-500 hover:text-white text-xs sm:text-sm transition-colors">
+              <Link href="/sitemap" className="text-white/60 hover:text-white text-xs sm:text-sm transition-colors">
                 Sitemap
               </Link>
             </div>

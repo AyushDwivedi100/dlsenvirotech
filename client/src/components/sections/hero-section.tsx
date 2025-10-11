@@ -5,7 +5,7 @@ import { Phone, Play, Award, TrendingUp } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-[600px] md:min-h-[700px] lg:min-h-screen flex items-center bg-gradient-to-br from-industrial-50 to-industrial-100 py-12 md:py-16 lg:py-0">
+    <section className="relative min-h-[600px] md:min-h-[700px] lg:min-h-screen flex items-center bg-gradient-to-br from-background to-muted py-12 md:py-16 lg:py-0">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center opacity-10"
@@ -23,12 +23,12 @@ const HeroSection = () => {
             15+ Years Experience
           </Badge>
 
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-industrial-900 mb-4 md:mb-6 leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4 md:mb-6 leading-tight">
             Professional STP, ETP & Industrial Water Treatment
             <span className="text-primary block mt-2">Solutions in India</span>
           </h1>
 
-          <p className="text-base sm:text-lg md:text-xl text-industrial-600 mb-6 md:mb-8 leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-6 md:mb-8 leading-relaxed">
             Leading water treatment company specializing in Sewage Treatment Plants (STP), 
             Effluent Treatment Plants (ETP), RO systems, and industrial wastewater solutions. 
             ISO certified with 2500+ installations across 22 countries. Expert environmental 
@@ -58,27 +58,27 @@ const HeroSection = () => {
             className="rounded-xl md:rounded-2xl shadow-2xl w-full h-auto"
           />
 
-          <div className="hidden md:flex absolute -bottom-4 -left-4 lg:-bottom-6 lg:-left-6 bg-white p-4 lg:p-6 rounded-xl shadow-lg">
+          <div className="hidden md:flex absolute -bottom-4 -left-4 lg:-bottom-6 lg:-left-6 bg-card border border-border p-4 lg:p-6 rounded-xl shadow-lg">
             <div className="flex items-center space-x-3 lg:space-x-4">
-              <div className="bg-secondary text-white p-2 lg:p-3 rounded-lg">
+              <div className="bg-secondary text-secondary-foreground p-2 lg:p-3 rounded-lg">
                 <TrendingUp className="h-5 w-5 lg:h-6 lg:w-6" />
               </div>
               <div>
-                <p className="text-xl lg:text-2xl font-bold text-industrial-900">2500+</p>
-                <p className="text-sm lg:text-base text-industrial-600">Systems Installed</p>
+                <p className="text-xl lg:text-2xl font-bold text-foreground">2500+</p>
+                <p className="text-sm lg:text-base text-muted-foreground">Systems Installed</p>
               </div>
             </div>
           </div>
           
           {/* Mobile stats badge - below image */}
-          <div className="md:hidden mt-4 bg-white p-4 rounded-xl shadow-lg">
+          <div className="md:hidden mt-4 bg-card border border-border p-4 rounded-xl shadow-lg">
             <div className="flex items-center space-x-3">
-              <div className="bg-secondary text-white p-2 rounded-lg">
+              <div className="bg-secondary text-secondary-foreground p-2 rounded-lg">
                 <TrendingUp className="h-5 w-5" />
               </div>
               <div>
-                <p className="text-xl font-bold text-industrial-900">2500+</p>
-                <p className="text-sm text-industrial-600">Systems Installed</p>
+                <p className="text-xl font-bold text-foreground">2500+</p>
+                <p className="text-sm text-muted-foreground">Systems Installed</p>
               </div>
             </div>
           </div>

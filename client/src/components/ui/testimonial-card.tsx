@@ -11,12 +11,12 @@ const TestimonialCard = ({ testimonial }: TestimonialCardProps) => {
     <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
       <CardContent className="p-8">
         <div className="flex items-center mb-6">
-          <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white text-xl font-bold">
+          <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-primary-foreground text-xl font-bold">
             {testimonial.name.split(" ").map(n => n[0]).join("")}
           </div>
           <div className="ml-4">
-            <h4 className="font-bold text-industrial-900">{testimonial.name}</h4>
-            <p className="text-industrial-600">{testimonial.position}, {testimonial.company}</p>
+            <h4 className="font-bold text-foreground">{testimonial.name}</h4>
+            <p className="text-muted-foreground">{testimonial.position}, {testimonial.company}</p>
           </div>
         </div>
         
@@ -26,7 +26,7 @@ const TestimonialCard = ({ testimonial }: TestimonialCardProps) => {
           ))}
         </div>
         
-        <p className="text-industrial-600 italic mb-4 leading-relaxed">
+        <p className="text-muted-foreground italic mb-4 leading-relaxed">
           "{testimonial.content}"
         </p>
         

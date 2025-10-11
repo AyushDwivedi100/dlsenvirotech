@@ -16,19 +16,19 @@ const AboutSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
             <div className="mb-8">
-              <h2 className="text-4xl font-bold text-industrial-900 mb-6">
+              <h2 className="text-4xl font-bold text-foreground mb-6">
                 10+ Years of Environmental Engineering Excellence
               </h2>
-              <p className="text-xl text-industrial-600 leading-relaxed mb-6">
+              <p className="text-xl text-muted-foreground leading-relaxed mb-6">
                 DLS Envirotech Corporation has established itself as a trusted leader in water treatment technology, 
                 delivering innovative solutions that protect the environment while ensuring regulatory compliance.
               </p>
-              <p className="text-lg text-industrial-600 leading-relaxed">
+              <p className="text-lg text-muted-foreground leading-relaxed">
                 Our comprehensive approach combines cutting-edge technology with proven methodologies to create 
                 sustainable water treatment solutions that meet the evolving needs of industries and municipalities worldwide.
               </p>
@@ -36,9 +36,9 @@ const AboutSection = () => {
             
             <div className="grid sm:grid-cols-2 gap-6 mb-8">
               {stats.map((stat) => (
-                <div key={stat.label} className="bg-industrial-50 p-6 rounded-xl">
+                <div key={stat.label} className="bg-muted p-6 rounded-xl">
                   <div className="text-3xl font-bold text-primary mb-2">{stat.value}</div>
-                  <div className="text-industrial-700 font-semibold">{stat.label}</div>
+                  <div className="text-foreground font-semibold">{stat.label}</div>
                 </div>
               ))}
             </div>
@@ -47,7 +47,7 @@ const AboutSection = () => {
               {features.map((feature) => (
                 <div key={feature} className="flex items-center">
                   <CheckCircle className="h-5 w-5 text-secondary mr-4 flex-shrink-0" />
-                  <span className="text-industrial-700 font-semibold">{feature}</span>
+                  <span className="text-foreground font-semibold">{feature}</span>
                 </div>
               ))}
             </div>
@@ -60,7 +60,7 @@ const AboutSection = () => {
               className="rounded-2xl shadow-2xl w-full h-auto" 
             />
             
-            <div className="absolute -bottom-8 -right-8 bg-primary text-white p-8 rounded-2xl shadow-xl">
+            <div className="absolute -bottom-8 -right-8 bg-primary text-primary-foreground p-8 rounded-2xl shadow-xl">
               <div className="text-center">
                 <div className="text-4xl font-bold mb-2">10+</div>
                 <div className="text-lg font-semibold">Years</div>
