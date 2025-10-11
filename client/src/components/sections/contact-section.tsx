@@ -113,7 +113,7 @@ export default function ContactSection() {
                 <Mail className="h-5 w-5 text-primary" />
                 <div>
                   <p className="font-medium">Email</p>
-                  <p className="text-muted-foreground">contact@dlsenvirotech.com</p>
+                  <p className="text-muted-foreground">info.dlsenvirotech@gmail.com</p>
                 </div>
               </div>
               <div className="flex items-center space-x-3">
@@ -121,8 +121,7 @@ export default function ContactSection() {
                 <div>
                   <p className="font-medium">Address</p>
                   <p className="text-muted-foreground">
-                    123 Industrial Way<br />
-                    Water City, WC 12345
+                    F-25, Sector-6, Noida 201301 (U.P.)
                   </p>
                 </div>
               </div>

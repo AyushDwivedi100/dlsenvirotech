@@ -11,23 +11,23 @@ const TopBar = () => {
               <Phone className="h-3 w-3" />
               <span>+919568572005</span>
             </a>
-            <a href="mailto:contact@dlsenvirotech.com" className="flex items-center gap-2 hover:text-white/90 transition-colors" data-testid="topbar-email">
+            <a href="mailto:info.dlsenvirotech@gmail.com" className="flex items-center gap-2 hover:text-white/90 transition-colors" data-testid="topbar-email">
               <Mail className="h-3 w-3" />
-              <span>contact@dlsenvirotech.com</span>
+              <span>info.dlsenvirotech@gmail.com</span>
             </a>
           </div>
           <div className="flex items-center gap-4">
             <ThemeToggle />
             <a 
-              href="https://maps.google.com/?q=123+Industrial+Way,+Water+City,+WC+12345" 
+              href="https://maps.google.com/?q=F-25,+Sector-6,+Noida+201301+(U.P.)" 
               target="_blank" 
               rel="noopener noreferrer"
               className="flex items-center gap-2 hover:text-white/90 transition-colors" 
               data-testid="topbar-address"
             >
               <MapPin className="h-3 w-3" />
-              <span className="hidden sm:inline">123 Industrial Way, Water City, WC 12345</span>
-              <span className="sm:hidden">Water City, WC</span>
+              <span className="hidden sm:inline">F-25, Sector-6, Noida 201301 (U.P.)</span>
+              <span className="sm:hidden">Noida, U.P.</span>
             </a>
           </div>
         </div>

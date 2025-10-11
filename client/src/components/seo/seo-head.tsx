@@ -76,13 +76,13 @@ export const organizationSchema = {
   "logo": "https://dlsenvirotech.com/logo.png",
   "image": "https://dlsenvirotech.com/og-image.jpg",
   "telephone": "+91-9568572005",
-  "email": "contact@dlsenvirotech.com",
+  "email": "info.dlsenvirotech@gmail.com",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "123 Industrial Way",
-    "addressLocality": "Water City",
-    "addressRegion": "WC",
-    "postalCode": "12345",
+    "streetAddress": "F-25, Sector-6, Noida 201301 (U.P.)",
+    "addressLocality": "Noida",
+    "addressRegion": "Uttar Pradesh",
+    "postalCode": "201301",
     "addressCountry": "IN"
   },
   "geo": {
@@ -133,10 +133,10 @@ export const localBusinessSchema = {
   "priceRange": "$$$$",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "123 Industrial Way",
-    "addressLocality": "Water City",
-    "addressRegion": "WC",
-    "postalCode": "12345",
+    "streetAddress": "F-25, Sector-6, Noida 201301 (U.P.)",
+    "addressLocality": "Noida",
+    "addressRegion": "Uttar Pradesh",
+    "postalCode": "201301",
     "addressCountry": "IN"
   },
   "openingHoursSpecification": {

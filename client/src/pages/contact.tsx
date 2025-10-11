@@ -20,7 +20,7 @@ const Contact = () => {
     <>
       <SEOHead
         title="Contact Water Treatment Experts - Free Consultation for STP, ETP & Industrial Solutions"
-        description="Contact DLS Envirotech for professional water treatment consultation. Expert engineers available 24/7. Call +91-9568572005 or email contact@dlsenvirotech.com for STP, ETP, and industrial wastewater solutions. Free site visit and quote!"
+        description="Contact DLS Envirotech for professional water treatment consultation. Expert engineers available 24/7. Call +91-9568572005 or email info.dlsenvirotech@gmail.com for STP, ETP, and industrial wastewater solutions. Free site visit and quote!"
         keywords="contact water treatment company, water treatment consultation, STP expert, ETP consultant, industrial wastewater expert, water treatment engineer, free water treatment consultation India"
         canonical="https://dlsenvirotech.com/contact"
         schema={combinedSchema}
