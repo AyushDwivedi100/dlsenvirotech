@@ -1,7 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { AlertCircle } from "lucide-react";
 import { motion } from "framer-motion";
-import dlsLogo from "@assets/DLS-Full-Logo_1757759427273.png";
+import dlsLogo from "@assets/- Copy_1760176701700.PNG";
 
 export default function NotFound() {
   return (

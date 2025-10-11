@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { MessageCircle, Send, X } from "lucide-react";
 import { mockApi } from "@/lib/mockApi";
-import dlsLogo from "@assets/DLS-Short-Logo_1757761870662.png";
+import dlsLogo from "@assets/- Copy_1760176701700.PNG";
 
 interface ChatMessage {
   id: string;

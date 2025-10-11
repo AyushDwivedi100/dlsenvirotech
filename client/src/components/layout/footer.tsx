@@ -1,7 +1,7 @@
 import { Link } from "wouter";
 import { Linkedin, Twitter, Facebook, Youtube } from "lucide-react";
 import { ThemeToggle } from "@/components/ui/theme-toggle";
-import dlsLogo from "@assets/DLS-Short-Logo_1757761870662.png";
+import dlsLogo from "@assets/- Copy_1760176701700.PNG";
 
 const Footer = () => {
   const services = [
