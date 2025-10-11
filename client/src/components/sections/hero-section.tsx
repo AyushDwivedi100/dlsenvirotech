@@ -24,15 +24,15 @@ const HeroSection = () => {
           </Badge>
 
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-industrial-900 mb-4 md:mb-6 leading-tight">
-            Advanced Water Treatment
-            <span className="text-primary block mt-2">Solutions</span>
+            Professional STP, ETP & Industrial Water Treatment
+            <span className="text-primary block mt-2">Solutions in India</span>
           </h1>
 
           <p className="text-base sm:text-lg md:text-xl text-industrial-600 mb-6 md:mb-8 leading-relaxed">
-            Leading provider of comprehensive wastewater treatment services,
-            specializing in effluent treatment plants, sewage treatment systems,
-            and environmental technology solutions for industrial and municipal
-            applications.
+            Leading water treatment company specializing in Sewage Treatment Plants (STP), 
+            Effluent Treatment Plants (ETP), RO systems, and industrial wastewater solutions. 
+            ISO certified with 2500+ installations across 22 countries. Expert environmental 
+            technology for all municipal and industrial applications.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center lg:justify-start">
@@ -54,7 +54,7 @@ const HeroSection = () => {
         <div className="relative mt-8 lg:mt-0">
           <img
             src="https://alantech.in/storage/blogs/modern-sewage-treatment-plant.webp"
-            alt="Modern sewage treatment plant facility with advanced filtration systems"
+            alt="Professional STP ETP water treatment plant facility - DLS Envirotech sewage and effluent treatment solutions with advanced biological and chemical filtration systems"
             className="rounded-xl md:rounded-2xl shadow-2xl w-full h-auto"
           />
 

@@ -87,8 +87,8 @@ export const organizationSchema = {
   },
   "geo": {
     "@type": "GeoCoordinates",
-    "latitude": "28.6139",
-    "longitude": "77.2090"
+    "latitude": 28.6139,
+    "longitude": 77.2090
   },
   "sameAs": [
     "https://www.facebook.com/dlsenvirotech",
@@ -98,17 +98,18 @@ export const organizationSchema = {
   "foundingDate": "2009",
   "numberOfEmployees": {
     "@type": "QuantitativeValue",
-    "value": "100+"
+    "value": 100
   },
-  "areaServed": {
-    "@type": "GeoCircle",
-    "geoMidpoint": {
-      "@type": "GeoCoordinates",
-      "latitude": "28.6139",
-      "longitude": "77.2090"
+  "areaServed": [
+    {
+      "@type": "Country",
+      "name": "India"
     },
-    "geoRadius": "global"
-  },
+    {
+      "@type": "Place",
+      "name": "Global"
+    }
+  ],
   "knowsAbout": [
     "Water Treatment",
     "Sewage Treatment Plant",
