@@ -9,6 +9,14 @@ export default defineConfig({
       jsxRuntime: "automatic",
     }),
     runtimeErrorOverlay(),
+    ...(process.env.NODE_ENV !== "production" &&
+    process.env.REPL_ID !== undefined
+      ? [
+          await import("@replit/vite-plugin-cartographer").then((m) =>
+            m.cartographer(),
+          ),
+        ]
+      : []),
   ],
   resolve: {
     alias: {
@@ -20,11 +28,15 @@ export default defineConfig({
     host: '0.0.0.0',
     port: 5000,
     strictPort: true,
-    allowedHosts: true
+    allowedHosts: true,
+    hmr: {
+      clientPort: 443
+    }
   },
   build: {
     target: "esnext",
     minify: "esbuild",
     sourcemap: false,
-  }
+  },
+  root: "."
 });
