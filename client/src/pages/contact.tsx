@@ -10,7 +10,7 @@ const Contact = () => {
     <>
       <Helmet>
         <title>Contact Us - Get Water Treatment Consultation | DLS Envirotech</title>
-        <meta name="description" content="Contact DLS Envirotech for professional water treatment consultation. Call +1 956 857 2005 or email contact@dlsenvirotech.com for expert environmental solutions." />
+        <meta name="description" content="Contact DLS Envirotech for professional water treatment consultation. Call +919568572005 or email contact@dlsenvirotech.com for expert environmental solutions." />
         <meta name="keywords" content="contact water treatment company, environmental technology consultation, STP ETP consultation, water treatment expert" />
       </Helmet>
       

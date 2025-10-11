@@ -106,7 +106,7 @@ export default function ContactSection() {
                 <Phone className="h-5 w-5 text-primary" />
                 <div>
                   <p className="font-medium">Phone</p>
-                  <p className="text-muted-foreground">+1 (555) 123-4567</p>
+                  <p className="text-muted-foreground">+919568572005</p>
                 </div>
               </div>
               <div className="flex items-center space-x-3">
