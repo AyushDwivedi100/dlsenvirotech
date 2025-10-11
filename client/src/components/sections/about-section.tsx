@@ -21,7 +21,7 @@ const AboutSection = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
             <div className="mb-8">
-              <h2 className="text-4xl font-bold text-foreground mb-6">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-6">
                 10+ Years of Environmental Engineering Excellence
               </h2>
               <p className="text-xl text-muted-foreground leading-relaxed mb-6">
@@ -53,16 +53,16 @@ const AboutSection = () => {
             </div>
           </div>
           
-          <div className="relative">
+          <div className="relative lg:mt-0">
             <img 
               src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
               alt="Professional engineering team discussing water treatment project plans" 
-              className="rounded-2xl shadow-2xl w-full h-auto" 
+              className="rounded-2xl shadow-2xl w-full h-auto object-cover max-h-[400px] md:max-h-[500px] lg:max-h-none" 
             />
             
-            <div className="absolute -bottom-8 -right-8 bg-primary text-primary-foreground p-8 rounded-2xl shadow-xl">
+            <div className="hidden lg:block absolute -bottom-8 -right-8 bg-primary text-primary-foreground p-8 rounded-2xl shadow-xl">
               <div className="text-center">
-                <div className="text-4xl font-bold mb-2">10+</div>
+                <div className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2">10+</div>
                 <div className="text-lg font-semibold">Years</div>
                 <div className="text-sm opacity-90">Experience</div>
               </div>

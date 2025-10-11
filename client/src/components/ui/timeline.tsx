@@ -137,7 +137,7 @@ const Timeline: React.FC<ResponsiveTimelineProps> = ({
             </span>
             <h1
               className={cn(
-                "text-6xl font-bold font-playfair-display text-industrial-900 dark:text-primary-foreground",
+                "text-6xl font-bold font-playfair-display text-foreground",
                 { anim: index > 0 }
               )}
             >

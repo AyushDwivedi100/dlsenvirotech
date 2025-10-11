@@ -1,6 +1,7 @@
 import { Link } from "wouter";
-import { Linkedin, Twitter, Facebook, Youtube } from "lucide-react";
+import { Linkedin, Twitter, Facebook, Youtube, Map } from "lucide-react";
 import { ThemeToggle } from "@/components/ui/theme-toggle";
+import { Button } from "@/components/ui/button";
 import dlsLogo from "@assets/dls-envirotech-logo.png";
 
 const Footer = () => {
@@ -92,13 +93,21 @@ const Footer = () => {
         <div className="border-t border-industrial-800 mt-8 md:mt-12 pt-6 md:pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-white/60 text-xs sm:text-sm text-center md:text-left">
-              © 2024 DLS Envirotech Corporation. All rights reserved.
+              © {new Date().getFullYear()} DLS Envirotech Corporation. All rights reserved.
             </p>
-            <div className="flex items-center space-x-4 md:space-x-6">
+            <div className="flex items-center gap-2">
               <ThemeToggle />
-              <Link href="/sitemap" className="text-white/60 hover:text-white text-xs sm:text-sm transition-colors">
-                Sitemap
-              </Link>
+              <Button
+                variant="ghost"
+                size="sm"
+                asChild
+                className="hover:bg-white/10 hover:text-white"
+              >
+                <Link href="/sitemap" className="flex items-center gap-2">
+                  <Map className="h-4 w-4" />
+                  <span className="text-sm">Sitemap</span>
+                </Link>
+              </Button>
             </div>
           </div>
         </div>

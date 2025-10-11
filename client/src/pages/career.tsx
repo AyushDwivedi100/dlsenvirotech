@@ -112,14 +112,14 @@ const Career = () => {
       <div className="min-h-screen bg-background">
         <TopBar />
         <Header />
-        <main className="bg-gray-50">
+        <main className="bg-muted">
           {/* Hero Section */}
-          <section className="bg-gradient-to-r from-industrial-900 to-industrial-700 text-white py-20">
+          <section className="bg-gradient-to-r from-primary to-primary/80 text-primary-foreground py-20">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
               <h1 className="text-4xl md:text-5xl font-bold mb-6" data-testid="text-career-hero-title">
                 Join Our Team
               </h1>
-              <p className="text-xl text-muted-foreground max-w-3xl mx-auto" data-testid="text-career-hero-description">
+              <p className="text-xl text-primary-foreground/90 max-w-3xl mx-auto" data-testid="text-career-hero-description">
                 Build your career with a leading environmental technology company. 
                 Be part of our mission to create sustainable water treatment solutions.
               </p>
@@ -130,7 +130,7 @@ const Career = () => {
           <section className="py-16">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center mb-12">
-                <h2 className="text-3xl font-bold text-foreground mb-4" data-testid="text-why-work-title">
+                <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-foreground mb-4" data-testid="text-why-work-title">
                   Why Work With Us?
                 </h2>
                 <p className="text-lg text-muted-foreground max-w-2xl mx-auto" data-testid="text-why-work-description">
@@ -175,7 +175,7 @@ const Career = () => {
           <section className="py-16 bg-background">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center mb-12">
-                <h2 className="text-3xl font-bold text-foreground mb-4" data-testid="text-openings-title">
+                <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-foreground mb-4" data-testid="text-openings-title">
                   Current Openings
                 </h2>
                 <p className="text-lg text-muted-foreground" data-testid="text-openings-description">
@@ -227,7 +227,7 @@ const Career = () => {
           {/* Call to Action */}
           <section className="py-16 bg-primary text-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-              <h2 className="text-3xl font-bold mb-4" data-testid="text-cta-title">
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4" data-testid="text-cta-title">
                 Don't See a Perfect Match?
               </h2>
               <p className="text-xl mb-8 text-primary-100" data-testid="text-cta-description">

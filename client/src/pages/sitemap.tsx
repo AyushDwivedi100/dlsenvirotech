@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
+import { SEOHead } from "@/components/seo/seo-head";
 
 const Sitemap = () => {
   const sitePages = [
@@ -66,11 +67,18 @@ const Sitemap = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      <Header />
+    <>
+      <SEOHead
+        title="Sitemap - Website Navigation"
+        description="Complete sitemap of DLS Envirotech Corporation website. Find all pages including water treatment services, STP plants, ETP systems, projects, gallery, and contact information."
+        keywords="sitemap, website navigation, DLS Envirotech pages, water treatment services"
+        canonical="https://dlsenvirotech.com/sitemap"
+      />
+      <div className="min-h-screen bg-muted">
+        <Header />
       <div className="max-w-4xl mx-auto px-4 py-12">
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-industrial-900 mb-4">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4">
             Website Sitemap
           </h1>
           <p className="text-lg text-muted-foreground">
@@ -106,12 +114,12 @@ const Sitemap = () => {
         </div>
 
         <div className="mt-12 p-6 bg-background rounded-lg shadow-sm">
-          <h2 className="text-2xl font-bold text-industrial-900 mb-4">
+          <h2 className="text-2xl font-bold text-foreground mb-4">
             Website Structure
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div>
-              <h3 className="text-lg font-semibold text-industrial-800 mb-3">
+              <h3 className="text-lg font-semibold text-foreground mb-3">
                 Main Pages
               </h3>
               <ul className="space-y-2 text-muted-foreground">
@@ -122,7 +130,7 @@ const Sitemap = () => {
               </ul>
             </div>
             <div>
-              <h3 className="text-lg font-semibold text-industrial-800 mb-3">
+              <h3 className="text-lg font-semibold text-foreground mb-3">
                 Additional Resources
               </h3>
               <ul className="space-y-2 text-muted-foreground">
@@ -142,7 +150,8 @@ const Sitemap = () => {
         </div>
       </div>
       <Footer />
-    </div>
+      </div>
+    </>
   );
 };
 

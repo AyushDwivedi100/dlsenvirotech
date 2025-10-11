@@ -169,7 +169,7 @@ export default function ChatbotWidget() {
                 <div ref={scrollRef} />
               </div>
             </ScrollArea>
-            <div className="p-4 border-t bg-white sticky bottom-0 rounded-b-lg">
+            <div className="p-4 border-t bg-background sticky bottom-0 rounded-b-lg">
               <div className="flex space-x-2">
                 <Input
                   ref={inputRef}

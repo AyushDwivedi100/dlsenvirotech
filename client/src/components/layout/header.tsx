@@ -26,14 +26,14 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-white dark:bg-industrial-900 shadow-lg sticky top-0 z-50 transition-colors" role="banner">
+    <header className="bg-background shadow-lg sticky top-0 z-50 transition-colors" role="banner">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Main navigation">
-        <div className="flex justify-between items-center h-20">
+        <div className="flex justify-between items-center h-16 md:h-20">
           <Link href="/" className="flex items-center space-x-4">
             <img 
               src={dlsLogo} 
               alt="DLS Envirotech Corporation Logo" 
-              className="h-12 md:h-14 lg:h-16 xl:h-[72px] w-auto object-contain"
+              className="h-6 sm:h-8 md:h-10 lg:h-12 w-auto object-contain"
             />
           </Link>
           

@@ -78,7 +78,7 @@ export default function Quote() {
         <meta name="description" content="Request a customized quote for your water treatment solution. Fast turnaround, competitive pricing." />
       </Helmet>
       
-      <div className="min-h-screen bg-gray-50 dark:bg-background">
+      <div className="min-h-screen bg-muted">
         <TopBar />
         <Header />
         
@@ -86,7 +86,7 @@ export default function Quote() {
         <div className="container mx-auto px-4 py-12">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <h1 className="text-4xl font-bold mb-4">Request a Quote</h1>
+              <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Request a Quote</h1>
               <p className="text-xl text-muted-foreground">
                 Get a customized solution for your water treatment needs. Fill out the form below and we'll provide you with a detailed quote within 24 hours.
               </p>

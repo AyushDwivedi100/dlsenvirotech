@@ -2,10 +2,17 @@ import { Card, CardContent } from "@/components/ui/card";
 import { AlertCircle } from "lucide-react";
 import { motion } from "framer-motion";
 import dlsLogo from "@assets/dls-envirotech-logo.png";
+import { SEOHead } from "@/components/seo/seo-head";
 
 export default function NotFound() {
   return (
-    <div className="min-h-screen w-full flex items-center justify-center bg-gray-50 px-4">
+    <>
+      <SEOHead
+        title="404 - Page Not Found"
+        description="The page you're looking for doesn't exist. Return to DLS Envirotech Corporation homepage for water treatment solutions including STP, ETP, and industrial wastewater treatment services."
+        canonical="https://dlsenvirotech.com/404"
+      />
+      <div className="min-h-screen w-full flex items-center justify-center bg-muted px-4">
       <motion.div
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -46,5 +53,6 @@ export default function NotFound() {
         </Card>
       </motion.div>
     </div>
+    </>
   );
 }

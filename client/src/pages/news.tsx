@@ -53,9 +53,9 @@ const NewsPage = () => {
         <Header />
         <main>
           {/* Hero Section */}
-          <section className="bg-gradient-to-br from-industrial-50 to-industrial-100 py-20">
+          <section className="bg-gradient-to-br from-muted to-muted py-20">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-              <h1 className="text-5xl font-bold text-foreground mb-6">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-6">
                 Latest News & Updates
               </h1>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
@@ -78,7 +78,7 @@ const NewsPage = () => {
                     className="flex flex-col hover:shadow-xl transition-shadow duration-300"
                   >
                     <CardHeader>
-                      <CardTitle className="text-xl font-bold text-industrial-800">
+                      <CardTitle className="text-xl font-bold text-foreground">
                         {article.title}
                       </CardTitle>
                       <CardDescription className="text-primary pt-1 font-medium">
@@ -106,7 +106,7 @@ const NewsPage = () => {
           {/* Call to Action */}
           <section className="py-20 bg-muted">
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-              <h2 className="text-3xl font-bold text-foreground mb-6">
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-foreground mb-6">
                 Ready to Discuss Your Project?
               </h2>
               <p className="text-lg text-muted-foreground mb-8">
