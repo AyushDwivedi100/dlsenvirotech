@@ -258,4 +258,22 @@ export const mockApi = {
     
     return quoteRequest;
   },
+
+  async createConsultation(formData: any) {
+    // Simulate API delay
+    await new Promise(resolve => setTimeout(resolve, 1000));
+    
+    // Store consultation request in localStorage
+    const consultations = JSON.parse(localStorage.getItem('dls_consultations') || '[]');
+    const consultationRequest = {
+      id: Date.now().toString(),
+      ...formData,
+      timestamp: new Date().toISOString(),
+      status: 'pending'
+    };
+    consultations.push(consultationRequest);
+    localStorage.setItem('dls_consultations', JSON.stringify(consultations));
+    
+    return consultationRequest;
+  },
 };

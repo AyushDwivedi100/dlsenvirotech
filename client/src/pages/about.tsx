@@ -11,7 +11,7 @@ import { Phone, Award, Users, Globe, Zap, AlertCircle } from "lucide-react";
 import Timeline from "@/components/ui/timeline";
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
-import dlsLogo from "@assets/- Copy_1760176701700.PNG";
+import dlsLogo from "@assets/dls-envirotech-logo.png";
 
 const About = () => {
   const milestones = [
