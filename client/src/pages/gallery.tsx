@@ -86,16 +86,16 @@ const Gallery = () => {
         <Header />
         <main>
           {/* Hero Section */}
-          <section className="bg-gradient-to-br from-muted to-muted py-20">
+          <section className="bg-gradient-to-br from-muted to-muted py-12 sm:py-16 md:py-20">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-6">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 sm:mb-6">
                 Project Gallery
               </h1>
-              <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
+              <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-6 sm:mb-8 px-4">
                 Explore our extensive portfolio of successfully completed water treatment installations 
                 across various industries and applications worldwide.
               </p>
-              <div className="grid md:grid-cols-3 gap-8 max-w-2xl mx-auto">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 md:gap-8 max-w-2xl mx-auto">
                 <div className="text-center">
                   <div className="text-xl sm:text-2xl md:text-3xl font-bold text-primary mb-2">2500+</div>
                   <div className="text-muted-foreground">Installations</div>
@@ -113,36 +113,36 @@ const Gallery = () => {
           </section>
 
           {/* Gallery Grid */}
-          <section className="py-20 bg-background">
+          <section className="py-12 sm:py-16 md:py-20 bg-background">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-6 md:gap-8">
                 {galleryImages.map((item) => (
-                  <div key={item.id} className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                  <div key={item.id} className="group relative overflow-hidden rounded-lg sm:rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
                     <div className="aspect-w-16 aspect-h-12">
                       <img 
                         src={item.image} 
                         alt={item.title}
-                        className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
+                        className="w-full h-48 sm:h-56 md:h-64 object-cover group-hover:scale-110 transition-transform duration-300"
                       />
                     </div>
                     
                     {/* Overlay */}
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                        <div className="text-sm font-semibold text-primary-light mb-2">
+                      <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6 text-white">
+                        <div className="text-xs sm:text-sm font-semibold text-primary-light mb-1 sm:mb-2">
                           {item.category}
                         </div>
-                        <h3 className="text-xl font-bold mb-2">
+                        <h3 className="text-base sm:text-lg md:text-xl font-bold mb-1 sm:mb-2">
                           {item.title}
                         </h3>
-                        <p className="text-sm opacity-90">
+                        <p className="text-xs sm:text-sm opacity-90">
                           {item.description}
                         </p>
                       </div>
                       
-                      <div className="absolute top-4 right-4">
-                        <div className="bg-background/20 backdrop-blur-sm rounded-full p-2">
-                          <ZoomIn className="h-5 w-5 text-white" />
+                      <div className="absolute top-3 right-3 sm:top-4 sm:right-4">
+                        <div className="bg-background/20 backdrop-blur-sm rounded-full p-1.5 sm:p-2">
+                          <ZoomIn className="h-4 w-4 sm:h-5 sm:w-5 text-white" />
                         </div>
                       </div>
                     </div>
@@ -153,25 +153,25 @@ const Gallery = () => {
           </section>
 
           {/* Call to Action */}
-          <section className="py-20 bg-muted">
+          <section className="py-12 sm:py-16 md:py-20 bg-muted">
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-foreground mb-6">
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-foreground mb-4 sm:mb-6">
                 Ready to See Your Project Here?
               </h2>
-              <p className="text-lg text-muted-foreground mb-8">
+              <p className="text-base sm:text-lg text-muted-foreground mb-6 sm:mb-8 px-4">
                 Join our gallery of successful installations with a custom water treatment 
                 solution designed specifically for your requirements.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" asChild>
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">
+                <Button size="lg" asChild className="w-full sm:w-auto">
                   <Link href="/contact">
-                    <Phone className="mr-2 h-5 w-5" />
-                    Get Your Quote
+                    <Phone className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
+                    <span className="text-sm sm:text-base">Get Your Quote</span>
                   </Link>
                 </Button>
-                <Button variant="outline" size="lg" asChild>
+                <Button variant="outline" size="lg" asChild className="w-full sm:w-auto">
                   <Link href="/portfolio">
-                    View Case Studies
+                    <span className="text-sm sm:text-base">View Case Studies</span>
                   </Link>
                 </Button>
               </div>

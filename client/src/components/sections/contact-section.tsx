@@ -45,28 +45,30 @@ export default function ContactSection() {
   };
 
   return (
-    <section className="py-16 bg-muted/50">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-4">Get In Touch</h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
+    <section className="py-12 sm:py-14 md:py-16 lg:py-20 bg-muted/50">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-8 sm:mb-10 md:mb-12">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">Get In Touch</h2>
+          <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-2xl mx-auto px-4">
             Ready to discuss your water treatment needs? Contact us today for a consultation.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-          <Card>
-            <CardHeader>
-              <CardTitle>Send us a Message</CardTitle>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 max-w-6xl mx-auto">
+          <Card className="shadow-lg">
+            <CardHeader className="pb-4">
+              <CardTitle className="text-lg sm:text-xl">Send us a Message</CardTitle>
             </CardHeader>
             <CardContent>
-              <form onSubmit={handleSubmit} className="space-y-4">
+              <form onSubmit={handleSubmit} className="space-y-3 sm:space-y-4">
                 <Input
                   name="name"
                   placeholder="Your Name"
                   value={formData.name}
                   onChange={handleChange}
                   required
+                  className="h-10 sm:h-11 text-sm sm:text-base"
+                  data-testid="input-name"
                 />
                 <Input
                   name="email"
@@ -75,12 +77,16 @@ export default function ContactSection() {
                   value={formData.email}
                   onChange={handleChange}
                   required
+                  className="h-10 sm:h-11 text-sm sm:text-base"
+                  data-testid="input-email"
                 />
                 <Input
                   name="company"
                   placeholder="Company Name"
                   value={formData.company}
                   onChange={handleChange}
+                  className="h-10 sm:h-11 text-sm sm:text-base"
+                  data-testid="input-company"
                 />
                 <Textarea
                   name="message"
@@ -89,38 +95,44 @@ export default function ContactSection() {
                   value={formData.message}
                   onChange={handleChange}
                   required
+                  className="text-sm sm:text-base min-h-[100px]"
+                  data-testid="textarea-message"
                 />
-                <Button type="submit" className="w-full">
+                <Button type="submit" className="w-full h-10 sm:h-11 text-sm sm:text-base" data-testid="button-send">
                   Send Message
                 </Button>
               </form>
             </CardContent>
           </Card>
 
-          <Card>
-            <CardHeader>
-              <CardTitle>Contact Information</CardTitle>
+          <Card className="shadow-lg">
+            <CardHeader className="pb-4">
+              <CardTitle className="text-lg sm:text-xl">Contact Information</CardTitle>
             </CardHeader>
-            <CardContent className="space-y-6">
-              <div className="flex items-center space-x-3">
-                <Phone className="h-5 w-5 text-primary" />
+            <CardContent className="space-y-5 sm:space-y-6">
+              <div className="flex items-start space-x-3 sm:space-x-4" data-testid="contact-phone">
+                <Phone className="h-5 w-5 sm:h-6 sm:w-6 text-primary flex-shrink-0 mt-1" />
                 <div>
-                  <p className="font-medium">Phone</p>
-                  <p className="text-muted-foreground">+919568572005</p>
+                  <p className="font-medium text-sm sm:text-base mb-1">Phone</p>
+                  <a href="tel:+919568572005" className="text-muted-foreground text-sm sm:text-base hover:text-primary transition-colors">
+                    +919568572005
+                  </a>
                 </div>
               </div>
-              <div className="flex items-center space-x-3">
-                <Mail className="h-5 w-5 text-primary" />
+              <div className="flex items-start space-x-3 sm:space-x-4" data-testid="contact-email">
+                <Mail className="h-5 w-5 sm:h-6 sm:w-6 text-primary flex-shrink-0 mt-1" />
                 <div>
-                  <p className="font-medium">Email</p>
-                  <p className="text-muted-foreground">info.dlsenvirotech@gmail.com</p>
+                  <p className="font-medium text-sm sm:text-base mb-1">Email</p>
+                  <a href="mailto:info.dlsenvirotech@gmail.com" className="text-muted-foreground text-sm sm:text-base hover:text-primary transition-colors break-all">
+                    info.dlsenvirotech@gmail.com
+                  </a>
                 </div>
               </div>
-              <div className="flex items-center space-x-3">
-                <MapPin className="h-5 w-5 text-primary" />
+              <div className="flex items-start space-x-3 sm:space-x-4" data-testid="contact-address">
+                <MapPin className="h-5 w-5 sm:h-6 sm:w-6 text-primary flex-shrink-0 mt-1" />
                 <div>
-                  <p className="font-medium">Address</p>
-                  <p className="text-muted-foreground">
+                  <p className="font-medium text-sm sm:text-base mb-1">Address</p>
+                  <p className="text-muted-foreground text-sm sm:text-base">
                     F-25, Sector-6, Noida 201301 (U.P.)
                   </p>
                 </div>

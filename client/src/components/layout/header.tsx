@@ -14,7 +14,6 @@ const Header = () => {
     { name: "Services", href: "/services" },
     { name: "Projects", href: "/portfolio" },
     { name: "Gallery", href: "/gallery" },
-    { name: "Careers", href: "/career" },
     { name: "Contact Us", href: "/contact" },
     { name: "News & Updates", href: "/news" },
   ];
@@ -33,16 +32,16 @@ const Header = () => {
             <img 
               src={dlsLogo} 
               alt="DLS Envirotech Corporation Logo" 
-              className="h-6 sm:h-8 md:h-10 lg:h-12 w-auto object-contain"
+              className="h-8 sm:h-9 md:h-10 w-auto object-contain"
             />
           </Link>
           
-          <div className="hidden xl:flex items-center space-x-6">
+          <div className="hidden lg:flex items-center space-x-4 xl:space-x-6">
             {navigation.map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
-                className={`text-sm font-medium transition-colors relative ${
+                className={`text-base font-medium transition-colors relative ${
                   isActive(item.href)
                     ? "text-primary font-semibold"
                     : "text-foreground/80 hover:text-primary"
@@ -54,14 +53,14 @@ const Header = () => {
                 )}
               </Link>
             ))}
-            <Button asChild size="sm">
+            <Button asChild size="sm" className="text-base px-4">
               <Link href="/quote">Get Quote</Link>
             </Button>
           </div>
           
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
-              <Button variant="ghost" size="icon" className="xl:hidden">
+              <Button variant="ghost" size="icon" className="lg:hidden">
                 <Menu className="h-6 w-6" />
                 <span className="sr-only">Toggle mobile menu</span>
               </Button>
