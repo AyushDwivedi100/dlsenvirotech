@@ -1,7 +1,6 @@
 import { Helmet } from "react-helmet";
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
-import ChatbotWidget from "@/components/chatbot/chatbot-widget";
 import {
   Card,
   CardContent,
@@ -121,7 +120,6 @@ const NewsPage = () => {
           </section>
         </main>
         <Footer />
-        <ChatbotWidget />
       </div>
     </>
   );

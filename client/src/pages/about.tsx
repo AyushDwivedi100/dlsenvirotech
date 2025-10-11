@@ -4,7 +4,6 @@ import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
 import AboutSection from "@/components/sections/about-section";
 import TestimonialsSection from "@/components/sections/testimonials-section";
-import ChatbotWidget from "@/components/chatbot/chatbot-widget";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { Phone, Award, Users, Globe, Zap, AlertCircle } from "lucide-react";
@@ -185,7 +184,6 @@ const About = () => {
           </section>
         </main>
         <Footer />
-        <ChatbotWidget />
       </div>
     </>
   );

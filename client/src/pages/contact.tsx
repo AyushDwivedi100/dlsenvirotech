@@ -3,7 +3,6 @@ import TopBar from "@/components/layout/top-bar";
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
 import ContactSection from "@/components/sections/contact-section";
-import ChatbotWidget from "@/components/chatbot/chatbot-widget";
 
 const Contact = () => {
   return (
@@ -49,7 +48,6 @@ const Contact = () => {
           <ContactSection />
         </main>
         <Footer />
-        <ChatbotWidget />
       </div>
     </>
   );

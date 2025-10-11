@@ -2,7 +2,6 @@ import { Helmet } from "react-helmet";
 import TopBar from "@/components/layout/top-bar";
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
-import ChatbotWidget from "@/components/chatbot/chatbot-widget";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -241,7 +240,6 @@ const Career = () => {
           </section>
         </main>
         <Footer />
-        <ChatbotWidget />
       </div>
     </>
   );

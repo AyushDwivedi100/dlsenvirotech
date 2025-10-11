@@ -3,7 +3,6 @@ import TopBar from "@/components/layout/top-bar";
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
 import ServiceCard from "@/components/ui/service-card";
-import ChatbotWidget from "@/components/chatbot/chatbot-widget";
 import { SERVICES } from "@/lib/constants";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
@@ -78,7 +77,6 @@ const Services = () => {
           </section>
         </main>
         <Footer />
-        <ChatbotWidget />
       </div>
     </>
   );

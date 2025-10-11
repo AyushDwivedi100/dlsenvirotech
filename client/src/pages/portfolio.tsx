@@ -4,7 +4,6 @@ import TopBar from "@/components/layout/top-bar";
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
 import PortfolioCard from "@/components/ui/portfolio-card";
-import ChatbotWidget from "@/components/chatbot/chatbot-widget";
 import { PORTFOLIO_PROJECTS } from "@/lib/constants";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
@@ -118,7 +117,6 @@ const Portfolio = () => {
           </section>
         </main>
         <Footer />
-        <ChatbotWidget />
       </div>
     </>
   );

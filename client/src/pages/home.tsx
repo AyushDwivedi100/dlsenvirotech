@@ -8,7 +8,6 @@ import PortfolioShowcase from "@/components/sections/portfolio-showcase";
 import AboutSection from "@/components/sections/about-section";
 import TestimonialsSection from "@/components/sections/testimonials-section";
 import ContactSection from "@/components/sections/contact-section";
-import ChatbotWidget from "@/components/chatbot/chatbot-widget";
 
 const Home = () => {
   return (
@@ -35,7 +34,6 @@ const Home = () => {
           <ContactSection />
         </main>
         <Footer />
-        <ChatbotWidget />
       </div>
     </>
   );

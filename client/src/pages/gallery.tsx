@@ -1,7 +1,6 @@
 import { Helmet } from "react-helmet";
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
-import ChatbotWidget from "@/components/chatbot/chatbot-widget";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { Phone, ZoomIn } from "lucide-react";
@@ -180,7 +179,6 @@ const Gallery = () => {
           </section>
         </main>
         <Footer />
-        <ChatbotWidget />
       </div>
     </>
   );
