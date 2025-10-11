@@ -6,7 +6,24 @@ This is a full-stack web application for DLS Envirotech Corporation, a water tre
 
 ## Recent Changes (October 2025)
 
-✓ **Brand Color Update & Modern Scrollbar (Latest)** - Changed accent color and implemented modern scrollbar:
+✓ **Content Authenticity & India-Focus Update (Latest)** - Updated to reflect accurate business operations:
+  - Replaced duplicate/fake testimonials with unique, realistic reviews from diverse Indian clients
+  - Changed international testimonial (Michael Chen, Singapore) to Indian client (Suresh Patel, Gujarat)
+  - Removed all placeholder portfolio projects and gallery images
+  - Added "Coming Soon" sections for real project portfolio and gallery
+  - Updated all references from "22 countries" to "India" / "Nationwide Service"
+  - Removed career page from navigation, footer, and routing
+  - Updated hero section to emphasize India-only operations
+  - Changed stats displays to show "15+ Years Experience" and "India Nationwide Service"
+  - Testimonials now include varied ratings (4-5 stars) for authenticity
+  - Added specific details in reviews (timeframes, ROI data, technical specifics)
+
+✓ **Increased Navigation Font Sizes** - Enhanced header readability:
+  - Changed navigation font from text-sm/text-base to consistent text-base
+  - Increased "Get Quote" button text size to text-base with px-4 padding
+  - Improved visibility and accessibility across all screen sizes
+
+✓ **Brand Color Update & Modern Scrollbar** - Changed accent color and implemented modern scrollbar:
   - Replaced green accent color with professional light blue (hsl(207, 90%, 50%))
   - Updated primary and secondary colors for brand consistency
   - Disabled horizontal scrollbar globally (overflow-x: hidden on html and body)

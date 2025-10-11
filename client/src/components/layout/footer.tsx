@@ -36,7 +36,7 @@ const Footer = () => {
             </div>
             <p className="text-white/70 text-sm sm:text-base mb-5 sm:mb-6 leading-relaxed">
               Leading provider of comprehensive water treatment solutions with 15+ years of expertise in 
-              environmental technology. Serving clients across 22 countries with innovative and sustainable solutions.
+              environmental technology. Serving clients across India with innovative and sustainable solutions.
             </p>
             <div className="flex flex-wrap gap-3 sm:gap-4">
               <a href="#" className="bg-industrial-800 p-2.5 sm:p-3 rounded-lg hover:bg-primary transition-colors" aria-label="LinkedIn">

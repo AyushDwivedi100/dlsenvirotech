@@ -57,57 +57,47 @@ const Portfolio = () => {
                 Project Portfolio & Case Studies
               </h1>
               <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-6 md:mb-8">
-                Explore our successful implementations across 22 countries with detailed technical 
-                specifications and performance metrics from over 2,500 completed systems.
+                Explore our successful water treatment implementations across India with proven expertise 
+                in STP, ETP, and industrial wastewater solutions.
               </p>
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-8 max-w-2xl mx-auto">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-8 max-w-xl mx-auto">
                 <div className="text-center p-4 bg-background/50 rounded-lg">
-                  <div className="text-2xl md:text-3xl font-bold text-primary mb-2">2500+</div>
-                  <div className="text-sm md:text-base text-muted-foreground">Systems Installed</div>
+                  <div className="text-2xl md:text-3xl font-bold text-primary mb-2">15+</div>
+                  <div className="text-sm md:text-base text-muted-foreground">Years Experience</div>
                 </div>
                 <div className="text-center p-4 bg-background/50 rounded-lg">
-                  <div className="text-2xl md:text-3xl font-bold text-secondary mb-2">22</div>
-                  <div className="text-sm md:text-base text-muted-foreground">Countries Served</div>
-                </div>
-                <div className="text-center p-4 bg-background/50 rounded-lg">
-                  <div className="text-2xl md:text-3xl font-bold text-accent mb-2">100%</div>
-                  <div className="text-sm md:text-base text-muted-foreground">Success Rate</div>
+                  <div className="text-2xl md:text-3xl font-bold text-secondary mb-2">India</div>
+                  <div className="text-sm md:text-base text-muted-foreground">Nationwide Service</div>
                 </div>
               </div>
             </div>
           </section>
 
-          {/* Portfolio Filter and Grid */}
+          {/* Portfolio Coming Soon */}
           <section className="py-12 md:py-16 lg:py-20 bg-background">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              {/* Filter Tabs */}
-              <div className="flex flex-wrap justify-center gap-2 md:gap-4 mb-8 md:mb-12">
-                {filters.map((filter) => (
-                  <Button
-                    key={filter.id}
-                    variant={activeFilter === filter.id ? "default" : "outline"}
-                    onClick={() => setActiveFilter(filter.id)}
-                    className="font-semibold text-xs sm:text-sm md:text-base"
-                    size="sm"
-                  >
-                    {filter.label}
-                  </Button>
-                ))}
-              </div>
-              
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-                {filteredProjects.map((project) => (
-                  <PortfolioCard key={project.id} project={project} />
-                ))}
-              </div>
-
-              {filteredProjects.length === 0 && (
-                <div className="text-center py-12">
-                  <p className="text-muted-foreground text-lg">
-                    No projects found for the selected filter.
+              <div className="text-center py-16 md:py-20 bg-muted rounded-lg">
+                <div className="max-w-2xl mx-auto px-4">
+                  <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4 md:mb-6">
+                    Real Project Portfolio Coming Soon
+                  </h2>
+                  <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-6 md:mb-8 leading-relaxed">
+                    We are currently updating our portfolio with detailed case studies and project documentation 
+                    of our actual installations. Our real project gallery will be available here soon, showcasing 
+                    our proven expertise in water treatment solutions across India.
                   </p>
+                  <p className="text-sm sm:text-base text-muted-foreground mb-8">
+                    In the meantime, feel free to contact us to learn more about our successful installations 
+                    and how we can help with your water treatment requirements.
+                  </p>
+                  <Button size="lg" asChild>
+                    <Link href="/contact">
+                      <Phone className="mr-2 h-5 w-5" />
+                      Contact Us for Project Details
+                    </Link>
+                  </Button>
                 </div>
-              )}
+              </div>
             </div>
           </section>
 

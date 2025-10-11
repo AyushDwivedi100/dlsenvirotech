@@ -92,74 +92,7 @@ export const SERVICES: ServiceType[] = [
   }
 ];
 
-export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
-  {
-    id: "municipal-stp-50mld",
-    title: "Municipal STP - 50 MLD Capacity",
-    description: "Advanced biological treatment system for municipal wastewater serving 200,000 population equivalent.",
-    image: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-    category: ["stp", "municipal"],
-    tags: ["STP", "Municipal"],
-    capacity: "50 MLD",
-    technology: "SBR + MBR",
-    location: "Gujarat, India"
-  },
-  {
-    id: "textile-etp-zld",
-    title: "Textile Industry ETP - ZLD System",
-    description: "Zero Liquid Discharge system for textile manufacturing facility with advanced chemical treatment.",
-    image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-    category: ["etp", "industrial"],
-    tags: ["ETP", "Industrial"],
-    capacity: "15 MLD",
-    technology: "ZLD + RO",
-    industry: "Textile"
-  },
-  {
-    id: "pharmaceutical-ro-dm",
-    title: "Pharmaceutical RO & DM Plant",
-    description: "High-purity water production system for pharmaceutical manufacturing with stringent quality requirements.",
-    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-    category: ["industrial"],
-    tags: ["RO Plant", "Industrial"],
-    capacity: "5000 LPH",
-    technology: "RO + EDI",
-    industry: "Pharmaceutical"
-  },
-  {
-    id: "cetp-industrial",
-    title: "Common Effluent Treatment Plant",
-    description: "Centralized treatment facility serving multiple industrial units in manufacturing cluster.",
-    image: "https://images.unsplash.com/photo-1621335223658-0ebd89004d51?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-    category: ["etp", "industrial"],
-    tags: ["CETP", "Industrial"],
-    capacity: "25 MLD",
-    technology: "MBBR + UF",
-    industry: "Manufacturing"
-  },
-  {
-    id: "smart-city-stp",
-    title: "Smart City STP with IoT Monitoring",
-    description: "Next-generation sewage treatment plant with real-time monitoring and automated control systems.",
-    image: "https://images.unsplash.com/photo-1599586120429-48281b6f0ece?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-    category: ["stp", "municipal"],
-    tags: ["STP", "Municipal"],
-    capacity: "100 MLD",
-    technology: "Smart SBR",
-    location: "Smart City Project"
-  },
-  {
-    id: "power-plant-cooling",
-    title: "Power Plant Cooling System",
-    description: "Large-scale cooling tower system for thermal power plant with advanced heat rejection technology.",
-    image: "https://images.unsplash.com/photo-1473116763246-b726752ebc2f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-    category: ["industrial"],
-    tags: ["Cooling Tower", "Power Plant"],
-    capacity: "50,000 TR",
-    technology: "Counter Flow",
-    industry: "Power Generation"
-  }
-];
+export const PORTFOLIO_PROJECTS: PortfolioProject[] = [];
 
 export const TESTIMONIALS: TestimonialType[] = [
   {
@@ -191,30 +124,30 @@ export const TESTIMONIALS: TestimonialType[] = [
   },
   {
     id: "testimonial-4",
-    name: "Priya Sharma",
-    position: "Municipal Engineer",
-    company: "City Corporation",
-    content: "The 50 MLD STP project was completed ahead of schedule with excellent quality. The automated monitoring system has significantly reduced our operational costs and improved treatment efficiency.",
+    name: "Suresh Patel",
+    position: "Environmental Compliance Officer",
+    company: "Gujarat Industrial Corporation",
+    content: "We've worked with several water treatment vendors, but DLS stands out for their reliability. Their cooling tower system has been running flawlessly for 18 months now, and the energy savings are better than projected.",
     rating: 5,
-    project: "Municipal STP Project"
+    project: "Industrial Cooling System"
   },
   {
     id: "testimonial-5",
-    name: "Priya Sharma",
-    position: "Municipal Engineer",
-    company: "City Corporation",
-    content: "The 50 MLD STP project was completed ahead of schedule with excellent quality. The automated monitoring system has significantly reduced our operational costs and improved treatment efficiency.",
-    rating: 5,
-    project: "Municipal STP Project"
+    name: "Kavita Desai",
+    position: "Sustainability Head",
+    company: "Green Valley Resorts",
+    content: "Initially skeptical about the ROI, but the wastewater recycling system has paid for itself in just 14 months. The team was patient with our queries and provided excellent post-installation training to our staff.",
+    rating: 4,
+    project: "Resort Water Recycling"
   },
   {
     id: "testimonial-6",
-    name: "Priya Sharma",
-    position: "Municipal Engineer",
-    company: "City Corporation",
-    content: "The 50 MLD STP project was completed ahead of schedule with excellent quality. The automated monitoring system has significantly reduced our operational costs and improved treatment efficiency.",
+    name: "Dr. Anil Verma",
+    position: "Quality Assurance Manager",
+    company: "BioMed Laboratories",
+    content: "Precision is everything in our industry. The DM plant they installed maintains consistent water purity levels - we've had zero batch rejections due to water quality since installation. Professional team, thorough documentation.",
     rating: 5,
-    project: "Municipal STP Project"
+    project: "Laboratory DM Plant"
   },
 ];
 

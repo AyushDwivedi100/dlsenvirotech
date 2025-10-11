@@ -29,10 +29,10 @@ const HeroSection = () => {
           </h1>
 
           <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground mb-5 sm:mb-6 md:mb-7 lg:mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0">
-            Leading water treatment company specializing in Sewage Treatment Plants (STP), 
+            Leading water treatment company in India specializing in Sewage Treatment Plants (STP), 
             Effluent Treatment Plants (ETP), RO systems, and industrial wastewater solutions. 
-            ISO certified with 2500+ installations across 22 countries. Expert environmental 
-            technology for all municipal and industrial applications.
+            ISO certified with proven expertise in environmental technology for all municipal 
+            and industrial applications across India.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center lg:justify-start">
