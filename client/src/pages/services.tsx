@@ -22,28 +22,28 @@ const Services = () => {
         <Header />
         <main>
           {/* Hero Section */}
-          <section className="bg-gradient-to-br from-industrial-50 to-industrial-100 py-20">
+          <section className="bg-gradient-to-br from-industrial-50 to-industrial-100 py-12 md:py-16 lg:py-20">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-              <h1 className="text-5xl font-bold text-industrial-900 mb-6">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-industrial-900 mb-4 md:mb-6">
                 Professional Water Treatment Services
               </h1>
-              <p className="text-xl text-industrial-600 max-w-3xl mx-auto mb-8">
+              <p className="text-base sm:text-lg md:text-xl text-industrial-600 max-w-3xl mx-auto mb-6 md:mb-8">
                 Comprehensive environmental technology solutions designed to meet the highest standards 
                 of water treatment for industrial and municipal applications.
               </p>
-              <Button size="lg" asChild>
+              <Button size="lg" className="w-full sm:w-auto" asChild>
                 <Link href="/contact">
-                  <Phone className="mr-2 h-5 w-5" />
-                  Get Custom Solution
+                  <Phone className="mr-2 h-4 w-4 md:h-5 md:w-5" />
+                  <span className="text-sm md:text-base">Get Custom Solution</span>
                 </Link>
               </Button>
             </div>
           </section>
 
           {/* Services Grid */}
-          <section className="py-20 bg-white">
+          <section className="py-12 md:py-16 lg:py-20 bg-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
                 {SERVICES.map((service) => (
                   <ServiceCard key={service.id} service={service} />
                 ))}
@@ -52,24 +52,24 @@ const Services = () => {
           </section>
 
           {/* Call to Action */}
-          <section className="py-20 bg-industrial-50">
+          <section className="py-12 md:py-16 lg:py-20 bg-industrial-50">
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-              <h2 className="text-3xl font-bold text-industrial-900 mb-6">
+              <h2 className="text-2xl sm:text-3xl font-bold text-industrial-900 mb-4 md:mb-6">
                 Need a Custom Water Treatment Solution?
               </h2>
-              <p className="text-lg text-industrial-600 mb-8">
+              <p className="text-base sm:text-lg text-industrial-600 mb-6 md:mb-8">
                 Our expert engineers can design and implement the perfect water treatment system 
                 for your specific requirements. Contact us for a free consultation.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" asChild>
+              <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center">
+                <Button size="lg" className="w-full sm:w-auto" asChild>
                   <Link href="/contact">
-                    Schedule Consultation
+                    <span className="text-sm md:text-base">Schedule Consultation</span>
                   </Link>
                 </Button>
-                <Button variant="outline" size="lg" asChild>
+                <Button variant="outline" size="lg" className="w-full sm:w-auto" asChild>
                   <Link href="/portfolio">
-                    View Case Studies
+                    <span className="text-sm md:text-base">View Case Studies</span>
                   </Link>
                 </Button>
               </div>

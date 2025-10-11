@@ -22,9 +22,9 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-industrial-900 dark:bg-industrial-950 text-white py-16 transition-colors">
+    <footer className="bg-industrial-900 dark:bg-industrial-950 text-white py-12 md:py-16 transition-colors">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
           {/* Company Information */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-4 mb-6">
@@ -89,14 +89,14 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="border-t border-industrial-800 dark:border-industrial-700 mt-12 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-industrial-400 dark:text-industrial-500 text-sm">
+        <div className="border-t border-industrial-800 dark:border-industrial-700 mt-8 md:mt-12 pt-6 md:pt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <p className="text-industrial-400 dark:text-industrial-500 text-xs sm:text-sm text-center md:text-left">
               © 2024 DLS Envirotech Corporation. All rights reserved.
             </p>
-            <div className="flex items-center space-x-6 mt-4 md:mt-0 mr-16">
+            <div className="flex items-center space-x-4 md:space-x-6">
               <ThemeToggle />
-              <Link href="/sitemap" className="text-industrial-400 dark:text-industrial-500 hover:text-white text-sm transition-colors">
+              <Link href="/sitemap" className="text-industrial-400 dark:text-industrial-500 hover:text-white text-xs sm:text-sm transition-colors">
                 Sitemap
               </Link>
             </div>

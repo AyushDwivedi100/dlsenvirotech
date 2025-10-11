@@ -100,9 +100,9 @@ const About = () => {
         <Header />
         <main>
           {/* Hero Section */}
-          <section className="bg-gradient-to-br from-industrial-50 to-industrial-100 py-20">
+          <section className="bg-gradient-to-br from-industrial-50 to-industrial-100 py-12 md:py-16 lg:py-20">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-              <h1 className="text-5xl font-bold text-industrial-900 mb-6">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-industrial-900 mb-4 md:mb-6">
                 About DLS Envirotech Corporation
               </h1>
               <p className="text-xl text-industrial-600 max-w-3xl mx-auto mb-8">

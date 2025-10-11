@@ -38,50 +38,51 @@ const Portfolio = () => {
         <Header />
         <main>
           {/* Hero Section */}
-          <section className="bg-gradient-to-br from-industrial-50 to-industrial-100 py-20">
+          <section className="bg-gradient-to-br from-industrial-50 to-industrial-100 py-12 md:py-16 lg:py-20">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-              <h1 className="text-5xl font-bold text-industrial-900 mb-6">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-industrial-900 mb-4 md:mb-6">
                 Project Portfolio & Case Studies
               </h1>
-              <p className="text-xl text-industrial-600 max-w-3xl mx-auto mb-8">
+              <p className="text-base sm:text-lg md:text-xl text-industrial-600 max-w-3xl mx-auto mb-6 md:mb-8">
                 Explore our successful implementations across 22 countries with detailed technical 
                 specifications and performance metrics from over 2,500 completed systems.
               </p>
-              <div className="grid md:grid-cols-3 gap-8 max-w-2xl mx-auto">
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-primary mb-2">2500+</div>
-                  <div className="text-industrial-600">Systems Installed</div>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-8 max-w-2xl mx-auto">
+                <div className="text-center p-4 bg-white/50 rounded-lg">
+                  <div className="text-2xl md:text-3xl font-bold text-primary mb-2">2500+</div>
+                  <div className="text-sm md:text-base text-industrial-600">Systems Installed</div>
                 </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-secondary mb-2">22</div>
-                  <div className="text-industrial-600">Countries Served</div>
+                <div className="text-center p-4 bg-white/50 rounded-lg">
+                  <div className="text-2xl md:text-3xl font-bold text-secondary mb-2">22</div>
+                  <div className="text-sm md:text-base text-industrial-600">Countries Served</div>
                 </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-accent mb-2">100%</div>
-                  <div className="text-industrial-600">Success Rate</div>
+                <div className="text-center p-4 bg-white/50 rounded-lg">
+                  <div className="text-2xl md:text-3xl font-bold text-accent mb-2">100%</div>
+                  <div className="text-sm md:text-base text-industrial-600">Success Rate</div>
                 </div>
               </div>
             </div>
           </section>
 
           {/* Portfolio Filter and Grid */}
-          <section className="py-20 bg-white">
+          <section className="py-12 md:py-16 lg:py-20 bg-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               {/* Filter Tabs */}
-              <div className="flex flex-wrap justify-center gap-4 mb-12">
+              <div className="flex flex-wrap justify-center gap-2 md:gap-4 mb-8 md:mb-12">
                 {filters.map((filter) => (
                   <Button
                     key={filter.id}
                     variant={activeFilter === filter.id ? "default" : "outline"}
                     onClick={() => setActiveFilter(filter.id)}
-                    className="font-semibold"
+                    className="font-semibold text-xs sm:text-sm md:text-base"
+                    size="sm"
                   >
                     {filter.label}
                   </Button>
                 ))}
               </div>
               
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
                 {filteredProjects.map((project) => (
                   <PortfolioCard key={project.id} project={project} />
                 ))}

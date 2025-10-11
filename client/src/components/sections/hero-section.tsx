@@ -5,7 +5,7 @@ import { Phone, Play, Award, TrendingUp } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center bg-gradient-to-br from-industrial-50 to-industrial-100">
+    <section className="relative min-h-[600px] md:min-h-[700px] lg:min-h-screen flex items-center bg-gradient-to-br from-industrial-50 to-industrial-100 py-12 md:py-16 lg:py-0">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center opacity-10"
@@ -16,56 +16,69 @@ const HeroSection = () => {
         aria-hidden="true"
       />
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-8 md:gap-12 items-center w-full">
         <div className="text-center lg:text-left">
-          <Badge className="mb-6" variant="secondary">
+          <Badge className="mb-4 md:mb-6" variant="secondary">
             <Award className="mr-2 h-4 w-4" />
             15+ Years Experience
           </Badge>
 
-          <h1 className="text-5xl lg:text-6xl font-bold text-industrial-900 mb-6 leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-industrial-900 mb-4 md:mb-6 leading-tight">
             Advanced Water Treatment
-            <span className="text-primary block">Solutions</span>
+            <span className="text-primary block mt-2">Solutions</span>
           </h1>
 
-          <p className="text-xl text-industrial-600 mb-8 leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl text-industrial-600 mb-6 md:mb-8 leading-relaxed">
             Leading provider of comprehensive wastewater treatment services,
             specializing in effluent treatment plants, sewage treatment systems,
             and environmental technology solutions for industrial and municipal
             applications.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-            <Button size="lg" asChild>
+          <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center lg:justify-start">
+            <Button size="lg" className="w-full sm:w-auto" asChild>
               <Link href="/contact">
-                <Phone className="mr-2 h-5 w-5" />
-                Get Free Consultation
+                <Phone className="mr-2 h-4 w-4 md:h-5 md:w-5" />
+                <span className="text-sm md:text-base">Get Free Consultation</span>
               </Link>
             </Button>
-            <Button variant="outline" size="lg" asChild>
+            <Button variant="outline" size="lg" className="w-full sm:w-auto" asChild>
               <Link href="/portfolio">
-                <Play className="mr-2 h-5 w-5" />
-                View Our Work
+                <Play className="mr-2 h-4 w-4 md:h-5 md:w-5" />
+                <span className="text-sm md:text-base">View Our Work</span>
               </Link>
             </Button>
           </div>
         </div>
 
-        <div className="relative">
+        <div className="relative mt-8 lg:mt-0">
           <img
             src="https://alantech.in/storage/blogs/modern-sewage-treatment-plant.webp"
             alt="Modern sewage treatment plant facility with advanced filtration systems"
-            className="rounded-2xl shadow-2xl w-full h-auto"
+            className="rounded-xl md:rounded-2xl shadow-2xl w-full h-auto"
           />
 
-          <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-lg">
-            <div className="flex items-center space-x-4">
-              <div className="bg-secondary text-white p-3 rounded-lg">
-                <TrendingUp className="h-6 w-6" />
+          <div className="hidden md:flex absolute -bottom-4 -left-4 lg:-bottom-6 lg:-left-6 bg-white p-4 lg:p-6 rounded-xl shadow-lg">
+            <div className="flex items-center space-x-3 lg:space-x-4">
+              <div className="bg-secondary text-white p-2 lg:p-3 rounded-lg">
+                <TrendingUp className="h-5 w-5 lg:h-6 lg:w-6" />
               </div>
               <div>
-                <p className="text-2xl font-bold text-industrial-900">2500+</p>
-                <p className="text-industrial-600">Systems Installed</p>
+                <p className="text-xl lg:text-2xl font-bold text-industrial-900">2500+</p>
+                <p className="text-sm lg:text-base text-industrial-600">Systems Installed</p>
+              </div>
+            </div>
+          </div>
+          
+          {/* Mobile stats badge - below image */}
+          <div className="md:hidden mt-4 bg-white p-4 rounded-xl shadow-lg">
+            <div className="flex items-center space-x-3">
+              <div className="bg-secondary text-white p-2 rounded-lg">
+                <TrendingUp className="h-5 w-5" />
+              </div>
+              <div>
+                <p className="text-xl font-bold text-industrial-900">2500+</p>
+                <p className="text-sm text-industrial-600">Systems Installed</p>
               </div>
             </div>
           </div>
