@@ -63,7 +63,7 @@ export default {
         },
         linkedin: "hsl(201, 100%, 35%)",
         facebook: "hsl(221, 44%, 41%)",
-        youtube: "hsl(0, 100%, 50%)",
+        youtube: "hsl(0, 85%, 45%)",
         industrial: {
           50: "hsl(210, 40%, 98%)",
           100: "hsl(210, 40%, 96%)",
