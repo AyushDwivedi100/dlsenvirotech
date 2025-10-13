@@ -53,16 +53,6 @@ const ServiceCard = ({ service }: ServiceCardProps) => {
             </li>
           ))}
         </ul>
-
-        <Button
-          variant="link"
-          asChild
-          className="p-0 text-primary font-semibold text-sm sm:text-base"
-        >
-          <Link href="/services">
-            Learn More <ArrowRight className="ml-2 h-3 w-3 sm:h-4 sm:w-4" />
-          </Link>
-        </Button>
       </CardContent>
     </Card>
   );
