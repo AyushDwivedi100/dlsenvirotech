@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import PortfolioCard from "@/components/ui/portfolio-card";
 import { PORTFOLIO_PROJECTS } from "@/lib/constants";
 import { Link } from "wouter";
-import { FolderOpen } from "lucide-react";
+import { FolderOpen, Phone } from "lucide-react";
 
 const PortfolioShowcase = () => {
   const [activeFilter, setActiveFilter] = useState("all");
@@ -35,8 +35,8 @@ const PortfolioShowcase = () => {
             Project Portfolio & Case Studies
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto px-4">
-            Explore our successful implementations across India with
-            detailed technical specifications and performance metrics
+            Explore our successful implementations across India with detailed
+            technical specifications and performance metrics
           </p>
         </div>
 
@@ -55,11 +55,36 @@ const PortfolioShowcase = () => {
           ))}
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-6 md:gap-8">
-          {filteredProjects.map((project) => (
-            <PortfolioCard key={project.id} project={project} />
-          ))}
-        </div>
+        {/* Portfolio Coming Soon */}
+        <section className="py-12 md:py-16 lg:py-20 bg-background">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center py-16 md:py-20 bg-muted rounded-lg">
+              <div className="max-w-2xl mx-auto px-4">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4 md:mb-6">
+                  Real Project Portfolio Coming Soon
+                </h2>
+                <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-6 md:mb-8 leading-relaxed">
+                  We are currently updating our portfolio with detailed case
+                  studies and project documentation of our actual installations.
+                  Our real project gallery will be available here soon,
+                  showcasing our proven expertise in water treatment solutions
+                  across India.
+                </p>
+                <p className="text-sm sm:text-base text-muted-foreground mb-8">
+                  In the meantime, feel free to contact us to learn more about
+                  our successful installations and how we can help with your
+                  water treatment requirements.
+                </p>
+                <Button size="lg" asChild>
+                  <Link href="/contact" className="text-white">
+                    <Phone className="mr-2 h-5 w-5" />
+                    Contact Us for Project Details
+                  </Link>
+                </Button>
+              </div>
+            </div>
+          </div>
+        </section>
 
         <div className="text-center mt-10 sm:mt-12">
           <Button size="lg" asChild className="w-full sm:w-auto text-white">
