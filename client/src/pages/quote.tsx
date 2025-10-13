@@ -15,7 +15,6 @@ import {
 } from "@/components/ui/select";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
-import { mockApi } from "@/lib/mockApi";
 import {
   SEOHead,
   organizationSchema,
@@ -24,6 +23,7 @@ import {
 
 export default function Quote() {
   const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -38,27 +38,42 @@ export default function Quote() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setIsSubmitting(true);
 
     try {
-      await mockApi.createQuote(formData);
-
-      toast({
-        title: "Quote Request Submitted!",
-        description:
-          "Thank you for your request. We'll prepare your quote and get back to you within 24 hours.",
+      const form = new FormData();
+      Object.entries(formData).forEach(([key, value]) => {
+        form.append(key, value);
       });
 
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        company: "",
-        service: "",
-        capacity: "",
-        location: "",
-        timeline: "",
-        description: "",
+      const response = await fetch('/quote-handler.php', {
+        method: 'POST',
+        body: form,
       });
+
+      const result = await response.json();
+
+      if (result.success) {
+        toast({
+          title: "Quote Request Submitted!",
+          description:
+            "Thank you for your request. We'll prepare your quote and get back to you within 24 hours.",
+        });
+
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          company: "",
+          service: "",
+          capacity: "",
+          location: "",
+          timeline: "",
+          description: "",
+        });
+      } else {
+        throw new Error(result.message);
+      }
     } catch (error) {
       toast({
         title: "Error",
@@ -66,6 +81,8 @@ export default function Quote() {
           "There was a problem submitting your quote request. Please try again.",
         variant: "destructive",
       });
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -240,9 +257,10 @@ export default function Quote() {
                     <Button
                       type="submit"
                       size="lg"
+                      disabled={isSubmitting}
                       className="text-white w-full"
                     >
-                      Request Quote
+                      {isSubmitting ? "Submitting..." : "Request Quote"}
                     </Button>
                   </form>
                 </CardContent>

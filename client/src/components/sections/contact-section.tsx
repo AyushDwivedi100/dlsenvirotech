@@ -5,29 +5,55 @@ import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
 import { Mail, Phone, MapPin } from "lucide-react";
-import { mockApi } from "@/lib/mockApi";
 
 export default function ContactSection() {
   const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    phone: "",
     company: "",
+    subject: "",
+    serviceType: "",
     message: "",
   });
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setIsSubmitting(true);
 
     try {
-      await mockApi.createConsultation(formData);
-
-      toast({
-        title: "Message Sent!",
-        description: "Thank you for your interest. We'll get back to you soon.",
+      const form = new FormData();
+      Object.entries(formData).forEach(([key, value]) => {
+        form.append(key, value);
       });
 
-      setFormData({ name: "", email: "", company: "", message: "" });
+      const response = await fetch('/contact-handler.php', {
+        method: 'POST',
+        body: form,
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        toast({
+          title: "Message Sent!",
+          description: "Thank you for your interest. We'll get back to you soon.",
+        });
+
+        setFormData({ 
+          name: "", 
+          email: "", 
+          phone: "", 
+          company: "", 
+          subject: "", 
+          serviceType: "", 
+          message: "" 
+        });
+      } else {
+        throw new Error(result.message);
+      }
     } catch (error) {
       toast({
         title: "Error",
@@ -35,6 +61,8 @@ export default function ContactSection() {
           "There was a problem submitting your message. Please try again.",
         variant: "destructive",
       });
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -71,7 +99,7 @@ export default function ContactSection() {
               <form onSubmit={handleSubmit} className="space-y-3 sm:space-y-4">
                 <Input
                   name="name"
-                  placeholder="Your Name"
+                  placeholder="Your Name *"
                   value={formData.name}
                   onChange={handleChange}
                   required
@@ -81,12 +109,21 @@ export default function ContactSection() {
                 <Input
                   name="email"
                   type="email"
-                  placeholder="Your Email"
+                  placeholder="Your Email *"
                   value={formData.email}
                   onChange={handleChange}
                   required
                   className="h-10 sm:h-11 text-sm sm:text-base"
                   data-testid="input-email"
+                />
+                <Input
+                  name="phone"
+                  type="tel"
+                  placeholder="Phone Number"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  className="h-10 sm:h-11 text-sm sm:text-base"
+                  data-testid="input-phone"
                 />
                 <Input
                   name="company"
@@ -96,9 +133,26 @@ export default function ContactSection() {
                   className="h-10 sm:h-11 text-sm sm:text-base"
                   data-testid="input-company"
                 />
+                <Input
+                  name="subject"
+                  placeholder="Subject *"
+                  value={formData.subject}
+                  onChange={handleChange}
+                  required
+                  className="h-10 sm:h-11 text-sm sm:text-base"
+                  data-testid="input-subject"
+                />
+                <Input
+                  name="serviceType"
+                  placeholder="Service Interest (e.g., STP, ETP, RO)"
+                  value={formData.serviceType}
+                  onChange={handleChange}
+                  className="h-10 sm:h-11 text-sm sm:text-base"
+                  data-testid="input-service-type"
+                />
                 <Textarea
                   name="message"
-                  placeholder="Tell us about your project"
+                  placeholder="Tell us about your project *"
                   rows={4}
                   value={formData.message}
                   onChange={handleChange}
@@ -108,10 +162,11 @@ export default function ContactSection() {
                 />
                 <Button
                   type="submit"
+                  disabled={isSubmitting}
                   className="w-full h-10 sm:h-11 text-sm sm:text-base text-white"
                   data-testid="button-send"
                 >
-                  Send Message
+                  {isSubmitting ? "Sending..." : "Send Message"}
                 </Button>
               </form>
             </CardContent>

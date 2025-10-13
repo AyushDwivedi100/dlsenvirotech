@@ -1,15 +1,12 @@
 <?php
-// Set CORS headers for React frontend
 header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: POST, GET, OPTIONS');
 header('Access-Control-Allow-Headers: Content-Type');
 
-// Handle preflight OPTIONS request
 if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     exit(0);
 }
 
-// Import PHPMailer classes into the global namespace
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
@@ -19,21 +16,20 @@ if(isset($_POST['name']) || isset($_POST['email'])){
     $email = $_POST['email'] ?? '';
     $phone = $_POST['phone'] ?? '';
     $company = $_POST['company'] ?? 'Not specified';
-    $subject = $_POST['subject'] ?? '';
-    $message = $_POST['message'] ?? '';
-    $serviceType = $_POST['serviceType'] ?? 'Not specified';
+    $service = $_POST['service'] ?? 'Not specified';
+    $capacity = $_POST['capacity'] ?? 'Not specified';
+    $location = $_POST['location'] ?? 'Not specified';
+    $timeline = $_POST['timeline'] ?? 'Not specified';
+    $description = $_POST['description'] ?? '';
 
-    // Load Composer's autoloader
     require 'PHPMailer/Exception.php';
     require 'PHPMailer/PHPMailer.php';
     require 'PHPMailer/SMTP.php';
 
-    // Create an instance; passing `true` enables exceptions
     $mail = new PHPMailer(true);
 
     try {
-        // Server settings
-        $mail->SMTPDebug = 0; // Disable debug output for production
+        $mail->SMTPDebug = 0;
         $mail->isSMTP();
         $mail->Host = 'smtp.hostinger.com';
         $mail->SMTPAuth = true;
@@ -42,19 +38,17 @@ if(isset($_POST['name']) || isset($_POST['email'])){
         $mail->SMTPSecure = 'ssl';
         $mail->Port = 465;
 
-        // Recipients
-        $mail->setFrom('info@powertonengineering.com', 'Powerton Engineering');
-        $mail->addAddress('powertoneng@gmail.com', 'Admin');
+        $mail->setFrom('info@powertonengineering.com', 'DLS Envirotech Quote Request');
+        $mail->addAddress('info.dlsenvirotech@gmail.com', 'DLS Envirotech Admin');
         $mail->addReplyTo($email, $name);
 
-        // Content
         $mail->isHTML(true);
-        $mail->Subject = "Contact Form Inquiry - " . $subject;
+        $mail->Subject = "Quote Request - " . $service;
         $mail->Body = "
         <table style='width: 100%; border-collapse: collapse; font-family: Arial, sans-serif;'>
         <tr>
-            <td colspan='2' style='padding: 15px; border: 1px solid #ccc; background: #1e3a8a; color: white; text-align: center;'>
-                <h2>New Contact Form Submission</h2>
+            <td colspan='2' style='padding: 15px; border: 1px solid #ccc; background: #0066cc; color: white; text-align: center;'>
+                <h2>New Quote Request</h2>
             </td>
         </tr>
         <tr>
@@ -74,20 +68,28 @@ if(isset($_POST['name']) || isset($_POST['email'])){
             <td style='padding: 10px; border: 1px solid #ccc;'>$company</td>
         </tr>
         <tr>
-            <td style='padding: 10px; border: 1px solid #ccc; background: #f5f5f5; font-weight: bold;'>Service Interest:</td>
-            <td style='padding: 10px; border: 1px solid #ccc;'>$serviceType</td>
+            <td style='padding: 10px; border: 1px solid #ccc; background: #f5f5f5; font-weight: bold;'>Service Type:</td>
+            <td style='padding: 10px; border: 1px solid #ccc;'>$service</td>
         </tr>
         <tr>
-            <td style='padding: 10px; border: 1px solid #ccc; background: #f5f5f5; font-weight: bold;'>Subject:</td>
-            <td style='padding: 10px; border: 1px solid #ccc;'>$subject</td>
+            <td style='padding: 10px; border: 1px solid #ccc; background: #f5f5f5; font-weight: bold;'>Capacity Required:</td>
+            <td style='padding: 10px; border: 1px solid #ccc;'>$capacity</td>
         </tr>
         <tr>
-            <td style='padding: 10px; border: 1px solid #ccc; background: #f5f5f5; font-weight: bold;'>Message:</td>
-            <td style='padding: 10px; border: 1px solid #ccc;'>$message</td>
+            <td style='padding: 10px; border: 1px solid #ccc; background: #f5f5f5; font-weight: bold;'>Location:</td>
+            <td style='padding: 10px; border: 1px solid #ccc;'>$location</td>
         </tr>
         <tr>
-            <td colspan='2' style='padding: 10px; border: 1px solid #ccc; background: #1e3a8a; color: white; text-align: center;'>
-                <strong>This e-mail was sent from the contact form on Powerton Engineering website.</strong><br>
+            <td style='padding: 10px; border: 1px solid #ccc; background: #f5f5f5; font-weight: bold;'>Timeline:</td>
+            <td style='padding: 10px; border: 1px solid #ccc;'>$timeline</td>
+        </tr>
+        <tr>
+            <td style='padding: 10px; border: 1px solid #ccc; background: #f5f5f5; font-weight: bold;'>Project Description:</td>
+            <td style='padding: 10px; border: 1px solid #ccc;'>$description</td>
+        </tr>
+        <tr>
+            <td colspan='2' style='padding: 10px; border: 1px solid #ccc; background: #0066cc; color: white; text-align: center;'>
+                <strong>This e-mail was sent from the quote request form on DLS Envirotech Corporation website.</strong><br>
                 <small>Submitted on: " . date('Y-m-d H:i:s') . "</small>
             </td>
         </tr>
@@ -95,18 +97,15 @@ if(isset($_POST['name']) || isset($_POST['email'])){
 
         $mail->send();
         
-        // Return JSON success response
         header('Content-Type: application/json');
-        echo json_encode(['success' => true, 'message' => 'Message sent successfully']);
+        echo json_encode(['success' => true, 'message' => 'Quote request sent successfully']);
         
     } catch (Exception $e) {
-        // Return JSON error response
         header('Content-Type: application/json');
         http_response_code(500);
-        echo json_encode(['success' => false, 'message' => 'Message could not be sent: ' . $mail->ErrorInfo]);
+        echo json_encode(['success' => false, 'message' => 'Quote request could not be sent: ' . $mail->ErrorInfo]);
     }
 } else {
-    // Return error for invalid request
     header('Content-Type: application/json');
     http_response_code(400);
     echo json_encode(['success' => false, 'message' => 'Invalid request']);
