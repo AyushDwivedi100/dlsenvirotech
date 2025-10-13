@@ -35,7 +35,7 @@ const PortfolioShowcase = () => {
             Project Portfolio & Case Studies
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto px-4">
-            Explore our successful implementations across 22 countries with
+            Explore our successful implementations across India with
             detailed technical specifications and performance metrics
           </p>
         </div>
