@@ -7,8 +7,7 @@ import {
   Image, 
   Users, 
   Mail, 
-  FileText, 
-  Newspaper 
+  FileText
 } from "lucide-react";
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
@@ -57,12 +56,6 @@ const Sitemap = () => {
       href: "/quote",
       icon: FileText,
       description: "Request a quote for your project requirements"
-    },
-    {
-      title: "News & Updates",
-      href: "/news",
-      icon: Newspaper,
-      description: "Latest company news and industry updates"
     }
   ];
 
@@ -137,7 +130,6 @@ const Sitemap = () => {
                 <li>• Gallery - Project photos and facilities</li>
                 <li>• Contact Us - Get in touch with our team</li>
                 <li>• Get Quote - Request project estimates</li>
-                <li>• News & Updates - Company announcements</li>
               </ul>
             </div>
           </div>

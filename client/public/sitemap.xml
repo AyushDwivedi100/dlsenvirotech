@@ -55,13 +55,6 @@
     <priority>0.8</priority>
   </url>
 
-  <url>
-    <loc>https://dlsenvirotech.com/news</loc>
-    <lastmod>2025-10-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
   <!-- Additional static pages -->
   <url>
     <loc>https://dlsenvirotech.com/sitemap</loc>

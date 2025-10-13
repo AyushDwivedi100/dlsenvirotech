@@ -12,7 +12,6 @@ import Gallery from "@/pages/gallery";
 import About from "@/pages/about";
 import Contact from "@/pages/contact";
 import Quote from "@/pages/quote";
-import NewsPage from "./pages/news";
 import Sitemap from "@/pages/sitemap";
 
 function Router() {
@@ -25,7 +24,6 @@ function Router() {
       <Route path="/about" component={About} />
       <Route path="/contact" component={Contact} />
       <Route path="/quote" component={Quote} />
-      <Route path="/news" component={NewsPage} />
       <Route path="/sitemap" component={Sitemap} />
       <Route component={NotFound} />
     </Switch>
