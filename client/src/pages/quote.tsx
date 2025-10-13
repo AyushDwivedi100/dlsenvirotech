@@ -115,9 +115,9 @@ export default function Quote() {
   return (
     <>
       <SEOHead
-        title="Get Free Quote for Water Treatment - STP, ETP Plants | DLS Envirotech"
-        description="Request FREE quote for water treatment solutions. Get competitive pricing for STP, ETP, RO plants & industrial wastewater systems. 24-hour response guaranteed! Call ☎️ +91-9568572005 or submit online form now."
-        keywords="water treatment quote India, STP plant cost, ETP price estimate, water treatment pricing, sewage plant quote, industrial water treatment cost, RO plant quotation India, free water treatment consultation"
+        title="Get Free Quote for Environmental Solutions - Water, Industrial & Waste Systems | DLS Envirotech"
+        description="Request FREE quote for environmental technology solutions. Get competitive pricing for water treatment, industrial systems, and waste management. 24-hour response guaranteed! Call ☎️ +91-9568572005 or submit online form now."
+        keywords="environmental solutions quote India, water treatment cost, industrial systems pricing, waste management quote, STP ETP quotation, environmental technology pricing India, free consultation"
         canonical="https://dlsenvirotech.com/quote"
         schema={combinedSchema}
       />

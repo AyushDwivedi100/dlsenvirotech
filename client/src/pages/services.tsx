@@ -24,38 +24,38 @@ const Services = () => {
   const faqSchema = createFAQSchema([
     {
       question:
-        "What types of water treatment services does DLS Envirotech provide?",
+        "What environmental solutions does DLS Envirotech provide?",
       answer:
-        "DLS Envirotech provides comprehensive water treatment services including Sewage Treatment Plants (STP), Effluent Treatment Plants (ETP), Reverse Osmosis (RO) systems, industrial wastewater treatment, zero liquid discharge (ZLD) systems, cooling tower water treatment, and complete turnkey solutions with installation and maintenance across India.",
+        "DLS Envirotech provides comprehensive environmental solutions including water treatment (STP, ETP, WTP, RO systems, FSTP), industrial systems (cooling towers, PSA oxygen plants, air pollution control, air towers), and waste management (solid waste management plants, material recovery facilities). We offer complete turnkey solutions with installation and maintenance across India.",
     },
     {
-      question: "How long does it take to install a water treatment plant?",
+      question: "How long does it take to install environmental systems?",
       answer:
-        "Installation time varies based on plant size and complexity. Small residential STPs typically take 2-4 weeks, while industrial ETP plants may require 3-6 months for complete installation. We provide detailed project timelines during consultation.",
-    },
-    {
-      question:
-        "Do you provide maintenance services for water treatment plants?",
-      answer:
-        "Yes, we offer comprehensive Annual Maintenance Contracts (AMC) and 24/7 support for all our water treatment systems. Our maintenance services include regular inspections, consumable replacement, performance optimization, and emergency repairs.",
-    },
-    {
-      question: "Which industries do you serve for water treatment solutions?",
-      answer:
-        "We serve diverse industries including pharmaceuticals, textiles, chemicals, food & beverage, hospitality, real estate, manufacturing, hospitals, educational institutions, IT parks, and municipal corporations across India.",
+        "Installation time varies based on system size and complexity. Small residential STPs typically take 2-4 weeks, while large industrial plants may require 3-6 months for complete installation. Industrial systems and waste management facilities are assessed individually. We provide detailed project timelines during consultation.",
     },
     {
       question:
-        "Are your water treatment plants compliant with environmental regulations?",
+        "Do you provide maintenance services for all your systems?",
       answer:
-        "Yes, all our water treatment solutions are designed to meet and exceed Indian environmental regulations including CPCB guidelines, state pollution control board norms, and ISO certifications. We ensure full compliance for discharge standards.",
+        "Yes, we offer comprehensive Annual Maintenance Contracts (AMC) and 24/7 support for all our environmental systems including water treatment plants, industrial solutions, and waste management facilities. Our maintenance services include regular inspections, consumable replacement, performance optimization, and emergency repairs.",
+    },
+    {
+      question: "Which industries do you serve?",
+      answer:
+        "We serve diverse industries including pharmaceuticals, textiles, chemicals, food & beverage, hospitality, real estate, manufacturing, hospitals, educational institutions, IT parks, power plants, and municipal corporations across India for water treatment, industrial systems, and waste management solutions.",
+    },
+    {
+      question:
+        "Are your systems compliant with environmental regulations?",
+      answer:
+        "Yes, all our environmental solutions are designed to meet and exceed Indian environmental regulations including CPCB guidelines, state pollution control board norms, and ISO certifications. We ensure full compliance for discharge standards, air quality norms, and waste management regulations.",
     },
   ]);
 
-  const stpServiceSchema = createServiceSchema(
-    "Sewage Treatment Plant (STP)",
-    "Professional STP installation and maintenance services for residential, commercial, and municipal applications with advanced biological treatment technology",
-    "Sewage Treatment",
+  const environmentalSolutionsSchema = createServiceSchema(
+    "Environmental Solutions",
+    "Comprehensive environmental technology solutions including water treatment (STP, ETP, WTP, RO, FSTP), industrial systems (cooling towers, PSA oxygen plants, air pollution control), and waste management (solid waste plants, material recovery facilities) for industrial and municipal applications",
+    "Environmental Services",
   );
 
   const combinedSchema = {
@@ -64,16 +64,16 @@ const Services = () => {
       organizationSchema,
       breadcrumbSchema,
       faqSchema,
-      stpServiceSchema,
+      environmentalSolutionsSchema,
     ],
   };
 
   return (
     <>
       <SEOHead
-        title="Water Treatment Services India - STP, ETP & Industrial Solutions | DLS Envirotech"
-        description="Leading water treatment services in India: STP, ETP, RO systems & industrial wastewater solutions. 2500+ successful installations, 15+ years expertise, ISO certified. Get free consultation & site visit today! ☎️ +91-9568572005"
-        keywords="water treatment services India, STP plant installation, ETP plant manufacturer, sewage treatment plant India, effluent treatment services, industrial water treatment, wastewater treatment company, RO plant installation India, zero liquid discharge India, biological wastewater treatment, water treatment AMC services"
+        title="Environmental Solutions India - Water Treatment, Industrial Systems & Waste Management | DLS Envirotech"
+        description="Leading environmental technology company in India: Water treatment (STP, ETP, RO), industrial solutions (cooling towers, PSA oxygen, air pollution control), waste management systems. 2500+ installations, 15+ years expertise, ISO certified. ☎️ +91-9568572005"
+        keywords="environmental solutions India, water treatment services, industrial solutions, waste management, STP plant, ETP plant, cooling towers, PSA oxygen plants, air pollution control, solid waste management, material recovery facilities, environmental technology company India"
         canonical="https://dlsenvirotech.com/services"
         schema={combinedSchema}
       />

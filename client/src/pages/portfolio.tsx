@@ -43,9 +43,9 @@ const Portfolio = () => {
   return (
     <>
       <SEOHead
-        title="Water Treatment Projects Portfolio India - 2500+ STP, ETP Case Studies"
-        description="Explore 2500+ successful water treatment projects across India. Detailed case studies of STP, ETP, RO plants, and industrial wastewater systems. View our proven track record in sewage and effluent treatment implementations nationwide."
-        keywords="water treatment projects India, STP projects, ETP case studies, wastewater treatment portfolio, sewage treatment installations, effluent treatment implementation, industrial water treatment projects, water treatment company track record, successful STP installations India"
+        title="Environmental Solutions Portfolio India - 2500+ Case Studies | DLS Envirotech"
+        description="Explore 2500+ successful environmental technology projects across India. Case studies of water treatment, industrial systems, and waste management implementations. View our proven track record in comprehensive environmental solutions nationwide."
+        keywords="environmental solutions portfolio India, water treatment projects, industrial systems case studies, waste management projects, STP installations, ETP implementations, environmental technology company India, successful projects portfolio"
         canonical="https://dlsenvirotech.com/portfolio"
         schema={combinedSchema}
       />
@@ -97,13 +97,13 @@ const Portfolio = () => {
                     We are currently updating our portfolio with detailed case
                     studies and project documentation of our actual
                     installations. Our real project gallery will be available
-                    here soon, showcasing our proven expertise in water
-                    treatment solutions across India.
+                    here soon, showcasing our proven expertise in environmental
+                    solutions including water treatment, industrial systems, and waste management across India.
                   </p>
                   <p className="text-sm sm:text-base text-muted-foreground mb-8">
                     In the meantime, feel free to contact us to learn more about
                     our successful installations and how we can help with your
-                    water treatment requirements.
+                    environmental technology requirements.
                   </p>
                   <Button size="lg" asChild>
                     <Link href="/contact" className="text-white">
@@ -120,11 +120,11 @@ const Portfolio = () => {
           <section className="py-20 bg-muted">
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
               <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-foreground mb-6">
-                Ready to Start Your Water Treatment Project?
+                Ready to Start Your Environmental Solutions Project?
               </h2>
               <p className="text-lg text-muted-foreground mb-8">
                 Join our growing list of satisfied clients with a proven track
-                record of successful water treatment implementations. Let's
+                record of successful environmental technology implementations. Let's
                 discuss your project requirements.
               </p>
               <Button size="lg" asChild>

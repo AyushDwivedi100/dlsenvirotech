@@ -33,7 +33,7 @@ const About = () => {
       year: "2009",
       title: "Company Founded",
       description:
-        "Started with a vision to provide innovative water treatment solutions",
+        "Started with a vision to provide innovative environmental solutions for water treatment, industrial systems, and waste management",
     },
     {
       year: "2012",
@@ -57,7 +57,7 @@ const About = () => {
       year: "2021",
       title: "Green Technology",
       description:
-        "Launched eco-friendly and energy-efficient treatment solutions",
+        "Launched eco-friendly and energy-efficient environmental solutions",
     },
     {
       year: "2024",
@@ -72,7 +72,7 @@ const About = () => {
       icon: Award,
       title: "Quality Excellence",
       description:
-        "Committed to delivering the highest quality water treatment solutions with rigorous testing and quality control.",
+        "Committed to delivering the highest quality environmental solutions including water treatment, industrial systems, and waste management with rigorous testing and quality control.",
     },
     {
       icon: Users,
@@ -90,16 +90,16 @@ const About = () => {
       icon: Zap,
       title: "Innovation",
       description:
-        "Continuously investing in R&D to develop cutting-edge treatment technologies and methodologies.",
+        "Continuously investing in R&D to develop cutting-edge environmental technologies and methodologies.",
     },
   ];
 
   return (
     <>
       <SEOHead
-        title="About DLS Envirotech - 15+ Years Leading Water Treatment Company India"
-        description="Learn about DLS Envirotech Corporation's 15+ years of expertise in water treatment technology. ISO certified company with 2500+ installations across India. Our journey from 2009 to becoming India's leading provider of STP, ETP, and industrial wastewater solutions."
-        keywords="about DLS Envirotech, water treatment company India, environmental technology expertise, ISO certified water treatment, company history, water treatment experience, leading STP ETP manufacturer, wastewater treatment expert"
+        title="About DLS Envirotech - 15+ Years Leading Environmental Solutions Company India"
+        description="Learn about DLS Envirotech Corporation's 15+ years of expertise in environmental technology. ISO certified company with 2500+ installations across India. Our journey from 2009 to becoming India's leading provider of water treatment, industrial systems, and waste management solutions."
+        keywords="about DLS Envirotech, environmental solutions company India, environmental technology expertise, ISO certified, company history, water treatment industrial waste management, leading environmental technology provider India"
         canonical="https://dlsenvirotech.com/about"
         schema={combinedSchema}
       />
