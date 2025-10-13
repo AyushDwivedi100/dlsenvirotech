@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Menu } from "lucide-react";
+import { Menu, Phone, Mail, MapPin } from "lucide-react";
 import dlsLogo from "@assets/dls-envirotech-logo.png";
 
 const Header = () => {
@@ -95,6 +95,47 @@ const Header = () => {
                     Get Quote
                   </Link>
                 </Button>
+
+                {/* Contact Section */}
+                <div className="mt-8 pt-6 border-t border-border">
+                  <h3 className="text-sm font-semibold text-foreground/60 mb-4 uppercase tracking-wider">
+                    Contact Us
+                  </h3>
+                  <div className="space-y-3">
+                    <a
+                      href="tel:+919568572005"
+                      className="flex items-center gap-3 text-foreground/80 hover:text-primary transition-colors group"
+                      data-testid="link-mobile-phone"
+                    >
+                      <div className="bg-primary/10 p-2 rounded-lg group-hover:bg-primary/20 transition-colors">
+                        <Phone className="h-4 w-4 text-primary" />
+                      </div>
+                      <span className="text-sm">+91 9568572005</span>
+                    </a>
+                    <a
+                      href="mailto:info.dlsenvirotech@gmail.com"
+                      className="flex items-center gap-3 text-foreground/80 hover:text-primary transition-colors group"
+                      data-testid="link-mobile-email"
+                    >
+                      <div className="bg-primary/10 p-2 rounded-lg group-hover:bg-primary/20 transition-colors">
+                        <Mail className="h-4 w-4 text-primary" />
+                      </div>
+                      <span className="text-sm">info.dlsenvirotech@gmail.com</span>
+                    </a>
+                    <a
+                      href="https://www.google.com/maps/search/?api=1&query=F-25,+Sector-6,+Noida+201301"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-3 text-foreground/80 hover:text-primary transition-colors group"
+                      data-testid="link-mobile-address"
+                    >
+                      <div className="bg-primary/10 p-2 rounded-lg group-hover:bg-primary/20 transition-colors">
+                        <MapPin className="h-4 w-4 text-primary" />
+                      </div>
+                      <span className="text-sm">F-25, Sector-6, Noida 201301 (U.P.)</span>
+                    </a>
+                  </div>
+                </div>
               </div>
             </SheetContent>
           </Sheet>
