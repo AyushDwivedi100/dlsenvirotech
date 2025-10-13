@@ -32,7 +32,6 @@ export default function Quote() {
     service: "",
     capacity: "",
     location: "",
-    timeline: "",
     description: "",
   });
 
@@ -68,7 +67,6 @@ export default function Quote() {
           service: "",
           capacity: "",
           location: "",
-          timeline: "",
           description: "",
         });
       } else {
@@ -238,37 +236,12 @@ export default function Quote() {
                       />
                     </div>
 
-                    <div className="grid md:grid-cols-2 gap-4">
-                      <Input
-                        name="location"
-                        placeholder="Project Location"
-                        value={formData.location}
-                        onChange={handleChange}
-                      />
-                      <Select
-                        onValueChange={(value) =>
-                          handleSelectChange("timeline", value)
-                        }
-                      >
-                        <SelectTrigger>
-                          <SelectValue placeholder="Project Timeline" />
-                        </SelectTrigger>
-                        <SelectContent>
-                          <SelectItem value="immediate">
-                            Immediate (1-2 weeks)
-                          </SelectItem>
-                          <SelectItem value="short">
-                            Short-term (1-3 months)
-                          </SelectItem>
-                          <SelectItem value="medium">
-                            Medium-term (3-6 months)
-                          </SelectItem>
-                          <SelectItem value="long">
-                            Long-term (6+ months)
-                          </SelectItem>
-                        </SelectContent>
-                      </Select>
-                    </div>
+                    <Input
+                      name="location"
+                      placeholder="Project Location"
+                      value={formData.location}
+                      onChange={handleChange}
+                    />
 
                     <Textarea
                       name="description"
