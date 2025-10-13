@@ -2,11 +2,28 @@
 
 ## Overview
 
-This is a full-stack web application for DLS Envirotech Corporation, a water treatment solutions company. The application serves as a comprehensive business website showcasing their services, portfolio, and providing client interaction capabilities through consultation requests and an AI chatbot.
+This is a React-based static website for DLS Envirotech Corporation, a water treatment solutions company. The application showcases their services, portfolio, and provides consultation request capabilities. **Configured for Hostinger Premium Web Hosting (static files only).**
 
 ## Recent Changes (October 2025)
 
-✓ **Content Authenticity & India-Focus Update (Latest)** - Updated to reflect accurate business operations:
+✓ **Automated Hostinger Deployment System (Latest)** - Fully automated build and deployment preparation:
+  - Created automated build script (`client/scripts/prebuild.js`) that runs before every build
+  - Domain configuration via `client/.env.production` file
+  - Automatic domain replacement in sitemap.xml, sitemap.txt, and robots.txt
+  - Automatic date updates in sitemap files
+  - Complete `.htaccess` Apache configuration for:
+    - HTTPS forcing
+    - React Router SPA support (all routes work)
+    - Gzip compression for performance
+    - Browser caching headers
+    - Security headers
+  - PWA support with manifest.json
+  - All SEO files automatically generated (sitemap.xml, sitemap.txt, robots.txt)
+  - Simple deployment: `cd client && npm run build` then upload `dist/` to Hostinger
+  - Created QUICK-DEPLOY.md for simple deployment instructions
+  - Created comprehensive DEPLOYMENT.md with detailed hosting guide
+
+✓ **Content Authenticity & India-Focus Update** - Updated to reflect accurate business operations:
   - Replaced duplicate/fake testimonials with unique, realistic reviews from diverse Indian clients
   - Changed international testimonial (Michael Chen, Singapore) to Indian client (Suresh Patel, Gujarat)
   - Removed all placeholder portfolio projects and gallery images
@@ -89,13 +106,13 @@ Preferred communication style: Simple, everyday language.
 
 ## System Architecture
 
-The application follows a modern full-stack architecture with clear separation between client and server concerns:
+**IMPORTANT:** This is now a **static website only** - configured for Hostinger Premium Web Hosting which does NOT support Node.js backends.
 
 - **Frontend**: React SPA with TypeScript, built using Vite
-- **Backend**: Express.js REST API with TypeScript
-- **Database**: PostgreSQL with Drizzle ORM
+- **Hosting**: Static files only (HTML, CSS, JS)
+- **Routing**: Client-side routing with Wouter (handled by `.htaccess`)
 - **Styling**: Tailwind CSS with shadcn/ui components
-- **Deployment**: Built for production with static file serving
+- **Deployment**: Automated build to static files for Hostinger
 
 ## Key Components
 
@@ -107,87 +124,81 @@ The application follows a modern full-stack architecture with clear separation b
 - **UI Components**: shadcn/ui component library with Radix UI primitives
 - **Styling**: Tailwind CSS with custom industrial color scheme
 
-### Backend Architecture
-- **Runtime**: Node.js with Express.js framework
-- **Language**: TypeScript with ES modules
-- **API**: RESTful endpoints for consultations and chat functionality
-- **Storage**: In-memory storage implementation with interface for future database integration
-- **Development**: Hot reload with Vite middleware integration
-
-### Database Schema
-- **Users**: Authentication system (id, username, password)
-- **Consultations**: Client consultation requests with contact info and service details
-- **Chat Messages**: AI chatbot conversation history with session tracking
-
 ### UI/UX Design
-- **Theme**: Industrial/professional with blue and green accent colors
+- **Theme**: Industrial/professional with light blue accent color
 - **Components**: Comprehensive shadcn/ui component set including forms, cards, dialogs
 - **Responsive**: Mobile-first design with Tailwind breakpoints
 - **Accessibility**: ARIA labels and semantic HTML structure
-
-## Data Flow
-
-### Client Interaction Flow
-1. User visits website and browses services/portfolio
-2. User can request consultation via contact form
-3. Form data sent to `/api/consultations` endpoint
-4. Consultation stored and user receives confirmation
-5. Optional: User interacts with chatbot for immediate assistance
-
-### Chat System Flow
-1. User opens chatbot widget
-2. Messages sent to `/api/chat` endpoint with session ID
-3. Simple response generation (placeholder for AI integration)
-4. Chat history maintained per session
-
-### Content Management
-- Static content defined in constants files
-- Services, portfolio projects, and testimonials configured as data objects
-- Dynamic rendering of cards and sections based on data
-
-## External Dependencies
-
-### Frontend Dependencies
-- **React Ecosystem**: React, React DOM, React Query for state management
-- **UI Components**: Radix UI primitives, Lucide React icons
-- **Forms**: React Hook Form with Zod validation
-- **Routing**: Wouter for client-side navigation
-- **Styling**: Tailwind CSS, class-variance-authority for component variants
-
-### Backend Dependencies
-- **Express.js**: Web framework with middleware support
-- **Database**: Drizzle ORM with PostgreSQL adapter (Neon serverless)
-- **Validation**: Zod schemas for type-safe data validation
-- **Development**: tsx for TypeScript execution, esbuild for production builds
-
-### Build Tools
-- **Vite**: Frontend build tool with React plugin
-- **TypeScript**: Type checking and compilation
-- **PostCSS**: CSS processing with Tailwind
-- **ESBuild**: Fast JavaScript bundling for production
+- **PWA**: Progressive Web App support with manifest.json
 
 ## Deployment Strategy
 
-### Development Environment
-- Vite dev server for frontend with HMR
-- Express server with TypeScript execution via tsx
-- In-memory storage for rapid development iteration
-- Replit-specific tooling and error overlay
+### Automated Build Process
 
-### Production Build
-1. **Frontend**: Vite builds optimized static assets to `dist/public`
-2. **Backend**: ESBuild bundles server code to `dist/index.js`
-3. **Database**: Drizzle migrations applied via `db:push` command
-4. **Serving**: Express serves both API routes and static frontend files
+1. **Configure Domain** (one-time):
+   - Edit `client/.env.production`
+   - Set `VITE_DOMAIN=yourdomain.com`
+
+2. **Build for Production**:
+   ```bash
+   cd client
+   npm run build
+   ```
+   
+   This automatically:
+   - Replaces domain in all SEO files
+   - Updates sitemap dates
+   - Generates optimized static files
+   - Creates production-ready `dist/` folder
+
+3. **Deploy to Hostinger**:
+   - Upload ALL files from `client/dist/` to `/public_html/`
+   - Via File Manager, FTP, or Git auto-deployment
+
+### Generated Files for Hostinger
+
+The `client/dist/` folder contains:
+- `index.html` - Main HTML file
+- `.htaccess` - Apache configuration (HTTPS, SPA routing, caching, compression)
+- `manifest.json` - PWA manifest
+- `robots.txt` - Search engine crawling rules (with your domain)
+- `sitemap.xml` - XML sitemap (with your domain and current date)
+- `sitemap.txt` - Text sitemap (with your domain)
+- `assets/` - Optimized CSS, JavaScript, and images
+
+### Build Automation Features
+
+- **Domain Replacement**: Automatically replaces placeholder domain with actual domain from `.env.production`
+- **Date Updates**: Automatically updates sitemap `<lastmod>` tags with current date
+- **Pre-build Script**: Runs before every build (`client/scripts/prebuild.js`)
+- **SEO Optimization**: All SEO files generated with correct domain and dates
+- **Apache Configuration**: `.htaccess` handles all SPA routing, HTTPS, caching, compression
 
 ### Environment Configuration
-- Database URL configured via environment variables
-- Separate development and production configurations
-- Static asset serving handled by Express in production
-- Error handling with structured JSON responses
+- Domain configured in `client/.env.production`
+- Automatic prebuild script handles all file updates
+- No manual editing of sitemaps or robots.txt required
+- Static file serving via Apache on Hostinger
 
 ### Scalability Considerations
-- Interface-based storage allows easy migration from in-memory to database
-- Modular component architecture supports feature expansion
-- RESTful API design enables mobile app integration
-- Session-based chat system ready for multi-user scaling
+- Static website - no server-side dependencies
+- All routing handled client-side via React Router (Wouter)
+- `.htaccess` ensures all routes load correctly
+- PWA-ready for offline capabilities and app-like experience
+- Optimized build with code splitting and lazy loading
+
+## Deployment Documentation
+
+- **README.md** - Quick overview and project information
+- **QUICK-DEPLOY.md** - Simple 3-step deployment guide (recommended)
+- **DEPLOYMENT.md** - Comprehensive deployment instructions with troubleshooting
+- **client/.env.production** - Domain configuration file
+- **client/scripts/prebuild.js** - Automated build script for domain replacement
+
+## Important Notes
+
+- This is a **static website** - no Node.js backend required for production
+- Backend code in `server/` directory is for development only (not used in production)
+- Hostinger Premium only supports static files (HTML, CSS, JS)
+- All API calls would need to be external services or removed for production
+- Contact form currently uses mock API (replace with external service like Formspree, EmailJS, or similar)
