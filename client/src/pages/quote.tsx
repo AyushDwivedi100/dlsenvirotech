@@ -134,7 +134,7 @@ export default function Quote() {
                   Request a Quote
                 </h1>
                 <p className="text-xl text-muted-foreground">
-                  Get a customized solution for your water treatment needs. Fill
+                  Get a customized solution for your environmental technology needs. Fill
                   out the form below and we'll provide you with a detailed quote
                   within 24 hours.
                 </p>

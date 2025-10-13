@@ -115,9 +115,9 @@ const About = () => {
                 About DLS Envirotech Corporation
               </h1>
               <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-6 md:mb-8 px-4">
-                With 15+ years of excellence in water treatment technology, we
+                With 15+ years of excellence in environmental technology, we
                 have established ourselves as a trusted partner for
-                environmental solutions across India.
+                comprehensive water treatment, industrial, and waste management solutions across India.
               </p>
               <Button size="lg" asChild>
                 <Link href="/contact" className="text-white">

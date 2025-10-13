@@ -61,9 +61,8 @@ const Portfolio = () => {
                 Project Portfolio & Case Studies
               </h1>
               <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-6 md:mb-8">
-                Explore our successful water treatment implementations across
-                India with proven expertise in STP, ETP, and industrial
-                wastewater solutions.
+                Explore our successful environmental technology implementations across
+                India including water treatment, industrial solutions, and waste management systems.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-8 max-w-xl mx-auto">
                 <div className="text-center p-4 bg-background/50 rounded-lg">
