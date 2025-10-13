@@ -44,13 +44,15 @@ const Footer = () => {
                 href="#"
                 className="bg-industrial-800 p-2.5 sm:p-3 rounded-lg hover:bg-linkedin transition-colors"
                 aria-label="LinkedIn"
+                data-testid="link-linkedin"
               >
                 <Linkedin className="h-4 w-4 sm:h-5 sm:w-5" />
               </a>
               <a
                 href="#"
-                className="bg-industrial-800 p-2.5 sm:p-3 rounded-lg hover:bg-black transition-colors"
-                aria-label="Twitter"
+                className="bg-industrial-800 p-2.5 sm:p-3 rounded-lg hover:bg-primary transition-colors"
+                aria-label="X (Twitter)"
+                data-testid="link-x-twitter"
               >
                 <X className="h-4 w-4 sm:h-5 sm:w-5" />
               </a>
@@ -58,6 +60,7 @@ const Footer = () => {
                 href="#"
                 className="bg-industrial-800 p-2.5 sm:p-3 rounded-lg hover:bg-primary transition-colors"
                 aria-label="Facebook"
+                data-testid="link-facebook"
               >
                 <Facebook className="h-4 w-4 sm:h-5 sm:w-5" />
               </a>
@@ -65,6 +68,7 @@ const Footer = () => {
                 href="#"
                 className="bg-industrial-800 p-2.5 sm:p-3 rounded-lg hover:bg-youtube transition-colors"
                 aria-label="YouTube"
+                data-testid="link-youtube"
               >
                 <Youtube className="h-4 w-4 sm:h-5 sm:w-5" />
               </a>

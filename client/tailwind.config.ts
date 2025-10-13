@@ -61,6 +61,20 @@ export default {
           border: "var(--sidebar-border)",
           ring: "var(--sidebar-ring)",
         },
+        linkedin: "hsl(200, 100%, 35%)",
+        youtube: "hsl(0, 100%, 50%)",
+        industrial: {
+          50: "hsl(210, 40%, 98%)",
+          100: "hsl(210, 40%, 96%)",
+          200: "hsl(214, 32%, 91%)",
+          300: "hsl(213, 27%, 84%)",
+          400: "hsl(215, 20%, 65%)",
+          500: "hsl(215, 16%, 46%)",
+          600: "hsl(215, 19%, 35%)",
+          700: "hsl(215, 25%, 27%)",
+          800: "hsl(217, 33%, 17%)",
+          900: "hsl(222, 84%, 4%)",
+        },
       },
       keyframes: {
         "accordion-down": {
