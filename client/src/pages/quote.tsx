@@ -46,8 +46,8 @@ export default function Quote() {
         form.append(key, value);
       });
 
-      const response = await fetch('/quote-handler.php', {
-        method: 'POST',
+      const response = await fetch("/quote-handler.php", {
+        method: "POST",
         body: form,
       });
 
@@ -197,6 +197,30 @@ export default function Quote() {
                           </SelectItem>
                           <SelectItem value="wtp">
                             Water Treatment Plant
+                          </SelectItem>
+                          <SelectItem value="industrial-ro">
+                            Industrial RO Plant
+                          </SelectItem>
+                          <SelectItem value="cooling-tower">
+                            Water Cooling Tower
+                          </SelectItem>
+                          <SelectItem value="fstp">
+                            Faecal Sludge Treatment Plant
+                          </SelectItem>
+                          <SelectItem value="mrf">
+                            Material Recovery Facility
+                          </SelectItem>
+                          <SelectItem value="swmp">
+                            Solid Waste Management Plant
+                          </SelectItem>
+                          <SelectItem value="oxygen-plant">
+                            PSA Oxygen Plant
+                          </SelectItem>
+                          <SelectItem value="air-pollution">
+                            Industrial Air Pollution Solutions
+                          </SelectItem>
+                          <SelectItem value="air-tower">
+                            Air Tower
                           </SelectItem>
                           <SelectItem value="maintenance">
                             Maintenance Services

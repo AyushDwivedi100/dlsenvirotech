@@ -59,7 +59,9 @@ const Header = () => {
               </Link>
             ))}
             <Button asChild size="sm" className="text-base px-4">
-              <Link href="/quote">Get Quote</Link>
+              <Link href="/quote" className="text-white">
+                Get Quote
+              </Link>
             </Button>
           </div>
 
@@ -120,7 +122,9 @@ const Header = () => {
                       <div className="bg-primary/10 p-2 rounded-lg group-hover:bg-primary/20 transition-colors">
                         <Mail className="h-4 w-4 text-primary" />
                       </div>
-                      <span className="text-sm">info.dlsenvirotech@gmail.com</span>
+                      <span className="text-sm">
+                        info.dlsenvirotech@gmail.com
+                      </span>
                     </a>
                     <a
                       href="https://maps.app.goo.gl/WyJmtqb2RpRi7Wrq6"
@@ -132,7 +136,9 @@ const Header = () => {
                       <div className="bg-primary/10 p-2 rounded-lg group-hover:bg-primary/20 transition-colors">
                         <MapPin className="h-4 w-4 text-primary" />
                       </div>
-                      <span className="text-sm">F-25, Sector-6, Noida 201301 (U.P.)</span>
+                      <span className="text-sm">
+                        F-25, Sector-6, Noida 201301 (U.P.)
+                      </span>
                     </a>
                   </div>
                 </div>
