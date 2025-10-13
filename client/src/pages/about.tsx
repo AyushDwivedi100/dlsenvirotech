@@ -37,9 +37,9 @@ const About = () => {
     },
     {
       year: "2012",
-      title: "First International Project",
+      title: "Pan-India Expansion",
       description:
-        "Expanded operations beyond India with our first overseas installation",
+        "Expanded operations nationwide with successful installations across multiple Indian states",
     },
     {
       year: "2015",
@@ -61,9 +61,9 @@ const About = () => {
     },
     {
       year: "2024",
-      title: "Global Presence",
+      title: "Industry Leadership",
       description:
-        "Serving clients across 22 countries with 2500+ installations",
+        "Serving clients across India with 2500+ successful installations and nationwide service network",
     },
   ];
 
@@ -98,7 +98,7 @@ const About = () => {
     <>
       <SEOHead
         title="About DLS Envirotech - 15+ Years Leading Water Treatment Company India"
-        description="Learn about DLS Envirotech Corporation's 15+ years of expertise in water treatment technology. ISO certified company with 2500+ installations across 22 countries. Our journey from 2009 to becoming a global leader in STP, ETP, and industrial wastewater solutions."
+        description="Learn about DLS Envirotech Corporation's 15+ years of expertise in water treatment technology. ISO certified company with 2500+ installations across India. Our journey from 2009 to becoming India's leading provider of STP, ETP, and industrial wastewater solutions."
         keywords="about DLS Envirotech, water treatment company India, environmental technology expertise, ISO certified water treatment, company history, water treatment experience, leading STP ETP manufacturer, wastewater treatment expert"
         canonical="https://dlsenvirotech.com/about"
         schema={combinedSchema}
@@ -114,10 +114,10 @@ const About = () => {
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4 md:mb-6">
                 About DLS Envirotech Corporation
               </h1>
-              <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-                With over 10 years of excellence in water treatment technology,
+              <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-6 md:mb-8 px-4">
+                With 15+ years of excellence in water treatment technology,
                 we have established ourselves as a trusted partner for
-                environmental solutions worldwide.
+                environmental solutions across India.
               </p>
               <Button size="lg" asChild>
                 <Link href="/contact" className="text-white">

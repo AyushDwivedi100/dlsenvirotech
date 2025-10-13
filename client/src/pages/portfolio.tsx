@@ -43,9 +43,9 @@ const Portfolio = () => {
   return (
     <>
       <SEOHead
-        title="Water Treatment Projects Portfolio - 2500+ STP, ETP Case Studies & Installations"
-        description="Explore 2500+ successful water treatment projects across 22 countries. Detailed case studies of STP, ETP, RO plants, and industrial wastewater systems. View our proven track record in sewage and effluent treatment implementations."
-        keywords="water treatment projects, STP projects, ETP case studies, wastewater treatment portfolio, sewage treatment installations, effluent treatment implementation, industrial water treatment projects, water treatment company track record, successful STP installations"
+        title="Water Treatment Projects Portfolio India - 2500+ STP, ETP Case Studies"
+        description="Explore 2500+ successful water treatment projects across India. Detailed case studies of STP, ETP, RO plants, and industrial wastewater systems. View our proven track record in sewage and effluent treatment implementations nationwide."
+        keywords="water treatment projects India, STP projects, ETP case studies, wastewater treatment portfolio, sewage treatment installations, effluent treatment implementation, industrial water treatment projects, water treatment company track record, successful STP installations India"
         canonical="https://dlsenvirotech.com/portfolio"
         schema={combinedSchema}
       />
