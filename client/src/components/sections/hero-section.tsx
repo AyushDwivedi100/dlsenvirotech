@@ -27,18 +27,14 @@ const HeroSection = () => {
           </Badge>
 
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-foreground mb-3 sm:mb-4 md:mb-5 lg:mb-6 leading-tight">
-            Professional STP, ETP & Industrial Water Treatment
+            Comprehensive Environmental Solutions
             <span className="text-primary block mt-1 sm:mt-2">
-              Solutions in India
+              for Industry & Municipalities in India
             </span>
           </h1>
 
           <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground mb-5 sm:mb-6 md:mb-7 lg:mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0">
-            Leading water treatment company in India specializing in Sewage
-            Treatment Plants (STP), Effluent Treatment Plants (ETP), RO systems,
-            and industrial wastewater solutions. ISO certified with proven
-            expertise in environmental technology for all municipal and
-            industrial applications across India.
+            Leading environmental technology company in India specializing in water treatment (STP, ETP, WTP, RO systems), industrial solutions (cooling towers, PSA oxygen plants, air pollution control), and waste management systems. ISO certified with proven expertise for all municipal and industrial applications across India.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center lg:justify-start">

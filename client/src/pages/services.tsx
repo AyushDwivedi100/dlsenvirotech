@@ -23,36 +23,49 @@ const Services = () => {
 
   const faqSchema = createFAQSchema([
     {
-      question: "What types of water treatment services does DLS Envirotech provide?",
-      answer: "DLS Envirotech provides comprehensive water treatment services including Sewage Treatment Plants (STP), Effluent Treatment Plants (ETP), Reverse Osmosis (RO) systems, industrial wastewater treatment, zero liquid discharge (ZLD) systems, cooling tower water treatment, and complete turnkey solutions with installation and maintenance across India."
+      question:
+        "What types of water treatment services does DLS Envirotech provide?",
+      answer:
+        "DLS Envirotech provides comprehensive water treatment services including Sewage Treatment Plants (STP), Effluent Treatment Plants (ETP), Reverse Osmosis (RO) systems, industrial wastewater treatment, zero liquid discharge (ZLD) systems, cooling tower water treatment, and complete turnkey solutions with installation and maintenance across India.",
     },
     {
       question: "How long does it take to install a water treatment plant?",
-      answer: "Installation time varies based on plant size and complexity. Small residential STPs typically take 2-4 weeks, while industrial ETP plants may require 3-6 months for complete installation. We provide detailed project timelines during consultation."
+      answer:
+        "Installation time varies based on plant size and complexity. Small residential STPs typically take 2-4 weeks, while industrial ETP plants may require 3-6 months for complete installation. We provide detailed project timelines during consultation.",
     },
     {
-      question: "Do you provide maintenance services for water treatment plants?",
-      answer: "Yes, we offer comprehensive Annual Maintenance Contracts (AMC) and 24/7 support for all our water treatment systems. Our maintenance services include regular inspections, consumable replacement, performance optimization, and emergency repairs."
+      question:
+        "Do you provide maintenance services for water treatment plants?",
+      answer:
+        "Yes, we offer comprehensive Annual Maintenance Contracts (AMC) and 24/7 support for all our water treatment systems. Our maintenance services include regular inspections, consumable replacement, performance optimization, and emergency repairs.",
     },
     {
       question: "Which industries do you serve for water treatment solutions?",
-      answer: "We serve diverse industries including pharmaceuticals, textiles, chemicals, food & beverage, hospitality, real estate, manufacturing, hospitals, educational institutions, IT parks, and municipal corporations across India."
+      answer:
+        "We serve diverse industries including pharmaceuticals, textiles, chemicals, food & beverage, hospitality, real estate, manufacturing, hospitals, educational institutions, IT parks, and municipal corporations across India.",
     },
     {
-      question: "Are your water treatment plants compliant with environmental regulations?",
-      answer: "Yes, all our water treatment solutions are designed to meet and exceed Indian environmental regulations including CPCB guidelines, state pollution control board norms, and ISO certifications. We ensure full compliance for discharge standards."
-    }
+      question:
+        "Are your water treatment plants compliant with environmental regulations?",
+      answer:
+        "Yes, all our water treatment solutions are designed to meet and exceed Indian environmental regulations including CPCB guidelines, state pollution control board norms, and ISO certifications. We ensure full compliance for discharge standards.",
+    },
   ]);
 
   const stpServiceSchema = createServiceSchema(
     "Sewage Treatment Plant (STP)",
     "Professional STP installation and maintenance services for residential, commercial, and municipal applications with advanced biological treatment technology",
-    "Sewage Treatment"
+    "Sewage Treatment",
   );
 
   const combinedSchema = {
     "@context": "https://schema.org",
-    "@graph": [organizationSchema, breadcrumbSchema, faqSchema, stpServiceSchema],
+    "@graph": [
+      organizationSchema,
+      breadcrumbSchema,
+      faqSchema,
+      stpServiceSchema,
+    ],
   };
 
   return (
@@ -73,12 +86,10 @@ const Services = () => {
           <section className="bg-gradient-to-br from-background to-muted py-12 md:py-16 lg:py-20">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4 md:mb-6">
-                Professional Water Treatment Services
+                Comprehensive Environmental Solutions
               </h1>
               <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-6 md:mb-8">
-                Comprehensive environmental technology solutions designed to
-                meet the highest standards of water treatment for industrial and
-                municipal applications.
+                Advanced water treatment, industrial solutions, and waste management systems designed to meet the highest environmental standards for industrial and municipal applications.
               </p>
               <Button size="lg" className="w-full sm:w-auto" asChild>
                 <Link href="/contact" className="text-white">
@@ -106,7 +117,7 @@ const Services = () => {
           <section className="py-12 md:py-16 lg:py-20 bg-muted">
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
               <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-4 md:mb-6">
-                Need a Custom Water Treatment Solution?
+                Need a Custom Solution?
               </h2>
               <p className="text-base sm:text-lg text-muted-foreground mb-6 md:mb-8">
                 Our expert engineers can design and implement the perfect water

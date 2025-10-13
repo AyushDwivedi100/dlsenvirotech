@@ -115,8 +115,8 @@ const About = () => {
                 About DLS Envirotech Corporation
               </h1>
               <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-6 md:mb-8 px-4">
-                With 15+ years of excellence in water treatment technology,
-                we have established ourselves as a trusted partner for
+                With 15+ years of excellence in water treatment technology, we
+                have established ourselves as a trusted partner for
                 environmental solutions across India.
               </p>
               <Button size="lg" asChild>
@@ -165,9 +165,6 @@ const About = () => {
             </div>
           </section>
 
-          {/* Timeline */}
-          <Timeline milestones={milestones} />
-
           {/* Testimonials */}
           <TestimonialsSection />
 
@@ -187,7 +184,12 @@ const About = () => {
                     Get Started Today
                   </Link>
                 </Button>
-                <Button variant="outline" size="lg" className="w-full sm:w-auto" asChild>
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="w-full sm:w-auto"
+                  asChild
+                >
                   <Link href="/portfolio">View Our Work</Link>
                 </Button>
               </div>

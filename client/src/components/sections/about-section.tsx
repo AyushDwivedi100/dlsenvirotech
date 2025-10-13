@@ -27,13 +27,13 @@ const AboutSection = () => {
               </h2>
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-6">
                 DLS Envirotech Corporation has established itself as a trusted
-                leader in water treatment technology, delivering innovative
-                solutions that protect the environment while ensuring regulatory
+                leader in environmental technology, delivering innovative
+                water treatment, industrial, and waste management solutions that protect the environment while ensuring regulatory
                 compliance.
               </p>
               <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
                 Our comprehensive approach combines cutting-edge technology with
-                proven methodologies to create sustainable water treatment
+                proven methodologies to create sustainable environmental
                 solutions that meet the evolving needs of industries and
                 municipalities across India.
               </p>
