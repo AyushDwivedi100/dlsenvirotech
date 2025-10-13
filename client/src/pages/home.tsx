@@ -34,9 +34,9 @@ const Home = () => {
   return (
     <>
       <SEOHead
-        title="Best Water Treatment Company India - STP, ETP & Industrial Wastewater Solutions"
-        description="Leading water treatment company in India specializing in STP, ETP, RO plants & industrial wastewater treatment. 2500+ installations across 22 countries. ISO certified. Get free consultation & quote today!"
-        keywords="water treatment company India, STP plant manufacturer, ETP plant manufacturer, sewage treatment plant, effluent treatment plant, industrial water treatment, wastewater treatment company, RO plant installation, zero liquid discharge, biological wastewater treatment, water purification system, best water treatment company"
+        title="Best Water Treatment Company India - STP, ETP & Industrial Solutions | DLS Envirotech"
+        description="#1 Water Treatment Company in India with 2500+ installations & 15+ years expertise. STP, ETP, RO plants & industrial wastewater solutions. ISO certified. Get FREE consultation & site visit! Call ☎️ +91-9568572005 today!"
+        keywords="best water treatment company India, STP plant manufacturer India, ETP plant installation, sewage treatment plant India, effluent treatment plant, industrial water treatment India, wastewater treatment company, RO plant supplier, zero liquid discharge ZLD, biological wastewater treatment, water purification India, top water treatment company"
         canonical="https://dlsenvirotech.com/"
         schema={combinedSchema}
       />

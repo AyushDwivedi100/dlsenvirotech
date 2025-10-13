@@ -59,6 +59,32 @@ const Contact = () => {
 
           {/* Contact Section */}
           <ContactSection />
+
+          {/* Map Section */}
+          <section className="py-12 sm:py-14 md:py-16 lg:py-20 bg-background">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="text-center mb-8 sm:mb-10 md:mb-12">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">
+                  Visit Our Office
+                </h2>
+                <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-2xl mx-auto px-4">
+                  Find us on the map and visit our office for a personal consultation.
+                </p>
+              </div>
+              <div className="max-w-6xl mx-auto">
+                <div className="relative w-full overflow-hidden rounded-lg shadow-lg" style={{ paddingBottom: '56.25%' }}>
+                  <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d218.95132058230632!2d77.3212035!3d28.5931423!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5a2e27d47d5%3A0x1c361a852fb0f86d!2sDLS%20ENVIROTECH%20CORPORATION%20PVT%20LTD!5e0!3m2!1sen!2sin!4v1760335331290!5m2!1sen!2sin"
+                    className="absolute top-0 left-0 w-full h-full border-0"
+                    allowFullScreen
+                    loading="lazy" 
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="DLS Envirotech Corporation Office Location"
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
         </main>
         <Footer />
       </div>

@@ -19,7 +19,7 @@ const TopBar = () => {
           <div className="flex items-center gap-4">
             <ThemeToggle />
             <a 
-              href="https://maps.google.com/?q=F-25,+Sector-6,+Noida+201301+(U.P.)" 
+              href="https://maps.app.goo.gl/WyJmtqb2RpRi7Wrq6" 
               target="_blank" 
               rel="noopener noreferrer"
               className="flex items-center gap-2 hover:text-white/90 transition-colors" 

@@ -4,25 +4,34 @@ import Footer from "@/components/layout/footer";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { Phone, ZoomIn } from "lucide-react";
+import {
+  SEOHead,
+  organizationSchema,
+  createBreadcrumbSchema,
+} from "@/components/seo/seo-head";
 
 const Gallery = () => {
   const galleryImages: any[] = [];
 
+  const breadcrumbSchema = createBreadcrumbSchema([
+    { name: "Home", url: "https://dlsenvirotech.com/" },
+    { name: "Gallery", url: "https://dlsenvirotech.com/gallery" },
+  ]);
+
+  const combinedSchema = {
+    "@context": "https://schema.org",
+    "@graph": [organizationSchema, breadcrumbSchema],
+  };
+
   return (
     <>
-      <Helmet>
-        <title>
-          Project Gallery - Water Treatment Installations | DLS Envirotech
-        </title>
-        <meta
-          name="description"
-          content="Browse our comprehensive gallery of water treatment project installations. View photos of STP, ETP, RO plants, cooling towers, and other environmental solutions."
-        />
-        <meta
-          name="keywords"
-          content="water treatment gallery, project photos, STP installation, ETP construction, industrial water treatment images"
-        />
-      </Helmet>
+      <SEOHead
+        title="Water Treatment Project Gallery - STP, ETP Installation Photos | DLS Envirotech"
+        description="View our water treatment project gallery: 2500+ STP, ETP, RO plant installations across India. Professional photos of industrial wastewater treatment systems. See our work quality! Request free site visit ☎️ +91-9568572005"
+        keywords="water treatment gallery India, STP installation photos, ETP project images, industrial water treatment pictures, sewage treatment plant photos, water purification system gallery, wastewater treatment installations"
+        canonical="https://dlsenvirotech.com/gallery"
+        schema={combinedSchema}
+      />
 
       <div className="min-h-screen bg-background">
         <Header />

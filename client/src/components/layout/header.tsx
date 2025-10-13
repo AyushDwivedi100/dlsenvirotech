@@ -123,7 +123,7 @@ const Header = () => {
                       <span className="text-sm">info.dlsenvirotech@gmail.com</span>
                     </a>
                     <a
-                      href="https://www.google.com/maps/search/?api=1&query=F-25,+Sector-6,+Noida+201301"
+                      href="https://maps.app.goo.gl/WyJmtqb2RpRi7Wrq6"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-3 text-foreground/80 hover:text-primary transition-colors group"

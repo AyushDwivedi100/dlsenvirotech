@@ -23,7 +23,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-industrial-900 text-white py-10 sm:py-12 md:py-16 transition-colors">
+    <footer className="bg-industrial-100 dark:bg-industrial-900 text-foreground py-10 sm:py-12 md:py-16 transition-colors">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 md:gap-10 lg:gap-12">
           {/* Company Information */}
@@ -35,7 +35,7 @@ const Footer = () => {
                 className="h-12 sm:h-14 md:h-16 w-auto object-contain"
               />
             </div>
-            <p className="text-white/70 text-sm sm:text-base mb-5 sm:mb-6 leading-relaxed">
+            <p className="text-foreground/70 text-sm sm:text-base mb-5 sm:mb-6 leading-relaxed">
               Leading provider of comprehensive water treatment solutions with
               15+ years of expertise in environmental technology. Serving
               clients across India with innovative and sustainable solutions.
@@ -43,7 +43,7 @@ const Footer = () => {
             <div className="flex flex-wrap gap-3 sm:gap-4">
               <a
                 href="#"
-                className="bg-industrial-800 p-2.5 sm:p-3 rounded-lg hover:bg-linkedin transition-colors"
+                className="bg-industrial-200 dark:bg-industrial-800 text-foreground p-2.5 sm:p-3 rounded-lg hover:bg-linkedin hover:text-white transition-colors"
                 aria-label="LinkedIn"
                 data-testid="link-linkedin"
               >
@@ -51,7 +51,7 @@ const Footer = () => {
               </a>
               <a
                 href="#"
-                className="bg-industrial-800 p-2.5 sm:p-3 rounded-lg hover:bg-black transition-colors"
+                className="bg-industrial-200 dark:bg-industrial-800 text-foreground p-2.5 sm:p-3 rounded-lg hover:bg-black hover:text-white transition-colors"
                 aria-label="X (Twitter)"
                 data-testid="link-x-twitter"
               >
@@ -59,7 +59,7 @@ const Footer = () => {
               </a>
               <a
                 href="#"
-                className="bg-industrial-800 p-2.5 sm:p-3 rounded-lg hover:bg-facebook transition-colors"
+                className="bg-industrial-200 dark:bg-industrial-800 text-foreground p-2.5 sm:p-3 rounded-lg hover:bg-facebook hover:text-white transition-colors"
                 aria-label="Facebook"
                 data-testid="link-facebook"
               >
@@ -67,7 +67,7 @@ const Footer = () => {
               </a>
               <a
                 href="#"
-                className="bg-industrial-800 p-2.5 sm:p-3 rounded-lg hover:bg-youtube transition-colors"
+                className="bg-industrial-200 dark:bg-industrial-800 text-foreground p-2.5 sm:p-3 rounded-lg hover:bg-youtube hover:text-white transition-colors"
                 aria-label="YouTube"
                 data-testid="link-youtube"
               >
@@ -86,7 +86,7 @@ const Footer = () => {
                 <li key={service}>
                   <Link
                     href="/services"
-                    className="text-white/70 hover:text-primary transition-colors text-sm sm:text-base"
+                    className="text-foreground/70 hover:text-primary transition-colors text-sm sm:text-base"
                   >
                     {service}
                   </Link>
@@ -105,7 +105,7 @@ const Footer = () => {
                 <li key={item.name}>
                   <Link
                     href={item.href}
-                    className="text-white/70 hover:text-primary transition-colors text-sm sm:text-base"
+                    className="text-foreground/70 hover:text-primary transition-colors text-sm sm:text-base"
                   >
                     {item.name}
                   </Link>
@@ -115,9 +115,9 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-industrial-800 mt-6 sm:mt-8 md:mt-12 pt-5 sm:pt-6 md:pt-8">
+        <div className="border-t border-industrial-300 dark:border-industrial-800 mt-6 sm:mt-8 md:mt-12 pt-5 sm:pt-6 md:pt-8">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-3 sm:gap-4">
-            <p className="text-white/60 text-xs sm:text-sm text-center sm:text-left order-2 sm:order-1">
+            <p className="text-foreground/60 text-xs sm:text-sm text-center sm:text-left order-2 sm:order-1">
               © {new Date().getFullYear()} DLS Envirotech Corporation. All
               rights reserved.
             </p>

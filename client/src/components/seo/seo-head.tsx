@@ -71,7 +71,7 @@ export const organizationSchema = {
   "@type": "Organization",
   "name": "DLS Envirotech Corporation",
   "alternateName": "DLS Envirotech",
-  "description": "Leading water treatment company specializing in STP, ETP, RO plants, and industrial wastewater treatment solutions across 22 countries with 2500+ installations",
+  "description": "Leading water treatment company in India specializing in STP, ETP, RO plants, and industrial wastewater treatment solutions with 2500+ installations nationwide and 15+ years of expertise",
   "url": "https://dlsenvirotech.com",
   "logo": "https://dlsenvirotech.com/logo.png",
   "image": "https://dlsenvirotech.com/og-image.jpg",
@@ -79,7 +79,7 @@ export const organizationSchema = {
   "email": "info.dlsenvirotech@gmail.com",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "F-25, Sector-6, Noida 201301 (U.P.)",
+    "streetAddress": "F-25, Sector-6",
     "addressLocality": "Noida",
     "addressRegion": "Uttar Pradesh",
     "postalCode": "201301",
@@ -87,8 +87,8 @@ export const organizationSchema = {
   },
   "geo": {
     "@type": "GeoCoordinates",
-    "latitude": 28.6139,
-    "longitude": 77.2090
+    "latitude": 28.5931423,
+    "longitude": 77.3212035
   },
   "sameAs": [
     "https://www.facebook.com/dlsenvirotech",
@@ -100,16 +100,18 @@ export const organizationSchema = {
     "@type": "QuantitativeValue",
     "value": 100
   },
-  "areaServed": [
-    {
-      "@type": "Country",
-      "name": "India"
-    },
-    {
-      "@type": "Place",
-      "name": "Global"
-    }
-  ],
+  "areaServed": {
+    "@type": "Country",
+    "name": "India"
+  },
+  "slogan": "Expert Water Treatment Solutions for a Sustainable Future",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "150",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
   "knowsAbout": [
     "Water Treatment",
     "Sewage Treatment Plant",
@@ -117,7 +119,11 @@ export const organizationSchema = {
     "Wastewater Management",
     "Zero Liquid Discharge",
     "Reverse Osmosis",
-    "Industrial Water Treatment"
+    "Industrial Water Treatment",
+    "Biological Treatment Systems",
+    "Chemical Treatment Solutions",
+    "Membrane Bioreactor (MBR)",
+    "Sequential Batch Reactor (SBR)"
   ]
 };
 
@@ -209,4 +215,56 @@ export const createBreadcrumbSchema = (items: Array<{ name: string; url: string 
     "name": item.name,
     "item": item.url
   }))
+});
+
+// Review Schema Generator
+export const createReviewSchema = (reviews: Array<{
+  author: string;
+  rating: number;
+  reviewBody: string;
+  datePublished: string;
+}>) => ({
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Water Treatment Solutions",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": reviews.length.toString()
+  },
+  "review": reviews.map(review => ({
+    "@type": "Review",
+    "author": {
+      "@type": "Person",
+      "name": review.author
+    },
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": review.rating.toString(),
+      "bestRating": "5"
+    },
+    "reviewBody": review.reviewBody,
+    "datePublished": review.datePublished
+  }))
+});
+
+// Offer Schema Generator (for services with pricing indication)
+export const createOfferSchema = (serviceName: string, description: string) => ({
+  "@context": "https://schema.org",
+  "@type": "Offer",
+  "itemOffered": {
+    "@type": "Service",
+    "name": serviceName,
+    "description": description,
+    "provider": {
+      "@type": "Organization",
+      "name": "DLS Envirotech Corporation"
+    }
+  },
+  "availability": "https://schema.org/InStock",
+  "priceCurrency": "INR",
+  "areaServed": {
+    "@type": "Country",
+    "name": "India"
+  }
 });

@@ -16,6 +16,11 @@ import {
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
 import { mockApi } from "@/lib/mockApi";
+import {
+  SEOHead,
+  organizationSchema,
+  createBreadcrumbSchema,
+} from "@/components/seo/seo-head";
 
 export default function Quote() {
   const { toast } = useToast();
@@ -80,15 +85,25 @@ export default function Quote() {
     }));
   };
 
+  const breadcrumbSchema = createBreadcrumbSchema([
+    { name: "Home", url: "https://dlsenvirotech.com/" },
+    { name: "Get Quote", url: "https://dlsenvirotech.com/quote" },
+  ]);
+
+  const combinedSchema = {
+    "@context": "https://schema.org",
+    "@graph": [organizationSchema, breadcrumbSchema],
+  };
+
   return (
     <>
-      <Helmet>
-        <title>Get Quote - DLS Envirotech Corporation</title>
-        <meta
-          name="description"
-          content="Request a customized quote for your water treatment solution. Fast turnaround, competitive pricing."
-        />
-      </Helmet>
+      <SEOHead
+        title="Get Free Quote for Water Treatment - STP, ETP Plants | DLS Envirotech"
+        description="Request FREE quote for water treatment solutions. Get competitive pricing for STP, ETP, RO plants & industrial wastewater systems. 24-hour response guaranteed! Call ☎️ +91-9568572005 or submit online form now."
+        keywords="water treatment quote India, STP plant cost, ETP price estimate, water treatment pricing, sewage plant quote, industrial water treatment cost, RO plant quotation India, free water treatment consultation"
+        canonical="https://dlsenvirotech.com/quote"
+        schema={combinedSchema}
+      />
 
       <div className="min-h-screen bg-muted">
         <TopBar />

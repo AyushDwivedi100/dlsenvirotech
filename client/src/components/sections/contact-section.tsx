@@ -163,9 +163,14 @@ export default function ContactSection() {
                   <p className="font-medium text-sm sm:text-base mb-1">
                     Address
                   </p>
-                  <p className="text-muted-foreground text-sm sm:text-base">
+                  <a
+                    href="https://maps.app.goo.gl/WyJmtqb2RpRi7Wrq6"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-muted-foreground text-sm sm:text-base hover:text-primary transition-colors"
+                  >
                     F-25, Sector-6, Noida 201301 (U.P.)
-                  </p>
+                  </a>
                 </div>
               </div>
             </CardContent>
