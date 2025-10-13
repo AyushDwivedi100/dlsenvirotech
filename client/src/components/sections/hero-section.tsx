@@ -18,31 +18,44 @@ const HeroSection = () => {
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 lg:gap-12 items-center w-full">
         <div className="text-center md:text-center lg:text-left">
-          <Badge className="mb-3 sm:mb-4 md:mb-5 lg:mb-6" variant="secondary">
+          <Badge
+            className="mb-3 sm:mb-4 md:mb-5 lg:mb-6 text-white"
+            variant="secondary"
+          >
             <Award className="mr-2 h-3 w-3 sm:h-4 sm:w-4" />
             15+ Years Experience
           </Badge>
 
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-foreground mb-3 sm:mb-4 md:mb-5 lg:mb-6 leading-tight">
             Professional STP, ETP & Industrial Water Treatment
-            <span className="text-primary block mt-1 sm:mt-2">Solutions in India</span>
+            <span className="text-primary block mt-1 sm:mt-2">
+              Solutions in India
+            </span>
           </h1>
 
           <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground mb-5 sm:mb-6 md:mb-7 lg:mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0">
-            Leading water treatment company in India specializing in Sewage Treatment Plants (STP), 
-            Effluent Treatment Plants (ETP), RO systems, and industrial wastewater solutions. 
-            ISO certified with proven expertise in environmental technology for all municipal 
-            and industrial applications across India.
+            Leading water treatment company in India specializing in Sewage
+            Treatment Plants (STP), Effluent Treatment Plants (ETP), RO systems,
+            and industrial wastewater solutions. ISO certified with proven
+            expertise in environmental technology for all municipal and
+            industrial applications across India.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center lg:justify-start">
             <Button size="lg" className="w-full sm:w-auto" asChild>
               <Link href="/contact">
-                <Phone className="mr-2 h-4 w-4 md:h-5 md:w-5" />
-                <span className="text-sm md:text-base">Get Free Consultation</span>
+                <Phone className="mr-2 h-4 w-4 md:h-5 md:w-5 text-white" />
+                <span className="text-sm md:text-base text-white">
+                  Get Free Consultation
+                </span>
               </Link>
             </Button>
-            <Button variant="outline" size="lg" className="w-full sm:w-auto" asChild>
+            <Button
+              variant="outline"
+              size="lg"
+              className="w-full sm:w-auto"
+              asChild
+            >
               <Link href="/portfolio">
                 <Play className="mr-2 h-4 w-4 md:h-5 md:w-5" />
                 <span className="text-sm md:text-base">View Our Work</span>
@@ -64,12 +77,16 @@ const HeroSection = () => {
                 <TrendingUp className="h-5 w-5 lg:h-6 lg:w-6" />
               </div>
               <div>
-                <p className="text-xl lg:text-2xl font-bold text-foreground">2500+</p>
-                <p className="text-sm lg:text-base text-muted-foreground">Systems Installed</p>
+                <p className="text-xl lg:text-2xl font-bold text-foreground">
+                  2500+
+                </p>
+                <p className="text-sm lg:text-base text-muted-foreground">
+                  Systems Installed
+                </p>
               </div>
             </div>
           </div>
-          
+
           {/* Mobile stats badge - below image */}
           <div className="md:hidden mt-4 bg-card border border-border p-4 rounded-xl shadow-lg">
             <div className="flex items-center space-x-3">
@@ -78,7 +95,9 @@ const HeroSection = () => {
               </div>
               <div>
                 <p className="text-xl font-bold text-foreground">2500+</p>
-                <p className="text-sm text-muted-foreground">Systems Installed</p>
+                <p className="text-sm text-muted-foreground">
+                  Systems Installed
+                </p>
               </div>
             </div>
           </div>

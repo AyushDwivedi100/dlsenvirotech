@@ -7,17 +7,21 @@ import { SERVICES } from "@/lib/constants";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { Phone } from "lucide-react";
-import { SEOHead, organizationSchema, createBreadcrumbSchema } from "@/components/seo/seo-head";
+import {
+  SEOHead,
+  organizationSchema,
+  createBreadcrumbSchema,
+} from "@/components/seo/seo-head";
 
 const Services = () => {
   const breadcrumbSchema = createBreadcrumbSchema([
     { name: "Home", url: "https://dlsenvirotech.com/" },
-    { name: "Services", url: "https://dlsenvirotech.com/services" }
+    { name: "Services", url: "https://dlsenvirotech.com/services" },
   ]);
 
   const combinedSchema = {
     "@context": "https://schema.org",
-    "@graph": [organizationSchema, breadcrumbSchema]
+    "@graph": [organizationSchema, breadcrumbSchema],
   };
 
   return (
@@ -29,7 +33,7 @@ const Services = () => {
         canonical="https://dlsenvirotech.com/services"
         schema={combinedSchema}
       />
-      
+
       <div className="min-h-screen bg-background">
         <TopBar />
         <Header />
@@ -41,13 +45,16 @@ const Services = () => {
                 Professional Water Treatment Services
               </h1>
               <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-6 md:mb-8">
-                Comprehensive environmental technology solutions designed to meet the highest standards 
-                of water treatment for industrial and municipal applications.
+                Comprehensive environmental technology solutions designed to
+                meet the highest standards of water treatment for industrial and
+                municipal applications.
               </p>
               <Button size="lg" className="w-full sm:w-auto" asChild>
-                <Link href="/contact">
+                <Link href="/contact" className="text-white">
                   <Phone className="mr-2 h-4 w-4 md:h-5 md:w-5" />
-                  <span className="text-sm md:text-base">Get Custom Solution</span>
+                  <span className="text-sm md:text-base">
+                    Get Custom Solution
+                  </span>
                 </Link>
               </Button>
             </div>
@@ -71,18 +78,28 @@ const Services = () => {
                 Need a Custom Water Treatment Solution?
               </h2>
               <p className="text-base sm:text-lg text-muted-foreground mb-6 md:mb-8">
-                Our expert engineers can design and implement the perfect water treatment system 
-                for your specific requirements. Contact us for a free consultation.
+                Our expert engineers can design and implement the perfect water
+                treatment system for your specific requirements. Contact us for
+                a free consultation.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center">
                 <Button size="lg" className="w-full sm:w-auto" asChild>
-                  <Link href="/contact">
-                    <span className="text-sm md:text-base">Schedule Consultation</span>
+                  <Link href="/contact" className="text-white">
+                    <span className="text-sm md:text-base">
+                      Schedule Consultation
+                    </span>
                   </Link>
                 </Button>
-                <Button variant="outline" size="lg" className="w-full sm:w-auto" asChild>
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="w-full sm:w-auto"
+                  asChild
+                >
                   <Link href="/portfolio">
-                    <span className="text-sm md:text-base">View Case Studies</span>
+                    <span className="text-sm md:text-base">
+                      View Case Studies
+                    </span>
                   </Link>
                 </Button>
               </div>

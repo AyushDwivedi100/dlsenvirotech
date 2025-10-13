@@ -11,11 +11,19 @@ const Gallery = () => {
   return (
     <>
       <Helmet>
-        <title>Project Gallery - Water Treatment Installations | DLS Envirotech</title>
-        <meta name="description" content="Browse our comprehensive gallery of water treatment project installations. View photos of STP, ETP, RO plants, cooling towers, and other environmental solutions." />
-        <meta name="keywords" content="water treatment gallery, project photos, STP installation, ETP construction, industrial water treatment images" />
+        <title>
+          Project Gallery - Water Treatment Installations | DLS Envirotech
+        </title>
+        <meta
+          name="description"
+          content="Browse our comprehensive gallery of water treatment project installations. View photos of STP, ETP, RO plants, cooling towers, and other environmental solutions."
+        />
+        <meta
+          name="keywords"
+          content="water treatment gallery, project photos, STP installation, ETP construction, industrial water treatment images"
+        />
       </Helmet>
-      
+
       <div className="min-h-screen bg-background">
         <Header />
         <main>
@@ -26,17 +34,24 @@ const Gallery = () => {
                 Project Gallery
               </h1>
               <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-6 sm:mb-8 px-4">
-                Explore our extensive portfolio of successfully completed water treatment installations 
-                across various industries and applications in India.
+                Explore our extensive portfolio of successfully completed water
+                treatment installations across various industries and
+                applications in India.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 md:gap-8 max-w-xl mx-auto">
                 <div className="text-center">
-                  <div className="text-xl sm:text-2xl md:text-3xl font-bold text-primary mb-2">15+</div>
+                  <div className="text-xl sm:text-2xl md:text-3xl font-bold text-primary mb-2">
+                    15+
+                  </div>
                   <div className="text-muted-foreground">Years Experience</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-xl sm:text-2xl md:text-3xl font-bold text-secondary mb-2">India</div>
-                  <div className="text-muted-foreground">Nationwide Service</div>
+                  <div className="text-xl sm:text-2xl md:text-3xl font-bold text-secondary mb-2">
+                    India
+                  </div>
+                  <div className="text-muted-foreground">
+                    Nationwide Service
+                  </div>
                 </div>
               </div>
             </div>
@@ -51,16 +66,18 @@ const Gallery = () => {
                     Real Project Gallery Coming Soon
                   </h2>
                   <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-6 md:mb-8 leading-relaxed">
-                    We are currently preparing our authentic project gallery featuring actual installation photos 
-                    from our completed water treatment projects across India. These real images will showcase 
-                    our expertise and quality workmanship.
+                    We are currently preparing our authentic project gallery
+                    featuring actual installation photos from our completed
+                    water treatment projects across India. These real images
+                    will showcase our expertise and quality workmanship.
                   </p>
                   <p className="text-sm sm:text-base text-muted-foreground mb-8">
-                    Check back soon to view our comprehensive collection of real project installations, 
-                    or contact us directly to discuss your water treatment needs.
+                    Check back soon to view our comprehensive collection of real
+                    project installations, or contact us directly to discuss
+                    your water treatment needs.
                   </p>
                   <Button size="lg" asChild>
-                    <Link href="/contact">
+                    <Link href="/contact" className="text-white">
                       <Phone className="mr-2 h-5 w-5" />
                       Contact Us for Project Information
                     </Link>
@@ -77,19 +94,26 @@ const Gallery = () => {
                 Ready to See Your Project Here?
               </h2>
               <p className="text-base sm:text-lg text-muted-foreground mb-6 sm:mb-8 px-4">
-                Join our gallery of successful installations with a custom water treatment 
-                solution designed specifically for your requirements.
+                Join our gallery of successful installations with a custom water
+                treatment solution designed specifically for your requirements.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">
                 <Button size="lg" asChild className="w-full sm:w-auto">
-                  <Link href="/contact">
+                  <Link href="/contact" className="text-white">
                     <Phone className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
                     <span className="text-sm sm:text-base">Get Your Quote</span>
                   </Link>
                 </Button>
-                <Button variant="outline" size="lg" asChild className="w-full sm:w-auto">
+                <Button
+                  variant="outline"
+                  size="lg"
+                  asChild
+                  className="w-full sm:w-auto"
+                >
                   <Link href="/portfolio">
-                    <span className="text-sm sm:text-base">View Case Studies</span>
+                    <span className="text-sm sm:text-base">
+                      View Case Studies
+                    </span>
                   </Link>
                 </Button>
               </div>

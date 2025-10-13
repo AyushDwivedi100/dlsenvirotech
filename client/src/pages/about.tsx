@@ -11,17 +11,21 @@ import Timeline from "@/components/ui/timeline";
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import dlsLogo from "@assets/dls-envirotech-logo.png";
-import { SEOHead, organizationSchema, createBreadcrumbSchema } from "@/components/seo/seo-head";
+import {
+  SEOHead,
+  organizationSchema,
+  createBreadcrumbSchema,
+} from "@/components/seo/seo-head";
 
 const About = () => {
   const breadcrumbSchema = createBreadcrumbSchema([
     { name: "Home", url: "https://dlsenvirotech.com/" },
-    { name: "About Us", url: "https://dlsenvirotech.com/about" }
+    { name: "About Us", url: "https://dlsenvirotech.com/about" },
   ]);
 
   const combinedSchema = {
     "@context": "https://schema.org",
-    "@graph": [organizationSchema, breadcrumbSchema]
+    "@graph": [organizationSchema, breadcrumbSchema],
   };
 
   const milestones = [
@@ -116,7 +120,7 @@ const About = () => {
                 environmental solutions worldwide.
               </p>
               <Button size="lg" asChild>
-                <Link href="/contact">
+                <Link href="/contact" className="text-white">
                   <Phone className="mr-2 h-5 w-5" />
                   Partner With Us
                 </Link>
@@ -179,7 +183,9 @@ const About = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" asChild>
-                  <Link href="/contact">Get Started Today</Link>
+                  <Link href="/contact" className="text-white">
+                    Get Started Today
+                  </Link>
                 </Button>
                 <Button variant="outline" size="lg" asChild>
                   <Link href="/portfolio">View Our Work</Link>

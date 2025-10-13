@@ -24,17 +24,23 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-background shadow-lg sticky top-0 z-50 transition-colors" role="banner">
-      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Main navigation">
+    <header
+      className="bg-background shadow-lg sticky top-0 z-50 transition-colors"
+      role="banner"
+    >
+      <nav
+        className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
+        aria-label="Main navigation"
+      >
         <div className="flex justify-between items-center h-16 md:h-20">
           <Link href="/" className="flex items-center space-x-4">
-            <img 
-              src={dlsLogo} 
-              alt="DLS Envirotech Corporation Logo" 
+            <img
+              src={dlsLogo}
+              alt="DLS Envirotech Corporation Logo"
               className="h-8 sm:h-9 md:h-10 w-auto object-contain"
             />
           </Link>
-          
+
           <div className="hidden lg:flex items-center space-x-4 xl:space-x-6">
             {navigation.map((item) => (
               <Link
@@ -56,7 +62,7 @@ const Header = () => {
               <Link href="/quote">Get Quote</Link>
             </Button>
           </div>
-          
+
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon" className="lg:hidden">
@@ -81,7 +87,11 @@ const Header = () => {
                   </Link>
                 ))}
                 <Button asChild className="mt-4">
-                  <Link href="/quote" onClick={() => setIsOpen(false)}>
+                  <Link
+                    href="/quote"
+                    onClick={() => setIsOpen(false)}
+                    className="text-white"
+                  >
                     Get Quote
                   </Link>
                 </Button>

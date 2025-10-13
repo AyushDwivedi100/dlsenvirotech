@@ -7,7 +7,7 @@ import { FolderOpen } from "lucide-react";
 
 const PortfolioShowcase = () => {
   const [activeFilter, setActiveFilter] = useState("all");
-  
+
   const filters = [
     { id: "all", label: "All Projects" },
     { id: "stp", label: "STP Systems" },
@@ -22,7 +22,7 @@ const PortfolioShowcase = () => {
     { id: "wsp", label: "Water Softening Plant" },
   ];
 
-  const filteredProjects = PORTFOLIO_PROJECTS.filter(project => {
+  const filteredProjects = PORTFOLIO_PROJECTS.filter((project) => {
     if (activeFilter === "all") return true;
     return project.category.includes(activeFilter);
   });
@@ -35,10 +35,11 @@ const PortfolioShowcase = () => {
             Project Portfolio & Case Studies
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto px-4">
-            Explore our successful implementations across 22 countries with detailed technical specifications and performance metrics
+            Explore our successful implementations across 22 countries with
+            detailed technical specifications and performance metrics
           </p>
         </div>
-        
+
         {/* Filter Tabs */}
         <div className="flex flex-wrap justify-center gap-2 sm:gap-3 md:gap-4 mb-8 sm:mb-10 md:mb-12">
           {filters.map((filter) => (
@@ -53,18 +54,20 @@ const PortfolioShowcase = () => {
             </Button>
           ))}
         </div>
-        
+
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-6 md:gap-8">
           {filteredProjects.map((project) => (
             <PortfolioCard key={project.id} project={project} />
           ))}
         </div>
-        
+
         <div className="text-center mt-10 sm:mt-12">
-          <Button size="lg" asChild className="w-full sm:w-auto">
+          <Button size="lg" asChild className="w-full sm:w-auto text-white">
             <Link href="/portfolio">
               <FolderOpen className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
-              <span className="text-sm sm:text-base">View Complete Portfolio</span>
+              <span className="text-sm sm:text-base">
+                View Complete Portfolio
+              </span>
             </Link>
           </Button>
         </div>

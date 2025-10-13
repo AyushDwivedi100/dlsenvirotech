@@ -8,11 +8,15 @@ import { PORTFOLIO_PROJECTS } from "@/lib/constants";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { Phone } from "lucide-react";
-import { SEOHead, organizationSchema, createBreadcrumbSchema } from "@/components/seo/seo-head";
+import {
+  SEOHead,
+  organizationSchema,
+  createBreadcrumbSchema,
+} from "@/components/seo/seo-head";
 
 const Portfolio = () => {
   const [activeFilter, setActiveFilter] = useState("all");
-  
+
   const filters = [
     { id: "all", label: "All Projects" },
     { id: "stp", label: "STP Systems" },
@@ -21,19 +25,19 @@ const Portfolio = () => {
     { id: "municipal", label: "Municipal" },
   ];
 
-  const filteredProjects = PORTFOLIO_PROJECTS.filter(project => {
+  const filteredProjects = PORTFOLIO_PROJECTS.filter((project) => {
     if (activeFilter === "all") return true;
     return project.category.includes(activeFilter);
   });
 
   const breadcrumbSchema = createBreadcrumbSchema([
     { name: "Home", url: "https://dlsenvirotech.com/" },
-    { name: "Projects", url: "https://dlsenvirotech.com/portfolio" }
+    { name: "Projects", url: "https://dlsenvirotech.com/portfolio" },
   ]);
 
   const combinedSchema = {
     "@context": "https://schema.org",
-    "@graph": [organizationSchema, breadcrumbSchema]
+    "@graph": [organizationSchema, breadcrumbSchema],
   };
 
   return (
@@ -45,7 +49,7 @@ const Portfolio = () => {
         canonical="https://dlsenvirotech.com/portfolio"
         schema={combinedSchema}
       />
-      
+
       <div className="min-h-screen bg-background">
         <TopBar />
         <Header />
@@ -57,17 +61,26 @@ const Portfolio = () => {
                 Project Portfolio & Case Studies
               </h1>
               <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-6 md:mb-8">
-                Explore our successful water treatment implementations across India with proven expertise 
-                in STP, ETP, and industrial wastewater solutions.
+                Explore our successful water treatment implementations across
+                India with proven expertise in STP, ETP, and industrial
+                wastewater solutions.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-8 max-w-xl mx-auto">
                 <div className="text-center p-4 bg-background/50 rounded-lg">
-                  <div className="text-2xl md:text-3xl font-bold text-primary mb-2">15+</div>
-                  <div className="text-sm md:text-base text-muted-foreground">Years Experience</div>
+                  <div className="text-2xl md:text-3xl font-bold text-primary mb-2">
+                    15+
+                  </div>
+                  <div className="text-sm md:text-base text-muted-foreground">
+                    Years Experience
+                  </div>
                 </div>
                 <div className="text-center p-4 bg-background/50 rounded-lg">
-                  <div className="text-2xl md:text-3xl font-bold text-secondary mb-2">India</div>
-                  <div className="text-sm md:text-base text-muted-foreground">Nationwide Service</div>
+                  <div className="text-2xl md:text-3xl font-bold text-secondary mb-2">
+                    India
+                  </div>
+                  <div className="text-sm md:text-base text-muted-foreground">
+                    Nationwide Service
+                  </div>
                 </div>
               </div>
             </div>
@@ -82,16 +95,19 @@ const Portfolio = () => {
                     Real Project Portfolio Coming Soon
                   </h2>
                   <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-6 md:mb-8 leading-relaxed">
-                    We are currently updating our portfolio with detailed case studies and project documentation 
-                    of our actual installations. Our real project gallery will be available here soon, showcasing 
-                    our proven expertise in water treatment solutions across India.
+                    We are currently updating our portfolio with detailed case
+                    studies and project documentation of our actual
+                    installations. Our real project gallery will be available
+                    here soon, showcasing our proven expertise in water
+                    treatment solutions across India.
                   </p>
                   <p className="text-sm sm:text-base text-muted-foreground mb-8">
-                    In the meantime, feel free to contact us to learn more about our successful installations 
-                    and how we can help with your water treatment requirements.
+                    In the meantime, feel free to contact us to learn more about
+                    our successful installations and how we can help with your
+                    water treatment requirements.
                   </p>
                   <Button size="lg" asChild>
-                    <Link href="/contact">
+                    <Link href="/contact" className="text-white">
                       <Phone className="mr-2 h-5 w-5" />
                       Contact Us for Project Details
                     </Link>
@@ -108,11 +124,12 @@ const Portfolio = () => {
                 Ready to Start Your Water Treatment Project?
               </h2>
               <p className="text-lg text-muted-foreground mb-8">
-                Join our growing list of satisfied clients with a proven track record of successful 
-                water treatment implementations. Let's discuss your project requirements.
+                Join our growing list of satisfied clients with a proven track
+                record of successful water treatment implementations. Let's
+                discuss your project requirements.
               </p>
               <Button size="lg" asChild>
-                <Link href="/contact">
+                <Link href="/contact" className="text-white">
                   <Phone className="mr-2 h-5 w-5" />
                   Start Your Project
                 </Link>
