@@ -61,7 +61,8 @@ export default {
           border: "var(--sidebar-border)",
           ring: "var(--sidebar-ring)",
         },
-        linkedin: "hsl(200, 100%, 35%)",
+        linkedin: "hsl(201, 100%, 35%)",
+        facebook: "hsl(221, 44%, 41%)",
         youtube: "hsl(0, 100%, 50%)",
         industrial: {
           50: "hsl(210, 40%, 98%)",

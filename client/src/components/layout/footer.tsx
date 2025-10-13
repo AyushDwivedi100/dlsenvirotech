@@ -1,5 +1,6 @@
 import { Link } from "wouter";
-import { Linkedin, Twitter, Facebook, Youtube, Map, X } from "lucide-react";
+import { Linkedin, Facebook, Youtube, Map } from "lucide-react";
+import { SiX } from "react-icons/si";
 import { ThemeToggle } from "@/components/ui/theme-toggle";
 import { Button } from "@/components/ui/button";
 import dlsLogo from "@assets/dls-envirotech-logo.png";
@@ -50,15 +51,15 @@ const Footer = () => {
               </a>
               <a
                 href="#"
-                className="bg-industrial-800 p-2.5 sm:p-3 rounded-lg hover:bg-primary transition-colors"
+                className="bg-industrial-800 p-2.5 sm:p-3 rounded-lg hover:bg-black transition-colors"
                 aria-label="X (Twitter)"
                 data-testid="link-x-twitter"
               >
-                <X className="h-4 w-4 sm:h-5 sm:w-5" />
+                <SiX className="h-4 w-4 sm:h-5 sm:w-5" />
               </a>
               <a
                 href="#"
-                className="bg-industrial-800 p-2.5 sm:p-3 rounded-lg hover:bg-primary transition-colors"
+                className="bg-industrial-800 p-2.5 sm:p-3 rounded-lg hover:bg-facebook transition-colors"
                 aria-label="Facebook"
                 data-testid="link-facebook"
               >
