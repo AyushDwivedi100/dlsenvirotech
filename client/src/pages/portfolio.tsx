@@ -60,8 +60,9 @@ const Portfolio = () => {
                 Project Portfolio & Case Studies
               </h1>
               <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-6 md:mb-8">
-                Explore our successful environmental technology implementations across
-                India including water treatment, industrial solutions, and waste management systems.
+                Explore our successful environmental technology implementations
+                across India including water treatment, industrial solutions,
+                and waste management systems.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-8 max-w-xl mx-auto">
                 <div className="text-center p-4 bg-background/50 rounded-lg">
@@ -104,14 +105,19 @@ const Portfolio = () => {
 
               {/* Projects Grid */}
               {filteredProjects.length > 0 ? (
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8" data-testid="projects-grid">
+                <div
+                  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 bg-muted p-4 sm:p-6 md:p-8 rounded-lg"
+                  data-testid="projects-grid"
+                >
                   {filteredProjects.map((project) => (
                     <PortfolioCard key={project.id} project={project} />
                   ))}
                 </div>
               ) : (
                 <div className="text-center py-16 bg-muted rounded-lg">
-                  <p className="text-lg text-muted-foreground">No projects found for this category.</p>
+                  <p className="text-lg text-muted-foreground">
+                    No projects found for this category.
+                  </p>
                 </div>
               )}
             </div>
@@ -125,8 +131,8 @@ const Portfolio = () => {
               </h2>
               <p className="text-lg text-muted-foreground mb-8">
                 Join our growing list of satisfied clients with a proven track
-                record of successful environmental technology implementations. Let's
-                discuss your project requirements.
+                record of successful environmental technology implementations.
+                Let's discuss your project requirements.
               </p>
               <Button size="lg" asChild>
                 <Link href="/contact" className="text-white">

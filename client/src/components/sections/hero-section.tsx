@@ -5,7 +5,7 @@ import { Phone, Play, Award, TrendingUp } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-[500px] sm:min-h-[600px] md:min-h-[650px] lg:min-h-[700px] xl:min-h-screen flex items-center bg-gradient-to-br from-background to-muted py-8 sm:py-12 md:py-16 lg:py-20 xl:py-0">
+    <section className="relative min-h-[500px] sm:min-h-[600px] md:min-h-[650px] lg:min-h-[700px] xl:min-h-screen flex items-center bg-gradient-to-br from-background to-muted py-8 sm:py-12 md:py-16 lg:py-20">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center opacity-10"
@@ -34,7 +34,11 @@ const HeroSection = () => {
           </h1>
 
           <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground mb-5 sm:mb-6 md:mb-7 lg:mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0">
-            Leading environmental technology company in India specializing in water treatment (STP, ETP, WTP, RO systems), industrial solutions (cooling towers, PSA oxygen plants, air pollution control), and waste management systems. ISO certified with proven expertise for all municipal and industrial applications across India.
+            Leading environmental technology company in India specializing in
+            water treatment (STP, ETP, WTP, RO systems), industrial solutions
+            (cooling towers, PSA oxygen plants, air pollution control), and
+            waste management systems. ISO certified with proven expertise for
+            all municipal and industrial applications across India.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center lg:justify-start">
