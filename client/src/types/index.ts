@@ -14,10 +14,12 @@ export interface PortfolioProject {
   image: string;
   category: string[];
   tags: string[];
-  capacity: string;
-  technology: string;
+  capacity?: string;
+  technology?: string;
   location?: string;
   industry?: string;
+  client?: string;
+  completedDate?: string;
 }
 
 export interface TestimonialType {

@@ -92,7 +92,89 @@ export const SERVICES: ServiceType[] = [
   }
 ];
 
-export const PORTFOLIO_PROJECTS: PortfolioProject[] = [];
+export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
+  {
+    id: "project-1",
+    title: "MRF & Waste to Compost Plant with Sanitary Landfill",
+    description: "Establishment and commissioning of comprehensive solid waste management infrastructure including Material Recovery Facility, Waste to Compost Plant, and Sanitary Landfill for municipal waste processing.",
+    image: "",
+    category: ["swm", "mrf"],
+    tags: ["Material Recovery Facility", "Waste to Compost", "Sanitary Landfill", "Municipal Solid Waste"],
+    client: "Hailakandi Municipal Board, Assam",
+    location: "Hailakandi, Assam",
+    completedDate: "July 2025"
+  },
+  {
+    id: "project-2",
+    title: "Solid Waste Management Operation & Maintenance",
+    description: "Comprehensive operation and maintenance management of solid waste management systems across multiple municipalities, ensuring efficient waste collection, processing, and disposal.",
+    image: "",
+    category: ["swm"],
+    tags: ["Operation & Maintenance", "Solid Waste Management", "Municipal Services"],
+    capacity: "15 TPD",
+    client: "UP Jal Nigam",
+    location: "Allahganj, Jalalabad, Kant, Punvaya",
+    completedDate: "July 2024"
+  },
+  {
+    id: "project-3",
+    title: "Solid Waste Processing Equipment Installation",
+    description: "Installation of advanced waste processing equipment including garbage separator trommel machine, shredding machine with conveyor belt, sorting conveyor machine, weight bridge, and sieving machine for efficient solid waste management.",
+    image: "",
+    category: ["swm"],
+    tags: ["Trommel Machine", "Shredding Machine", "Sorting Conveyor", "Weight Bridge", "Sieving Machine"],
+    capacity: "10 TPD",
+    client: "Nagar Palika Parishad",
+    location: "Amroha, Gajraula",
+    completedDate: "November 2022"
+  },
+  {
+    id: "project-4",
+    title: "Bio-Methanation Plant & Waste to Compost Facility",
+    description: "Establishment of large-scale bio-methanation plant utilizing anaerobic digestion technology for waste-to-energy conversion, combined with waste to compost facility for sustainable waste management and renewable energy generation.",
+    image: "",
+    category: ["swm", "waste-to-energy"],
+    tags: ["Bio-Methanation", "Anaerobic Digestor", "Waste to Compost", "Waste-to-Energy", "Renewable Energy"],
+    capacity: "95 TPD",
+    technology: "Anaerobic Digestor, Waste-to-Energy Technology",
+    client: "Kisan Sahkari Chini Mills Ltd.",
+    location: "Najibabad, Bijnor, Uttar Pradesh",
+    completedDate: "March 2023"
+  },
+  {
+    id: "project-5",
+    title: "Sanitary Landfill & Weight Bridge Establishment",
+    description: "Development of engineered sanitary landfill with integrated weight bridge system for scientific waste disposal and accurate waste quantification.",
+    image: "",
+    category: ["swm"],
+    tags: ["Sanitary Landfill", "Weight Bridge", "Waste Disposal"],
+    capacity: "30 MT",
+    client: "Nagar Palika Parishad Amroha",
+    location: "Amroha",
+    completedDate: "June 2023"
+  },
+  {
+    id: "project-6",
+    title: "MRF & Waste to Compost Plant - Nalbari",
+    description: "Establishment of Material Recovery Facility and Waste to Compost Plant for segregation, processing, and conversion of municipal solid waste into valuable resources.",
+    image: "",
+    category: ["swm", "mrf"],
+    tags: ["Material Recovery Facility", "Waste to Compost", "Resource Recovery"],
+    client: "Nalbari Municipal Board, Assam",
+    location: "Nalbari, Assam",
+    completedDate: "June 2025"
+  },
+  {
+    id: "project-7",
+    title: "MRF & Waste to Compost Plant - Kajalgaon",
+    description: "Establishment of Material Recovery Facility and Waste to Compost Plant for efficient municipal solid waste management and resource recovery.",
+    image: "",
+    category: ["swm", "mrf"],
+    tags: ["Material Recovery Facility", "Waste to Compost", "Municipal Waste"],
+    client: "Kajalgaon Municipal Board, Assam (Chirang BTC)",
+    location: "Kajalgaon, Assam"
+  }
+];
 
 export const TESTIMONIALS: TestimonialType[] = [
   {
