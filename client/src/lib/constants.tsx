@@ -100,6 +100,7 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
     image: "",
     category: ["swm", "mrf"],
     tags: ["Material Recovery Facility", "Waste to Compost", "Sanitary Landfill", "Municipal Solid Waste"],
+    technology: "Mechanical Segregation, Composting Technology, Engineered Landfill",
     client: "Hailakandi Municipal Board, Assam",
     location: "Hailakandi, Assam",
     completedDate: "July 2025"
@@ -112,6 +113,7 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
     category: ["swm"],
     tags: ["Operation & Maintenance", "Solid Waste Management", "Municipal Services"],
     capacity: "15 TPD",
+    technology: "Integrated Waste Management, Collection & Processing Systems",
     client: "UP Jal Nigam",
     location: "Allahganj, Jalalabad, Kant, Punvaya",
     completedDate: "July 2024"
@@ -124,6 +126,7 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
     category: ["swm"],
     tags: ["Trommel Machine", "Shredding Machine", "Sorting Conveyor", "Weight Bridge", "Sieving Machine"],
     capacity: "10 TPD",
+    technology: "Automated Segregation, Mechanical Sorting, Shredding Systems",
     client: "Nagar Palika Parishad",
     location: "Amroha, Gajraula",
     completedDate: "November 2022"
@@ -149,6 +152,7 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
     category: ["swm"],
     tags: ["Sanitary Landfill", "Weight Bridge", "Waste Disposal"],
     capacity: "30 MT",
+    technology: "Engineered Landfill, Leachate Management, Weight Bridge System",
     client: "Nagar Palika Parishad Amroha",
     location: "Amroha",
     completedDate: "June 2023"
@@ -160,6 +164,7 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
     image: "",
     category: ["swm", "mrf"],
     tags: ["Material Recovery Facility", "Waste to Compost", "Resource Recovery"],
+    technology: "Mechanical Segregation, Aerobic Composting, Material Recovery",
     client: "Nalbari Municipal Board, Assam",
     location: "Nalbari, Assam",
     completedDate: "June 2025"
@@ -171,6 +176,7 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
     image: "",
     category: ["swm", "mrf"],
     tags: ["Material Recovery Facility", "Waste to Compost", "Municipal Waste"],
+    technology: "Mechanical Segregation, Composting Technology, Recyclable Recovery",
     client: "Kajalgaon Municipal Board, Assam (Chirang BTC)",
     location: "Kajalgaon, Assam"
   }

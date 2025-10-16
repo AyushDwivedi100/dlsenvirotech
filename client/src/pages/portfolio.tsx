@@ -19,10 +19,9 @@ const Portfolio = () => {
 
   const filters = [
     { id: "all", label: "All Projects" },
-    { id: "stp", label: "STP Systems" },
-    { id: "etp", label: "ETP Plants" },
-    { id: "industrial", label: "Industrial" },
-    { id: "municipal", label: "Municipal" },
+    { id: "swm", label: "Solid Waste Management" },
+    { id: "mrf", label: "Material Recovery Facilities" },
+    { id: "waste-to-energy", label: "Waste-to-Energy" },
   ];
 
   const filteredProjects = PORTFOLIO_PROJECTS.filter((project) => {
@@ -85,34 +84,36 @@ const Portfolio = () => {
             </div>
           </section>
 
-          {/* Portfolio Coming Soon */}
+          {/* Portfolio Projects */}
           <section className="py-12 md:py-16 lg:py-20 bg-background">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <div className="text-center py-16 md:py-20 bg-muted rounded-lg">
-                <div className="max-w-2xl mx-auto px-4">
-                  <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4 md:mb-6">
-                    Real Project Portfolio Coming Soon
-                  </h2>
-                  <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-6 md:mb-8 leading-relaxed">
-                    We are currently updating our portfolio with detailed case
-                    studies and project documentation of our actual
-                    installations. Our real project gallery will be available
-                    here soon, showcasing our proven expertise in environmental
-                    solutions including water treatment, industrial systems, and waste management across India.
-                  </p>
-                  <p className="text-sm sm:text-base text-muted-foreground mb-8">
-                    In the meantime, feel free to contact us to learn more about
-                    our successful installations and how we can help with your
-                    environmental technology requirements.
-                  </p>
-                  <Button size="lg" asChild>
-                    <Link href="/contact" className="text-white">
-                      <Phone className="mr-2 h-5 w-5" />
-                      Contact Us for Project Details
-                    </Link>
+              {/* Filter Tabs */}
+              <div className="flex flex-wrap justify-center gap-2 sm:gap-3 md:gap-4 mb-8 sm:mb-10 md:mb-12">
+                {filters.map((filter) => (
+                  <Button
+                    key={filter.id}
+                    variant={activeFilter === filter.id ? "default" : "outline"}
+                    onClick={() => setActiveFilter(filter.id)}
+                    className="font-semibold text-xs sm:text-sm h-8 sm:h-9 md:h-10 px-3 sm:px-4"
+                    data-testid={`filter-${filter.id}`}
+                  >
+                    {filter.label}
                   </Button>
-                </div>
+                ))}
               </div>
+
+              {/* Projects Grid */}
+              {filteredProjects.length > 0 ? (
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8" data-testid="projects-grid">
+                  {filteredProjects.map((project) => (
+                    <PortfolioCard key={project.id} project={project} />
+                  ))}
+                </div>
+              ) : (
+                <div className="text-center py-16 bg-muted rounded-lg">
+                  <p className="text-lg text-muted-foreground">No projects found for this category.</p>
+                </div>
+              )}
             </div>
           </section>
 
