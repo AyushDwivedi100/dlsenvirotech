@@ -118,7 +118,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-industrial-300 dark:border-industrial-800 mt-6 sm:mt-8 md:mt-12 pt-5 sm:pt-6 md:pt-8">
-          <div className="flex flex-col sm:flex-row justify-between items-center gap-3 sm:gap-4">
+          <div className="flex flex-col sm:flex-row justify-evenly items-center gap-3 sm:gap-4">
             <p className="text-foreground/60 text-xs sm:text-sm text-center sm:text-left order-2 sm:order-1">
               © {new Date().getFullYear()} DLS Envirotech Corporation. All
               rights reserved.
