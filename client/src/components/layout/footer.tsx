@@ -39,8 +39,9 @@ const Footer = () => {
             </div>
             <p className="text-foreground/70 text-sm sm:text-base mb-5 sm:mb-6 leading-relaxed">
               Leading provider of comprehensive water treatment solutions with
-              {yearsExperience} years of expertise in environmental technology. Serving
-              clients across India with innovative and sustainable solutions.
+              {yearsExperience} years of expertise in environmental technology.
+              Serving clients across India with innovative and sustainable
+              solutions.
             </p>
             <div className="flex flex-wrap gap-3 sm:gap-4">
               <a
