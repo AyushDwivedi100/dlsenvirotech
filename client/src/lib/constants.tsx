@@ -178,7 +178,8 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
     tags: ["Material Recovery Facility", "Waste to Compost", "Municipal Waste"],
     technology: "Mechanical Segregation, Composting Technology, Recyclable Recovery",
     client: "Kajalgaon Municipal Board, Assam (Chirang BTC)",
-    location: "Kajalgaon, Assam"
+    location: "Kajalgaon, Assam",
+    completedDate: "May 2025"
   },
   {
     id: "project-8",
