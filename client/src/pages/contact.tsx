@@ -23,7 +23,7 @@ const Contact = () => {
   return (
     <>
       <SEOHead
-        title="Contact STP, FSTP & Waste Management Experts | Free Consultation | DLS Envirotech"
+        title="Contact STP, FSTP & Waste Management Experts India | Free Consultation | DLS Envirotech Noida"
         description="STP, FSTP & waste management consultation. 24/7 expert engineers. Noida: F-25, Sector-6. Call +91-9568572005. Free site visit & quote. India & international."
         keywords="contact STP manufacturer, FSTP consultation India, waste management expert contact, sewage treatment plant inquiry, DLS Envirotech Noida office, environmental solutions contact, STP installation quote, free consultation wastewater, UP Jal Nigam contractor, Assam waste management contact, bio-methanation plant inquiry, MRF installation consultation, turnkey STP project quote, CPCB approved contractor contact, 24/7 environmental support India"
         canonical="https://dlsenvirotech.com/contact"

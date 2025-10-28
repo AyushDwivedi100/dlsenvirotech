@@ -46,7 +46,7 @@ const Portfolio = () => {
   return (
     <>
       <SEOHead
-        title="STP, FSTP & Waste Management Projects Portfolio | 15+ Case Studies | DLS Envirotech"
+        title="STP, FSTP & Waste Management Projects Portfolio India | 15+ Case Studies | DLS Envirotech UP Assam"
         description="15+ projects: MRF Assam, 95 TPD bio-methanation Najibabad, FSTP Rangia, STP O&M UP. UP Jal Nigam, Assam municipalities. STP, waste-to-compost case studies."
         keywords="STP project portfolio India, FSTP case studies, waste management projects Assam, MRF plant installation, bio-methanation plant Najibabad, UP Jal Nigam STP projects, faecal sludge treatment plant Rangia, sewage treatment plant O&M, waste to compost plant India, sanitary landfill projects, solid waste management Assam, environmental projects UP, successful STP installations, FSTP implementation case studies, material recovery facility portfolio, waste-to-energy projects India"
         canonical="https://dlsenvirotech.com/portfolio"
