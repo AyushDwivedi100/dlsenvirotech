@@ -179,6 +179,104 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
     technology: "Mechanical Segregation, Composting Technology, Recyclable Recovery",
     client: "Kajalgaon Municipal Board, Assam (Chirang BTC)",
     location: "Kajalgaon, Assam"
+  },
+  {
+    id: "project-8",
+    title: "MRF & Waste to Compost Plant - Barpeta",
+    description: "Establishment and commissioning of Material Recovery Facility and Waste to Compost Plant for comprehensive municipal solid waste management and resource recovery.",
+    image: "",
+    category: ["swm", "mrf"],
+    tags: ["Material Recovery Facility", "Waste to Compost", "Municipal Solid Waste"],
+    technology: "Mechanical Segregation, Aerobic Composting, Material Recovery",
+    client: "Barpeta Municipal Board, Assam",
+    location: "Barpeta, Assam",
+    completedDate: "February 2025"
+  },
+  {
+    id: "project-9",
+    title: "MRF & Waste to Compost Plant - Bilasipara",
+    description: "Establishment and commissioning of Material Recovery Facility and Waste to Compost Plant for municipal solid waste processing and compost production.",
+    image: "",
+    category: ["swm", "mrf"],
+    tags: ["Material Recovery Facility", "Waste to Compost", "Municipal Solid Waste"],
+    technology: "Mechanical Segregation, Composting Technology, Resource Recovery",
+    client: "Bilasipara Municipal Board, Assam",
+    location: "Bilasipara, Assam",
+    completedDate: "March 2025"
+  },
+  {
+    id: "project-10",
+    title: "MRF & Waste to Compost Plant - Dargaon",
+    description: "Establishment and commissioning of Material Recovery Facility and Waste to Compost Plant for efficient municipal waste management and organic composting.",
+    image: "",
+    category: ["swm", "mrf"],
+    tags: ["Material Recovery Facility", "Waste to Compost", "Municipal Waste Management"],
+    technology: "Mechanical Segregation, Aerobic Composting, Recyclable Recovery",
+    client: "Dargaon Municipal Board, Assam",
+    location: "Dargaon, Assam",
+    completedDate: "April 2025"
+  },
+  {
+    id: "project-11",
+    title: "MRF & Waste to Compost Plant - Dhubri",
+    description: "Establishment and commissioning of Material Recovery Facility and Waste to Compost Plant for sustainable municipal solid waste management and resource recovery.",
+    image: "",
+    category: ["swm", "mrf"],
+    tags: ["Material Recovery Facility", "Waste to Compost", "Sustainable Waste Management"],
+    technology: "Mechanical Segregation, Composting Technology, Material Recovery",
+    client: "Dhubri Municipal Board, Assam",
+    location: "Dhubri, Assam",
+    completedDate: "April 2025"
+  },
+  {
+    id: "project-12",
+    title: "MRF & Waste to Compost Plant Commissioning - Gauripur",
+    description: "Commissioning and establishment of Material Recovery Facility and Waste to Compost Plant for comprehensive municipal solid waste processing and management.",
+    image: "",
+    category: ["swm", "mrf"],
+    tags: ["Material Recovery Facility", "Waste to Compost", "Plant Commissioning"],
+    technology: "Mechanical Segregation, Composting Technology, Recyclable Recovery",
+    client: "Gauripur Municipal Board, Assam",
+    location: "Gauripur, Assam",
+    completedDate: "April 2025"
+  },
+  {
+    id: "project-13",
+    title: "FSTP - Hybrid & Mechanized with Screw Press Technology",
+    description: "Design, supply, construction, installation, testing, and commissioning of Faecal Sludge Treatment Plant with hybrid mechanized screw press technology. Includes 3-4 years of operation and maintenance services.",
+    image: "",
+    category: ["fstp"],
+    tags: ["Faecal Sludge Treatment", "Screw Press Technology", "Hybrid System", "Mechanized Treatment", "O&M"],
+    capacity: "5 KLD",
+    technology: "Hybrid Mechanized System, Screw Press Technology, Advanced Sludge Dewatering",
+    client: "Rangia Municipal Board, Assam",
+    location: "Village Hekuhti, Rangia, Assam",
+    completedDate: "October 2024"
+  },
+  {
+    id: "project-14",
+    title: "Solid Waste Management O&M - Kanth & Puwanya",
+    description: "Operation and maintenance management of comprehensive solid waste management systems for multiple municipal areas, ensuring efficient waste collection, processing, and disposal.",
+    image: "",
+    category: ["swm"],
+    tags: ["Operation & Maintenance", "Solid Waste Management", "Municipal Services", "Waste Collection"],
+    capacity: "15 TPD",
+    technology: "Integrated Waste Management, Collection & Processing Systems",
+    client: "UP Jal Nigam",
+    location: "Nagar Palika Parishad Kanth & Puwanya, Shahjahanpur",
+    completedDate: "December 2023"
+  },
+  {
+    id: "project-15",
+    title: "Sanitary Landfill Development - Chirang BTC",
+    description: "Development of engineered sanitary landfill with comprehensive waste disposal infrastructure for scientific and environmentally safe waste management.",
+    image: "",
+    category: ["infrastructure"],
+    tags: ["Sanitary Landfill", "Infrastructure Development", "Waste Disposal", "Environmental Management"],
+    technology: "Engineered Landfill, Leachate Management, Environmental Controls",
+    client: "Kajalgaon Municipal Board, Assam (Chirang BTC)",
+    location: "Chirang BTC, Assam",
+    completedDate: "September 2025"
   }
 ];
 
