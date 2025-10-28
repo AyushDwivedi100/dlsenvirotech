@@ -9,8 +9,10 @@ import {
   organizationSchema,
   createBreadcrumbSchema,
 } from "@/components/seo/seo-head";
+import { getYearsOfExperienceString } from "@/lib/utils/company-info";
 
 const Gallery = () => {
+  const yearsExperience = getYearsOfExperienceString();
   const galleryImages: any[] = [];
 
   const breadcrumbSchema = createBreadcrumbSchema([
@@ -27,7 +29,7 @@ const Gallery = () => {
     <>
       <SEOHead
         title="Water Treatment Project Gallery - STP, ETP Installation Photos | DLS Envirotech"
-        description="View our water treatment project gallery: 2500+ STP, ETP, RO plant installations across India. Professional photos of industrial wastewater treatment systems. See our work quality! Request free site visit ☎️ +91-9568572005"
+        description="View our water treatment project gallery: 200+ STP, ETP, RO plant installations across India. Professional photos of industrial wastewater treatment systems. See our work quality! Request free site visit ☎️ +91-9568572005"
         keywords="water treatment gallery India, STP installation photos, ETP project images, industrial water treatment pictures, sewage treatment plant photos, water purification system gallery, wastewater treatment installations"
         canonical="https://dlsenvirotech.com/gallery"
         schema={combinedSchema}
@@ -50,7 +52,7 @@ const Gallery = () => {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 md:gap-8 max-w-xl mx-auto">
                 <div className="text-center">
                   <div className="text-xl sm:text-2xl md:text-3xl font-bold text-primary mb-2">
-                    15+
+                    {yearsExperience}
                   </div>
                   <div className="text-muted-foreground">Years Experience</div>
                 </div>

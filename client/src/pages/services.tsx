@@ -14,8 +14,10 @@ import {
   createFAQSchema,
   createServiceSchema,
 } from "@/components/seo/seo-head";
+import { getYearsOfExperienceString } from "@/lib/utils/company-info";
 
 const Services = () => {
+  const yearsExperience = getYearsOfExperienceString();
   const breadcrumbSchema = createBreadcrumbSchema([
     { name: "Home", url: "https://dlsenvirotech.com/" },
     { name: "Services", url: "https://dlsenvirotech.com/services" },
@@ -72,7 +74,7 @@ const Services = () => {
     <>
       <SEOHead
         title="Environmental Solutions India - Water Treatment, Industrial Systems & Waste Management | DLS Envirotech"
-        description="Leading environmental technology company in India: Water treatment (STP, ETP, RO), industrial solutions (cooling towers, PSA oxygen, air pollution control), waste management systems. 2500+ installations, 15+ years expertise, ISO certified. ☎️ +91-9568572005"
+        description={`Leading environmental technology company in India: Water treatment (STP, ETP, RO), industrial solutions (cooling towers, PSA oxygen, air pollution control), waste management systems. 200+ installations, ${yearsExperience} years expertise, ISO certified. ☎️ +91-9568572005`}
         keywords="environmental solutions India, water treatment services, industrial solutions, waste management, STP plant, ETP plant, cooling towers, PSA oxygen plants, air pollution control, solid waste management, material recovery facilities, environmental technology company India"
         canonical="https://dlsenvirotech.com/services"
         schema={combinedSchema}

@@ -2,8 +2,10 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Link } from "wouter";
 import { Phone, Play, Award, TrendingUp } from "lucide-react";
+import { getYearsOfExperienceString } from "@/lib/utils/company-info";
 
 const HeroSection = () => {
+  const yearsExperience = getYearsOfExperienceString();
   return (
     <section className="relative min-h-[500px] sm:min-h-[600px] md:min-h-[650px] lg:min-h-[700px] xl:min-h-screen flex items-center bg-gradient-to-br from-background to-muted py-8 sm:py-12 md:py-16 lg:py-20">
       {/* Background Image */}
@@ -23,7 +25,7 @@ const HeroSection = () => {
             variant="secondary"
           >
             <Award className="mr-2 h-3 w-3 sm:h-4 sm:w-4" />
-            15+ Years Experience
+            {yearsExperience} Years Experience
           </Badge>
 
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-foreground mb-3 sm:mb-4 md:mb-5 lg:mb-6 leading-tight">
@@ -78,7 +80,7 @@ const HeroSection = () => {
               </div>
               <div>
                 <p className="text-xl lg:text-2xl font-bold text-foreground">
-                  2500+
+                  200+
                 </p>
                 <p className="text-sm lg:text-base text-muted-foreground">
                   Systems Installed
@@ -94,7 +96,7 @@ const HeroSection = () => {
                 <TrendingUp className="h-5 w-5" />
               </div>
               <div>
-                <p className="text-xl font-bold text-foreground">2500+</p>
+                <p className="text-xl font-bold text-foreground">200+</p>
                 <p className="text-sm text-muted-foreground">
                   Systems Installed
                 </p>

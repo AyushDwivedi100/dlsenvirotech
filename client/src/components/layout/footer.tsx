@@ -4,8 +4,10 @@ import { SiX } from "react-icons/si";
 import { ThemeToggle } from "@/components/ui/theme-toggle";
 import { Button } from "@/components/ui/button";
 import dlsLogo from "@assets/dls-envirotech-logo.png";
+import { getYearsOfExperienceString } from "@/lib/utils/company-info";
 
 const Footer = () => {
+  const yearsExperience = getYearsOfExperienceString();
   const services = [
     "Sewage Treatment Plants",
     "Effluent Treatment Plants",
@@ -37,7 +39,7 @@ const Footer = () => {
             </div>
             <p className="text-foreground/70 text-sm sm:text-base mb-5 sm:mb-6 leading-relaxed">
               Leading provider of comprehensive water treatment solutions with
-              15+ years of expertise in environmental technology. Serving
+              {yearsExperience} years of expertise in environmental technology. Serving
               clients across India with innovative and sustainable solutions.
             </p>
             <div className="flex flex-wrap gap-3 sm:gap-4">

@@ -255,3 +255,53 @@ Everything else is automated! 🚀
 [x] 82. Image now matches company's working area (environmental solutions/wastewater) ✅
 
 **Latest Update**: About page now displays an appropriate faecal sludge treatment plant image that aligns with DLS Envirotech's environmental solutions work area.
+
+---
+
+## ✅ Dynamic Years & Custom Image Implementation - October 28, 2025
+
+[x] 83. Created utility function to automatically calculate years from founding year (2009) ✅
+[x] 84. Updated all 15+ references to dynamic calculation (now shows 16+) ✅
+[x] 85. Generated custom FSTP wastewater treatment facility image ✅
+[x] 86. Replaced stock images with AI-generated professional FSTP image ✅
+[x] 87. Updated About section to use generated image ✅
+[x] 88. Updated hero-section.tsx with dynamic years ✅
+[x] 89. Updated footer.tsx with dynamic years ✅
+[x] 90. Updated about.tsx page with dynamic years ✅
+[x] 91. Updated gallery.tsx page with dynamic years ✅
+[x] 92. Updated portfolio.tsx page with dynamic years ✅
+[x] 93. Updated home.tsx SEO metadata with dynamic years ✅
+[x] 94. Updated services.tsx SEO metadata with dynamic years ✅
+[x] 95. Updated seo-head.tsx organization schema with dynamic years ✅
+[x] 96. Removed all stock images from project ✅
+[x] 97. Verified website showing "16+" years across all pages ✅
+[x] 98. Years will now auto-increment every year (2009 → current year) ✅
+
+**Implementation Details**:
+- Created `/client/src/lib/utils/company-info.ts` with `getYearsOfExperienceString()` function
+- Function calculates: `current year - 2009 = years of experience`
+- Currently displays "16+" (2025 - 2009 = 16)
+- Will automatically show "17+" in 2026, "18+" in 2027, etc.
+- No manual updates needed ever again!
+- All pages, SEO metadata, and schemas updated
+- Custom AI-generated FSTP image matches company's environmental solutions work
+
+**Result**: Years of experience now auto-updates annually and custom professional FSTP image installed!
+
+---
+
+## ✅ Project Count Update - October 28, 2025
+
+[x] 99. Updated all "2500+" references to "200+" throughout website ✅
+[x] 100. Updated about-section.tsx stats (200+ Systems Installed) ✅
+[x] 101. Updated hero-section.tsx desktop badge (200+ Systems) ✅
+[x] 102. Updated hero-section.tsx mobile badge (200+ Systems) ✅
+[x] 103. Updated about.tsx page content and SEO metadata ✅
+[x] 104. Updated home.tsx SEO metadata (200+ installations) ✅
+[x] 105. Updated services.tsx SEO metadata (200+ installations) ✅
+[x] 106. Updated portfolio.tsx title and description (200+ Case Studies) ✅
+[x] 107. Updated gallery.tsx SEO metadata (200+ installations) ✅
+[x] 108. Updated seo-head.tsx organization schema (200+ installations) ✅
+[x] 109. Verified all changes displaying correctly across website ✅
+
+**Update Summary**: All project count references changed from 2500+ to 200+ as requested. User will manually update this number in the future as needed.

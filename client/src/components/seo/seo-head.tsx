@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet";
+import { getYearsOfExperienceString } from "@/lib/utils/company-info";
 
 interface SEOHeadProps {
   title: string;
@@ -66,12 +67,13 @@ export const SEOHead = ({
 };
 
 // Organization Schema - Use on all pages
+const yearsExp = getYearsOfExperienceString();
 export const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "DLS Envirotech Corporation",
   "alternateName": "DLS Envirotech",
-  "description": "Leading water treatment company in India specializing in STP, ETP, RO plants, and industrial wastewater treatment solutions with 2500+ installations nationwide and 15+ years of expertise",
+  "description": `Leading water treatment company in India specializing in STP, ETP, RO plants, and industrial wastewater treatment solutions with 200+ installations nationwide and ${yearsExp} years of expertise`,
   "url": "https://dlsenvirotech.com",
   "logo": "https://dlsenvirotech.com/logo.png",
   "image": "https://dlsenvirotech.com/og-image.jpg",

@@ -1,11 +1,14 @@
 import { CheckCircle } from "lucide-react";
-import fstpImage from "@assets/stock_images/faecal_sludge_treatm_23f5be9f.jpg";
+import fstpImage from "@assets/generated_images/FSTP_wastewater_treatment_facility_9bf6216d.png";
+import { getYearsOfExperienceString } from "@/lib/utils/company-info";
 
 const AboutSection = () => {
+  const yearsExperience = getYearsOfExperienceString();
+  
   const stats = [
-    { value: "2500+", label: "Systems Installed" },
+    { value: "200+", label: "Systems Installed" },
     { value: "India", label: "Nationwide Service" },
-    { value: "15+", label: "Years Experience" },
+    { value: yearsExperience, label: "Years Experience" },
     { value: "100+", label: "Team Members" },
   ];
 
@@ -24,7 +27,7 @@ const AboutSection = () => {
           <div>
             <div className="mb-8">
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-6">
-                15+ Years of Environmental Engineering Excellence
+                {yearsExperience} Years of Environmental Engineering Excellence
               </h2>
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-6">
                 DLS Envirotech Corporation has established itself as a trusted
@@ -88,7 +91,7 @@ const AboutSection = () => {
             {/* Experience Badge - Repositioned */}
             <div className="absolute top-6 right-6 bg-primary text-primary-foreground p-4 sm:p-6 rounded-xl shadow-xl backdrop-blur-sm bg-primary/95">
               <div className="text-center text-white">
-                <div className="text-3xl sm:text-4xl font-bold mb-1">15+</div>
+                <div className="text-3xl sm:text-4xl font-bold mb-1">{yearsExperience}</div>
                 <div className="text-sm sm:text-base font-semibold">Years</div>
                 <div className="text-xs opacity-90">Excellence</div>
               </div>

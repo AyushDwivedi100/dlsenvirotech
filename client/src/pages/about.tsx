@@ -16,8 +16,10 @@ import {
   organizationSchema,
   createBreadcrumbSchema,
 } from "@/components/seo/seo-head";
+import { getYearsOfExperienceString } from "@/lib/utils/company-info";
 
 const About = () => {
+  const yearsExperience = getYearsOfExperienceString();
   const breadcrumbSchema = createBreadcrumbSchema([
     { name: "Home", url: "https://dlsenvirotech.com/" },
     { name: "About Us", url: "https://dlsenvirotech.com/about" },
@@ -63,7 +65,7 @@ const About = () => {
       year: "2024",
       title: "Industry Leadership",
       description:
-        "Serving clients across India with 2500+ successful installations and nationwide service network",
+        "Serving clients across India with 200+ successful installations and nationwide service network",
     },
   ];
 
@@ -97,8 +99,8 @@ const About = () => {
   return (
     <>
       <SEOHead
-        title="About DLS Envirotech - 15+ Years Leading Environmental Solutions Company India"
-        description="Learn about DLS Envirotech Corporation's 15+ years of expertise in environmental technology. ISO certified company with 2500+ installations across India. Our journey from 2009 to becoming India's leading provider of water treatment, industrial systems, and waste management solutions."
+        title={`About DLS Envirotech - ${yearsExperience} Years Leading Environmental Solutions Company India`}
+        description={`Learn about DLS Envirotech Corporation's ${yearsExperience} years of expertise in environmental technology. ISO certified company with 200+ installations across India. Our journey from 2009 to becoming India's leading provider of water treatment, industrial systems, and waste management solutions.`}
         keywords="about DLS Envirotech, environmental solutions company India, environmental technology expertise, ISO certified, company history, water treatment industrial waste management, leading environmental technology provider India"
         canonical="https://dlsenvirotech.com/about"
         schema={combinedSchema}
@@ -115,7 +117,7 @@ const About = () => {
                 About DLS Envirotech Corporation
               </h1>
               <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-6 md:mb-8 px-4">
-                With 15+ years of excellence in environmental technology, we
+                With {yearsExperience} years of excellence in environmental technology, we
                 have established ourselves as a trusted partner for
                 comprehensive water treatment, industrial, and waste management solutions across India.
               </p>
