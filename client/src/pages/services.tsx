@@ -74,7 +74,7 @@ const Services = () => {
     <>
       <SEOHead
         title="STP, FSTP & Waste Management Services India | MBR, MBBR Technology | DLS Envirotech"
-        description={`Comprehensive environmental services: Sewage treatment plant (STP), FSTP, solid waste management, MBR/MBBR/SBR technology, bio-methanation, cooling towers, ETP, RO plants. CPCB approved. ${yearsExperience} years experience, 200+ installations across India. Turnkey projects. ☎️ +91-9568572005`}
+        description={`STP, FSTP, solid waste, MBR/MBBR/SBR, bio-methanation, ETP, RO services. CPCB approved. ${yearsExperience} experience, 200+ installations. Turnkey projects India.`}
         keywords="sewage treatment plant services, STP installation India, FSTP services, faecal sludge treatment, MBBR technology India, MBR membrane bioreactor, SBR sequencing batch reactor, packaged STP plant, solid waste management services, bio-methanation plant, material recovery facility MRF, effluent treatment plant ETP, wastewater treatment services, industrial ETP installation, cooling tower manufacturer, PSA oxygen plant, air pollution control, septage treatment, water recycling services, zero liquid discharge, STP O&M services, CPCB compliant STP, environmental engineering services, waste to compost plant, sanitary landfill development, turnkey environmental projects India"
         canonical="https://dlsenvirotech.com/services"
         schema={combinedSchema}

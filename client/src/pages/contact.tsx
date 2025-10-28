@@ -24,7 +24,7 @@ const Contact = () => {
     <>
       <SEOHead
         title="Contact STP, FSTP & Waste Management Experts | Free Consultation | DLS Envirotech"
-        description="Contact DLS Envirotech for STP, FSTP, waste management consultation. Expert engineers available 24/7. Noida office: F-25, Sector-6, Noida 201301. Call +91-9568572005. Email: info.dlsenvirotech@gmail.com. Free site visit & quote! Serving UP, Assam & pan-India. International projects welcome."
+        description="STP, FSTP & waste management consultation. 24/7 expert engineers. Noida: F-25, Sector-6. Call +91-9568572005. Free site visit & quote. India & international."
         keywords="contact STP manufacturer, FSTP consultation India, waste management expert contact, sewage treatment plant inquiry, DLS Envirotech Noida office, environmental solutions contact, STP installation quote, free consultation wastewater, UP Jal Nigam contractor, Assam waste management contact, bio-methanation plant inquiry, MRF installation consultation, turnkey STP project quote, CPCB approved contractor contact, 24/7 environmental support India"
         canonical="https://dlsenvirotech.com/contact"
         schema={combinedSchema}

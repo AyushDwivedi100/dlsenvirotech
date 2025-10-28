@@ -100,7 +100,7 @@ const About = () => {
     <>
       <SEOHead
         title={`About DLS Envirotech | ${yearsExperience} Years | ISO Certified STP, FSTP & Waste Management Company`}
-        description={`DLS Envirotech: ${yearsExperience} years expertise in STP, FSTP & waste management. ISO 9001:2015 certified. 200+ installations across India. Founded 2009. CPCB approved. Leading manufacturer of sewage treatment plants, FSTP, bio-methanation, MRF in India. Serving municipalities, industries & international clients.`}
+        description={`${yearsExperience} STP, FSTP & waste management expertise. ISO 9001:2015, CPCB approved. 200+ installations since 2009. Serving municipalities & industries India-wide.`}
         keywords="about DLS Envirotech Corporation, ISO certified STP manufacturer India, ${yearsExperience} years environmental engineering, FSTP company India, waste management company history, CPCB approved, sewage treatment plant manufacturer, bio-methanation plant supplier, environmental solutions provider India, Noida environmental company, UP Jal Nigam contractor, Assam waste management projects, company milestones, quality environmental solutions, turnkey project contractor India, international environmental services"
         canonical="https://dlsenvirotech.com/about"
         schema={combinedSchema}

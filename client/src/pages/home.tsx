@@ -37,7 +37,7 @@ const Home = () => {
     <>
       <SEOHead
         title="Best STP, FSTP & Waste Management Company India | DLS Envirotech | 200+ Projects"
-        description={`Leading sewage treatment plant (STP), faecal sludge treatment plant (FSTP) & waste management company in India with ${yearsExperience} years expertise, 200+ installations. CPCB approved, ISO certified. MBR, MBBR, SBR technology. Turnkey projects across India & international. Get FREE consultation! ☎️ +91-9568572005`}
+        description={`${yearsExperience} years STP, FSTP & waste management expertise. ISO certified, CPCB approved. 200+ installations. MBR, MBBR technology. Serving India & global.`}
         keywords="sewage treatment plant India, STP plant manufacturer, FSTP India, faecal sludge treatment plant, waste management company India, MBBR STP, MBR technology, SBR sewage treatment, effluent treatment plant ETP, packaged STP, wastewater treatment India, CPCB approved STP, bio-methanation plant, solid waste management India, septage treatment plant, industrial wastewater treatment, water recycling plant, zero liquid discharge ZLD, sewage plant installation, STP O&M services, environmental solutions India, Swachh Bharat Mission, Namami Gange, UP Jal Nigam projects, Assam waste management, international environmental projects, turnkey STP contractor, eco-friendly waste treatment"
         canonical="https://dlsenvirotech.com/"
         schema={combinedSchema}
