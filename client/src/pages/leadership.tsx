@@ -4,7 +4,7 @@ import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
-import { Phone, Award, Building2, Briefcase, GraduationCap, Target } from "lucide-react";
+import { Phone, Award, Building2, Briefcase, Target } from "lucide-react";
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import {
@@ -56,9 +56,9 @@ const Leadership = () => {
   return (
     <>
       <SEOHead
-        title="Leadership - Mr. Shantanu Kumar Singh | Founder & Director | DLS Envirotech"
-        description={`Meet Mr. Shantanu Kumar Singh (S.K. Singh), Founder & Director of DLS Envirotech Corporation. Environmental Engineer with ${yearsExperience} years of experience, leading 120+ SWM projects, 60+ STPs, and 32+ FSTPs across India.`}
-        keywords="DLS Envirotech founder, Shantanu Kumar Singh, S.K. Singh, environmental engineer, director profile, company leadership, environmental solutions India, STP expert, FSTP specialist"
+        title="Leadership - Mr. S.K. Singh | Managing Director | DLS Envirotech"
+        description={`Meet Mr. S.K. Singh, Managing Director of DLS Envirotech Corporation. With ${yearsExperience} years of experience, leading 120+ SWM projects, 60+ STPs, and 32+ FSTPs across India.`}
+        keywords="DLS Envirotech director, S.K. Singh, managing director, company leadership, environmental solutions India, STP expert, FSTP specialist"
         canonical="https://dlsenvirotech.com/leadership"
         schema={combinedSchema}
       />
@@ -100,7 +100,7 @@ const Leadership = () => {
                           <div className="absolute -inset-4 bg-primary/20 rounded-full blur-2xl"></div>
                           <img
                             src="/director-photo.png"
-                            alt="Mr. Shantanu Kumar Singh, Founder & Director"
+                            alt="Mr. S.K. Singh, Managing Director"
                             className="relative rounded-2xl shadow-2xl w-full max-w-sm md:max-w-none object-cover"
                             data-testid="img-director-photo"
                           />
@@ -110,16 +110,13 @@ const Leadership = () => {
                       {/* Info Section */}
                       <div className="md:col-span-3 p-8 md:p-12 bg-background">
                         <div className="mb-6">
-                          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-2" data-testid="text-director-name">
-                            Mr. Shantanu Kumar Singh
+                          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4" data-testid="text-director-name">
+                            Mr. S.K. Singh
                           </h2>
-                          <p className="text-lg md:text-xl text-muted-foreground mb-1" data-testid="text-director-short-name">
-                            (Mr. S.K. Singh)
-                          </p>
-                          <div className="flex items-center gap-2 mt-3">
+                          <div className="flex items-center gap-2">
                             <div className="bg-primary/10 px-4 py-2 rounded-lg">
                               <p className="text-base md:text-lg font-semibold text-primary" data-testid="text-director-title">
-                                Founder & Director
+                                Managing Director
                               </p>
                             </div>
                           </div>
@@ -127,12 +124,6 @@ const Leadership = () => {
 
                         {/* Credentials */}
                         <div className="space-y-3 mb-8">
-                          <div className="flex items-center gap-3 text-foreground/80">
-                            <GraduationCap className="h-5 w-5 text-primary flex-shrink-0" />
-                            <span className="text-base md:text-lg" data-testid="text-director-education">
-                              B.E. (Environment)
-                            </span>
-                          </div>
                           <div className="flex items-center gap-3 text-foreground/80">
                             <Briefcase className="h-5 w-5 text-primary flex-shrink-0" />
                             <span className="text-base md:text-lg" data-testid="text-director-experience">
@@ -192,7 +183,7 @@ const Leadership = () => {
                       </p>
 
                       <p className="text-base md:text-lg text-foreground/90 leading-relaxed mb-6">
-                        As an Environmental Engineer (B.E. in Environment) with over {yearsExperience} years of professional experience, I have witnessed how scientific approach and responsible engineering can transform communities and industries towards a cleaner, greener future.
+                        With over {yearsExperience} years of professional experience, I have witnessed how scientific approach and responsible engineering can transform communities and industries towards a cleaner, greener future.
                       </p>
 
                       <p className="text-base md:text-lg text-foreground/90 leading-relaxed mb-6">
@@ -209,10 +200,10 @@ const Leadership = () => {
 
                       <div className="mt-8 pt-6 border-t border-border">
                         <p className="text-lg md:text-xl font-semibold text-foreground">
-                          — Mr. Shantanu Kumar Singh
+                          — Mr. S.K. Singh
                         </p>
                         <p className="text-base text-muted-foreground mt-1">
-                          B.E. (Environment), Founder & Director
+                          Managing Director
                         </p>
                         <p className="text-base text-muted-foreground">
                           DLS Envirotech Corporation Pvt. Ltd

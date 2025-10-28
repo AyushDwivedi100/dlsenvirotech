@@ -360,3 +360,24 @@ Everything else is automated! 🚀
 - Consistent with DLS Envirotech branding
 
 **Status**: Leadership page successfully created and operational. Page accessible at /leadership with navigation link in header menu.
+
+---
+
+## ✅ Director Profile Updated - October 28, 2025
+
+[x] 127. Changed director name display to short name only (Mr. S.K. Singh) ✅
+[x] 128. Removed full name subtitle line ✅
+[x] 129. Removed qualification/education display (B.E. Environment) ✅
+[x] 130. Changed title from "Founder & Director" to "Managing Director" ✅
+[x] 131. Updated SEO metadata with new title and description ✅
+[x] 132. Updated director's message to remove qualification reference ✅
+[x] 133. Updated signature at end of message ✅
+[x] 134. Removed unused GraduationCap icon import ✅
+[x] 135. Verified changes display correctly with screenshot ✅
+
+**Updated Profile**:
+- **Display Name**: Mr. S.K. Singh (short name only)
+- **Title**: Managing Director (updated from Founder & Director)
+- **Credentials**: 16+ Years of Professional Experience only (qualification removed)
+- **Photo**: Professional black & white portrait
+- **All other content**: Achievements, message, and vision remain unchanged
