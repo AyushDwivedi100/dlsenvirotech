@@ -72,8 +72,8 @@ export const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "DLS Envirotech Corporation",
-  "alternateName": "DLS Envirotech",
-  "description": `Leading water treatment company in India specializing in STP, ETP, RO plants, and industrial wastewater treatment solutions with 200+ installations nationwide and ${yearsExp} years of expertise`,
+  "alternateName": ["DLS Envirotech", "DLS Envirotech Corporation Pvt. Ltd"],
+  "description": `Leading sewage treatment plant (STP), faecal sludge treatment plant (FSTP) & solid waste management company in India. CPCB approved, ISO 9001:2015 certified. 200+ installations across India with ${yearsExp} years expertise. MBR, MBBR, SBR technology. Bio-methanation plants, MRF, ETP. International projects.`,
   "url": "https://dlsenvirotech.com",
   "logo": "https://dlsenvirotech.com/logo.png",
   "image": "https://dlsenvirotech.com/og-image.jpg",
@@ -93,6 +93,7 @@ export const organizationSchema = {
     "longitude": 77.3212035
   },
   "sameAs": [
+    "https://www.indiamart.com/dlsenvirotechcorporation/",
     "https://www.facebook.com/dlsenvirotech",
     "https://www.linkedin.com/company/dlsenvirotech",
     "https://twitter.com/dlsenvirotech"
@@ -102,30 +103,59 @@ export const organizationSchema = {
     "@type": "QuantitativeValue",
     "value": 100
   },
-  "areaServed": {
-    "@type": "Country",
-    "name": "India"
-  },
-  "slogan": "Expert Water Treatment Solutions for a Sustainable Future",
+  "areaServed": [
+    {
+      "@type": "Country",
+      "name": "India"
+    },
+    {
+      "@type": "State",
+      "name": "Uttar Pradesh"
+    },
+    {
+      "@type": "State",
+      "name": "Assam"
+    }
+  ],
+  "slogan": "Comprehensive Environmental Solutions for Industry & Municipalities Worldwide",
   "aggregateRating": {
     "@type": "AggregateRating",
-    "ratingValue": "4.8",
-    "reviewCount": "150",
+    "ratingValue": "4.9",
+    "reviewCount": "200",
     "bestRating": "5",
     "worstRating": "1"
   },
   "knowsAbout": [
-    "Water Treatment",
-    "Sewage Treatment Plant",
-    "Effluent Treatment Plant",
-    "Wastewater Management",
-    "Zero Liquid Discharge",
-    "Reverse Osmosis",
-    "Industrial Water Treatment",
-    "Biological Treatment Systems",
-    "Chemical Treatment Solutions",
-    "Membrane Bioreactor (MBR)",
-    "Sequential Batch Reactor (SBR)"
+    "Sewage Treatment Plant (STP)",
+    "Faecal Sludge Treatment Plant (FSTP)",
+    "Solid Waste Management",
+    "Material Recovery Facility (MRF)",
+    "Bio-Methanation Plant",
+    "Waste to Compost Plant",
+    "Effluent Treatment Plant (ETP)",
+    "MBBR Technology",
+    "MBR Membrane Bioreactor",
+    "SBR Sequencing Batch Reactor",
+    "Packaged STP",
+    "Septage Treatment",
+    "Water Recycling",
+    "Zero Liquid Discharge (ZLD)",
+    "Industrial Wastewater Treatment",
+    "Sanitary Landfill",
+    "CPCB Compliance",
+    "Environmental Engineering",
+    "Turnkey Projects",
+    "STP O&M Services"
+  ],
+  "hasCredential": [
+    {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "ISO 9001:2015 Certification"
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "CPCB Approved Contractor"
+    }
   ]
 };
 
