@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin, Clock, MessageCircle, Headphones } from "lucide-react";
 
 export default function ContactSection() {
   const { toast } = useToast();
@@ -178,7 +178,7 @@ export default function ContactSection() {
                 Contact Information
               </CardTitle>
             </CardHeader>
-            <CardContent className="space-y-5 sm:space-y-6">
+            <CardContent className="space-y-4 sm:space-y-5">
               <div
                 className="flex items-start space-x-3 sm:space-x-4"
                 data-testid="contact-phone"
@@ -190,10 +190,29 @@ export default function ContactSection() {
                     href="tel:+919568572005"
                     className="text-muted-foreground text-sm sm:text-base hover:text-primary transition-colors"
                   >
-                    +919568572005
+                    +91 9568572005
                   </a>
                 </div>
               </div>
+              
+              <div
+                className="flex items-start space-x-3 sm:space-x-4"
+                data-testid="contact-whatsapp"
+              >
+                <MessageCircle className="h-5 w-5 sm:h-6 sm:w-6 text-primary flex-shrink-0 mt-1" />
+                <div>
+                  <p className="font-medium text-sm sm:text-base mb-1">WhatsApp</p>
+                  <a
+                    href="https://wa.me/919568572005"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-muted-foreground text-sm sm:text-base hover:text-primary transition-colors"
+                  >
+                    +91 9568572005
+                  </a>
+                </div>
+              </div>
+              
               <div
                 className="flex items-start space-x-3 sm:space-x-4"
                 data-testid="contact-email"
@@ -209,6 +228,7 @@ export default function ContactSection() {
                   </a>
                 </div>
               </div>
+              
               <div
                 className="flex items-start space-x-3 sm:space-x-4"
                 data-testid="contact-address"
@@ -226,6 +246,40 @@ export default function ContactSection() {
                   >
                     F-25, Sector-6, Noida 201301 (U.P.)
                   </a>
+                </div>
+              </div>
+              
+              <div className="border-t border-border pt-4 sm:pt-5 mt-4 sm:mt-5">
+                <div
+                  className="flex items-start space-x-3 sm:space-x-4"
+                  data-testid="contact-hours"
+                >
+                  <Clock className="h-5 w-5 sm:h-6 sm:w-6 text-primary flex-shrink-0 mt-1" />
+                  <div>
+                    <p className="font-medium text-sm sm:text-base mb-1">Business Hours</p>
+                    <p className="text-muted-foreground text-sm sm:text-base">
+                      Mon - Sat: 9:00 AM - 6:00 PM
+                    </p>
+                    <p className="text-muted-foreground text-sm sm:text-base">
+                      Sunday: Closed
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
+              <div
+                className="flex items-start space-x-3 sm:space-x-4"
+                data-testid="contact-support"
+              >
+                <Headphones className="h-5 w-5 sm:h-6 sm:w-6 text-primary flex-shrink-0 mt-1" />
+                <div>
+                  <p className="font-medium text-sm sm:text-base mb-1">Customer Support</p>
+                  <p className="text-muted-foreground text-sm sm:text-base">
+                    24/7 Emergency Support Available
+                  </p>
+                  <p className="text-xs sm:text-sm text-muted-foreground/80 mt-1">
+                    Response within 24 hours
+                  </p>
                 </div>
               </div>
             </CardContent>

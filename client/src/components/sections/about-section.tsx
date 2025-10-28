@@ -7,7 +7,7 @@ const AboutSection = () => {
   
   const stats = [
     { value: "200+", label: "Systems Installed" },
-    { value: "India", label: "Nationwide Service" },
+    { value: "Global", label: "Service Reach" },
     { value: yearsExperience, label: "Years Experience" },
     { value: "100+", label: "Team Members" },
   ];
@@ -39,7 +39,7 @@ const AboutSection = () => {
                 Our comprehensive approach combines cutting-edge technology with
                 proven methodologies to create sustainable environmental
                 solutions that meet the evolving needs of industries and
-                municipalities across India.
+                municipalities in India and beyond.
               </p>
             </div>
 

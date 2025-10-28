@@ -65,7 +65,7 @@ const About = () => {
       year: "2024",
       title: "Industry Leadership",
       description:
-        "Serving clients across India with 200+ successful installations and nationwide service network",
+        "Serving clients globally with 200+ successful installations and expanding international service network",
     },
   ];
 
@@ -99,9 +99,9 @@ const About = () => {
   return (
     <>
       <SEOHead
-        title={`About DLS Envirotech - ${yearsExperience} Years Leading Environmental Solutions Company India`}
-        description={`Learn about DLS Envirotech Corporation's ${yearsExperience} years of expertise in environmental technology. ISO certified company with 200+ installations across India. Our journey from 2009 to becoming India's leading provider of water treatment, industrial systems, and waste management solutions.`}
-        keywords="about DLS Envirotech, environmental solutions company India, environmental technology expertise, ISO certified, company history, water treatment industrial waste management, leading environmental technology provider India"
+        title={`About DLS Envirotech - ${yearsExperience} Years Leading Environmental Solutions Company`}
+        description={`Learn about DLS Envirotech Corporation's ${yearsExperience} years of expertise in environmental technology. ISO certified company with 200+ installations globally, based in India. Our journey from 2009 to becoming a leading provider of water treatment, industrial systems, and waste management solutions worldwide.`}
+        keywords="about DLS Envirotech, environmental solutions company India, environmental technology expertise, ISO certified, company history, water treatment industrial waste management, leading environmental technology provider, international environmental solutions"
         canonical="https://dlsenvirotech.com/about"
         schema={combinedSchema}
       />
@@ -119,7 +119,7 @@ const About = () => {
               <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-6 md:mb-8 px-4">
                 With {yearsExperience} years of excellence in environmental technology, we
                 have established ourselves as a trusted partner for
-                comprehensive water treatment, industrial, and waste management solutions across India.
+                comprehensive water treatment, industrial, and waste management solutions in India and internationally.
               </p>
               <Button size="lg" asChild>
                 <Link href="/contact" className="text-white">

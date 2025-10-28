@@ -44,7 +44,7 @@ const Services = () => {
     {
       question: "Which industries do you serve?",
       answer:
-        "We serve diverse industries including pharmaceuticals, textiles, chemicals, food & beverage, hospitality, real estate, manufacturing, hospitals, educational institutions, IT parks, power plants, and municipal corporations across India for water treatment, industrial systems, and waste management solutions.",
+        "We serve diverse industries including pharmaceuticals, textiles, chemicals, food & beverage, hospitality, real estate, manufacturing, hospitals, educational institutions, IT parks, power plants, and municipal corporations in India and internationally for water treatment, industrial systems, and waste management solutions.",
     },
     {
       question:

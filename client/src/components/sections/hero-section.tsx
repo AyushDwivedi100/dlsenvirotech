@@ -31,16 +31,16 @@ const HeroSection = () => {
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-foreground mb-3 sm:mb-4 md:mb-5 lg:mb-6 leading-tight">
             Comprehensive Environmental Solutions
             <span className="text-primary block mt-1 sm:mt-2">
-              for Industry & Municipalities in India
+              for Industry & Municipalities Worldwide
             </span>
           </h1>
 
           <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground mb-5 sm:mb-6 md:mb-7 lg:mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0">
-            Leading environmental technology company in India specializing in
+            Leading environmental technology company based in India, serving clients globally. Specializing in
             water treatment (STP, ETP, WTP, RO systems), industrial solutions
             (cooling towers, PSA oxygen plants, air pollution control), and
             waste management systems. ISO certified with proven expertise for
-            all municipal and industrial applications across India.
+            all municipal and industrial applications in India and internationally.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center lg:justify-start">

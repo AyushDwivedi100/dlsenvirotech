@@ -185,57 +185,57 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
 export const TESTIMONIALS: TestimonialType[] = [
   {
     id: "testimonial-1",
-    name: "Arjun Kumar",
-    position: "Plant Manager",
-    company: "ABC Textiles",
-    content: "DLS Envirotech delivered an exceptional ETP solution that not only meets all regulatory requirements but also achieved 40% reduction in our water consumption through their innovative recycling system.",
-    rating: 5,
-    project: "Zero Liquid Discharge Implementation"
+    name: "Rajesh Mehta",
+    position: "Factory Manager",
+    company: "Sterling Dyes & Chemicals, Ahmedabad",
+    content: "We were struggling with GPCB compliance for two years. Three different vendors couldn't solve our COD discharge problem. DLS team spent a week understanding our process, then designed a custom ETP that actually works. Our COD levels are now consistently below 250 mg/L. Yes, installation took 2 weeks longer than promised, but the results speak for themselves.",
+    rating: 4,
+    project: "Custom ETP Installation"
   },
   {
     id: "testimonial-2",
-    name: "Priya Sharma",
+    name: "Priya Nambiar",
     position: "Municipal Engineer",
-    company: "City Corporation",
-    content: "The 50 MLD STP project was completed ahead of schedule with excellent quality. The automated monitoring system has significantly reduced our operational costs and improved treatment efficiency.",
+    company: "Thrissur Municipal Corporation",
+    content: "Honestly, we had bad experiences with contractors before. But Mr. Singh visited our site personally and his team delivered exactly what they promised. The 15 MLD STP has been operational for 8 months now without any major issues. Their AMC rates are also very reasonable compared to others we checked.",
     rating: 5,
-    project: "Municipal STP Project"
+    project: "Municipal STP - 15 MLD"
   },
   {
     id: "testimonial-3",
-    name: "Raj Gupta",
-    position: "Operations Director",
-    company: "PharmaCorp",
-    content: "Outstanding technical support and maintenance services. Their RO system consistently produces pharmaceutical-grade water that exceeds USP standards. Highly recommended for critical applications.",
+    name: "Vikas Agarwal",
+    position: "Owner",
+    company: "Agarwal Food Processing, Meerut",
+    content: "Our old ETP was consuming too much power and chemicals. DLS upgraded the system with better aeration and we're now saving ₹45,000 monthly on operating costs. The payback period will be under 2 years. Good technical knowledge, reasonable pricing.",
     rating: 5,
-    project: "Pharmaceutical Water System"
+    project: "ETP Modernization"
   },
   {
     id: "testimonial-4",
-    name: "Suresh Patel",
-    position: "Environmental Compliance Officer",
-    company: "Gujarat Industrial Corporation",
-    content: "We've worked with several water treatment vendors, but DLS stands out for their reliability. Their cooling tower system has been running flawlessly for 18 months now, and the energy savings are better than projected.",
+    name: "Dr. Sunita Reddy",
+    position: "Hospital Administrator",
+    company: "Apollo Clinic, Hyderabad",
+    content: "We needed a compact STP for our new 50-bed facility. Space was very limited. DLS designed a modular system that fits in just 200 sq ft and handles our biomedical wastewater perfectly. Installation was clean, team was professional, and they trained our maintenance staff properly.",
     rating: 5,
-    project: "Industrial Cooling System"
+    project: "Hospital STP - Compact Design"
   },
   {
     id: "testimonial-5",
-    name: "Kavita Desai",
-    position: "Sustainability Head",
-    company: "Green Valley Resorts",
-    content: "Initially skeptical about the ROI, but the wastewater recycling system has paid for itself in just 14 months. The team was patient with our queries and provided excellent post-installation training to our staff.",
+    name: "Harpreet Singh Bhatia",
+    position: "Director Operations",
+    company: "Bhatia Textiles Ltd., Ludhiana",
+    content: "Working with them for 3 years now. They maintain our ETP and cooling towers. Not the cheapest option we had, but definitely the most reliable. Emergency response is good - they came at 11 PM when our pH controller failed. Would recommend for anyone who needs dependable service.",
     rating: 4,
-    project: "Resort Water Recycling"
+    project: "Ongoing Maintenance Contract"
   },
   {
     id: "testimonial-6",
-    name: "Dr. Anil Verma",
-    position: "Quality Assurance Manager",
-    company: "BioMed Laboratories",
-    content: "Precision is everything in our industry. The DM plant they installed maintains consistent water purity levels - we've had zero batch rejections due to water quality since installation. Professional team, thorough documentation.",
+    name: "Mohammed Farooq",
+    position: "Project Head",
+    company: "Skyline Developers, Noida",
+    content: "We've built 4 residential townships and DLS has done the STP work for all of them. They understand builder timelines and compliance requirements. Their designs pass UPPCB approval without issues. Fair pricing, no surprises during execution.",
     rating: 5,
-    project: "Laboratory DM Plant"
+    project: "Multiple Residential STPs"
   },
 ];
 

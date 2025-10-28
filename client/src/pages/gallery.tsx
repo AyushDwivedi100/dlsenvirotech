@@ -29,8 +29,8 @@ const Gallery = () => {
     <>
       <SEOHead
         title="Water Treatment Project Gallery - STP, ETP Installation Photos | DLS Envirotech"
-        description="View our water treatment project gallery: 200+ STP, ETP, RO plant installations across India. Professional photos of industrial wastewater treatment systems. See our work quality! Request free site visit ☎️ +91-9568572005"
-        keywords="water treatment gallery India, STP installation photos, ETP project images, industrial water treatment pictures, sewage treatment plant photos, water purification system gallery, wastewater treatment installations"
+        description="View our water treatment project gallery: 200+ STP, ETP, RO plant installations globally. Professional photos of industrial wastewater treatment systems. See our work quality! Request free site visit ☎️ +91-9568572005"
+        keywords="water treatment gallery India, STP installation photos, ETP project images, industrial water treatment pictures, international projects, sewage treatment plant photos, water purification system gallery, wastewater treatment installations"
         canonical="https://dlsenvirotech.com/gallery"
         schema={combinedSchema}
       />
@@ -47,7 +47,7 @@ const Gallery = () => {
               <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-6 sm:mb-8 px-4">
                 Explore our extensive portfolio of successfully completed water
                 treatment installations across various industries and
-                applications in India.
+                applications globally.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 md:gap-8 max-w-xl mx-auto">
                 <div className="text-center">
@@ -58,10 +58,10 @@ const Gallery = () => {
                 </div>
                 <div className="text-center">
                   <div className="text-xl sm:text-2xl md:text-3xl font-bold text-secondary mb-2">
-                    India
+                    Global
                   </div>
                   <div className="text-muted-foreground">
-                    Nationwide Service
+                    Service Reach
                   </div>
                 </div>
               </div>
@@ -79,7 +79,7 @@ const Gallery = () => {
                   <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-6 md:mb-8 leading-relaxed">
                     We are currently preparing our authentic project gallery
                     featuring actual installation photos from our completed
-                    water treatment projects across India. These real images
+                    water treatment projects globally. These real images
                     will showcase our expertise and quality workmanship.
                   </p>
                   <p className="text-sm sm:text-base text-muted-foreground mb-8">

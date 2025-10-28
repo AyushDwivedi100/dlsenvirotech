@@ -17,7 +17,7 @@ const PortfolioShowcase = () => {
             Featured Projects
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto px-4">
-            Showcasing our proven expertise in solid waste management, material recovery facilities, and waste-to-energy solutions across India
+            Showcasing our proven expertise in solid waste management, material recovery facilities, and waste-to-energy solutions in India and beyond
           </p>
         </div>
 

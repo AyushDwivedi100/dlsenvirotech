@@ -44,9 +44,9 @@ const Portfolio = () => {
   return (
     <>
       <SEOHead
-        title="Environmental Solutions Portfolio India - 200+ Case Studies | DLS Envirotech"
-        description="Explore 200+ successful environmental technology projects across India. Case studies of water treatment, industrial systems, and waste management implementations. View our proven track record in comprehensive environmental solutions nationwide."
-        keywords="environmental solutions portfolio India, water treatment projects, industrial systems case studies, waste management projects, STP installations, ETP implementations, environmental technology company India, successful projects portfolio"
+        title="Environmental Solutions Portfolio - 200+ Case Studies | DLS Envirotech"
+        description="Explore 200+ successful environmental technology projects in India and beyond. Case studies of water treatment, industrial systems, and waste management implementations. View our proven track record in comprehensive environmental solutions globally."
+        keywords="environmental solutions portfolio India, water treatment projects, industrial systems case studies, waste management projects, STP installations, ETP implementations, environmental technology company India, international environmental projects, successful projects portfolio"
         canonical="https://dlsenvirotech.com/portfolio"
         schema={combinedSchema}
       />
@@ -63,7 +63,7 @@ const Portfolio = () => {
               </h1>
               <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-6 md:mb-8">
                 Explore our successful environmental technology implementations
-                across India including water treatment, industrial solutions,
+                in India and beyond, including water treatment, industrial solutions,
                 and waste management systems.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-8 max-w-xl mx-auto">

@@ -20,8 +20,8 @@ const Contact = () => {
     <>
       <SEOHead
         title="Contact Environmental Solutions Experts - Free Consultation | DLS Envirotech"
-        description="Contact DLS Envirotech for professional environmental solutions consultation. Expert engineers available 24/7. Call +91-9568572005 for water treatment, industrial systems, and waste management solutions. Free site visit and quote!"
-        keywords="contact environmental solutions, water treatment consultation, industrial systems expert, waste management consultant, environmental technology company, free consultation India, DLS Envirotech contact"
+        description="Contact DLS Envirotech for professional environmental solutions consultation worldwide. Expert engineers available 24/7. Call +91-9568572005 for water treatment, industrial systems, and waste management solutions. Free site visit and quote!"
+        keywords="contact environmental solutions, water treatment consultation, industrial systems expert, waste management consultant, environmental technology company, free consultation India, international projects, DLS Envirotech contact"
         canonical="https://dlsenvirotech.com/contact"
         schema={combinedSchema}
       />
