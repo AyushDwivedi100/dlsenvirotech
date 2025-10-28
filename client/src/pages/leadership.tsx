@@ -57,8 +57,8 @@ const Leadership = () => {
     <>
       <SEOHead
         title="Leadership - Mr. S.K. Singh | Managing Director | DLS Envirotech"
-        description={`Meet Mr. S.K. Singh, Managing Director of DLS Envirotech Corporation. With ${yearsExperience} years of experience, leading 120+ SWM projects, 60+ STPs, and 32+ FSTPs across India.`}
-        keywords="DLS Envirotech director, S.K. Singh, managing director, company leadership, environmental solutions India, STP expert, FSTP specialist"
+        description={`Meet Mr. S.K. Singh, Managing Director of DLS Envirotech Corporation. With ${yearsExperience} years of experience, leading 120+ SWM projects, 60+ STPs, and 32+ FSTPs in India, with capabilities for international projects.`}
+        keywords="DLS Envirotech director, S.K. Singh, managing director, company leadership, environmental solutions India, international projects, STP expert, FSTP specialist"
         canonical="https://dlsenvirotech.com/leadership"
         schema={combinedSchema}
       />
@@ -80,7 +80,7 @@ const Leadership = () => {
                   Leadership
                 </h1>
                 <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-                  Meet the visionary leader driving sustainable environmental solutions across India
+                  Meet the visionary leader driving sustainable environmental solutions in India and beyond
                 </p>
               </motion.div>
 
@@ -187,7 +187,7 @@ const Leadership = () => {
                       </p>
 
                       <p className="text-base md:text-lg text-foreground/90 leading-relaxed mb-6">
-                        Under our leadership, DLS Envirotech has successfully completed more than 120+ Solid Waste Management projects, 60+ large Sewage Treatment Plants (STP), and 32+ large Faecal Sludge Treatment Plants (FSTP) across various regions in India. These achievements are a reflection of our dedication, technical expertise, and client trust.
+                        Under our leadership, DLS Envirotech has successfully completed more than 120+ Solid Waste Management projects, 60+ large Sewage Treatment Plants (STP), and 32+ large Faecal Sludge Treatment Plants (FSTP) across various regions in India. These achievements are a reflection of our dedication, technical expertise, and client trust. While we are proudly rooted in India, we welcome opportunities to bring our expertise to international projects.
                       </p>
 
                       <p className="text-base md:text-lg text-foreground/90 leading-relaxed mb-6">
@@ -269,7 +269,7 @@ const Leadership = () => {
                 <Card className="bg-gradient-to-br from-primary/5 to-primary/10 border-primary/20">
                   <CardContent className="p-8 md:p-12">
                     <p className="text-lg md:text-xl text-foreground/90 leading-relaxed text-center">
-                      To provide <span className="font-semibold text-primary">sustainable, efficient, and affordable environmental solutions</span> that ensure compliance and contribute to a <span className="font-semibold text-primary">pollution-free nation</span>. We continue to invest in advanced technologies, skill development, and transparent project execution to maintain the highest standards in our field.
+                      To provide <span className="font-semibold text-primary">sustainable, efficient, and affordable environmental solutions</span> in India and globally, ensuring compliance and contributing to a <span className="font-semibold text-primary">pollution-free world</span>. We continue to invest in advanced technologies, skill development, and transparent project execution to maintain the highest standards in our field.
                     </p>
                   </CardContent>
                 </Card>
@@ -284,7 +284,7 @@ const Leadership = () => {
                 Partner with Industry-Leading Expertise
               </h2>
               <p className="text-base md:text-lg text-muted-foreground mb-6 md:mb-8">
-                Experience the difference that {yearsExperience} years of environmental engineering excellence can make to your project.
+                Experience the difference that {yearsExperience} years of environmental engineering excellence can make to your project, anywhere in the world.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center">
                 <Button size="lg" className="w-full sm:w-auto" asChild data-testid="button-contact-leader">
