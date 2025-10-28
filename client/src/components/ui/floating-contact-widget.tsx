@@ -38,7 +38,7 @@ export default function FloatingContactWidget() {
         <span className="absolute inset-0 rounded-full bg-[#E97D27] opacity-75 animate-[ripple_1.5s_ease-out_0.5s_infinite]"></span>
         <span className="absolute inset-0 rounded-full bg-[#E97D27] opacity-75 animate-[ripple_1.5s_ease-out_1s_infinite]"></span>
         
-        <img src={indiaMartLogo} alt="IndiaMART" className="h-10 w-10 object-contain relative z-10" />
+        <img src={indiaMartLogo} alt="IndiaMART" className="h-12 w-12 object-contain relative z-10" />
         <span className="absolute left-16 bg-[#E97D27] text-white px-3 py-1.5 rounded-md text-sm font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300 shadow-lg pointer-events-none z-10">
           IndiaMART
         </span>
