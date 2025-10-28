@@ -178,34 +178,34 @@ const Leadership = () => {
                 <Card className="shadow-lg border-l-4 border-l-primary">
                   <CardContent className="p-8 md:p-12">
                     <div className="prose prose-lg max-w-none" data-testid="text-director-message">
-                      <p className="text-base md:text-lg text-foreground/90 leading-relaxed mb-6">
+                      <p className="text-base md:text-lg text-gray-700 dark:text-gray-200 leading-relaxed mb-6">
                         At DLS Envirotech Corporation Pvt. Ltd., we are committed to driving sustainable development through innovative and reliable environmental and pollution control solutions.
                       </p>
 
-                      <p className="text-base md:text-lg text-foreground/90 leading-relaxed mb-6">
+                      <p className="text-base md:text-lg text-gray-700 dark:text-gray-200 leading-relaxed mb-6">
                         With over {yearsExperience} years of professional experience, I have witnessed how scientific approach and responsible engineering can transform communities and industries towards a cleaner, greener future.
                       </p>
 
-                      <p className="text-base md:text-lg text-foreground/90 leading-relaxed mb-6">
+                      <p className="text-base md:text-lg text-gray-700 dark:text-gray-200 leading-relaxed mb-6">
                         Under our leadership, DLS Envirotech has successfully completed more than 120+ Solid Waste Management projects, 60+ large Sewage Treatment Plants (STP), and 32+ large Faecal Sludge Treatment Plants (FSTP) across various regions in India. These achievements are a reflection of our dedication, technical expertise, and client trust. While we are proudly rooted in India, we welcome opportunities to bring our expertise to international projects.
                       </p>
 
-                      <p className="text-base md:text-lg text-foreground/90 leading-relaxed mb-6">
+                      <p className="text-base md:text-lg text-gray-700 dark:text-gray-200 leading-relaxed mb-6">
                         Our vision is clear — to provide sustainable, efficient, and affordable environmental solutions that ensure compliance and contribute to a pollution-free nation. We continue to invest in advanced technologies, skill development, and transparent project execution to maintain the highest standards in our field.
                       </p>
 
-                      <p className="text-base md:text-lg text-foreground/90 leading-relaxed">
+                      <p className="text-base md:text-lg text-gray-700 dark:text-gray-200 leading-relaxed">
                         Together, with our clients, partners, and team, we are building a cleaner and more sustainable tomorrow.
                       </p>
 
                       <div className="mt-8 pt-6 border-t border-border">
-                        <p className="text-lg md:text-xl font-semibold text-foreground">
+                        <p className="text-lg md:text-xl font-semibold text-gray-900 dark:text-white">
                           — Mr. S.K. Singh
                         </p>
-                        <p className="text-base text-muted-foreground mt-1">
+                        <p className="text-base text-gray-600 dark:text-gray-300 mt-1">
                           Managing Director
                         </p>
-                        <p className="text-base text-muted-foreground">
+                        <p className="text-base text-gray-600 dark:text-gray-300">
                           DLS Envirotech Corporation Pvt. Ltd
                         </p>
                       </div>
