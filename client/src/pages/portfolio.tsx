@@ -23,6 +23,8 @@ const Portfolio = () => {
     { id: "all", label: "All Projects" },
     { id: "swm", label: "Solid Waste Management" },
     { id: "mrf", label: "Material Recovery Facilities" },
+    { id: "fstp", label: "FSTP" },
+    { id: "infrastructure", label: "Infrastructure" },
     { id: "waste-to-energy", label: "Waste-to-Energy" },
   ];
 
