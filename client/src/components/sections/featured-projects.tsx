@@ -4,10 +4,13 @@ import { PORTFOLIO_PROJECTS } from "@/lib/constants";
 import { Link } from "wouter";
 import { FolderOpen } from "lucide-react";
 
-const PortfolioShowcase = () => {
+const FeaturedProjects = () => {
 
-  // Show only first 3 projects on home page as preview
-  const previewProjects = PORTFOLIO_PROJECTS.slice(0, 3);
+  // Show 3 flagship projects: Bio-Methanation, FSTP Rangia, Sanitary Landfill
+  const featuredProjectIds = ["project-4", "project-13", "project-15"];
+  const previewProjects = PORTFOLIO_PROJECTS.filter(project => 
+    featuredProjectIds.includes(project.id)
+  );
 
   return (
     <section className="py-12 sm:py-16 md:py-20 bg-muted">
@@ -43,4 +46,4 @@ const PortfolioShowcase = () => {
   );
 };
 
-export default PortfolioShowcase;
+export default FeaturedProjects;

@@ -3,9 +3,8 @@ import TopBar from "@/components/layout/top-bar";
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
 import HeroSection from "@/components/sections/hero-section";
-import FeaturedProjectsSection from "@/components/sections/featured-projects-section";
 import ServicesOverview from "@/components/sections/services-overview";
-import PortfolioShowcase from "@/components/sections/portfolio-showcase";
+import FeaturedProjects from "@/components/sections/featured-projects";
 import AboutSection from "@/components/sections/about-section";
 import TestimonialsSection from "@/components/sections/testimonials-section";
 import ContactSection from "@/components/sections/contact-section";
@@ -49,9 +48,8 @@ const Home = () => {
         <Header />
         <main>
           <HeroSection />
-          <FeaturedProjectsSection />
           <ServicesOverview />
-          <PortfolioShowcase />
+          <FeaturedProjects />
           <AboutSection />
           <TestimonialsSection />
           <ContactSection />
