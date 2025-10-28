@@ -10,6 +10,7 @@ import Services from "@/pages/services";
 import Portfolio from "@/pages/portfolio";
 import Gallery from "@/pages/gallery";
 import About from "@/pages/about";
+import Leadership from "@/pages/leadership";
 import Contact from "@/pages/contact";
 import Quote from "@/pages/quote";
 import Sitemap from "@/pages/sitemap";
@@ -22,6 +23,7 @@ function Router() {
       <Route path="/portfolio" component={Portfolio} />
       <Route path="/gallery" component={Gallery} />
       <Route path="/about" component={About} />
+      <Route path="/leadership" component={Leadership} />
       <Route path="/contact" component={Contact} />
       <Route path="/quote" component={Quote} />
       <Route path="/sitemap" component={Sitemap} />
