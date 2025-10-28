@@ -46,9 +46,9 @@ const Portfolio = () => {
   return (
     <>
       <SEOHead
-        title="Environmental Solutions Portfolio - 200+ Case Studies | DLS Envirotech"
-        description="Explore 200+ successful environmental technology projects in India and beyond. Case studies of water treatment, industrial systems, and waste management implementations. View our proven track record in comprehensive environmental solutions globally."
-        keywords="environmental solutions portfolio India, water treatment projects, industrial systems case studies, waste management projects, STP installations, ETP implementations, environmental technology company India, international environmental projects, successful projects portfolio"
+        title="STP, FSTP & Waste Management Projects Portfolio | 15+ Case Studies | DLS Envirotech"
+        description="Explore 15+ successfully completed environmental projects: MRF plants in Assam (Hailakandi, Nalbari, Kajalgaon), 95 TPD bio-methanation in Najibabad, FSTP Rangia, STP O&M in UP. Case studies of STP, FSTP, waste-to-compost, sanitary landfills across India. Proven track record with UP Jal Nigam, Assam municipalities."
+        keywords="STP project portfolio India, FSTP case studies, waste management projects Assam, MRF plant installation, bio-methanation plant Najibabad, UP Jal Nigam STP projects, faecal sludge treatment plant Rangia, sewage treatment plant O&M, waste to compost plant India, sanitary landfill projects, solid waste management Assam, environmental projects UP, successful STP installations, FSTP implementation case studies, material recovery facility portfolio, waste-to-energy projects India"
         canonical="https://dlsenvirotech.com/portfolio"
         schema={combinedSchema}
       />
