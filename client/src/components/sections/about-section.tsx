@@ -1,4 +1,5 @@
 import { CheckCircle } from "lucide-react";
+import fstpImage from "@assets/stock_images/faecal_sludge_treatm_23f5be9f.jpg";
 
 const AboutSection = () => {
   const stats = [
@@ -76,10 +77,11 @@ const AboutSection = () => {
           <div className="relative mt-8 lg:mt-0">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl bg-muted">
               <img
-                src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
-                alt="Professional engineering team discussing water treatment project plans"
+                src={fstpImage}
+                alt="Faecal sludge treatment plant FSTP with wastewater management systems"
                 className="w-full h-auto object-cover aspect-[4/3] lg:aspect-[3/4]"
                 loading="lazy"
+                data-testid="img-about-fstp"
               />
             </div>
 
