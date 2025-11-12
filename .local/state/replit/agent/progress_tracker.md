@@ -477,6 +477,22 @@ Everything else is automated! 🚀
 [x] 185. Import migration FULLY COMPLETED ✅
 
 **Final Status - November 12, 2025**: Project successfully migrated to Replit environment and fully operational. All dependencies installed, Vite development server running successfully on port 5000, website displaying correctly with all branding, navigation, hero section, wastewater treatment plant imagery, and floating contact widgets (WhatsApp + IndiaMART) working perfectly. The application is ready for continued development and new features.
+
+---
+
+## ✅ Package.json Dev Script Fix - November 12, 2025
+
+[x] 186. Identified error in client/package.json dev script (referenced non-existent vite.config.dev.ts) ✅
+[x] 187. Fixed dev script to use default vite.config.ts ✅
+[x] 188. Tested npm run dev in client folder - confirmed working ✅
+[x] 189. Dev script fix COMPLETED ✅
+
+**Fix Details**:
+- **Problem**: `npm run dev` in client folder was failing with "Could not resolve vite.config.dev.ts"
+- **Root Cause**: package.json referenced `vite.config.dev.ts` which didn't exist
+- **Solution**: Changed dev script from `vite --config vite.config.dev.ts` to just `vite`
+- **Result**: Vite now uses the default `vite.config.ts` file and starts successfully
+- **Verified**: Tested and confirmed working on port 5001 (5000 in use by workflow)
 [x] 177. Updated service icons with new Lucide icons (Waves, Leaf, Sprout, Trash2, Stethoscope) ✅
 [x] 178. Updated service-card component to support new icons ✅
 [x] 179. Updated Services page SEO metadata with new service keywords ✅
