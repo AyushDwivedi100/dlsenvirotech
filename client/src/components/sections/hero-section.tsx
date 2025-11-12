@@ -45,8 +45,8 @@ const HeroSection = () => {
 
           <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center lg:justify-start">
             <Button size="lg" className="w-full sm:w-auto" asChild>
-              <Link href="/contact">
-                <Phone className="mr-2 h-4 w-4 md:h-5 md:w-5 text-white" />
+              <Link href="/contact" aria-label="Contact us for free consultation on environmental solutions">
+                <Phone className="mr-2 h-4 w-4 md:h-5 md:w-5 text-white" aria-hidden="true" />
                 <span className="text-sm md:text-base text-white">
                   Get Free Consultation
                 </span>
@@ -58,8 +58,8 @@ const HeroSection = () => {
               className="w-full sm:w-auto"
               asChild
             >
-              <Link href="/portfolio">
-                <Play className="mr-2 h-4 w-4 md:h-5 md:w-5" />
+              <Link href="/portfolio" aria-label="View our portfolio of completed environmental projects">
+                <Play className="mr-2 h-4 w-4 md:h-5 md:w-5" aria-hidden="true" />
                 <span className="text-sm md:text-base">View Our Work</span>
               </Link>
             </Button>
@@ -69,8 +69,9 @@ const HeroSection = () => {
         <div className="relative mt-6 sm:mt-8 lg:mt-0">
           <img
             src="https://alantech.in/storage/blogs/modern-sewage-treatment-plant.webp"
-            alt="Professional STP ETP water treatment plant facility - DLS Envirotech sewage and effluent treatment solutions with advanced biological and chemical filtration systems"
+            alt="Modern wastewater treatment facility with advanced MBBR, STP, and biological filtration technology - DLS Envirotech professional environmental solutions"
             className="rounded-lg sm:rounded-xl md:rounded-2xl shadow-2xl w-full h-auto max-h-[300px] sm:max-h-[400px] md:max-h-[500px] lg:max-h-none object-cover lg:object-contain"
+            loading="eager"
           />
 
           <div className="hidden md:flex absolute -bottom-4 -left-4 lg:-bottom-6 lg:-left-6 bg-card border border-border p-4 lg:p-6 rounded-xl shadow-lg">

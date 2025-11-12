@@ -33,7 +33,7 @@ const Footer = () => {
             <div className="flex items-center space-x-4 mb-4 sm:mb-6">
               <img
                 src={dlsLogo}
-                alt="DLS Envirotech Corporation Logo"
+                alt="DLS Envirotech Corporation - Environmental Solutions Company Logo"
                 className="h-12 sm:h-14 md:h-16 w-auto object-contain"
               />
             </div>
@@ -47,34 +47,34 @@ const Footer = () => {
               <a
                 href="#"
                 className="bg-industrial-200 dark:bg-industrial-800 text-foreground p-2.5 sm:p-3 rounded-lg hover:bg-linkedin hover:text-white transition-colors"
-                aria-label="LinkedIn"
+                aria-label="Follow DLS Envirotech on LinkedIn for company updates and industry insights"
                 data-testid="link-linkedin"
               >
-                <Linkedin className="h-4 w-4 sm:h-5 sm:w-5" />
+                <Linkedin className="h-4 w-4 sm:h-5 sm:w-5" aria-hidden="true" />
               </a>
               <a
                 href="#"
                 className="bg-industrial-200 dark:bg-industrial-800 text-foreground p-2.5 sm:p-3 rounded-lg hover:bg-black hover:text-white transition-colors"
-                aria-label="X (Twitter)"
+                aria-label="Follow DLS Envirotech on X (Twitter) for latest news and updates"
                 data-testid="link-x-twitter"
               >
-                <SiX className="h-4 w-4 sm:h-5 sm:w-5" />
+                <SiX className="h-4 w-4 sm:h-5 sm:w-5" aria-hidden="true" />
               </a>
               <a
                 href="#"
                 className="bg-industrial-200 dark:bg-industrial-800 text-foreground p-2.5 sm:p-3 rounded-lg hover:bg-facebook hover:text-white transition-colors"
-                aria-label="Facebook"
+                aria-label="Follow DLS Envirotech on Facebook for environmental solutions and project updates"
                 data-testid="link-facebook"
               >
-                <Facebook className="h-4 w-4 sm:h-5 sm:w-5" />
+                <Facebook className="h-4 w-4 sm:h-5 sm:w-5" aria-hidden="true" />
               </a>
               <a
                 href="#"
                 className="bg-industrial-200 dark:bg-industrial-800 text-foreground p-2.5 sm:p-3 rounded-lg hover:bg-youtube hover:text-white transition-colors"
-                aria-label="YouTube"
+                aria-label="Watch DLS Envirotech project videos and demonstrations on YouTube"
                 data-testid="link-youtube"
               >
-                <Youtube className="h-4 w-4 sm:h-5 sm:w-5" />
+                <Youtube className="h-4 w-4 sm:h-5 sm:w-5" aria-hidden="true" />
               </a>
             </div>
           </div>
@@ -90,6 +90,7 @@ const Footer = () => {
                   <Link
                     href="/services"
                     className="text-foreground/70 hover:text-primary transition-colors text-sm sm:text-base"
+                    aria-label={`Learn more about ${service}`}
                   >
                     {service}
                   </Link>
@@ -109,6 +110,7 @@ const Footer = () => {
                   <Link
                     href={item.href}
                     className="text-foreground/70 hover:text-primary transition-colors text-sm sm:text-base"
+                    aria-label={`Navigate to ${item.name} page`}
                   >
                     {item.name}
                   </Link>
@@ -135,8 +137,9 @@ const Footer = () => {
                 <Link
                   href="/sitemap"
                   className="flex items-center gap-1.5 sm:gap-2"
+                  aria-label="View website sitemap for easy navigation"
                 >
-                  <Map className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
+                  <Map className="h-3.5 w-3.5 sm:h-4 sm:w-4" aria-hidden="true" />
                   <span className="text-xs sm:text-sm">Sitemap</span>
                 </Link>
               </Button>

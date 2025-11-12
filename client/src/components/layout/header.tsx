@@ -34,10 +34,10 @@ const Header = () => {
         aria-label="Main navigation"
       >
         <div className="flex justify-between items-center h-16 md:h-20">
-          <Link href="/" className="flex items-center space-x-4">
+          <Link href="/" className="flex items-center space-x-4" aria-label="DLS Envirotech Corporation - Home">
             <img
               src={dlsLogo}
-              alt="DLS Envirotech Corporation Logo"
+              alt="DLS Envirotech Corporation - Environmental Solutions Company Logo"
               className="h-10 sm:h-12 md:h-14 lg:h-16 w-auto object-contain"
             />
           </Link>
@@ -52,15 +52,17 @@ const Header = () => {
                     ? "text-primary font-semibold"
                     : "text-foreground/80 hover:text-primary"
                 }`}
+                aria-label={`Navigate to ${item.name}`}
+                aria-current={isActive(item.href) ? "page" : undefined}
               >
                 {item.name}
                 {isActive(item.href) && (
-                  <span className="absolute -bottom-1 left-0 right-0 h-0.5 bg-primary rounded-full"></span>
+                  <span className="absolute -bottom-1 left-0 right-0 h-0.5 bg-primary rounded-full" aria-hidden="true"></span>
                 )}
               </Link>
             ))}
             <Button asChild size="sm" className="text-base px-4">
-              <Link href="/quote" className="text-white">
+              <Link href="/quote" className="text-white" aria-label="Request a quote for environmental solutions">
                 Get Quote
               </Link>
             </Button>
@@ -68,8 +70,8 @@ const Header = () => {
 
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
-              <Button variant="ghost" size="icon" className="lg:hidden">
-                <Menu className="h-6 w-6" />
+              <Button variant="ghost" size="icon" className="lg:hidden" aria-label="Open navigation menu">
+                <Menu className="h-6 w-6" aria-hidden="true" />
                 <span className="sr-only">Toggle mobile menu</span>
               </Button>
             </SheetTrigger>
@@ -85,6 +87,8 @@ const Header = () => {
                         : "text-foreground/80 hover:text-primary px-3 py-2 hover:bg-muted rounded-md"
                     }`}
                     onClick={() => setIsOpen(false)}
+                    aria-label={`Navigate to ${item.name}`}
+                    aria-current={isActive(item.href) ? "page" : undefined}
                   >
                     {item.name}
                   </Link>
@@ -94,6 +98,7 @@ const Header = () => {
                     href="/quote"
                     onClick={() => setIsOpen(false)}
                     className="text-white"
+                    aria-label="Request a quote for environmental solutions"
                   >
                     Get Quote
                   </Link>
@@ -109,6 +114,7 @@ const Header = () => {
                       href="tel:+919568572005"
                       className="flex items-center gap-3 text-foreground/80 hover:text-primary transition-colors group"
                       data-testid="link-mobile-phone"
+                      aria-label="Call DLS Envirotech at +91 9568572005"
                     >
                       <div className="bg-primary/10 p-2 rounded-lg group-hover:bg-primary/20 transition-colors">
                         <Phone className="h-4 w-4 text-primary" />
@@ -119,6 +125,7 @@ const Header = () => {
                       href="mailto:info.dlsenvirotech@gmail.com"
                       className="flex items-center gap-3 text-foreground/80 hover:text-primary transition-colors group"
                       data-testid="link-mobile-email"
+                      aria-label="Email DLS Envirotech at info.dlsenvirotech@gmail.com"
                     >
                       <div className="bg-primary/10 p-2 rounded-lg group-hover:bg-primary/20 transition-colors">
                         <Mail className="h-4 w-4 text-primary" />
@@ -133,6 +140,7 @@ const Header = () => {
                       rel="noopener noreferrer"
                       className="flex items-center gap-3 text-foreground/80 hover:text-primary transition-colors group"
                       data-testid="link-mobile-address"
+                      aria-label="View DLS Envirotech office location on Google Maps - F-25, Sector-6, Noida"
                     >
                       <div className="bg-primary/10 p-2 rounded-lg group-hover:bg-primary/20 transition-colors">
                         <MapPin className="h-4 w-4 text-primary" />
