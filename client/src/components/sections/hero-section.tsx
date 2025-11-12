@@ -87,7 +87,7 @@ const HeroSection = () => {
             loading="eager"
           />
 
-          <div className="hidden md:flex absolute -bottom-2 -left-4 lg:-bottom-6 lg:-left-6 bg-card border border-border p-4 lg:p-6 rounded-xl shadow-lg">
+          <div className="hidden md:flex absolute -bottom-6 -left-4 lg:-bottom-10 lg:-left-6 bg-card border border-border p-4 lg:p-6 rounded-xl shadow-lg">
             <div className="flex items-center space-x-3 lg:space-x-4">
               <div className="bg-secondary text-secondary-foreground p-2 lg:p-3 rounded-lg">
                 <TrendingUp className="h-5 w-5 lg:h-6 lg:w-6" />
