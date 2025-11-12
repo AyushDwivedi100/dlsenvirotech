@@ -10,7 +10,7 @@ const ServicesOverview = () => {
             Our Specialized Services
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-            Comprehensive environmental technology solutions including water treatment, industrial systems, and waste management tailored for industrial and municipal applications
+            Comprehensive environmental technology solutions including water treatment (WWTP, MBBR, STP, FSTP), industrial systems (MGPS, cooling towers, PSA oxygen), waste management (W2C, C&D waste, MRF), and bio-remediation tailored for industrial and municipal applications
           </p>
         </div>
         

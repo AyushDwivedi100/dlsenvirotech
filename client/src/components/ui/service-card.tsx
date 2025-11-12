@@ -11,6 +11,11 @@ import {
   Settings,
   ArrowRight,
   Check,
+  Waves,
+  Leaf,
+  Sprout,
+  Trash2,
+  Stethoscope,
 } from "lucide-react";
 
 interface ServiceCardProps {
@@ -24,6 +29,11 @@ const iconMap = {
   Gauge,
   Thermometer,
   Settings,
+  Waves,
+  Leaf,
+  Sprout,
+  Trash2,
+  Stethoscope,
 };
 
 const ServiceCard = ({ service }: ServiceCardProps) => {

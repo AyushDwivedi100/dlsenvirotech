@@ -24,7 +24,7 @@ const Home = () => {
     },
     {
       question: "What water treatment services does DLS Envirotech provide?",
-      answer: "DLS Envirotech provides comprehensive water treatment solutions including STP, ETP, RO plants, industrial wastewater treatment, zero liquid discharge systems, cooling towers, and complete turnkey projects with installation and maintenance."
+      answer: "DLS Envirotech provides comprehensive environmental solutions including water treatment (STP, ETP, WWTP, FSTP, MBBR, RO plants), industrial systems (cooling towers, PSA oxygen, MGPS), waste management (solid waste, material recovery, waste to compost, C&D waste management), bio-remediation, zero liquid discharge systems, and complete turnkey projects with installation and maintenance."
     }
   ]);
 
@@ -36,9 +36,9 @@ const Home = () => {
   return (
     <>
       <SEOHead
-        title="Best STP, FSTP & Waste Management Company India | DLS Envirotech | 200+ Projects"
-        description={`${yearsExperience} years STP, FSTP & waste management expertise. ISO certified, CPCB approved. 200+ installations. MBR, MBBR technology. Serving India & global.`}
-        keywords="sewage treatment plant India, STP plant manufacturer, FSTP India, faecal sludge treatment plant, waste management company India, MBBR STP, MBR technology, SBR sewage treatment, effluent treatment plant ETP, packaged STP, wastewater treatment India, CPCB approved STP, bio-methanation plant, solid waste management India, septage treatment plant, industrial wastewater treatment, water recycling plant, zero liquid discharge ZLD, sewage plant installation, STP O&M services, environmental solutions India, Swachh Bharat Mission, Namami Gange, UP Jal Nigam projects, Assam waste management, international environmental projects, turnkey STP contractor, eco-friendly waste treatment"
+        title="Best WWTP, MBBR, STP & Waste Management Company India | DLS Envirotech | 200+ Projects"
+        description={`${yearsExperience} years WWTP, MBBR, STP, FSTP, W2C, C&D waste, MGPS expertise. ISO certified, CPCB approved. 200+ installations. Bio-remediation. Serving India & global.`}
+        keywords="wastewater treatment plant WWTP, MBBR moving bed biofilm reactor, sewage treatment plant India, STP plant manufacturer, FSTP India, faecal sludge treatment plant, waste to compost systems W2C, bio-remediation services, medical gas pipeline system MGPS, construction demolition waste C&D, waste management company India, MBBR STP, MBR technology, SBR sewage treatment, effluent treatment plant ETP, packaged STP, wastewater treatment India, CPCB approved STP, bio-methanation plant, solid waste management India, septage treatment plant, industrial wastewater treatment, water recycling plant, zero liquid discharge ZLD, sewage plant installation, STP O&M services, environmental solutions India, Swachh Bharat Mission, Namami Gange, UP Jal Nigam projects, Assam waste management, international environmental projects, turnkey STP contractor, eco-friendly waste treatment"
         canonical="https://dlsenvirotech.com/"
         schema={combinedSchema}
       />

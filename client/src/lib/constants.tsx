@@ -6,6 +6,11 @@ import {
   Gauge,
   Thermometer,
   Settings,
+  Waves,
+  Leaf,
+  Sprout,
+  Trash2,
+  Stethoscope,
 } from "lucide-react";
 
 export const SERVICES: ServiceType[] = [
@@ -127,6 +132,90 @@ export const SERVICES: ServiceType[] = [
     ],
     icon: "Settings",
     category: "industrial",
+  },
+  {
+    id: "wwtp",
+    title: "Wastewater Treatment Plants (WWTP)",
+    description:
+      "Comprehensive wastewater treatment solutions for industrial and municipal applications with advanced purification and recycling technology.",
+    features: [
+      "Primary Treatment",
+      "Secondary Treatment",
+      "Tertiary Treatment",
+      "Water Recycling",
+    ],
+    icon: "Waves",
+    category: "water-treatment",
+  },
+  {
+    id: "mbbr",
+    title: "Moving Bed Biofilm Reactor (MBBR)",
+    description:
+      "Advanced MBBR technology for efficient biological wastewater treatment with compact design and high treatment capacity.",
+    features: [
+      "Biofilm Technology",
+      "Compact Design",
+      "High Efficiency",
+      "Low Maintenance",
+    ],
+    icon: "Droplets",
+    category: "water-treatment",
+  },
+  {
+    id: "w2c",
+    title: "Waste to Compost Systems (W2C)",
+    description:
+      "Organic waste composting systems converting biodegradable waste into high-quality compost for sustainable waste management.",
+    features: [
+      "Aerobic Composting",
+      "Odor Control",
+      "Quality Compost Production",
+      "Organic Waste Processing",
+    ],
+    icon: "Sprout",
+    category: "waste-management",
+  },
+  {
+    id: "bio-remediation",
+    title: "Bio-Remediation Solutions",
+    description:
+      "Biological treatment solutions for contaminated soil and water using natural microorganisms for environmental restoration.",
+    features: [
+      "Soil Treatment",
+      "Water Purification",
+      "Microbial Solutions",
+      "Environmental Restoration",
+    ],
+    icon: "Leaf",
+    category: "environmental",
+  },
+  {
+    id: "mgps",
+    title: "Medical Gas Pipeline System (MGPS)",
+    description:
+      "Complete medical gas pipeline systems for hospitals including oxygen, nitrous oxide, and vacuum systems with safety features.",
+    features: [
+      "Oxygen Pipeline",
+      "Nitrous Oxide System",
+      "Vacuum System",
+      "Safety Controls",
+    ],
+    icon: "Stethoscope",
+    category: "medical",
+  },
+  {
+    id: "cd-waste",
+    title: "Construction & Demolition Waste Management",
+    description:
+      "Comprehensive C&D waste processing facilities for recycling construction debris into reusable materials.",
+    features: [
+      "Debris Sorting",
+      "Material Recovery",
+      "Crushing & Screening",
+      "Recycled Aggregates",
+    ],
+    icon: "Trash2",
+    category: "waste-management",
   },
 ];
 

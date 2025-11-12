@@ -28,7 +28,7 @@ const Services = () => {
       question:
         "What environmental solutions does DLS Envirotech provide?",
       answer:
-        "DLS Envirotech provides comprehensive environmental solutions including water treatment (STP, ETP, WTP, RO systems, FSTP), industrial systems (cooling towers, PSA oxygen plants, air pollution control, air towers), and waste management (solid waste management plants, material recovery facilities). We offer complete turnkey solutions with installation and maintenance across India.",
+        "DLS Envirotech provides comprehensive environmental solutions including water treatment (STP, ETP, WTP, WWTP, FSTP, MBBR, RO systems), industrial systems (cooling towers, PSA oxygen plants, air pollution control, air towers, MGPS), waste management (solid waste management, material recovery facilities, waste to compost systems, C&D waste management), and bio-remediation. We offer complete turnkey solutions with installation and maintenance across India.",
     },
     {
       question: "How long does it take to install environmental systems?",
@@ -56,7 +56,7 @@ const Services = () => {
 
   const environmentalSolutionsSchema = createServiceSchema(
     "Environmental Solutions",
-    "Comprehensive environmental technology solutions including water treatment (STP, ETP, WTP, RO, FSTP), industrial systems (cooling towers, PSA oxygen plants, air pollution control), and waste management (solid waste plants, material recovery facilities) for industrial and municipal applications",
+    "Comprehensive environmental technology solutions including water treatment (STP, ETP, WTP, WWTP, FSTP, MBBR, RO), industrial systems (cooling towers, PSA oxygen plants, air pollution control, MGPS), waste management (solid waste plants, material recovery facilities, waste to compost systems, C&D waste management), and bio-remediation for industrial and municipal applications",
     "Environmental Services",
   );
 
@@ -73,9 +73,9 @@ const Services = () => {
   return (
     <>
       <SEOHead
-        title="STP, FSTP & Waste Management Services India | MBR, MBBR Technology | DLS Envirotech"
-        description={`STP, FSTP, solid waste, MBR/MBBR/SBR, bio-methanation, ETP, RO services. CPCB approved. ${yearsExperience} experience, 200+ installations. Turnkey projects India.`}
-        keywords="sewage treatment plant services, STP installation India, FSTP services, faecal sludge treatment, MBBR technology India, MBR membrane bioreactor, SBR sequencing batch reactor, packaged STP plant, solid waste management services, bio-methanation plant, material recovery facility MRF, effluent treatment plant ETP, wastewater treatment services, industrial ETP installation, cooling tower manufacturer, PSA oxygen plant, air pollution control, septage treatment, water recycling services, zero liquid discharge, STP O&M services, CPCB compliant STP, environmental engineering services, waste to compost plant, sanitary landfill development, turnkey environmental projects India"
+        title="WWTP, MBBR, STP & Waste Management Services India | DLS Envirotech"
+        description={`WWTP, MBBR, STP, FSTP, W2C, C&D waste, MGPS, bio-remediation services. CPCB approved. ${yearsExperience} experience, 200+ installations. Turnkey projects India.`}
+        keywords="wastewater treatment plant WWTP, MBBR moving bed biofilm reactor, sewage treatment plant services, STP installation India, FSTP services, faecal sludge treatment, MBBR technology India, MBR membrane bioreactor, SBR sequencing batch reactor, waste to compost systems W2C, bio-remediation services India, medical gas pipeline system MGPS, construction demolition waste management C&D, packaged STP plant, solid waste management services, bio-methanation plant, material recovery facility MRF, effluent treatment plant ETP, wastewater treatment services, industrial ETP installation, cooling tower manufacturer, PSA oxygen plant, air pollution control, septage treatment, water recycling services, zero liquid discharge, STP O&M services, CPCB compliant STP, environmental engineering services, waste to compost plant, sanitary landfill development, turnkey environmental projects India"
         canonical="https://dlsenvirotech.com/services"
         schema={combinedSchema}
       />
