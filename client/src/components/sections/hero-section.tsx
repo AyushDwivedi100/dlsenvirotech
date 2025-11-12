@@ -36,17 +36,24 @@ const HeroSection = () => {
           </h1>
 
           <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground mb-5 sm:mb-6 md:mb-7 lg:mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0">
-            Leading environmental technology company based in India, serving clients globally. Specializing in
-            water treatment (STP, ETP, WTP, RO systems), industrial solutions
-            (cooling towers, PSA oxygen plants, air pollution control), and
-            waste management systems. ISO certified with proven expertise for
-            all municipal and industrial applications in India and internationally.
+            Leading environmental technology company based in India, serving
+            clients globally. Specializing in water treatment (STP, ETP, WTP, RO
+            systems), industrial solutions (cooling towers, PSA oxygen plants,
+            air pollution control), and waste management systems. ISO certified
+            with proven expertise for all municipal and industrial applications
+            in India and internationally.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center lg:justify-start">
             <Button size="lg" className="w-full sm:w-auto" asChild>
-              <Link href="/contact" aria-label="Contact us for free consultation on environmental solutions">
-                <Phone className="mr-2 h-4 w-4 md:h-5 md:w-5 text-white" aria-hidden="true" />
+              <Link
+                href="/contact"
+                aria-label="Contact us for free consultation on environmental solutions"
+              >
+                <Phone
+                  className="mr-2 h-4 w-4 md:h-5 md:w-5 text-white"
+                  aria-hidden="true"
+                />
                 <span className="text-sm md:text-base text-white">
                   Get Free Consultation
                 </span>
@@ -58,8 +65,14 @@ const HeroSection = () => {
               className="w-full sm:w-auto"
               asChild
             >
-              <Link href="/portfolio" aria-label="View our portfolio of completed environmental projects">
-                <Play className="mr-2 h-4 w-4 md:h-5 md:w-5" aria-hidden="true" />
+              <Link
+                href="/portfolio"
+                aria-label="View our portfolio of completed environmental projects"
+              >
+                <Play
+                  className="mr-2 h-4 w-4 md:h-5 md:w-5"
+                  aria-hidden="true"
+                />
                 <span className="text-sm md:text-base">View Our Work</span>
               </Link>
             </Button>
@@ -74,7 +87,7 @@ const HeroSection = () => {
             loading="eager"
           />
 
-          <div className="hidden md:flex absolute -bottom-4 -left-4 lg:-bottom-6 lg:-left-6 bg-card border border-border p-4 lg:p-6 rounded-xl shadow-lg">
+          <div className="hidden md:flex absolute -bottom-2 -left-4 lg:-bottom-6 lg:-left-6 bg-card border border-border p-4 lg:p-6 rounded-xl shadow-lg">
             <div className="flex items-center space-x-3 lg:space-x-4">
               <div className="bg-secondary text-secondary-foreground p-2 lg:p-3 rounded-lg">
                 <TrendingUp className="h-5 w-5 lg:h-6 lg:w-6" />
