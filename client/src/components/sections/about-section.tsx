@@ -40,7 +40,7 @@ const AboutSection = () => {
                 Our comprehensive approach combines cutting-edge technology with
                 proven methodologies to create sustainable environmental
                 solutions that meet the evolving needs of industries and
-                municipalities in India and beyond.
+                municipalities worldwide.
               </p>
             </div>
 

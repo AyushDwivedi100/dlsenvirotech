@@ -32,13 +32,13 @@ const Leadership = () => {
       icon: Building2,
       value: "120+",
       label: "Solid Waste Management Projects",
-      description: "Successfully delivered across India",
+      description: "Successfully delivered worldwide",
     },
     {
       icon: Target,
       value: "60+",
       label: "Large Sewage Treatment Plants",
-      description: "STP installations nationwide",
+      description: "STP installations globally",
     },
     {
       icon: Award,
@@ -57,9 +57,9 @@ const Leadership = () => {
   return (
     <>
       <SEOHead
-        title={`Mr. S.K. Singh - Managing Director India | ${yearsExperience} Years | STP, FSTP Expert DLS Envirotech Noida`}
-        description={`Mr. S.K. Singh, MD of DLS Envirotech. ${yearsExperience} experience. Led 120+ waste projects, 60+ STP, 32+ FSTP across India. CPCB approved. Vision: sustainable solutions.`}
-        keywords={`S.K. Singh DLS Envirotech managing director, ${yearsExperience} years environmental engineering leadership, STP sewage treatment plant expert India, WWTP wastewater treatment specialist, MBBR moving bed biofilm reactor expert, FSTP faecal sludge treatment plant specialist, ETP WTP expert, MBR SBR ZLD technology leader, waste to compost W2C director, C&D construction demolition waste management, bio-remediation solutions expert, MGPS medical gas pipeline specialist, PSA oxygen plant director, industrial RO plant expert, cooling tower specialist, air pollution control leader, MRF material recovery facility specialist, bio-methanation expert, waste management leader India, CPCB NABL approved contractor, UP Jal Nigam Assam projects director, turnkey environmental projects director, sustainable development leader, international environmental consultant India, Delhi NCR Mumbai Hyderabad Bengaluru Chennai`}
+        title={`Mr. S.K. Singh - Managing Director | ${yearsExperience} Years | STP, FSTP Expert DLS Envirotech Worldwide`}
+        description={`Mr. S.K. Singh, MD of DLS Envirotech. ${yearsExperience} experience. Led 120+ waste projects, 60+ STP, 32+ FSTP worldwide. CPCB approved. Vision: sustainable solutions globally.`}
+        keywords={`S.K. Singh DLS Envirotech managing director, ${yearsExperience} years environmental engineering leadership, STP sewage treatment plant expert worldwide, WWTP wastewater treatment specialist global, MBBR moving bed biofilm reactor expert international, FSTP faecal sludge treatment plant specialist, ETP WTP expert, MBR SBR ZLD technology leader, waste to compost W2C director, C&D construction demolition waste management, bio-remediation solutions expert, MGPS medical gas pipeline specialist, PSA oxygen plant director, industrial RO plant expert, cooling tower specialist, air pollution control leader, MRF material recovery facility specialist, bio-methanation expert, waste management leader worldwide, CPCB NABL approved contractor, international projects director, turnkey environmental projects director, sustainable development leader, international environmental consultant, global environmental solutions, Delhi NCR Mumbai Hyderabad Bengaluru Chennai`}
         canonical="https://dlsenvirotech.com/leadership"
         schema={combinedSchema}
       />
@@ -81,7 +81,7 @@ const Leadership = () => {
                   Leadership
                 </h1>
                 <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-                  Meet the visionary leader driving sustainable environmental solutions in India and beyond
+                  Meet the visionary leader driving sustainable environmental solutions worldwide
                 </p>
               </motion.div>
 
@@ -189,11 +189,11 @@ const Leadership = () => {
                       </p>
 
                       <p className="text-base md:text-lg text-gray-700 dark:text-gray-200 leading-relaxed mb-6">
-                        Under our leadership, DLS Envirotech has successfully completed more than 120+ Solid Waste Management projects, 60+ large Sewage Treatment Plants (STP), and 32+ large Faecal Sludge Treatment Plants (FSTP) across various regions in India. These achievements are a reflection of our dedication, technical expertise, and client trust. While we are proudly rooted in India, we welcome opportunities to bring our expertise to international projects.
+                        Under our leadership, DLS Envirotech has successfully completed more than 120+ Solid Waste Management projects, 60+ large Sewage Treatment Plants (STP), and 32+ large Faecal Sludge Treatment Plants (FSTP) across multiple regions worldwide. These achievements are a reflection of our dedication, technical expertise, and client trust. We are committed to bringing our expertise to projects globally, serving clients wherever environmental solutions are needed.
                       </p>
 
                       <p className="text-base md:text-lg text-gray-700 dark:text-gray-200 leading-relaxed mb-6">
-                        Our vision is clear — to provide sustainable, efficient, and affordable environmental solutions that ensure compliance and contribute to a pollution-free nation. We continue to invest in advanced technologies, skill development, and transparent project execution to maintain the highest standards in our field.
+                        Our vision is clear — to provide sustainable, efficient, and affordable environmental solutions that ensure compliance and contribute to a pollution-free world. We continue to invest in advanced technologies, skill development, and transparent project execution to maintain the highest standards in our field.
                       </p>
 
                       <p className="text-base md:text-lg text-gray-700 dark:text-gray-200 leading-relaxed">
@@ -271,7 +271,7 @@ const Leadership = () => {
                 <Card className="bg-gradient-to-br from-primary/5 to-primary/10 border-primary/20">
                   <CardContent className="p-8 md:p-12">
                     <p className="text-lg md:text-xl text-foreground/90 leading-relaxed text-center">
-                      To provide <span className="font-semibold text-primary">sustainable, efficient, and affordable environmental solutions</span> in India and globally, ensuring compliance and contributing to a <span className="font-semibold text-primary">pollution-free world</span>. We continue to invest in advanced technologies, skill development, and transparent project execution to maintain the highest standards in our field.
+                      To provide <span className="font-semibold text-primary">sustainable, efficient, and affordable environmental solutions</span> worldwide, ensuring compliance and contributing to a <span className="font-semibold text-primary">pollution-free world</span>. We continue to invest in advanced technologies, skill development, and transparent project execution to maintain the highest standards in our field.
                     </p>
                   </CardContent>
                 </Card>
