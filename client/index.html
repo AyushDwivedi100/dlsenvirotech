@@ -20,7 +20,16 @@
     
     <!-- Apple Touch Icon -->
     <link rel="apple-touch-icon" href="/favicon-192.png" />
+    
+    <!-- Preload critical images for faster loading -->
+    <link 
+      rel="preload" 
+      as="image" 
+      href="https://alantech.in/storage/blogs/modern-sewage-treatment-plant.webp"
+      fetchpriority="high"
+    />
   </head>
+
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>

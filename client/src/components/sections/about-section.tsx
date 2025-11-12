@@ -1,6 +1,7 @@
 import { CheckCircle } from "lucide-react";
 import fstpImage from "@assets/generated_images/FSTP_wastewater_treatment_facility_9bf6216d.png";
 import { getYearsOfExperienceString } from "@/lib/utils/company-info";
+import { OptimizedImage } from "@/components/ui/optimized-image";
 
 const AboutSection = () => {
   const yearsExperience = getYearsOfExperienceString();
@@ -79,12 +80,12 @@ const AboutSection = () => {
           {/* Image Side */}
           <div className="relative mt-8 lg:mt-0">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl bg-muted">
-              <img
+              <OptimizedImage
                 src={fstpImage}
                 alt="Faecal sludge treatment plant FSTP with wastewater management systems"
-                className="w-full h-auto object-cover aspect-[4/3] lg:aspect-[3/4]"
+                className="object-cover aspect-[4/3] lg:aspect-[3/4]"
                 loading="lazy"
-                data-testid="img-about-fstp"
+                testId="img-about-fstp"
               />
             </div>
 

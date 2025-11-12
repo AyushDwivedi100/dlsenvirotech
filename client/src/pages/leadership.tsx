@@ -13,6 +13,7 @@ import {
   createBreadcrumbSchema,
 } from "@/components/seo/seo-head";
 import { getYearsOfExperienceString } from "@/lib/utils/company-info";
+import { OptimizedImage } from "@/components/ui/optimized-image";
 
 const Leadership = () => {
   const yearsExperience = getYearsOfExperienceString();
@@ -98,11 +99,12 @@ const Leadership = () => {
                       <div className="md:col-span-2 bg-gradient-to-br from-primary/5 to-primary/10 flex items-center justify-center p-8 md:p-12">
                         <div className="relative">
                           <div className="absolute -inset-4 bg-primary/20 rounded-full blur-2xl"></div>
-                          <img
+                          <OptimizedImage
                             src="/director-photo.png"
                             alt="Mr. S.K. Singh, Managing Director"
-                            className="relative rounded-2xl shadow-2xl w-full max-w-sm md:max-w-none object-cover"
-                            data-testid="img-director-photo"
+                            className="relative rounded-2xl shadow-2xl max-w-sm md:max-w-none object-cover"
+                            loading="lazy"
+                            testId="img-director-photo"
                           />
                         </div>
                       </div>

@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Link } from "wouter";
 import { Phone, Play, Award, TrendingUp } from "lucide-react";
 import { getYearsOfExperienceString } from "@/lib/utils/company-info";
+import { OptimizedImage } from "@/components/ui/optimized-image";
 
 const HeroSection = () => {
   const yearsExperience = getYearsOfExperienceString();
@@ -80,11 +81,12 @@ const HeroSection = () => {
         </div>
 
         <div className="relative mt-6 sm:mt-8 lg:mt-0">
-          <img
+          <OptimizedImage
             src="https://alantech.in/storage/blogs/modern-sewage-treatment-plant.webp"
             alt="Modern wastewater treatment facility with advanced MBBR, STP, and biological filtration technology - DLS Envirotech professional environmental solutions"
-            className="rounded-lg sm:rounded-xl md:rounded-2xl shadow-2xl w-full h-auto max-h-[300px] sm:max-h-[400px] md:max-h-[500px] lg:max-h-none object-cover lg:object-contain"
-            loading="eager"
+            className="rounded-lg sm:rounded-xl md:rounded-2xl shadow-2xl max-h-[300px] sm:max-h-[400px] md:max-h-[500px] lg:max-h-none object-cover lg:object-contain"
+            priority
+            testId="img-hero-treatment-plant"
           />
 
           <div className="hidden md:flex absolute -bottom-6 -left-4 lg:-bottom-10 lg:-left-6 bg-card border border-border p-4 lg:p-6 rounded-xl shadow-lg">
