@@ -8,7 +8,7 @@ interface TestimonialCardProps {
 
 const TestimonialCard = ({ testimonial }: TestimonialCardProps) => {
   return (
-    <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300 h-full">
+    <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300 h-full bg-muted">
       <CardContent className="p-5 sm:p-6 md:p-8">
         <div className="flex items-center mb-4 sm:mb-6">
           <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-primary rounded-full flex items-center justify-center text-primary-foreground text-base sm:text-lg md:text-xl font-bold flex-shrink-0">

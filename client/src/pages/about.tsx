@@ -167,7 +167,7 @@ const About = () => {
         <Header />
         <main>
           {/* Hero Section */}
-          <section className="bg-muted py-12 md:py-16 lg:py-20">
+          <section className="bg-gradient-to-br from-muted to-muted py-12 md:py-16 lg:py-20">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4 md:mb-6">
                 About DLS Envirotech Corporation
@@ -190,7 +190,7 @@ const About = () => {
           <AboutSection />
 
           {/* Service Categories */}
-          <section className="py-12 md:py-16 lg:py-20 bg-background">
+          <section className="py-12 md:py-16 lg:py-20 bg-muted">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center mb-8 md:mb-12 lg:mb-16">
                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-3 md:mb-4">
@@ -205,7 +205,7 @@ const About = () => {
                 {serviceCategories.map((service) => (
                   <div
                     key={service.title}
-                    className="bg-muted rounded-xl p-6 md:p-8 shadow-lg hover:shadow-xl transition-shadow"
+                    className="bg-background rounded-xl p-6 md:p-8 shadow-lg hover:shadow-xl transition-shadow"
                   >
                     <div className="bg-primary text-white p-3 md:p-4 rounded-xl w-14 h-14 md:w-16 md:h-16 flex items-center justify-center mb-4 md:mb-6">
                       <service.icon className="h-6 w-6 md:h-8 md:w-8" />
@@ -223,7 +223,7 @@ const About = () => {
           </section>
 
           {/* Certifications & Compliance */}
-          <section className="py-12 md:py-16 lg:py-20 bg-muted">
+          <section className="py-12 md:py-16 lg:py-20 bg-background">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center mb-8 md:mb-12 lg:mb-16">
                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-3 md:mb-4">
@@ -238,7 +238,7 @@ const About = () => {
                 {certifications.map((cert) => (
                   <div
                     key={cert.title}
-                    className="bg-background rounded-xl p-6 md:p-8 text-center shadow-lg hover:shadow-xl transition-shadow"
+                    className="bg-muted rounded-xl p-6 md:p-8 text-center shadow-lg hover:shadow-xl transition-shadow"
                   >
                     <div className="bg-primary text-white p-3 md:p-4 rounded-xl w-14 h-14 md:w-16 md:h-16 flex items-center justify-center mx-auto mb-4 md:mb-6">
                       <cert.icon className="h-6 w-6 md:h-8 md:w-8" />
@@ -256,7 +256,7 @@ const About = () => {
           </section>
 
           {/* Our Values */}
-          <section className="py-12 md:py-16 lg:py-20 bg-background">
+          <section className="py-12 md:py-16 lg:py-20 bg-muted">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center mb-8 md:mb-12 lg:mb-16">
                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-3 md:mb-4">
