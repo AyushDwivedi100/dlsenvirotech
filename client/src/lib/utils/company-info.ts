@@ -1,7 +1,7 @@
 /**
  * Company founding year
  */
-const FOUNDING_YEAR = 2009;
+const FOUNDING_YEAR = 2015;
 
 /**
  * Calculate years of experience from founding year to current year

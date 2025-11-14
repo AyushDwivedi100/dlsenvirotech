@@ -6,7 +6,7 @@ import AboutSection from "@/components/sections/about-section";
 import TestimonialsSection from "@/components/sections/testimonials-section";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
-import { Phone, Award, Users, Globe, Zap, AlertCircle } from "lucide-react";
+import { Phone, Award, Users, Globe, Zap, AlertCircle, Wrench, Briefcase, FileText, Settings as SettingsIcon, CheckCircle2, Shield } from "lucide-react";
 import Timeline from "@/components/ui/timeline";
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
@@ -32,7 +32,7 @@ const About = () => {
 
   const milestones = [
     {
-      year: "2009",
+      year: "2015",
       title: "Company Founded",
       description:
         "Started with a vision to provide innovative environmental solutions for water treatment, industrial systems, and waste management",
@@ -69,6 +69,62 @@ const About = () => {
     },
   ];
 
+  const serviceCategories = [
+    {
+      icon: Briefcase,
+      title: "Construction of Environmental Plants",
+      description:
+        "Complete design, engineering, and construction services for STP, ETP, FSTP, MRF, and other environmental infrastructure projects.",
+    },
+    {
+      icon: Wrench,
+      title: "Operation & Maintenance (O&M)",
+      description:
+        "Comprehensive operation and maintenance services ensuring optimal performance and regulatory compliance of environmental systems.",
+    },
+    {
+      icon: FileText,
+      title: "Consultation & Design",
+      description:
+        "Expert consultation and custom design services for environmental projects tailored to specific client requirements and site conditions.",
+    },
+    {
+      icon: SettingsIcon,
+      title: "Upgradation & Retrofitting",
+      description:
+        "Enhancement and modernization of existing environmental systems to improve efficiency, capacity, and regulatory compliance.",
+    },
+    {
+      icon: CheckCircle2,
+      title: "Regulatory Compliance Assistance",
+      description:
+        "Support services for meeting CPCB, SPCB, and other environmental regulatory requirements with documentation and reporting.",
+    },
+  ];
+
+  const certifications = [
+    {
+      icon: Award,
+      title: "ISO 9001:2015 Certified",
+      description: "Quality Management System certification ensuring consistent service excellence",
+    },
+    {
+      icon: Shield,
+      title: "CPCB Approved",
+      description: "Central Pollution Control Board approval for environmental projects",
+    },
+    {
+      icon: Shield,
+      title: "SPCB Compliance",
+      description: "State Pollution Control Board compliance for all installations",
+    },
+    {
+      icon: CheckCircle2,
+      title: "Capacity Certified",
+      description: "Certified for STP up to 15 MLD and various environmental systems",
+    },
+  ];
+
   const values = [
     {
       icon: Award,
@@ -100,8 +156,8 @@ const About = () => {
     <>
       <SEOHead
         title={`About DLS Envirotech India | ${yearsExperience} Years | ISO Certified STP, FSTP & Waste Management Noida`}
-        description={`${yearsExperience} STP, FSTP & waste management expertise. ISO 9001:2015, CPCB approved. 200+ installations since 2009. Serving municipalities & industries India-wide.`}
-        keywords={`about DLS Envirotech Corporation, ISO 9001:2015 certified environmental company India, ${yearsExperience} years wastewater treatment expertise, CPCB NABL approved contractor, sewage treatment plant STP manufacturer, WWTP wastewater treatment plant design, MBBR moving bed biofilm reactor specialist, FSTP faecal sludge treatment plant, ETP effluent treatment plant, WTP water treatment plant, MBR membrane bioreactor technology, SBR sequencing batch reactor systems, ZLD zero liquid discharge systems, waste to compost W2C plant, C&D construction demolition waste management, bio-remediation soil water treatment, MGPS medical gas pipeline system hospital infrastructure, PSA oxygen plant generator manufacturer, industrial RO reverse osmosis plant, water cooling tower systems, air pollution control equipment, MRF material recovery facility, solid waste management solutions, bio-methanation biogas plant, turnkey environmental projects India, company history milestones 2009, Delhi NCR Mumbai Hyderabad Bengaluru Chennai Kolkata Pune Ahmedabad, Noida UP Jal Nigam Assam, international environmental engineering services, CPCB compliance environmental consultant India`}
+        description={`${yearsExperience} comprehensive environmental solutions expertise. ISO 9001:2015, CPCB approved. 200+ installations since 2015. Serving municipalities & industries across 4+ countries with 2 manufacturing facilities.`}
+        keywords={`about DLS Envirotech Corporation, ISO 9001:2015 certified environmental company India, ${yearsExperience} years wastewater treatment expertise, CPCB SPCB approved contractor, sewage treatment plant STP 15 MLD capacity, WWTP wastewater treatment plant design, MBBR moving bed biofilm reactor specialist, FSTP faecal sludge treatment plant, ETP effluent treatment plant, CETP common effluent treatment, WTP water treatment plant, RWH rain water harvesting, MBR membrane bioreactor technology, SBR sequencing batch reactor systems, Extended Aeration technology, ZLD zero liquid discharge systems, waste to compost W2C plant, waste to energy systems, bio methanation plants, C&D construction demolition waste management recycling, bio-remediation soil water treatment oil spills heavy metals, MGPS medical gas pipeline system hospital infrastructure, PSA oxygen plant generator manufacturer, industrial RO reverse osmosis plant, water cooling tower systems, absorption cooling systems, process cooling solutions, boilers heaters steam generation, turnkey power plants, solar energy solutions, air pollution control equipment, specialty environmental chemicals, MRF material recovery facility, solid waste management solutions, international offices 4+ countries, 2 manufacturing facilities, consultation design services, O&M operation maintenance, upgradation retrofitting services, regulatory compliance assistance, company history milestones 2015, Delhi NCR Mumbai Hyderabad Bengaluru Chennai Kolkata Pune Ahmedabad, Noida UP Jal Nigam Assam, international environmental engineering services global, CPCB compliance environmental consultant India`}
         canonical="https://dlsenvirotech.com/about"
         schema={combinedSchema}
       />
@@ -133,8 +189,74 @@ const About = () => {
           {/* About Section */}
           <AboutSection />
 
-          {/* Our Values */}
+          {/* Service Categories */}
+          <section className="py-12 md:py-16 lg:py-20 bg-background">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="text-center mb-8 md:mb-12 lg:mb-16">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-3 md:mb-4">
+                  Our Service Offerings
+                </h2>
+                <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto px-4">
+                  Comprehensive environmental solutions from design to long-term maintenance
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+                {serviceCategories.map((service) => (
+                  <div
+                    key={service.title}
+                    className="bg-muted rounded-xl p-6 md:p-8 shadow-lg hover:shadow-xl transition-shadow"
+                  >
+                    <div className="bg-primary text-white p-3 md:p-4 rounded-xl w-14 h-14 md:w-16 md:h-16 flex items-center justify-center mb-4 md:mb-6">
+                      <service.icon className="h-6 w-6 md:h-8 md:w-8" />
+                    </div>
+                    <h3 className="text-lg md:text-xl font-bold text-foreground mb-3 md:mb-4">
+                      {service.title}
+                    </h3>
+                    <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
+                      {service.description}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+
+          {/* Certifications & Compliance */}
           <section className="py-12 md:py-16 lg:py-20 bg-muted">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="text-center mb-8 md:mb-12 lg:mb-16">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-3 md:mb-4">
+                  Certifications & Compliance
+                </h2>
+                <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto px-4">
+                  Certified and approved for delivering quality environmental solutions
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+                {certifications.map((cert) => (
+                  <div
+                    key={cert.title}
+                    className="bg-background rounded-xl p-6 md:p-8 text-center shadow-lg hover:shadow-xl transition-shadow"
+                  >
+                    <div className="bg-primary text-white p-3 md:p-4 rounded-xl w-14 h-14 md:w-16 md:h-16 flex items-center justify-center mx-auto mb-4 md:mb-6">
+                      <cert.icon className="h-6 w-6 md:h-8 md:w-8" />
+                    </div>
+                    <h3 className="text-base md:text-lg font-bold text-foreground mb-2 md:mb-3">
+                      {cert.title}
+                    </h3>
+                    <p className="text-xs md:text-sm text-muted-foreground leading-relaxed">
+                      {cert.description}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+
+          {/* Our Values */}
+          <section className="py-12 md:py-16 lg:py-20 bg-background">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center mb-8 md:mb-12 lg:mb-16">
                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-3 md:mb-4">

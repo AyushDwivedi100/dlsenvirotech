@@ -11,6 +11,12 @@ import {
   Sprout,
   Trash2,
   Stethoscope,
+  Zap,
+  Flame,
+  Snowflake,
+  Sun,
+  FlaskConical,
+  CloudRain,
 } from "lucide-react";
 
 export const SERVICES: ServiceType[] = [
@@ -18,11 +24,14 @@ export const SERVICES: ServiceType[] = [
     id: "stp",
     title: "Sewage Treatment Plants (STP)",
     description:
-      "Advanced biological and chemical treatment systems for municipal and residential wastewater management with high efficiency.",
+      "Advanced sewage treatment plants using Extended Aeration, Moving Bed Biofilm Reactor (MBBR), and Sequencing Batch Reactors (SBR) technologies. Capacity up to 15 MLD with CPCB and SPCB compliance for municipal and residential wastewater management.",
     features: [
-      "Biological Treatment",
-      "Chemical Treatment",
-      "Sludge Management",
+      "Extended Aeration, MBBR & SBR Technologies",
+      "Capacity: Up to 15 MLD",
+      "CPCB & SPCB Compliance",
+      "Sustainable Water Reuse for Irrigation",
+      "Nutrient Removal & Sludge Handling",
+      "Comprehensive O&M Services",
     ],
     icon: "Droplets",
     category: "water-treatment",
@@ -179,12 +188,16 @@ export const SERVICES: ServiceType[] = [
     id: "bio-remediation",
     title: "Bio-Remediation Solutions",
     description:
-      "Biological treatment solutions for contaminated soil and water using natural microorganisms for environmental restoration.",
+      "Eco-friendly biological treatment using specific microorganisms to degrade pollutants including oil spills, heavy metals, and industrial chemicals. Comprehensive remediation for contaminated sites, water bodies, and landfills with sustainable results.",
     features: [
-      "Soil Treatment",
-      "Water Purification",
-      "Microbial Solutions",
-      "Environmental Restoration",
+      "Microbial Treatment for Pollutants",
+      "Oil Spills & Heavy Metals Degradation",
+      "Industrial Chemicals Remediation",
+      "Contaminated Sites & Landfills Restoration",
+      "Water Bodies Purification",
+      "Eco-Friendly & Sustainable Process",
+      "Long-term Environmental Health",
+      "CPCB Compliance",
     ],
     icon: "Leaf",
     category: "environmental",
@@ -207,15 +220,145 @@ export const SERVICES: ServiceType[] = [
     id: "cd-waste",
     title: "Construction & Demolition Waste Management",
     description:
-      "Comprehensive C&D waste processing facilities for recycling construction debris into reusable materials.",
+      "End-to-end C&D waste management with dedicated fleet for collection & transportation. On-site/off-site segregation into concrete, metals, wood, plastics, bricks, and soil. Complete recycling process: primary crushing, screening, magnetic separation, producing recycled aggregates and sand substitutes.",
     features: [
-      "Debris Sorting",
-      "Material Recovery",
-      "Crushing & Screening",
-      "Recycled Aggregates",
+      "Collection & Transportation Fleet",
+      "On-site/Off-site Segregation",
+      "Concrete, Metals, Wood, Plastics Processing",
+      "Primary Crushing & Screening",
+      "Magnetic Separation for Metals",
+      "Recycled Aggregates & Sand Production",
+      "Mobile Processing Units Available",
+      "Safe Disposal for Non-Recyclables",
     ],
     icon: "Trash2",
     category: "waste-management",
+  },
+  {
+    id: "cetp",
+    title: "Common Effluent Treatment Plants (CETP)",
+    description:
+      "Centralized effluent treatment plants serving multiple industries, providing cost-effective and efficient treatment solutions with shared infrastructure and regulatory compliance.",
+    features: [
+      "Multi-Industry Service",
+      "Cost-Effective Shared Infrastructure",
+      "CPCB & SPCB Compliance",
+      "Advanced Treatment Technology",
+    ],
+    icon: "Building2",
+    category: "industrial",
+  },
+  {
+    id: "rwh",
+    title: "Rain Water Harvesting (RWH)",
+    description:
+      "Comprehensive rainwater harvesting systems for water conservation, groundwater recharge, and sustainable water management for residential, commercial, and industrial applications.",
+    features: [
+      "Water Conservation Systems",
+      "Groundwater Recharge",
+      "Storage & Filtration",
+      "Sustainable Water Management",
+    ],
+    icon: "CloudRain",
+    category: "water-treatment",
+  },
+  {
+    id: "waste-to-energy",
+    title: "Waste-to-Energy Systems",
+    description:
+      "Advanced waste-to-energy solutions converting municipal and industrial waste into renewable energy through incineration, gasification, and bio-methanation technologies.",
+    features: [
+      "Waste Incineration Systems",
+      "Gasification Technology",
+      "Bio-methanation Plants",
+      "Renewable Energy Generation",
+    ],
+    icon: "Zap",
+    category: "energy",
+  },
+  {
+    id: "power-generation",
+    title: "Turnkey Power Plants",
+    description:
+      "Complete turnkey power generation solutions including design, construction, and commissioning of steam and power generation plants for industrial and utility applications.",
+    features: [
+      "Steam Generation Systems",
+      "Power Plant Design & Build",
+      "Turnkey Project Execution",
+      "Commissioning & O&M",
+    ],
+    icon: "Zap",
+    category: "energy",
+  },
+  {
+    id: "boilers-heaters",
+    title: "Boilers & Heaters",
+    description:
+      "Industrial boilers and process heating systems for various applications including steam generation, hot water production, and thermal oil heating with high efficiency.",
+    features: [
+      "Steam Boilers",
+      "Hot Water Systems",
+      "Thermal Oil Heaters",
+      "Process Heating Solutions",
+    ],
+    icon: "Flame",
+    category: "industrial",
+  },
+  {
+    id: "absorption-cooling",
+    title: "Absorption Cooling Systems",
+    description:
+      "Energy-efficient absorption cooling systems utilizing waste heat or solar energy for air conditioning and refrigeration applications in industrial and commercial settings.",
+    features: [
+      "Waste Heat Utilization",
+      "Solar Cooling Integration",
+      "Energy Efficient Operation",
+      "Industrial & Commercial Applications",
+    ],
+    icon: "Snowflake",
+    category: "industrial",
+  },
+  {
+    id: "process-cooling",
+    title: "Process Cooling Solutions",
+    description:
+      "Customized process cooling systems for industrial applications including chilled water systems, glycol cooling, and specialized cooling for manufacturing processes.",
+    features: [
+      "Chilled Water Systems",
+      "Glycol Cooling",
+      "Custom Process Cooling",
+      "Industrial Applications",
+    ],
+    icon: "Snowflake",
+    category: "industrial",
+  },
+  {
+    id: "solar-solutions",
+    title: "Solar Energy Solutions",
+    description:
+      "Renewable solar energy systems including solar water heating, solar power generation, and solar-assisted environmental technologies for sustainable operations.",
+    features: [
+      "Solar Water Heating",
+      "Solar Power Generation",
+      "Solar-Assisted Cooling",
+      "Sustainable Energy Solutions",
+    ],
+    icon: "Sun",
+    category: "energy",
+  },
+  {
+    id: "specialty-chemicals",
+    title: "Specialty Environmental Chemicals",
+    description:
+      "High-performance specialty chemicals for water treatment, air pollution control, and environmental management applications with eco-friendly formulations.",
+    features: [
+      "Water Treatment Chemicals",
+      "Air Pollution Control Agents",
+      "Eco-Friendly Formulations",
+      "Custom Chemical Solutions",
+    ],
+    icon: "FlaskConical",
+    category: "environmental",
   },
 ];
 

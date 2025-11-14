@@ -8,9 +8,11 @@ const AboutSection = () => {
   
   const stats = [
     { value: "200+", label: "Systems Installed" },
-    { value: "Global", label: "Service Reach" },
+    { value: "4+", label: "Countries Served" },
     { value: yearsExperience, label: "Years Experience" },
+    { value: "2", label: "Manufacturing Facilities" },
     { value: "100+", label: "Team Members" },
+    { value: "1", label: "International Office" },
   ];
 
   const features = [
@@ -31,16 +33,10 @@ const AboutSection = () => {
                 {yearsExperience} Years of Environmental Engineering Excellence
               </h2>
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-6">
-                DLS Envirotech Corporation has established itself as a trusted
-                leader in environmental technology, delivering innovative
-                water treatment, industrial, and waste management solutions that protect the environment while ensuring regulatory
-                compliance.
+                DLS Envirotech Corporation provides systems and solutions in the critical domains of energy and environment. Our products and services help industries achieve better resource productivity and improved bottom lines, while maintaining a cleaner environment. Our vision for the future is firmly anchored in the belief that to stay competitive, business houses need to adopt sustainable practices.
               </p>
               <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-                Our comprehensive approach combines cutting-edge technology with
-                proven methodologies to create sustainable environmental
-                solutions that meet the evolving needs of industries and
-                municipalities worldwide.
+                Our product portfolio covers heating, cooling, water and waste management, and specialty environment. We design, build and commission large CETP, ETP, STP, WWTP, WTP, RWH, steam and power generation, turnkey power plants, waste-to-energy systems and air pollution control projects with energy efficient and eco-friendly technologies.
               </p>
             </div>
 
