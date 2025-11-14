@@ -8,7 +8,7 @@ import { OptimizedImage } from "@/components/ui/optimized-image";
 const HeroSection = () => {
   const yearsExperience = getYearsOfExperienceString();
   return (
-    <section className="relative min-h-[500px] sm:min-h-[600px] md:min-h-[650px] lg:min-h-[700px] xl:min-h-screen flex items-center bg-gradient-to-br from-background to-muted py-8 sm:py-12 md:py-16 lg:py-20">
+    <section className="relative min-h-[500px] sm:min-h-[600px] md:min-h-[650px] lg:min-h-[700px] xl:min-h-screen flex items-center py-8 sm:py-12 md:py-16 lg:py-20">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center opacity-10"

@@ -167,7 +167,7 @@ const About = () => {
         <Header />
         <main>
           {/* Hero Section */}
-          <section className="bg-gradient-to-br from-muted to-muted py-12 md:py-16 lg:py-20">
+          <section className="bg-muted py-12 md:py-16 lg:py-20">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4 md:mb-6">
                 About DLS Envirotech Corporation
@@ -187,10 +187,12 @@ const About = () => {
           </section>
 
           {/* About Section */}
-          <AboutSection />
+          <section className="bg-background">
+            <AboutSection />
+          </section>
 
           {/* Service Categories */}
-          <section className="py-12 md:py-16 lg:py-20 bg-muted">
+          <section className="bg-muted py-12 md:py-16 lg:py-20">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center mb-8 md:mb-12 lg:mb-16">
                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-3 md:mb-4">
@@ -223,7 +225,7 @@ const About = () => {
           </section>
 
           {/* Certifications & Compliance */}
-          <section className="py-12 md:py-16 lg:py-20 bg-background">
+          <section className="bg-background py-12 md:py-16 lg:py-20">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center mb-8 md:mb-12 lg:mb-16">
                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-3 md:mb-4">
@@ -256,7 +258,7 @@ const About = () => {
           </section>
 
           {/* Our Values */}
-          <section className="py-12 md:py-16 lg:py-20 bg-muted">
+          <section className="bg-muted py-12 md:py-16 lg:py-20">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center mb-8 md:mb-12 lg:mb-16">
                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-3 md:mb-4">
@@ -290,10 +292,12 @@ const About = () => {
           </section>
 
           {/* Testimonials */}
-          <TestimonialsSection />
+          <section className="bg-background">
+            <TestimonialsSection />
+          </section>
 
           {/* Call to Action */}
-          <section className="py-12 md:py-16 lg:py-20 bg-muted">
+          <section className="bg-muted py-12 md:py-16 lg:py-20">
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
               <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-foreground mb-4 md:mb-6">
                 Ready to Experience Our Expertise?

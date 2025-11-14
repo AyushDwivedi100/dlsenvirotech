@@ -47,12 +47,22 @@ const Home = () => {
         <TopBar />
         <Header />
         <main>
-          <HeroSection />
-          <ServicesOverview />
-          <FeaturedProjects />
-          <AboutSection />
-          <TestimonialsSection />
-          <ContactSection />
+          <section className="bg-muted">
+            <HeroSection />
+          </section>
+          <section className="bg-background">
+            <ServicesOverview />
+          </section>
+          <section className="bg-muted">
+            <FeaturedProjects />
+          </section>
+          <section className="bg-background">
+            <AboutSection />
+          </section>
+          <section className="bg-muted">
+            <TestimonialsSection />
+            <ContactSection />
+          </section>
         </main>
         <Footer />
       </div>
