@@ -58,9 +58,9 @@ const Home = () => {
           </section>
           <section className="bg-background">
             <AboutSection />
+            <TestimonialsSection />
           </section>
           <section className="bg-muted">
-            <TestimonialsSection />
             <ContactSection />
           </section>
         </main>
