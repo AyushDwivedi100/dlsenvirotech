@@ -73,7 +73,7 @@ const Services = () => {
   return (
     <>
       <SEOHead
-        title="WWTP, MBBR, STP & Waste Management Services India | DLS Envirotech"
+        title="Our Services | DLS Envirotech"
         description={`WWTP, MBBR, STP, FSTP, W2C, C&D waste, MGPS, bio-remediation services. CPCB approved. ${yearsExperience} experience, 200+ installations. Turnkey projects India.`}
         keywords="wastewater treatment plant WWTP, MBBR moving bed biofilm reactor, sewage treatment plant services, STP installation India, FSTP services, faecal sludge treatment, MBBR technology India, MBR membrane bioreactor, SBR sequencing batch reactor, waste to compost systems W2C, bio-remediation services India, medical gas pipeline system MGPS, construction demolition waste management C&D, packaged STP plant, solid waste management services, bio-methanation plant, material recovery facility MRF, effluent treatment plant ETP, wastewater treatment services, industrial ETP installation, cooling tower manufacturer, PSA oxygen plant, air pollution control, septage treatment, water recycling services, zero liquid discharge, STP O&M services, CPCB compliant STP, environmental engineering services, waste to compost plant, sanitary landfill development, turnkey environmental projects India"
         canonical="https://dlsenvirotech.com/services"

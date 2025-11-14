@@ -57,7 +57,7 @@ const Leadership = () => {
   return (
     <>
       <SEOHead
-        title={`Mr. S.K. Singh - Managing Director | ${yearsExperience} Years | STP, FSTP Expert DLS Envirotech Worldwide`}
+        title="Leadership | DLS Envirotech"
         description={`Mr. S.K. Singh, MD of DLS Envirotech. ${yearsExperience} experience. Led 120+ waste projects, 60+ STP, 32+ FSTP worldwide. CPCB approved. Vision: sustainable solutions globally.`}
         keywords={`S.K. Singh DLS Envirotech managing director, ${yearsExperience} years environmental engineering leadership, STP sewage treatment plant expert worldwide, WWTP wastewater treatment specialist global, MBBR moving bed biofilm reactor expert international, FSTP faecal sludge treatment plant specialist, ETP WTP expert, MBR SBR ZLD technology leader, waste to compost W2C director, C&D construction demolition waste management, bio-remediation solutions expert, MGPS medical gas pipeline specialist, PSA oxygen plant director, industrial RO plant expert, cooling tower specialist, air pollution control leader, MRF material recovery facility specialist, bio-methanation expert, waste management leader worldwide, CPCB NABL approved contractor, international projects director, turnkey environmental projects director, sustainable development leader, international environmental consultant, global environmental solutions, Delhi NCR Mumbai Hyderabad Bengaluru Chennai`}
         canonical="https://dlsenvirotech.com/leadership"

@@ -36,7 +36,7 @@ const Home = () => {
   return (
     <>
       <SEOHead
-        title="Best WWTP, MBBR, STP & Waste Management Company India | DLS Envirotech | 200+ Projects"
+        title="Home | DLS Envirotech - Environmental Solutions"
         description={`${yearsExperience} years WWTP, MBBR, STP, FSTP, W2C, C&D waste, MGPS expertise. ISO certified, CPCB approved. 200+ installations. Bio-remediation. Serving India & global.`}
         keywords="wastewater treatment plant WWTP, MBBR moving bed biofilm reactor, sewage treatment plant India, STP plant manufacturer, FSTP India, faecal sludge treatment plant, waste to compost systems W2C, bio-remediation services, medical gas pipeline system MGPS, construction demolition waste C&D, waste management company India, MBBR STP, MBR technology, SBR sewage treatment, effluent treatment plant ETP, packaged STP, wastewater treatment India, CPCB approved STP, bio-methanation plant, solid waste management India, septage treatment plant, industrial wastewater treatment, water recycling plant, zero liquid discharge ZLD, sewage plant installation, STP O&M services, environmental solutions India, Swachh Bharat Mission, Namami Gange, UP Jal Nigam projects, Assam waste management, international environmental projects, turnkey STP contractor, eco-friendly waste treatment"
         canonical="https://dlsenvirotech.com/"
