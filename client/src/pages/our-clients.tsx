@@ -74,9 +74,17 @@ const ClientCard = ({
   );
 };
 
+const CATEGORY_ORDER = ["government", "private", "international", "municipal"];
+
 const OurClients = () => {
   const [selectedCategory, setSelectedCategory] = useState("all");
-  const filteredClients = getClientsByCategory(selectedCategory);
+  const rawClients = getClientsByCategory(selectedCategory);
+  
+  const filteredClients = [...rawClients].sort((a, b) => {
+    const orderA = CATEGORY_ORDER.indexOf(a.category);
+    const orderB = CATEGORY_ORDER.indexOf(b.category);
+    return orderA - orderB;
+  });
 
   const breadcrumbSchema = createBreadcrumbSchema([
     { name: "Home", url: "https://dlsenvirotech.com/" },
