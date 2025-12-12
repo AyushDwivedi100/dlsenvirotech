@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { Users, Building2 } from "lucide-react";
-import { CLIENTS, getFeaturedClients } from "@/constants/clients";
+import { CLIENTS, getFeaturedClients, CLIENT_CATEGORIES } from "@/constants/clients";
 import { useState } from "react";
 
 const PLACEHOLDER_LOGO = "https://www.fmt.se/wp-content/uploads/2023/02/logo-placeholder-image.png";
@@ -9,23 +9,36 @@ const PLACEHOLDER_LOGO = "https://www.fmt.se/wp-content/uploads/2023/02/logo-pla
 const ClientCard = ({
   client,
 }: {
-  client: { id: string; name: string; logo: string; website?: string };
+  client: { id: string; name: string; logo: string; category: string; website?: string };
 }) => {
   const [imageSrc, setImageSrc] = useState(client.logo);
 
+  const getCategoryLabel = (category: string) => {
+    const cat = CLIENT_CATEGORIES.find((c) => c.id === category);
+    return cat?.label || category;
+  };
+
   const content = (
-    <img
-      src={imageSrc}
-      alt={client.name}
-      className="max-h-12 sm:max-h-16 w-auto object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
-      loading="lazy"
-      onError={() => setImageSrc(PLACEHOLDER_LOGO)}
-    />
+    <div className="flex flex-col items-center justify-center text-center">
+      <img
+        src={imageSrc}
+        alt={client.name}
+        className="max-h-12 sm:max-h-16 w-auto object-contain mb-3"
+        loading="lazy"
+        onError={() => setImageSrc(PLACEHOLDER_LOGO)}
+      />
+      <span className="text-sm text-foreground font-medium leading-tight line-clamp-2 mb-1">
+        {client.name}
+      </span>
+      <span className="text-xs text-muted-foreground">
+        {getCategoryLabel(client.category)}
+      </span>
+    </div>
   );
 
   return (
     <div
-      className="flex items-center justify-center p-4 sm:p-6 bg-card rounded-lg border border-border hover-elevate transition-all duration-300 min-h-[100px] sm:min-h-[120px]"
+      className="flex items-center justify-center p-4 sm:p-6 bg-card rounded-lg border border-border hover-elevate transition-all duration-300 min-h-[140px] sm:min-h-[160px]"
       data-testid={`client-logo-${client.id}`}
       title={client.name}
     >
