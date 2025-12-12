@@ -4,44 +4,22 @@ import { Users, Building2 } from "lucide-react";
 import { CLIENTS, getFeaturedClients } from "@/constants/clients";
 import { useState } from "react";
 
+const PLACEHOLDER_LOGO = "https://www.fmt.se/wp-content/uploads/2023/02/logo-placeholder-image.png";
+
 const ClientCard = ({
   client,
 }: {
   client: { id: string; name: string; logo: string; website?: string };
 }) => {
-  const [imageError, setImageError] = useState(false);
+  const [imageSrc, setImageSrc] = useState(client.logo);
 
-  const getInitials = (name: string) => {
-    return name
-      .split(/[\s,]+/)
-      .filter(
-        (word) =>
-          word.length > 0 && !["Ltd.", "Ltd", "Pvt.", "Pvt"].includes(word)
-      )
-      .slice(0, 2)
-      .map((word) => word[0])
-      .join("")
-      .toUpperCase();
-  };
-
-  const content = imageError ? (
-    <div className="flex flex-col items-center justify-center text-center p-2">
-      <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-primary/10 flex items-center justify-center mb-2">
-        <span className="text-primary font-bold text-sm sm:text-base">
-          {getInitials(client.name)}
-        </span>
-      </div>
-      <span className="text-xs sm:text-sm text-muted-foreground font-medium leading-tight line-clamp-2">
-        {client.name}
-      </span>
-    </div>
-  ) : (
+  const content = (
     <img
-      src={client.logo}
+      src={imageSrc}
       alt={client.name}
       className="max-h-12 sm:max-h-16 w-auto object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
       loading="lazy"
-      onError={() => setImageError(true)}
+      onError={() => setImageSrc(PLACEHOLDER_LOGO)}
     />
   );
 

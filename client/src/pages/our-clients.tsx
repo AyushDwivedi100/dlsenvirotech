@@ -15,6 +15,8 @@ import {
   createBreadcrumbSchema,
 } from "@/components/seo/seo-head";
 
+const PLACEHOLDER_LOGO = "https://www.fmt.se/wp-content/uploads/2023/02/logo-placeholder-image.png";
+
 const ClientCard = ({
   client,
 }: {
@@ -26,48 +28,21 @@ const ClientCard = ({
     website?: string;
   };
 }) => {
-  const [imageError, setImageError] = useState(false);
-
-  const getInitials = (name: string) => {
-    return name
-      .split(/[\s,]+/)
-      .filter(
-        (word) =>
-          word.length > 0 && !["Ltd.", "Ltd", "Pvt.", "Pvt"].includes(word)
-      )
-      .slice(0, 2)
-      .map((word) => word[0])
-      .join("")
-      .toUpperCase();
-  };
+  const [imageSrc, setImageSrc] = useState(client.logo);
 
   const getCategoryLabel = (category: string) => {
     const cat = CLIENT_CATEGORIES.find((c) => c.id === category);
     return cat?.label || category;
   };
 
-  const content = imageError ? (
-    <div className="flex flex-col items-center justify-center text-center p-2">
-      <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-primary/10 flex items-center justify-center mb-3">
-        <span className="text-primary font-bold text-base sm:text-lg">
-          {getInitials(client.name)}
-        </span>
-      </div>
-      <span className="text-sm sm:text-base text-foreground font-medium leading-tight line-clamp-2 mb-1">
-        {client.name}
-      </span>
-      <span className="text-xs text-muted-foreground">
-        {getCategoryLabel(client.category)}
-      </span>
-    </div>
-  ) : (
+  const content = (
     <div className="flex flex-col items-center justify-center text-center">
       <img
-        src={client.logo}
+        src={imageSrc}
         alt={client.name}
         className="max-h-16 sm:max-h-20 w-auto object-contain mb-3"
         loading="lazy"
-        onError={() => setImageError(true)}
+        onError={() => setImageSrc(PLACEHOLDER_LOGO)}
       />
       <span className="text-sm text-foreground font-medium leading-tight line-clamp-2 mb-1">
         {client.name}
