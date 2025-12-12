@@ -41,14 +41,14 @@ const ServiceCard = ({ service }: ServiceCardProps) => {
     iconMap[service.icon as keyof typeof iconMap] || Settings;
 
   return (
-    <Card 
+    <Card
       className="group bg-muted hover:shadow-xl transition-all duration-300 hover:-translate-y-1 sm:hover:-translate-y-2"
       role="article"
       aria-label={`${service.title} service offering - ${service.description}`}
       data-testid={`card-service-${service.id}`}
     >
       <CardContent className="p-5 sm:p-6 md:p-8">
-        <div 
+        <div
           className="bg-primary text-primary-foreground p-3 sm:p-4 rounded-xl w-14 h-14 sm:w-16 sm:h-16 flex items-center justify-center mb-4 sm:mb-6 group-hover:scale-110 transition-transform"
           aria-hidden="true"
         >
@@ -63,10 +63,16 @@ const ServiceCard = ({ service }: ServiceCardProps) => {
           {service.description}
         </p>
 
-        <ul className="text-sm sm:text-base text-muted-foreground space-y-2 mb-4 sm:mb-6" aria-label={`Key features of ${service.title}`}>
+        <ul
+          className="text-sm sm:text-base text-muted-foreground space-y-2 mb-4 sm:mb-6"
+          aria-label={`Key features of ${service.title}`}
+        >
           {service.features.map((feature) => (
             <li key={feature} className="flex items-start">
-              <Check className="h-4 w-4 text-secondary mr-2 mt-0.5 flex-shrink-0" aria-hidden="true" />
+              <Check
+                className="h-4 w-4 text-secondary mr-2 mt-0.5 flex-shrink-0"
+                aria-hidden="true"
+              />
               <span>{feature}</span>
             </li>
           ))}

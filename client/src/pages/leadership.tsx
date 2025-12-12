@@ -81,7 +81,8 @@ const Leadership = () => {
                   Leadership
                 </h1>
                 <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-                  Meet the visionary leader driving sustainable environmental solutions worldwide
+                  Meet the visionary leader driving sustainable environmental
+                  solutions worldwide
                 </p>
               </motion.div>
 
@@ -112,12 +113,18 @@ const Leadership = () => {
                       {/* Info Section */}
                       <div className="md:col-span-3 p-8 md:p-12 bg-background">
                         <div className="mb-6">
-                          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4" data-testid="text-director-name">
+                          <h2
+                            className="text-3xl md:text-4xl font-bold text-foreground mb-4"
+                            data-testid="text-director-name"
+                          >
                             Mr. S.K. Singh
                           </h2>
                           <div className="flex items-center gap-2">
                             <div className="bg-primary/10 px-4 py-2 rounded-lg">
-                              <p className="text-base md:text-lg font-semibold text-primary" data-testid="text-director-title">
+                              <p
+                                className="text-base md:text-lg font-semibold text-primary"
+                                data-testid="text-director-title"
+                              >
                                 Managing Director
                               </p>
                             </div>
@@ -128,7 +135,10 @@ const Leadership = () => {
                         <div className="space-y-3 mb-8">
                           <div className="flex items-center gap-3 text-foreground/80">
                             <Briefcase className="h-5 w-5 text-primary flex-shrink-0" />
-                            <span className="text-base md:text-lg" data-testid="text-director-experience">
+                            <span
+                              className="text-base md:text-lg"
+                              data-testid="text-director-experience"
+                            >
                               {yearsExperience} Years of Professional Experience
                             </span>
                           </div>
@@ -137,20 +147,48 @@ const Leadership = () => {
                         {/* Quick Stats */}
                         <div className="grid grid-cols-2 gap-4">
                           <div className="bg-muted p-4 rounded-lg text-center">
-                            <p className="text-2xl font-bold text-primary" data-testid="text-stat-swm">120+</p>
-                            <p className="text-xs text-muted-foreground mt-1">SWM Projects</p>
+                            <p
+                              className="text-2xl font-bold text-primary"
+                              data-testid="text-stat-swm"
+                            >
+                              120+
+                            </p>
+                            <p className="text-xs text-muted-foreground mt-1">
+                              SWM Projects
+                            </p>
                           </div>
                           <div className="bg-muted p-4 rounded-lg text-center">
-                            <p className="text-2xl font-bold text-primary" data-testid="text-stat-stp">60+</p>
-                            <p className="text-xs text-muted-foreground mt-1">STP Installations</p>
+                            <p
+                              className="text-2xl font-bold text-primary"
+                              data-testid="text-stat-stp"
+                            >
+                              60+
+                            </p>
+                            <p className="text-xs text-muted-foreground mt-1">
+                              STP Installations
+                            </p>
                           </div>
                           <div className="bg-muted p-4 rounded-lg text-center">
-                            <p className="text-2xl font-bold text-primary" data-testid="text-stat-fstp">32+</p>
-                            <p className="text-xs text-muted-foreground mt-1">FSTP Projects</p>
+                            <p
+                              className="text-2xl font-bold text-primary"
+                              data-testid="text-stat-fstp"
+                            >
+                              32+
+                            </p>
+                            <p className="text-xs text-muted-foreground mt-1">
+                              FSTP Projects
+                            </p>
                           </div>
                           <div className="bg-muted p-4 rounded-lg text-center">
-                            <p className="text-2xl font-bold text-primary" data-testid="text-stat-years">{yearsExperience}</p>
-                            <p className="text-xs text-muted-foreground mt-1">Years Experience</p>
+                            <p
+                              className="text-2xl font-bold text-primary"
+                              data-testid="text-stat-years"
+                            >
+                              {yearsExperience}
+                            </p>
+                            <p className="text-xs text-muted-foreground mt-1">
+                              Years Experience
+                            </p>
                           </div>
                         </div>
                       </div>
@@ -179,25 +217,48 @@ const Leadership = () => {
 
                 <Card className="shadow-lg border-l-4 border-l-primary">
                   <CardContent className="p-8 md:p-12">
-                    <div className="prose prose-lg max-w-none" data-testid="text-director-message">
+                    <div
+                      className="prose prose-lg max-w-none"
+                      data-testid="text-director-message"
+                    >
                       <p className="text-base md:text-lg text-gray-700 dark:text-gray-200 leading-relaxed mb-6">
-                        At DLS Envirotech Corporation Pvt. Ltd., we are committed to driving sustainable development through innovative and reliable environmental and pollution control solutions.
+                        At DLS Envirotech Corporation Pvt. Ltd., we are
+                        committed to driving sustainable development through
+                        innovative and reliable environmental and pollution
+                        control solutions.
                       </p>
 
                       <p className="text-base md:text-lg text-gray-700 dark:text-gray-200 leading-relaxed mb-6">
-                        With over {yearsExperience} years of professional experience, I have witnessed how scientific approach and responsible engineering can transform communities and industries towards a cleaner, greener future.
+                        With over {yearsExperience} years of professional
+                        experience, I have witnessed how scientific approach and
+                        responsible engineering can transform communities and
+                        industries towards a cleaner, greener future.
                       </p>
 
                       <p className="text-base md:text-lg text-gray-700 dark:text-gray-200 leading-relaxed mb-6">
-                        Under our leadership, DLS Envirotech has successfully completed more than 120+ Solid Waste Management projects, 60+ large Sewage Treatment Plants (STP), and 32+ large Faecal Sludge Treatment Plants (FSTP) across multiple regions worldwide. These achievements are a reflection of our dedication, technical expertise, and client trust. We are committed to bringing our expertise to projects globally, serving clients wherever environmental solutions are needed.
+                        Under our leadership, DLS Envirotech has successfully
+                        completed more than 120+ Solid Waste Management
+                        projects, 60+ large Sewage Treatment Plants (STP), and
+                        32+ large Faecal Sludge Treatment Plants (FSTP) across
+                        multiple regions worldwide. These achievements are a
+                        reflection of our dedication, technical expertise, and
+                        client trust. We are committed to bringing our expertise
+                        to projects globally, serving clients wherever
+                        environmental solutions are needed.
                       </p>
 
                       <p className="text-base md:text-lg text-gray-700 dark:text-gray-200 leading-relaxed mb-6">
-                        Our vision is clear — to provide sustainable, efficient, and affordable environmental solutions that ensure compliance and contribute to a pollution-free world. We continue to invest in advanced technologies, skill development, and transparent project execution to maintain the highest standards in our field.
+                        Our vision is clear — to provide sustainable, efficient,
+                        and affordable environmental solutions that ensure
+                        compliance and contribute to a pollution-free world. We
+                        continue to invest in advanced technologies, skill
+                        development, and transparent project execution to
+                        maintain the highest standards in our field.
                       </p>
 
                       <p className="text-base md:text-lg text-gray-700 dark:text-gray-200 leading-relaxed">
-                        Together, with our clients, partners, and team, we are building a cleaner and more sustainable tomorrow.
+                        Together, with our clients, partners, and team, we are
+                        building a cleaner and more sustainable tomorrow.
                       </p>
 
                       <div className="mt-8 pt-6 border-t border-border">
@@ -226,7 +287,8 @@ const Leadership = () => {
                   Key Achievements
                 </h2>
                 <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
-                  Milestones that showcase our commitment to environmental excellence
+                  Milestones that showcase our commitment to environmental
+                  excellence
                 </p>
               </div>
 
@@ -244,7 +306,10 @@ const Leadership = () => {
                         <div className="bg-primary/10 p-4 rounded-xl w-16 h-16 flex items-center justify-center mx-auto mb-4">
                           <achievement.icon className="h-8 w-8 text-primary" />
                         </div>
-                        <p className="text-3xl md:text-4xl font-bold text-primary mb-2" data-testid={`text-achievement-${index}`}>
+                        <p
+                          className="text-3xl md:text-4xl font-bold text-primary mb-2"
+                          data-testid={`text-achievement-${index}`}
+                        >
                           {achievement.value}
                         </p>
                         <h3 className="text-base md:text-lg font-semibold text-foreground mb-2">
@@ -271,7 +336,18 @@ const Leadership = () => {
                 <Card className="bg-gradient-to-br from-primary/5 to-primary/10 border-primary/20">
                   <CardContent className="p-8 md:p-12">
                     <p className="text-lg md:text-xl text-foreground/90 leading-relaxed text-center">
-                      To provide <span className="font-semibold text-primary">sustainable, efficient, and affordable environmental solutions</span> worldwide, ensuring compliance and contributing to a <span className="font-semibold text-primary">pollution-free world</span>. We continue to invest in advanced technologies, skill development, and transparent project execution to maintain the highest standards in our field.
+                      To provide{" "}
+                      <span className="font-semibold text-primary">
+                        sustainable, efficient, and affordable environmental
+                        solutions
+                      </span>{" "}
+                      worldwide, ensuring compliance and contributing to a{" "}
+                      <span className="font-semibold text-primary">
+                        pollution-free world
+                      </span>
+                      . We continue to invest in advanced technologies, skill
+                      development, and transparent project execution to maintain
+                      the highest standards in our field.
                     </p>
                   </CardContent>
                 </Card>
@@ -286,10 +362,17 @@ const Leadership = () => {
                 Partner with Industry-Leading Expertise
               </h2>
               <p className="text-base md:text-lg text-muted-foreground mb-6 md:mb-8">
-                Experience the difference that {yearsExperience} years of environmental engineering excellence can make to your project, anywhere in the world.
+                Experience the difference that {yearsExperience} years of
+                environmental engineering excellence can make to your project,
+                anywhere in the world.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center">
-                <Button size="lg" className="w-full sm:w-auto" asChild data-testid="button-contact-leader">
+                <Button
+                  size="lg"
+                  className="w-full sm:w-auto"
+                  asChild
+                  data-testid="button-contact-leader"
+                >
                   <Link href="/contact" className="text-white">
                     <Phone className="mr-2 h-5 w-5" />
                     Get In Touch

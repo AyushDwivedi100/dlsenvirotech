@@ -60,9 +60,7 @@ const Gallery = () => {
                   <div className="text-xl sm:text-2xl md:text-3xl font-bold text-secondary mb-2">
                     Global
                   </div>
-                  <div className="text-muted-foreground">
-                    Service Reach
-                  </div>
+                  <div className="text-muted-foreground">Service Reach</div>
                 </div>
               </div>
             </div>
@@ -79,8 +77,8 @@ const Gallery = () => {
                   <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-6 md:mb-8 leading-relaxed">
                     We are currently preparing our authentic project gallery
                     featuring actual installation photos from our completed
-                    water treatment projects globally. These real images
-                    will showcase our expertise and quality workmanship.
+                    water treatment projects globally. These real images will
+                    showcase our expertise and quality workmanship.
                   </p>
                   <p className="text-sm sm:text-base text-muted-foreground mb-8">
                     Check back soon to view our comprehensive collection of real

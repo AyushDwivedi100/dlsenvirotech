@@ -10,10 +10,13 @@ const ServicesOverview = () => {
             Our Specialized Services
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-            Comprehensive environmental technology solutions including water treatment (WWTP, MBBR, STP, FSTP), industrial systems (MGPS, cooling towers, PSA oxygen), waste management (W2C, C&D waste, MRF), and bio-remediation tailored for industrial and municipal applications
+            Comprehensive environmental technology solutions including water
+            treatment (WWTP, MBBR, STP, FSTP), industrial systems (MGPS, cooling
+            towers, PSA oxygen), waste management (W2C, C&D waste, MRF), and
+            bio-remediation tailored for industrial and municipal applications
           </p>
         </div>
-        
+
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {SERVICES.map((service) => (
             <ServiceCard key={service.id} service={service} />

@@ -10,10 +10,11 @@ const TestimonialsSection = () => {
             Client Success Stories
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto px-4">
-            Hear from industry leaders who trust DLS Envirotech for their critical water treatment infrastructure
+            Hear from industry leaders who trust DLS Envirotech for their
+            critical water treatment infrastructure
           </p>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {TESTIMONIALS.map((testimonial) => (
             <TestimonialCard key={testimonial.id} testimonial={testimonial} />

@@ -21,11 +21,7 @@
       "purpose": "any maskable"
     }
   ],
-  "categories": [
-    "business",
-    "utilities",
-    "environment"
-  ],
+  "categories": ["business", "utilities", "environment"],
   "lang": "en-IN",
   "dir": "ltr",
   "scope": "/",

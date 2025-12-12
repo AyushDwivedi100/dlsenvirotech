@@ -26,7 +26,7 @@ export const OptimizedImage = ({
       {!isLoaded && !hasError && (
         <div
           className="absolute inset-0 bg-gradient-to-br from-muted/50 via-muted/30 to-muted/50 animate-pulse"
-          style={{ backdropFilter: 'blur(20px)' }}
+          style={{ backdropFilter: "blur(20px)" }}
           aria-hidden="true"
         />
       )}
@@ -38,7 +38,9 @@ export const OptimizedImage = ({
         fetchpriority={priority ? "high" : "auto"}
         className={cn(
           "w-full h-auto transition-all duration-700 ease-out",
-          isLoaded ? "opacity-100 blur-0 scale-100" : "opacity-0 blur-sm scale-105",
+          isLoaded
+            ? "opacity-100 blur-0 scale-100"
+            : "opacity-0 blur-sm scale-105",
           className
         )}
         onLoad={() => setIsLoaded(true)}

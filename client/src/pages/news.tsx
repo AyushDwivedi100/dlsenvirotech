@@ -86,7 +86,9 @@ const NewsPage = () => {
                       </CardDescription>
                     </CardHeader>
                     <CardContent className="flex-grow">
-                      <p className="text-sm text-muted-foreground">{article.summary}</p>
+                      <p className="text-sm text-muted-foreground">
+                        {article.summary}
+                      </p>
                     </CardContent>
                     <div className="p-6 pt-0">
                       <div className="flex flex-wrap gap-2">
@@ -110,8 +112,9 @@ const NewsPage = () => {
                 Ready to Discuss Your Project?
               </h2>
               <p className="text-lg text-muted-foreground mb-8">
-                Our team of experts is ready to answer your questions and help you find the perfect
-                environmental solution for your needs. Let's build a sustainable future together.
+                Our team of experts is ready to answer your questions and help
+                you find the perfect environmental solution for your needs.
+                Let's build a sustainable future together.
               </p>
               <Button size="lg" asChild>
                 <Link href="/contact">Contact Us</Link>

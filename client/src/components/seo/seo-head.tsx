@@ -18,11 +18,16 @@ export const SEOHead = ({
   canonical,
   ogType = "website",
   ogImage = "https://dlsenvirotech.com/og-image.jpg",
-  schema
+  schema,
 }: SEOHeadProps) => {
   const fullTitle = `${title} | DLS Envirotech Corporation`;
-  const siteUrl = typeof window !== 'undefined' ? window.location.origin : 'https://dlsenvirotech.com';
-  const fullCanonical = canonical || (typeof window !== 'undefined' ? window.location.href : siteUrl);
+  const siteUrl =
+    typeof window !== "undefined"
+      ? window.location.origin
+      : "https://dlsenvirotech.com";
+  const fullCanonical =
+    canonical ||
+    (typeof window !== "undefined" ? window.location.href : siteUrl);
 
   return (
     <Helmet>
@@ -31,10 +36,10 @@ export const SEOHead = ({
       <meta name="title" content={fullTitle} />
       <meta name="description" content={description} />
       {keywords && <meta name="keywords" content={keywords} />}
-      
+
       {/* Canonical URL */}
       <link rel="canonical" href={fullCanonical} />
-      
+
       {/* Open Graph / Facebook */}
       <meta property="og:type" content={ogType} />
       <meta property="og:url" content={fullCanonical} />
@@ -42,25 +47,23 @@ export const SEOHead = ({
       <meta property="og:description" content={description} />
       <meta property="og:image" content={ogImage} />
       <meta property="og:site_name" content="DLS Envirotech Corporation" />
-      
+
       {/* Twitter */}
       <meta property="twitter:card" content="summary_large_image" />
       <meta property="twitter:url" content={fullCanonical} />
       <meta property="twitter:title" content={fullTitle} />
       <meta property="twitter:description" content={description} />
       <meta property="twitter:image" content={ogImage} />
-      
+
       {/* Additional SEO */}
       <meta name="robots" content="index, follow" />
       <meta name="language" content="English" />
       <meta name="revisit-after" content="7 days" />
       <meta name="author" content="DLS Envirotech Corporation" />
-      
+
       {/* Schema.org Markup */}
       {schema && (
-        <script type="application/ld+json">
-          {JSON.stringify(schema)}
-        </script>
+        <script type="application/ld+json">{JSON.stringify(schema)}</script>
       )}
     </Helmet>
   );
@@ -71,61 +74,62 @@ const yearsExp = getYearsOfExperienceString();
 export const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "name": "DLS Envirotech Corporation",
-  "alternateName": ["DLS Envirotech", "DLS Envirotech Corporation Pvt. Ltd"],
-  "description": `Leading wastewater treatment (WWTP, STP, FSTP, MBBR), solid waste management (W2C, C&D, MRF), bio-remediation & medical gas pipeline (MGPS) company in India. CPCB approved, ISO 9001:2015 certified. 200+ installations across India with ${yearsExp} years expertise. MBR, MBBR, SBR technology. International projects.`,
-  "url": "https://dlsenvirotech.com",
-  "logo": "https://dlsenvirotech.com/logo.png",
-  "image": "https://dlsenvirotech.com/og-image.jpg",
-  "telephone": "+91-9568572005",
-  "email": "info.dlsenvirotech@gmail.com",
-  "address": {
+  name: "DLS Envirotech Corporation",
+  alternateName: ["DLS Envirotech", "DLS Envirotech Corporation Pvt. Ltd"],
+  description: `Leading wastewater treatment (WWTP, STP, FSTP, MBBR), solid waste management (W2C, C&D, MRF), bio-remediation & medical gas pipeline (MGPS) company in India. CPCB approved, ISO 9001:2015 certified. 200+ installations across India with ${yearsExp} years expertise. MBR, MBBR, SBR technology. International projects.`,
+  url: "https://dlsenvirotech.com",
+  logo: "https://dlsenvirotech.com/logo.png",
+  image: "https://dlsenvirotech.com/og-image.jpg",
+  telephone: "+91-9568572005",
+  email: "info.dlsenvirotech@gmail.com",
+  address: {
     "@type": "PostalAddress",
-    "streetAddress": "F-25, Sector-6",
-    "addressLocality": "Noida",
-    "addressRegion": "Uttar Pradesh",
-    "postalCode": "201301",
-    "addressCountry": "IN"
+    streetAddress: "F-25, Sector-6",
+    addressLocality: "Noida",
+    addressRegion: "Uttar Pradesh",
+    postalCode: "201301",
+    addressCountry: "IN",
   },
-  "geo": {
+  geo: {
     "@type": "GeoCoordinates",
-    "latitude": 28.5931423,
-    "longitude": 77.3212035
+    latitude: 28.5931423,
+    longitude: 77.3212035,
   },
-  "sameAs": [
+  sameAs: [
     "https://www.indiamart.com/dlsenvirotechcorporation/",
     "https://www.facebook.com/dlsenvirotech",
     "https://www.linkedin.com/company/dlsenvirotech",
-    "https://twitter.com/dlsenvirotech"
+    "https://twitter.com/dlsenvirotech",
   ],
-  "foundingDate": "2015",
-  "numberOfEmployees": {
+  foundingDate: "2015",
+  numberOfEmployees: {
     "@type": "QuantitativeValue",
-    "value": 100
+    value: 100,
   },
-  "areaServed": [
+  areaServed: [
     {
       "@type": "Country",
-      "name": "India"
+      name: "India",
     },
     {
       "@type": "State",
-      "name": "Uttar Pradesh"
+      name: "Uttar Pradesh",
     },
     {
       "@type": "State",
-      "name": "Assam"
-    }
+      name: "Assam",
+    },
   ],
-  "slogan": "Comprehensive Environmental Solutions for Industry & Municipalities Worldwide",
-  "aggregateRating": {
+  slogan:
+    "Comprehensive Environmental Solutions for Industry & Municipalities Worldwide",
+  aggregateRating: {
     "@type": "AggregateRating",
-    "ratingValue": "4.9",
-    "reviewCount": "200",
-    "bestRating": "5",
-    "worstRating": "1"
+    ratingValue: "4.9",
+    reviewCount: "200",
+    bestRating: "5",
+    worstRating: "1",
   },
-  "knowsAbout": [
+  knowsAbout: [
     "Sewage Treatment Plant (STP)",
     "Wastewater Treatment Plant (WWTP)",
     "Moving Bed Biofilm Reactor (MBBR)",
@@ -177,51 +181,51 @@ export const organizationSchema = {
     "Water Purification",
     "Oil Spills Treatment",
     "Heavy Metals Remediation",
-    "Hospital Infrastructure"
+    "Hospital Infrastructure",
   ],
-  "hasCredential": [
+  hasCredential: [
     {
       "@type": "EducationalOccupationalCredential",
-      "credentialCategory": "ISO 9001:2015 Certification"
+      credentialCategory: "ISO 9001:2015 Certification",
     },
     {
       "@type": "EducationalOccupationalCredential",
-      "credentialCategory": "CPCB Approved Contractor"
-    }
-  ]
+      credentialCategory: "CPCB Approved Contractor",
+    },
+  ],
 };
 
 // LocalBusiness Schema
 export const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "name": "DLS Envirotech Corporation",
-  "image": "https://dlsenvirotech.com/og-image.jpg",
+  name: "DLS Envirotech Corporation",
+  image: "https://dlsenvirotech.com/og-image.jpg",
   "@id": "https://dlsenvirotech.com",
-  "url": "https://dlsenvirotech.com",
-  "telephone": "+91-9568572005",
-  "priceRange": "$$$$",
-  "address": {
+  url: "https://dlsenvirotech.com",
+  telephone: "+91-9568572005",
+  priceRange: "$$$$",
+  address: {
     "@type": "PostalAddress",
-    "streetAddress": "F-25, Sector-6, Noida 201301 (U.P.)",
-    "addressLocality": "Noida",
-    "addressRegion": "Uttar Pradesh",
-    "postalCode": "201301",
-    "addressCountry": "IN"
+    streetAddress: "F-25, Sector-6, Noida 201301 (U.P.)",
+    addressLocality: "Noida",
+    addressRegion: "Uttar Pradesh",
+    postalCode: "201301",
+    addressCountry: "IN",
   },
-  "openingHoursSpecification": {
+  openingHoursSpecification: {
     "@type": "OpeningHoursSpecification",
-    "dayOfWeek": [
+    dayOfWeek: [
       "Monday",
       "Tuesday",
       "Wednesday",
       "Thursday",
       "Friday",
-      "Saturday"
+      "Saturday",
     ],
-    "opens": "09:00",
-    "closes": "18:00"
-  }
+    opens: "09:00",
+    closes: "18:00",
+  },
 };
 
 // Service Schema Generator
@@ -232,103 +236,112 @@ export const createServiceSchema = (
 ) => ({
   "@context": "https://schema.org",
   "@type": "Service",
-  "serviceType": serviceType,
-  "name": serviceName,
-  "description": description,
-  "provider": {
+  serviceType: serviceType,
+  name: serviceName,
+  description: description,
+  provider: {
     "@type": "Organization",
-    "name": "DLS Envirotech Corporation",
-    "telephone": "+91-9568572005",
-    "url": "https://dlsenvirotech.com"
+    name: "DLS Envirotech Corporation",
+    telephone: "+91-9568572005",
+    url: "https://dlsenvirotech.com",
   },
-  "areaServed": {
+  areaServed: {
     "@type": "Country",
-    "name": "India"
+    name: "India",
   },
-  "offers": {
+  offers: {
     "@type": "Offer",
-    "availability": "https://schema.org/InStock",
-    "priceSpecification": {
+    availability: "https://schema.org/InStock",
+    priceSpecification: {
       "@type": "PriceSpecification",
-      "priceCurrency": "INR"
-    }
-  }
+      priceCurrency: "INR",
+    },
+  },
 });
 
 // FAQ Schema Generator
-export const createFAQSchema = (faqs: Array<{ question: string; answer: string }>) => ({
+export const createFAQSchema = (
+  faqs: Array<{ question: string; answer: string }>
+) => ({
   "@context": "https://schema.org",
   "@type": "FAQPage",
-  "mainEntity": faqs.map(faq => ({
+  mainEntity: faqs.map((faq) => ({
     "@type": "Question",
-    "name": faq.question,
-    "acceptedAnswer": {
+    name: faq.question,
+    acceptedAnswer: {
       "@type": "Answer",
-      "text": faq.answer
-    }
-  }))
+      text: faq.answer,
+    },
+  })),
 });
 
 // BreadcrumbList Schema Generator
-export const createBreadcrumbSchema = (items: Array<{ name: string; url: string }>) => ({
+export const createBreadcrumbSchema = (
+  items: Array<{ name: string; url: string }>
+) => ({
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
-  "itemListElement": items.map((item, index) => ({
+  itemListElement: items.map((item, index) => ({
     "@type": "ListItem",
-    "position": index + 1,
-    "name": item.name,
-    "item": item.url
-  }))
+    position: index + 1,
+    name: item.name,
+    item: item.url,
+  })),
 });
 
 // Review Schema Generator
-export const createReviewSchema = (reviews: Array<{
-  author: string;
-  rating: number;
-  reviewBody: string;
-  datePublished: string;
-}>) => ({
+export const createReviewSchema = (
+  reviews: Array<{
+    author: string;
+    rating: number;
+    reviewBody: string;
+    datePublished: string;
+  }>
+) => ({
   "@context": "https://schema.org",
   "@type": "Product",
-  "name": "Water Treatment Solutions",
-  "aggregateRating": {
+  name: "Water Treatment Solutions",
+  aggregateRating: {
     "@type": "AggregateRating",
-    "ratingValue": "4.8",
-    "reviewCount": reviews.length.toString()
+    ratingValue: "4.8",
+    reviewCount: reviews.length.toString(),
   },
-  "review": reviews.map(review => ({
+  review: reviews.map((review) => ({
     "@type": "Review",
-    "author": {
+    author: {
       "@type": "Person",
-      "name": review.author
+      name: review.author,
     },
-    "reviewRating": {
+    reviewRating: {
       "@type": "Rating",
-      "ratingValue": review.rating.toString(),
-      "bestRating": "5"
+      ratingValue: review.rating.toString(),
+      bestRating: "5",
     },
-    "reviewBody": review.reviewBody,
-    "datePublished": review.datePublished
-  }))
+    reviewBody: review.reviewBody,
+    datePublished: review.datePublished,
+  })),
 });
 
 // Offer Schema Generator (for services with pricing indication)
-export const createOfferSchema = (serviceName: string, description: string) => ({
+export const createOfferSchema = (
+  serviceName: string,
+  description: string
+) => ({
   "@context": "https://schema.org",
   "@type": "Offer",
-  "itemOffered": {
+  itemOffered: {
     "@type": "Service",
-    "name": serviceName,
-    "description": description,
-    "provider": {
+    name: serviceName,
+    description: description,
+    provider: {
       "@type": "Organization",
-      "name": "DLS Envirotech Corporation"
-    }
+      name: "DLS Envirotech Corporation",
+    },
   },
-  "availability": "https://schema.org/InStock",
-  "priceCurrency": "INR",
-  "areaServed": {
+  availability: "https://schema.org/InStock",
+  priceCurrency: "INR",
+  areaServed: {
     "@type": "Country",
-    "name": "India"
-  }
+    name: "India",
+  },
 });

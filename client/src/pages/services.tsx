@@ -24,8 +24,7 @@ const Services = () => {
 
   const faqSchema = createFAQSchema([
     {
-      question:
-        "What environmental solutions does DLS Envirotech provide?",
+      question: "What environmental solutions does DLS Envirotech provide?",
       answer:
         "DLS Envirotech provides comprehensive environmental solutions including water treatment (STP, ETP, WTP, WWTP, FSTP, MBBR, RO systems), industrial systems (cooling towers, PSA oxygen plants, air pollution control, air towers, MGPS), waste management (solid waste management, material recovery facilities, waste to compost systems, C&D waste management), and bio-remediation. We offer complete turnkey solutions with installation and maintenance across India.",
     },
@@ -35,8 +34,7 @@ const Services = () => {
         "Installation time varies based on system size and complexity. Small residential STPs typically take 2-4 weeks, while large industrial plants may require 3-6 months for complete installation. Industrial systems and waste management facilities are assessed individually. We provide detailed project timelines during consultation.",
     },
     {
-      question:
-        "Do you provide maintenance services for all your systems?",
+      question: "Do you provide maintenance services for all your systems?",
       answer:
         "Yes, we offer comprehensive Annual Maintenance Contracts (AMC) and 24/7 support for all our environmental systems including water treatment plants, industrial solutions, and waste management facilities. Our maintenance services include regular inspections, consumable replacement, performance optimization, and emergency repairs.",
     },
@@ -46,8 +44,7 @@ const Services = () => {
         "We serve diverse industries including pharmaceuticals, textiles, chemicals, food & beverage, hospitality, real estate, manufacturing, hospitals, educational institutions, IT parks, power plants, and municipal corporations in India and internationally for water treatment, industrial systems, and waste management solutions.",
     },
     {
-      question:
-        "Are your systems compliant with environmental regulations?",
+      question: "Are your systems compliant with environmental regulations?",
       answer:
         "Yes, all our environmental solutions are designed to meet and exceed Indian environmental regulations including CPCB guidelines, state pollution control board norms, and ISO certifications. We ensure full compliance for discharge standards, air quality norms, and waste management regulations.",
     },
@@ -56,7 +53,7 @@ const Services = () => {
   const environmentalSolutionsSchema = createServiceSchema(
     "Environmental Solutions",
     "Comprehensive environmental technology solutions including water treatment (STP, ETP, WTP, WWTP, FSTP, MBBR, RO), industrial systems (cooling towers, PSA oxygen plants, air pollution control, MGPS), waste management (solid waste plants, material recovery facilities, waste to compost systems, C&D waste management), and bio-remediation for industrial and municipal applications",
-    "Environmental Services",
+    "Environmental Services"
   );
 
   const combinedSchema = {
@@ -90,7 +87,9 @@ const Services = () => {
                 Comprehensive Environmental Solutions
               </h1>
               <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-6 md:mb-8">
-                Advanced water treatment, industrial solutions, and waste management systems designed to meet the highest environmental standards for industrial and municipal applications.
+                Advanced water treatment, industrial solutions, and waste
+                management systems designed to meet the highest environmental
+                standards for industrial and municipal applications.
               </p>
               <Button size="lg" className="w-full sm:w-auto" asChild>
                 <Link href="/contact" className="text-white">

@@ -37,11 +37,11 @@ const HeroSection = () => {
           </h1>
 
           <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground mb-5 sm:mb-6 md:mb-7 lg:mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0">
-            Leading environmental technology company serving
-            clients worldwide. Specializing in water treatment (STP, ETP, WTP, RO
-            systems), industrial solutions (cooling towers, PSA oxygen plants,
-            air pollution control), and waste management systems. ISO certified
-            with proven expertise for all municipal and industrial applications
+            Leading environmental technology company serving clients worldwide.
+            Specializing in water treatment (STP, ETP, WTP, RO systems),
+            industrial solutions (cooling towers, PSA oxygen plants, air
+            pollution control), and waste management systems. ISO certified with
+            proven expertise for all municipal and industrial applications
             globally.
           </p>
 

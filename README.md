@@ -43,7 +43,7 @@ When you run `npm run build`:
 ✅ All static files optimized and generated  
 ✅ `.htaccess` configured for React Router & HTTPS  
 ✅ PWA manifest included  
-✅ SEO files ready for search engines  
+✅ SEO files ready for search engines
 
 ---
 

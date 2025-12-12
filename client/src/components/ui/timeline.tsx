@@ -15,9 +15,7 @@ interface ResponsiveTimelineProps {
   milestones: Milestone[];
 }
 
-const Timeline: React.FC<ResponsiveTimelineProps> = ({
-  milestones,
-}) => {
+const Timeline: React.FC<ResponsiveTimelineProps> = ({ milestones }) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const maskRef = useRef<SVGRectElement>(null);
 
@@ -145,10 +143,9 @@ const Timeline: React.FC<ResponsiveTimelineProps> = ({
             </h1>
 
             <div
-              className={cn(
-                "col flex gap-12 text-muted-foreground",
-                { anim: index > 0 }
-              )}
+              className={cn("col flex gap-12 text-muted-foreground", {
+                anim: index > 0,
+              })}
             >
               <p className="text-sm max-w-[50vw] mt-4">
                 {milestone.description}

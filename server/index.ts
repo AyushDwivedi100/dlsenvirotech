@@ -30,7 +30,7 @@ if (isProduction) {
         ...process.env,
         FORCE_COLOR: "1",
       },
-    },
+    }
   );
 
   viteProcess.on("error", (error) => {
@@ -76,7 +76,7 @@ if (isProduction) {
         NODE_ENV: "development",
         FORCE_COLOR: "1",
       },
-    },
+    }
   );
 
   viteProcess.on("error", (error) => {
@@ -99,7 +99,7 @@ if (isProduction) {
             cwd: clientDir,
             stdio: "inherit",
             env: { ...process.env, NODE_ENV: "development" },
-          },
+          }
         );
       } else {
         console.error("❌ Failed to install dependencies");

@@ -50,7 +50,10 @@ const Footer = () => {
                 aria-label="Follow DLS Envirotech on LinkedIn for company updates and industry insights"
                 data-testid="link-linkedin"
               >
-                <Linkedin className="h-4 w-4 sm:h-5 sm:w-5" aria-hidden="true" />
+                <Linkedin
+                  className="h-4 w-4 sm:h-5 sm:w-5"
+                  aria-hidden="true"
+                />
               </a>
               <a
                 href="#"
@@ -66,7 +69,10 @@ const Footer = () => {
                 aria-label="Follow DLS Envirotech on Facebook for environmental solutions and project updates"
                 data-testid="link-facebook"
               >
-                <Facebook className="h-4 w-4 sm:h-5 sm:w-5" aria-hidden="true" />
+                <Facebook
+                  className="h-4 w-4 sm:h-5 sm:w-5"
+                  aria-hidden="true"
+                />
               </a>
               <a
                 href="#"
@@ -139,7 +145,10 @@ const Footer = () => {
                   className="flex items-center gap-1.5 sm:gap-2"
                   aria-label="View website sitemap for easy navigation"
                 >
-                  <Map className="h-3.5 w-3.5 sm:h-4 sm:w-4" aria-hidden="true" />
+                  <Map
+                    className="h-3.5 w-3.5 sm:h-4 sm:w-4"
+                    aria-hidden="true"
+                  />
                   <span className="text-xs sm:text-sm">Sitemap</span>
                 </Link>
               </Button>

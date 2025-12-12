@@ -5,7 +5,7 @@ import { OptimizedImage } from "@/components/ui/optimized-image";
 
 const AboutSection = () => {
   const yearsExperience = getYearsOfExperienceString();
-  
+
   const stats = [
     { value: "200+", label: "Systems Installed" },
     { value: "4+", label: "Countries Served" },
@@ -33,10 +33,21 @@ const AboutSection = () => {
                 {yearsExperience} Years of Environmental Engineering Excellence
               </h2>
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-6">
-                DLS Envirotech Corporation provides systems and solutions in the critical domains of energy and environment. Our products and services help industries achieve better resource productivity and improved bottom lines, while maintaining a cleaner environment. Our vision for the future is firmly anchored in the belief that to stay competitive, business houses need to adopt sustainable practices.
+                DLS Envirotech Corporation provides systems and solutions in the
+                critical domains of energy and environment. Our products and
+                services help industries achieve better resource productivity
+                and improved bottom lines, while maintaining a cleaner
+                environment. Our vision for the future is firmly anchored in the
+                belief that to stay competitive, business houses need to adopt
+                sustainable practices.
               </p>
               <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-                Our product portfolio covers heating, cooling, water and waste management, and specialty environment. We design, build and commission large CETP, ETP, STP, WWTP, WTP, RWH, steam and power generation, turnkey power plants, waste-to-energy systems and air pollution control projects with energy efficient and eco-friendly technologies.
+                Our product portfolio covers heating, cooling, water and waste
+                management, and specialty environment. We design, build and
+                commission large CETP, ETP, STP, WWTP, WTP, RWH, steam and power
+                generation, turnkey power plants, waste-to-energy systems and
+                air pollution control projects with energy efficient and
+                eco-friendly technologies.
               </p>
             </div>
 
@@ -88,7 +99,9 @@ const AboutSection = () => {
             {/* Experience Badge - Repositioned */}
             <div className="absolute top-6 right-6 bg-primary text-primary-foreground p-4 sm:p-6 rounded-xl shadow-xl backdrop-blur-sm bg-primary/95">
               <div className="text-center text-white">
-                <div className="text-3xl sm:text-4xl font-bold mb-1">{yearsExperience}</div>
+                <div className="text-3xl sm:text-4xl font-bold mb-1">
+                  {yearsExperience}
+                </div>
                 <div className="text-sm sm:text-base font-semibold">Years</div>
                 <div className="text-xs opacity-90">Excellence</div>
               </div>

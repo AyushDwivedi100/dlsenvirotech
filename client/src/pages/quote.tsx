@@ -85,7 +85,7 @@ export default function Quote() {
   };
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
     setFormData((prev) => ({
       ...prev,
@@ -132,9 +132,9 @@ export default function Quote() {
                   Request a Quote
                 </h1>
                 <p className="text-xl text-muted-foreground">
-                  Get a customized solution for your environmental technology needs. Fill
-                  out the form below and we'll provide you with a detailed quote
-                  within 24 hours.
+                  Get a customized solution for your environmental technology
+                  needs. Fill out the form below and we'll provide you with a
+                  detailed quote within 24 hours.
                 </p>
               </div>
 
@@ -217,9 +217,7 @@ export default function Quote() {
                           <SelectItem value="air-pollution">
                             Industrial Air Pollution Solutions
                           </SelectItem>
-                          <SelectItem value="air-tower">
-                            Air Tower
-                          </SelectItem>
+                          <SelectItem value="air-tower">Air Tower</SelectItem>
                           <SelectItem value="maintenance">
                             Maintenance Services
                           </SelectItem>

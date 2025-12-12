@@ -2,7 +2,11 @@ import { useState } from "react";
 import TopBar from "@/components/layout/top-bar";
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
-import { CLIENTS, CLIENT_CATEGORIES, getClientsByCategory } from "@/constants/clients";
+import {
+  CLIENTS,
+  CLIENT_CATEGORIES,
+  getClientsByCategory,
+} from "@/constants/clients";
 import { Button } from "@/components/ui/button";
 import { Building2 } from "lucide-react";
 import {
@@ -11,33 +15,50 @@ import {
   createBreadcrumbSchema,
 } from "@/components/seo/seo-head";
 
-const ClientCard = ({ client }: { client: { id: string; name: string; logo: string; category: string; website?: string } }) => {
+const ClientCard = ({
+  client,
+}: {
+  client: {
+    id: string;
+    name: string;
+    logo: string;
+    category: string;
+    website?: string;
+  };
+}) => {
   const [imageError, setImageError] = useState(false);
-  
+
   const getInitials = (name: string) => {
     return name
       .split(/[\s,]+/)
-      .filter(word => word.length > 0 && !['Ltd.', 'Ltd', 'Pvt.', 'Pvt'].includes(word))
+      .filter(
+        (word) =>
+          word.length > 0 && !["Ltd.", "Ltd", "Pvt.", "Pvt"].includes(word)
+      )
       .slice(0, 2)
-      .map(word => word[0])
-      .join('')
+      .map((word) => word[0])
+      .join("")
       .toUpperCase();
   };
 
   const getCategoryLabel = (category: string) => {
-    const cat = CLIENT_CATEGORIES.find(c => c.id === category);
+    const cat = CLIENT_CATEGORIES.find((c) => c.id === category);
     return cat?.label || category;
   };
 
   const content = imageError ? (
     <div className="flex flex-col items-center justify-center text-center p-2">
       <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-primary/10 flex items-center justify-center mb-3">
-        <span className="text-primary font-bold text-base sm:text-lg">{getInitials(client.name)}</span>
+        <span className="text-primary font-bold text-base sm:text-lg">
+          {getInitials(client.name)}
+        </span>
       </div>
       <span className="text-sm sm:text-base text-foreground font-medium leading-tight line-clamp-2 mb-1">
         {client.name}
       </span>
-      <span className="text-xs text-muted-foreground">{getCategoryLabel(client.category)}</span>
+      <span className="text-xs text-muted-foreground">
+        {getCategoryLabel(client.category)}
+      </span>
     </div>
   ) : (
     <div className="flex flex-col items-center justify-center text-center">
@@ -51,7 +72,9 @@ const ClientCard = ({ client }: { client: { id: string; name: string; logo: stri
       <span className="text-sm text-foreground font-medium leading-tight line-clamp-2 mb-1">
         {client.name}
       </span>
-      <span className="text-xs text-muted-foreground">{getCategoryLabel(client.category)}</span>
+      <span className="text-xs text-muted-foreground">
+        {getCategoryLabel(client.category)}
+      </span>
     </div>
   );
 
@@ -80,7 +103,7 @@ const ClientCard = ({ client }: { client: { id: string; name: string; logo: stri
 const OurClients = () => {
   const [selectedCategory, setSelectedCategory] = useState("all");
   const filteredClients = getClientsByCategory(selectedCategory);
-  
+
   const breadcrumbSchema = createBreadcrumbSchema([
     { name: "Home", url: "https://dlsenvirotech.com/" },
     { name: "Our Clients", url: "https://dlsenvirotech.com/clients" },
@@ -112,8 +135,9 @@ const OurClients = () => {
                   Our Valued Clients
                 </h1>
                 <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-                  Trusted by government organizations, municipal bodies, and leading industries 
-                  across India for comprehensive environmental solutions
+                  Trusted by government organizations, municipal bodies, and
+                  leading industries across India for comprehensive
+                  environmental solutions
                 </p>
               </div>
 
@@ -127,7 +151,9 @@ const OurClients = () => {
 
                   {filteredClients.length === 0 && (
                     <div className="text-center py-12">
-                      <p className="text-muted-foreground">No clients found in this category.</p>
+                      <p className="text-muted-foreground">
+                        No clients found in this category.
+                      </p>
                     </div>
                   )}
                 </>
@@ -140,8 +166,8 @@ const OurClients = () => {
                     Client Portfolio Coming Soon
                   </h3>
                   <p className="text-muted-foreground max-w-md mx-auto">
-                    We are updating our client portfolio. Check back soon to see the organizations 
-                    we have partnered with.
+                    We are updating our client portfolio. Check back soon to see
+                    the organizations we have partnered with.
                   </p>
                 </div>
               )}

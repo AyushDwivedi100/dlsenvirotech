@@ -1,11 +1,11 @@
 /**
  * CLIENTS CONFIGURATION FILE
  * ==========================
- * 
+ *
  * How to add a new client:
  * 1. Add the client logo image to: client/public/clients/ folder
  * 2. Add a new entry to the CLIENTS array below
- * 
+ *
  * Example:
  * {
  *   id: "unique-client-id",        // Unique identifier (lowercase, no spaces)
@@ -14,10 +14,10 @@
  *   category: "government",         // Category: "government", "municipal", "private", "international"
  *   website: "https://example.com", // Optional: Client website URL
  * }
- * 
+ *
  * Supported image formats: .png, .jpg, .jpeg, .svg, .webp
  * Recommended logo size: 200x100 pixels (width x height)
- * 
+ *
  * Categories available:
  * - "government"   : Government organizations and departments
  * - "municipal"    : Municipal corporations and local bodies
@@ -45,7 +45,7 @@ export const CLIENT_CATEGORIES = [
  * ADD YOUR CLIENTS HERE
  * =====================
  * Copy the template below and fill in your client details:
- * 
+ *
  * {
  *   id: "client-name",
  *   name: "Client Full Name",
@@ -138,7 +138,7 @@ export const CLIENTS: ClientType[] = [
  * These clients will be shown on the home page in the "Featured Clients" section.
  * Add client IDs from the CLIENTS array above.
  * Maximum recommended: 8-12 clients for best display.
- * 
+ *
  * Example:
  * export const FEATURED_CLIENT_IDS = [
  *   "up-jal-nigam",

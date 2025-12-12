@@ -4,7 +4,14 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
-import { Mail, Phone, MapPin, Clock, MessageCircle, Headphones } from "lucide-react";
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Clock,
+  MessageCircle,
+  Headphones,
+} from "lucide-react";
 
 export default function ContactSection() {
   const { toast } = useToast();
@@ -29,8 +36,8 @@ export default function ContactSection() {
         form.append(key, value);
       });
 
-      const response = await fetch('/contact-handler.php', {
-        method: 'POST',
+      const response = await fetch("/contact-handler.php", {
+        method: "POST",
         body: form,
       });
 
@@ -39,17 +46,18 @@ export default function ContactSection() {
       if (result.success) {
         toast({
           title: "Message Sent!",
-          description: "Thank you for your interest. We'll get back to you soon.",
+          description:
+            "Thank you for your interest. We'll get back to you soon.",
         });
 
-        setFormData({ 
-          name: "", 
-          email: "", 
-          phone: "", 
-          company: "", 
-          subject: "", 
-          serviceType: "", 
-          message: "" 
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          company: "",
+          subject: "",
+          serviceType: "",
+          message: "",
         });
       } else {
         throw new Error(result.message);
@@ -67,7 +75,7 @@ export default function ContactSection() {
   };
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
     setFormData((prev) => ({
       ...prev,
@@ -194,14 +202,16 @@ export default function ContactSection() {
                   </a>
                 </div>
               </div>
-              
+
               <div
                 className="flex items-start space-x-3 sm:space-x-4"
                 data-testid="contact-whatsapp"
               >
                 <MessageCircle className="h-5 w-5 sm:h-6 sm:w-6 text-primary flex-shrink-0 mt-1" />
                 <div>
-                  <p className="font-medium text-sm sm:text-base mb-1">WhatsApp</p>
+                  <p className="font-medium text-sm sm:text-base mb-1">
+                    WhatsApp
+                  </p>
                   <a
                     href="https://wa.me/919568572005"
                     target="_blank"
@@ -212,7 +222,7 @@ export default function ContactSection() {
                   </a>
                 </div>
               </div>
-              
+
               <div
                 className="flex items-start space-x-3 sm:space-x-4"
                 data-testid="contact-email"
@@ -228,7 +238,7 @@ export default function ContactSection() {
                   </a>
                 </div>
               </div>
-              
+
               <div
                 className="flex items-start space-x-3 sm:space-x-4"
                 data-testid="contact-address"
@@ -248,7 +258,7 @@ export default function ContactSection() {
                   </a>
                 </div>
               </div>
-              
+
               <div className="border-t border-border pt-4 sm:pt-5 mt-4 sm:mt-5">
                 <div
                   className="flex items-start space-x-3 sm:space-x-4"
@@ -256,7 +266,9 @@ export default function ContactSection() {
                 >
                   <Clock className="h-5 w-5 sm:h-6 sm:w-6 text-primary flex-shrink-0 mt-1" />
                   <div>
-                    <p className="font-medium text-sm sm:text-base mb-1">Business Hours</p>
+                    <p className="font-medium text-sm sm:text-base mb-1">
+                      Business Hours
+                    </p>
                     <p className="text-muted-foreground text-sm sm:text-base">
                       Mon - Sat: 9:00 AM - 6:00 PM
                     </p>
@@ -266,14 +278,16 @@ export default function ContactSection() {
                   </div>
                 </div>
               </div>
-              
+
               <div
                 className="flex items-start space-x-3 sm:space-x-4"
                 data-testid="contact-support"
               >
                 <Headphones className="h-5 w-5 sm:h-6 sm:w-6 text-primary flex-shrink-0 mt-1" />
                 <div>
-                  <p className="font-medium text-sm sm:text-base mb-1">Customer Support</p>
+                  <p className="font-medium text-sm sm:text-base mb-1">
+                    Customer Support
+                  </p>
                   <p className="text-muted-foreground text-sm sm:text-base">
                     24/7 Emergency Support Available
                   </p>
