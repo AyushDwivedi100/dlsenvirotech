@@ -57,6 +57,41 @@ export const CLIENT_CATEGORIES = [
 export const CLIENTS: ClientType[] = [
   // ===== GOVERNMENT CLIENTS =====
   {
+    id: "irctc",
+    name: "Indian Railway Catering and Tourism Corporation Limited (IRCTC)",
+    logo: "/clients/irctc.jpg",
+    category: "government",
+    website: "https://www.irctc.co.in",
+  },
+  {
+    id: "airports-authority-india",
+    name: "Airports Authority of India (AAI)",
+    logo: "/clients/airports-authority-india.jpg",
+    category: "government",
+    website: "https://www.aai.aero",
+  },
+  {
+    id: "ongc",
+    name: "Oil and Natural Gas Corporation Limited (ONGC)",
+    logo: "/clients/ongc.jpg",
+    category: "government",
+    website: "https://www.ongcindia.com",
+  },
+  {
+    id: "indian-oil",
+    name: "Indian Oil Corporation Limited (IOCL)",
+    logo: "/clients/indian-oil.jpg",
+    category: "government",
+    website: "https://iocl.com",
+  },
+  {
+    id: "all-india-radio",
+    name: "All India Radio (Prasar Bharati)",
+    logo: "/clients/all-india-radio.jpg",
+    category: "government",
+    website: "https://newsonair.gov.in",
+  },
+  {
     id: "up-jal-nigam",
     name: "UP Jal Nigam",
     logo: "/clients/up-jal-nigam.png",
@@ -147,6 +182,11 @@ export const CLIENTS: ClientType[] = [
  * ];
  */
 export const FEATURED_CLIENT_IDS: string[] = [
+  "irctc",
+  "airports-authority-india",
+  "ongc",
+  "indian-oil",
+  "all-india-radio",
   "up-jal-nigam",
   "nagar-palika-amroha",
   "kisan-sahkari-chini-mills",
