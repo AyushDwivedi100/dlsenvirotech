@@ -36,13 +36,15 @@ const ClientCard = ({
 
   const content = (
     <div className="flex flex-col items-center justify-center text-center">
-      <img
-        src={imageSrc}
-        alt={client.name}
-        className="max-h-16 sm:max-h-20 w-auto object-contain mb-3"
-        loading="lazy"
-        onError={() => setImageSrc(PLACEHOLDER_LOGO)}
-      />
+      <div className="bg-white rounded-md p-2 flex items-center justify-center mb-3">
+        <img
+          src={imageSrc}
+          alt={client.name}
+          className="max-h-12 sm:max-h-16 w-auto object-contain"
+          loading="lazy"
+          onError={() => setImageSrc(PLACEHOLDER_LOGO)}
+        />
+      </div>
       <span className="text-sm text-foreground font-medium leading-tight line-clamp-2 mb-1">
         {client.name}
       </span>
