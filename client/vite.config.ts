@@ -20,9 +20,15 @@ export default defineConfig({
     port: 5000,
     strictPort: false,
     allowedHosts: true,
-    hmr: true,
+    hmr: {
+      protocol: "wss",
+      clientPort: 443,
+    },
     headers: {
       "Access-Control-Allow-Origin": "*",
+    },
+    watch: {
+      usePolling: true,
     },
   },
   preview: {
