@@ -59,7 +59,7 @@ export const CLIENTS: ClientType[] = [
   {
     id: "irctc",
     name: "Indian Railway Catering and Tourism Corporation Limited (IRCTC)",
-    logo: "/clients/irctc.jpg",
+    logo: "https://www.irctc.co.in/nget/assets/images/logo.png",
     category: "government",
     website: "https://www.irctc.co.in",
   },
