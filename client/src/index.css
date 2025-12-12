@@ -1,0 +1,188 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(222, 84%, 4%);
+  --muted: hsl(210, 40%, 98%);
+  --muted-foreground: hsl(215, 16%, 46%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(222, 84%, 4%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(222, 84%, 4%);
+  --border: hsl(214, 32%, 91%);
+  --input: hsl(214, 32%, 91%);
+  --primary: hsl(207, 90%, 42%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(207, 90%, 40%);
+  --secondary-foreground: hsl(0, 0%, 100%);
+  --accent: hsl(0, 84%, 60%);
+  --accent-foreground: hsl(210, 40%, 98%);
+  --destructive: hsl(0, 84%, 60%);
+  --destructive-foreground: hsl(210, 40%, 98%);
+  --ring: hsl(222, 84%, 4%);
+  --radius: 0.5rem;
+  
+  /* Industrial color scheme */
+  --industrial-50: hsl(210, 40%, 98%);
+  --industrial-100: hsl(210, 40%, 96%);
+  --industrial-200: hsl(214, 32%, 91%);
+  --industrial-300: hsl(213, 27%, 84%);
+  --industrial-400: hsl(215, 20%, 65%);
+  --industrial-500: hsl(215, 16%, 46%);
+  --industrial-600: hsl(215, 19%, 35%);
+  --industrial-700: hsl(215, 25%, 27%);
+  --industrial-800: hsl(217, 33%, 17%);
+  --industrial-900: hsl(222, 84%, 4%);
+}
+
+.dark {
+  --background: hsl(222, 84%, 4%);
+  --foreground: hsl(210, 40%, 98%);
+  --muted: hsl(217, 33%, 17%);
+  --muted-foreground: hsl(215, 20%, 65%);
+  --popover: hsl(222, 84%, 4%);
+  --popover-foreground: hsl(210, 40%, 98%);
+  --card: hsl(222, 84%, 4%);
+  --card-foreground: hsl(210, 40%, 98%);
+  --border: hsl(217, 33%, 17%);
+  --input: hsl(217, 33%, 17%);
+  --primary: hsl(207, 90%, 55%);
+  --primary-foreground: hsl(222, 84%, 4%);
+  --secondary: hsl(207, 90%, 60%);
+  --secondary-foreground: hsl(222, 84%, 4%);
+  --accent: hsl(0, 84%, 60%);
+  --accent-foreground: hsl(222, 84%, 4%);
+  --destructive: hsl(0, 62%, 30%);
+  --destructive-foreground: hsl(210, 40%, 98%);
+  --ring: hsl(212, 12%, 87%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+    overflow-x: hidden; /* Disable horizontal scrollbar */
+  }
+
+  /* Prevent horizontal overflow on all elements */
+  html {
+    overflow-x: hidden;
+  }
+
+  /* Modern Slim Scrollbar Styling */
+  /* For Webkit browsers (Chrome, Safari, Edge) */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: hsl(210, 40%, 98%);
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, hsl(207, 90%, 42%), hsl(207, 90%, 50%));
+    border-radius: 10px;
+    transition: background 0.3s ease;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, hsl(207, 90%, 38%), hsl(207, 90%, 46%));
+  }
+
+  /* Dark mode scrollbar */
+  .dark ::-webkit-scrollbar-track {
+    background: hsl(217, 33%, 17%);
+  }
+
+  .dark ::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, hsl(207, 90%, 55%), hsl(207, 90%, 65%));
+  }
+
+  .dark ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, hsl(207, 90%, 50%), hsl(207, 90%, 60%));
+  }
+
+  /* For Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: hsl(207, 90%, 42%) hsl(210, 40%, 98%);
+  }
+
+  .dark * {
+    scrollbar-color: hsl(207, 90%, 55%) hsl(217, 33%, 17%);
+  }
+}
+
+@layer utilities {
+  .text-industrial-50 {
+    color: hsl(210, 40%, 98%);
+  }
+  .text-industrial-100 {
+    color: hsl(210, 40%, 96%);
+  }
+  .text-industrial-200 {
+    color: hsl(214, 32%, 91%);
+  }
+  .text-industrial-300 {
+    color: hsl(213, 27%, 84%);
+  }
+  .text-industrial-400 {
+    color: hsl(215, 20%, 65%);
+  }
+  .text-industrial-500 {
+    color: hsl(215, 16%, 46%);
+  }
+  .text-industrial-600 {
+    color: hsl(215, 19%, 35%);
+  }
+  .text-industrial-700 {
+    color: hsl(215, 25%, 27%);
+  }
+  .text-industrial-800 {
+    color: hsl(217, 33%, 17%);
+  }
+  .text-industrial-900 {
+    color: hsl(222, 84%, 4%);
+  }
+  
+  .bg-industrial-50 {
+    background-color: hsl(210, 40%, 98%);
+  }
+  .bg-industrial-100 {
+    background-color: hsl(210, 40%, 96%);
+  }
+  .bg-industrial-200 {
+    background-color: hsl(214, 32%, 91%);
+  }
+  .bg-industrial-300 {
+    background-color: hsl(213, 27%, 84%);
+  }
+  .bg-industrial-400 {
+    background-color: hsl(215, 20%, 65%);
+  }
+  .bg-industrial-500 {
+    background-color: hsl(215, 16%, 46%);
+  }
+  .bg-industrial-600 {
+    background-color: hsl(215, 19%, 35%);
+  }
+  .bg-industrial-700 {
+    background-color: hsl(215, 25%, 27%);
+  }
+  .bg-industrial-800 {
+    background-color: hsl(217, 33%, 17%);
+  }
+  .bg-industrial-900 {
+    background-color: hsl(222, 84%, 4%);
+  }
+  .bg-industrial-950 {
+    background-color: hsl(222, 84%, 2%);
+  }
+}
