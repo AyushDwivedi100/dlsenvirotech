@@ -28,7 +28,7 @@ const TestimonialsSection = () => {
 
   useEffect(() => {
     if (!isAutoPlaying || !canGoNext) return;
-    
+
     const interval = setInterval(() => {
       nextSlide();
     }, 4000);
@@ -104,10 +104,10 @@ const TestimonialsSection = () => {
             </Button>
 
             <div className="flex gap-2">
-              {TESTIMONIALS.map((_, index) => (
+              {Array.from({ length: maxIndex + 1 }).map((_, index) => (
                 <button
                   key={index}
-                  onClick={() => setCurrentIndex(Math.min(index, maxIndex))}
+                  onClick={() => setCurrentIndex(index)}
                   className={`w-2 h-2 rounded-full transition-all duration-300 ${
                     index === currentIndex
                       ? "bg-primary w-6"
