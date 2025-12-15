@@ -6,7 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { DIVISIONS } from "@/constants/constants";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
-import { Phone, ArrowRight } from "lucide-react";
+import { Phone, ArrowRight, Check } from "lucide-react";
 import * as LucideIcons from "lucide-react";
 import {
   SEOHead,
@@ -152,6 +152,16 @@ const Services = () => {
                           <CardDescription>
                             {division.description}
                           </CardDescription>
+                          {division.highlights && division.highlights.length > 0 && (
+                            <ul className="mt-3 space-y-1.5">
+                              {division.highlights.map((highlight, idx) => (
+                                <li key={idx} className="flex items-start gap-2 text-sm text-muted-foreground">
+                                  <Check className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
+                                  <span>{highlight}</span>
+                                </li>
+                              ))}
+                            </ul>
+                          )}
                         </CardHeader>
                         <CardContent>
                           <div className="flex flex-wrap gap-2 mb-4">

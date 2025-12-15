@@ -27,6 +27,7 @@ export interface Division {
   title: string;
   shortTitle: string;
   description: string;
+  highlights?: string[];
   icon: string;
   color: string;
   wasteTypes?: string[];

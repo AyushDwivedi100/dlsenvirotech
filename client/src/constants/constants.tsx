@@ -10,7 +10,13 @@ export const DIVISIONS: Division[] = [
     number: 1,
     title: "Water and Soil Treatment Division",
     shortTitle: "Water & Soil Treatment",
-    description: "Comprehensive water and wastewater treatment solutions including sewage treatment, effluent treatment, and water purification systems for municipal and industrial applications.",
+    description: "Our Water and Soil Treatment Division delivers comprehensive solutions for municipal and industrial water management challenges. We specialize in designing, manufacturing, and installing advanced treatment systems that transform wastewater into reusable water resources while ensuring strict compliance with CPCB and SPCB environmental norms.",
+    highlights: [
+      "Complete STP, ETP, WTP, FSTP & WBP solutions",
+      "Advanced technologies: SBR, MBR, MBBR, ABR, ZLD, UASB",
+      "Capacity range from 10 KLD to 100+ MLD",
+      "Turnkey project execution with O&M support"
+    ],
     icon: "Droplets",
     color: "blue",
     services: [
@@ -121,7 +127,13 @@ export const DIVISIONS: Division[] = [
     number: 2,
     title: "Solid Waste Management Plants",
     shortTitle: "Solid Waste Management",
-    description: "Complete solid waste management solutions including material recovery, composting, and sanitary landfill facilities for municipalities and industries. We handle all 7 types of solid waste: Municipal (MSW), Industrial, Agricultural, Hazardous, Bio-medical, E-waste, and Construction & Demolition waste through 4 management approaches: Landfills, Incineration, Recycling, and Composting.",
+    description: "Our Solid Waste Management Division provides end-to-end solutions for handling municipal, industrial, and specialized waste streams. We design and implement integrated waste management systems that maximize resource recovery, minimize landfill dependency, and ensure environmental sustainability through scientific waste processing and treatment methodologies.",
+    highlights: [
+      "Handles all 7 waste types: MSW, Industrial, Agricultural, Hazardous, Bio-medical, E-waste, C&D",
+      "4 management approaches: Landfills, Incineration, Recycling, Composting",
+      "MRF, Waste-to-Compost, and Sanitary Landfill solutions",
+      "Compliant with SWM Rules 2016 and environmental regulations"
+    ],
     icon: "Recycle",
     color: "green",
     wasteTypes: ["Municipal (MSW)", "Industrial", "Agricultural", "Hazardous", "Bio-medical", "E-waste", "Construction & Demolition"],
@@ -194,7 +206,13 @@ export const DIVISIONS: Division[] = [
     number: 3,
     title: "O2 & Air Purification Division",
     shortTitle: "O2 & Air Purification",
-    description: "Oxygen generation systems and air purification solutions for medical, industrial, and environmental applications.",
+    description: "Our O2 & Air Purification Division specializes in on-site oxygen generation systems and comprehensive air quality management solutions. We serve hospitals, industries, and commercial establishments with reliable oxygen supply systems, medical gas pipelines, and industrial air purification equipment designed for continuous operation and optimal efficiency.",
+    highlights: [
+      "PSA & VPSA oxygen generation with up to 95% purity",
+      "Complete MGPS for hospitals and healthcare facilities",
+      "Industrial smoke towers and fume extraction systems",
+      "Energy-efficient air blowers and cleaning equipment"
+    ],
     icon: "Wind",
     color: "cyan",
     services: [
@@ -305,7 +323,13 @@ export const DIVISIONS: Division[] = [
     number: 4,
     title: "Chemical & Biochemical Treatment Division",
     shortTitle: "Chemical & Biochemical Treatment",
-    description: "Bio-remediation and biochemical solutions for waste treatment, including biogas generation and culture-based remediation technologies.",
+    description: "Our Chemical & Biochemical Treatment Division offers innovative bio-remediation solutions that harness the power of microbial technology for waste treatment. We develop specialized bio-culture formulations and biogas systems that accelerate organic waste decomposition, enhance treatment plant performance, and generate renewable energy from waste materials.",
+    highlights: [
+      "Biogas plants for renewable energy generation",
+      "Specialized bio-culture for STP, ETP & solid waste",
+      "Bio-methanation and legacy waste remediation",
+      "Industry-specific microbial formulations"
+    ],
     icon: "FlaskConical",
     color: "purple",
     services: [
@@ -436,7 +460,13 @@ export const DIVISIONS: Division[] = [
     number: 5,
     title: "Manufacturing/Fabrication Division",
     shortTitle: "Manufacturing & Fabrication",
-    description: "In-house manufacturing of environmental equipment, machinery, and infrastructure products for waste management and renewable energy applications.",
+    description: "Our Manufacturing & Fabrication Division operates state-of-the-art production facilities for environmental equipment and machinery. We design and fabricate custom equipment for waste management, water treatment, and renewable energy projects, ensuring quality control and timely delivery with complete in-house capabilities from design to installation.",
+    highlights: [
+      "Custom MRF equipment and processing machinery",
+      "Solar panels, street lights & electrical systems",
+      "Industrial cleaning machines and sweepers",
+      "Complete fabrication with quality assurance"
+    ],
     icon: "Factory",
     color: "orange",
     services: [
