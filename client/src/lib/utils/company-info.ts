@@ -1,7 +1,9 @@
 /**
  * Company founding year
+ * Set to 2010 so that in 2025 it shows "15+ years"
+ * This automatically increments each year
  */
-const FOUNDING_YEAR = 2015;
+const FOUNDING_YEAR = 2010;
 
 /**
  * Calculate years of experience from founding year to current year
