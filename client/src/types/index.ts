@@ -7,6 +7,31 @@ export interface ServiceType {
   category: string;
 }
 
+export interface ServiceDetail {
+  id: string;
+  title: string;
+  shortTitle: string;
+  description: string;
+  fullDescription: string;
+  features: string[];
+  technologies?: string[];
+  types?: string[];
+  applications?: string[];
+  benefits?: string[];
+  icon: string;
+}
+
+export interface Division {
+  id: string;
+  number: number;
+  title: string;
+  shortTitle: string;
+  description: string;
+  icon: string;
+  color: string;
+  services: ServiceDetail[];
+}
+
 export interface TestimonialType {
   id: string;
   name: string;
