@@ -121,16 +121,18 @@ export const DIVISIONS: Division[] = [
     number: 2,
     title: "Solid Waste Management Plants",
     shortTitle: "Solid Waste Management",
-    description: "Complete solid waste management solutions including material recovery, composting, and sanitary landfill facilities for municipalities and industries.",
+    description: "Complete solid waste management solutions including material recovery, composting, and sanitary landfill facilities for municipalities and industries. We handle all 7 types of solid waste: Municipal (MSW), Industrial, Agricultural, Hazardous, Bio-medical, E-waste, and Construction & Demolition waste through 4 management approaches: Landfills, Incineration, Recycling, and Composting.",
     icon: "Recycle",
     color: "green",
+    wasteTypes: ["Municipal (MSW)", "Industrial", "Agricultural", "Hazardous", "Bio-medical", "E-waste", "Construction & Demolition"],
+    managementApproaches: ["Landfills", "Incineration", "Recycling", "Composting"],
     services: [
       {
         id: "mrf",
         title: "Material Recovery Facility Plants (MRF)",
         shortTitle: "MRF",
         description: "Advanced sorting and processing facilities for recyclable materials recovery from mixed waste.",
-        fullDescription: "Our Material Recovery Facilities are designed to maximize resource recovery from municipal solid waste. Using a combination of manual and automated sorting technologies, we help municipalities and industries recover valuable recyclables while minimizing landfill waste.",
+        fullDescription: "Our Material Recovery Facilities are designed to maximize resource recovery from municipal solid waste. Using a combination of manual and automated sorting technologies, we help municipalities and industries recover valuable recyclables while minimizing landfill waste. We handle all types of solid waste including Municipal (MSW), Industrial, Agricultural, Hazardous, Bio-medical, E-waste, and Construction & Demolition waste.",
         features: [
           "Multi-stream sorting capability",
           "Automated sorting systems",
@@ -140,7 +142,7 @@ export const DIVISIONS: Division[] = [
           "Safe working environment"
         ],
         technologies: ["Trommel Screens", "Magnetic Separators", "Eddy Current Separators", "Air Classifiers", "Optical Sorters", "Ballistic Separators"],
-        types: ["Single Stream MRF", "Dual Stream MRF", "Mixed Waste MRF", "Construction & Demolition MRF", "E-waste MRF"],
+        types: ["Single Stream MRF", "Dual Stream MRF", "Mixed Waste MRF", "Construction & Demolition MRF", "E-waste MRF", "Hazardous Waste MRF", "Bio-medical Waste MRF"],
         applications: ["Municipal corporations", "Industrial estates", "Commercial complexes", "Smart city projects"],
         benefits: ["Resource recovery", "Reduced landfill waste", "Revenue from recyclables", "Environmental sustainability"],
         icon: "Recycle"

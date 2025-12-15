@@ -29,6 +29,8 @@ export interface Division {
   description: string;
   icon: string;
   color: string;
+  wasteTypes?: string[];
+  managementApproaches?: string[];
   services: ServiceDetail[];
 }
 
