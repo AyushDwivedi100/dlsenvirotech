@@ -149,7 +149,7 @@ const Services = () => {
                           <CardTitle className="text-xl group-hover:text-primary transition-colors">
                             {division.title}
                           </CardTitle>
-                          <CardDescription className="line-clamp-3">
+                          <CardDescription>
                             {division.description}
                           </CardDescription>
                         </CardHeader>
