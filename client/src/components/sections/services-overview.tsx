@@ -40,7 +40,7 @@ const ServicesOverview = () => {
             return (
               <Card
                 key={division.id}
-                className="group hover-elevate cursor-pointer h-full"
+                className="group hover-elevate cursor-pointer h-full bg-muted"
                 data-testid={`card-division-home-${division.id}`}
               >
                 <Link href={`/services/${division.id}`}>

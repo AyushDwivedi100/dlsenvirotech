@@ -135,7 +135,7 @@ const Services = () => {
                   return (
                     <Card
                       key={division.id}
-                      className="group cursor-pointer h-full transition-all duration-300 hover:shadow-xl hover:-translate-y-2 hover:border-primary/50"
+                      className="group hover-elevate cursor-pointer h-full bg-muted"
                       data-testid={`card-division-${division.id}`}
                     >
                       <Link href={`/services/${division.id}`}>
