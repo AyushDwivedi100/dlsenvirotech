@@ -79,9 +79,96 @@ const ServiceDetail = () => {
     },
   ]);
 
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: service.title,
+    description: service.fullDescription,
+    url: `https://dlsenvirotech.com/services/${division.id}/${service.id}`,
+    provider: {
+      "@type": "Organization",
+      name: "DLS Envirotech Corporation",
+      url: "https://dlsenvirotech.com",
+      telephone: "+91-9568572005",
+    },
+    serviceType: division.title,
+    areaServed: {
+      "@type": "Country",
+      name: "India",
+    },
+    hasOfferCatalog: service.types && service.types.length > 0 ? {
+      "@type": "OfferCatalog",
+      name: `${service.title} Types`,
+      itemListElement: service.types.map((type) => ({
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: type,
+        },
+      })),
+    } : undefined,
+    termsOfService: "https://dlsenvirotech.com/contact",
+    offers: {
+      "@type": "Offer",
+      availability: "https://schema.org/InStock",
+      priceCurrency: "INR",
+      priceSpecification: {
+        "@type": "PriceSpecification",
+        priceCurrency: "INR",
+      },
+    },
+  };
+
+  const howToSchema = {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: `How to get ${service.title} from DLS Envirotech`,
+    description: `Steps to implement ${service.title} for your organization with DLS Envirotech's expert team.`,
+    step: [
+      {
+        "@type": "HowToStep",
+        position: 1,
+        name: "Request Consultation",
+        text: "Contact DLS Envirotech for a free consultation about your requirements.",
+        url: "https://dlsenvirotech.com/contact",
+      },
+      {
+        "@type": "HowToStep",
+        position: 2,
+        name: "Site Assessment",
+        text: "Our engineers conduct a detailed site assessment and feasibility study.",
+      },
+      {
+        "@type": "HowToStep",
+        position: 3,
+        name: "Custom Design",
+        text: "We design a customized solution based on your specific needs and site conditions.",
+      },
+      {
+        "@type": "HowToStep",
+        position: 4,
+        name: "Get Quote",
+        text: "Receive a detailed quotation with transparent pricing and timeline.",
+        url: "https://dlsenvirotech.com/quote",
+      },
+      {
+        "@type": "HowToStep",
+        position: 5,
+        name: "Installation & Commissioning",
+        text: "Our team installs and commissions the system with full training and support.",
+      },
+    ],
+    totalTime: "P30D",
+    estimatedCost: {
+      "@type": "MonetaryAmount",
+      currency: "INR",
+      value: "Contact for pricing",
+    },
+  };
+
   const combinedSchema = {
     "@context": "https://schema.org",
-    "@graph": [organizationSchema, breadcrumbSchema],
+    "@graph": [organizationSchema, breadcrumbSchema, serviceSchema, howToSchema],
   };
 
   const colorClasses: Record<string, string> = {

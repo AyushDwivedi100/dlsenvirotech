@@ -66,9 +66,24 @@ const Division = () => {
     },
   ]);
 
+  const itemListSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: `${division.title} Services`,
+    description: division.description,
+    numberOfItems: division.services.length,
+    itemListElement: division.services.map((service, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: service.title,
+      description: service.description,
+      url: `https://dlsenvirotech.com/services/${division.id}/${service.id}`,
+    })),
+  };
+
   const combinedSchema = {
     "@context": "https://schema.org",
-    "@graph": [organizationSchema, breadcrumbSchema],
+    "@graph": [organizationSchema, breadcrumbSchema, itemListSchema],
   };
 
   const colorClasses: Record<string, string> = {
