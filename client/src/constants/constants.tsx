@@ -615,6 +615,36 @@ export const TESTIMONIALS: TestimonialType[] = [
     rating: 5,
     project: "Multiple Residential STPs",
   },
+  {
+    id: "testimonial-7",
+    name: "Anita Sharma",
+    position: "General Manager",
+    company: "Taj Hotels, Jaipur",
+    content:
+      "DLS installed our water treatment and recycling system that handles 500 KLD daily. The treated water quality exceeds our expectations and we're reusing it for landscaping and cooling towers. Their team understands hospitality industry needs - zero disruption to guests during installation.",
+    rating: 5,
+    project: "Hotel Water Recycling System",
+  },
+  {
+    id: "testimonial-8",
+    name: "Suresh Kumar Patel",
+    position: "Chief Engineer",
+    company: "NTPC Dadri Power Plant",
+    content:
+      "Critical cooling tower maintenance and water treatment for our 1820 MW facility. DLS has been our trusted partner for 5 years. Their engineers understand power plant operations and schedule maintenance during low-load periods. Technical expertise is excellent.",
+    rating: 5,
+    project: "Power Plant Water Treatment",
+  },
+  {
+    id: "testimonial-9",
+    name: "Deepa Krishnan",
+    position: "Sustainability Head",
+    company: "Asian Paints, Mumbai",
+    content:
+      "Zero liquid discharge was our target and DLS delivered. Their ZLD system processes 800 KLD of our manufacturing effluent. We've achieved 95% water recovery and the concentrated waste is properly disposed. ROI came faster than projected. Truly professional team.",
+    rating: 5,
+    project: "Zero Liquid Discharge System",
+  },
 ];
 
 export const QUICK_CHAT_MESSAGES = [
