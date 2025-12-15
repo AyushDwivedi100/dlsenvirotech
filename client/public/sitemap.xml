@@ -7,65 +7,259 @@
   <!-- Homepage -->
   <url>
     <loc>https://dlsenvirotech.com/</loc>
-    <lastmod>2025-10-28</lastmod>
+    <lastmod>2025-12-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <!-- Main Pages -->
   <url>
-    <loc>https://dlsenvirotech.com/services</loc>
-    <lastmod>2025-10-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <url>
-    <loc>https://dlsenvirotech.com/portfolio</loc>
-    <lastmod>2025-10-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
     <loc>https://dlsenvirotech.com/about</loc>
-    <lastmod>2025-10-28</lastmod>
+    <lastmod>2025-12-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://dlsenvirotech.com/leadership</loc>
-    <lastmod>2025-10-28</lastmod>
+    <lastmod>2025-12-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://dlsenvirotech.com/contact</loc>
-    <lastmod>2025-10-28</lastmod>
+    <loc>https://dlsenvirotech.com/services</loc>
+    <lastmod>2025-12-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
+    <loc>https://dlsenvirotech.com/clients</loc>
+    <lastmod>2025-12-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
     <loc>https://dlsenvirotech.com/gallery</loc>
-    <lastmod>2025-10-28</lastmod>
+    <lastmod>2025-12-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
+    <loc>https://dlsenvirotech.com/contact</loc>
+    <lastmod>2025-12-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
     <loc>https://dlsenvirotech.com/quote</loc>
-    <lastmod>2025-10-28</lastmod>
+    <lastmod>2025-12-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- Additional static pages -->
+  <!-- Division 1: Water and Soil Treatment -->
+  <url>
+    <loc>https://dlsenvirotech.com/services/water-soil-treatment</loc>
+    <lastmod>2025-12-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://dlsenvirotech.com/services/water-soil-treatment/stp</loc>
+    <lastmod>2025-12-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://dlsenvirotech.com/services/water-soil-treatment/wtp</loc>
+    <lastmod>2025-12-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://dlsenvirotech.com/services/water-soil-treatment/fstp</loc>
+    <lastmod>2025-12-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://dlsenvirotech.com/services/water-soil-treatment/etp</loc>
+    <lastmod>2025-12-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://dlsenvirotech.com/services/water-soil-treatment/wbp</loc>
+    <lastmod>2025-12-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Division 2: Solid Waste Management -->
+  <url>
+    <loc>https://dlsenvirotech.com/services/solid-waste-management</loc>
+    <lastmod>2025-12-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://dlsenvirotech.com/services/solid-waste-management/mrf</loc>
+    <lastmod>2025-12-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://dlsenvirotech.com/services/solid-waste-management/w2c</loc>
+    <lastmod>2025-12-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://dlsenvirotech.com/services/solid-waste-management/slf</loc>
+    <lastmod>2025-12-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Division 3: O2 & Air Purification -->
+  <url>
+    <loc>https://dlsenvirotech.com/services/o2-air-purification</loc>
+    <lastmod>2025-12-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://dlsenvirotech.com/services/o2-air-purification/o2-plants</loc>
+    <lastmod>2025-12-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://dlsenvirotech.com/services/o2-air-purification/mgps</loc>
+    <lastmod>2025-12-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://dlsenvirotech.com/services/o2-air-purification/smoke-tower</loc>
+    <lastmod>2025-12-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://dlsenvirotech.com/services/o2-air-purification/air-gun</loc>
+    <lastmod>2025-12-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://dlsenvirotech.com/services/o2-air-purification/air-blower</loc>
+    <lastmod>2025-12-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Division 4: Chemical & Biochemical Treatment -->
+  <url>
+    <loc>https://dlsenvirotech.com/services/chemical-biochemical-treatment</loc>
+    <lastmod>2025-12-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://dlsenvirotech.com/services/chemical-biochemical-treatment/biogas-plants</loc>
+    <lastmod>2025-12-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://dlsenvirotech.com/services/chemical-biochemical-treatment/bio-culture-solid-waste</loc>
+    <lastmod>2025-12-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://dlsenvirotech.com/services/chemical-biochemical-treatment/bio-culture-stp</loc>
+    <lastmod>2025-12-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://dlsenvirotech.com/services/chemical-biochemical-treatment/bio-culture-etp</loc>
+    <lastmod>2025-12-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://dlsenvirotech.com/services/chemical-biochemical-treatment/bio-methanation</loc>
+    <lastmod>2025-12-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Division 5: Manufacturing & Fabrication -->
+  <url>
+    <loc>https://dlsenvirotech.com/services/manufacturing-fabrication</loc>
+    <lastmod>2025-12-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://dlsenvirotech.com/services/manufacturing-fabrication/mrf-equipment</loc>
+    <lastmod>2025-12-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://dlsenvirotech.com/services/manufacturing-fabrication/processing-machines</loc>
+    <lastmod>2025-12-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://dlsenvirotech.com/services/manufacturing-fabrication/solar-electrical</loc>
+    <lastmod>2025-12-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://dlsenvirotech.com/services/manufacturing-fabrication/cleaning-machines</loc>
+    <lastmod>2025-12-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Sitemap -->
   <url>
     <loc>https://dlsenvirotech.com/sitemap</loc>
-    <lastmod>2025-10-28</lastmod>
+    <lastmod>2025-12-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
