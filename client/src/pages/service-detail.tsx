@@ -340,10 +340,10 @@ const ServiceDetail = () => {
                   )}
 
                   {/* Quick Contact */}
-                  <Card className="bg-primary text-primary-foreground">
+                  <Card className="bg-primary">
                     <CardContent className="pt-6">
-                      <h3 className="font-bold text-lg mb-2">Need Help?</h3>
-                      <p className="text-sm opacity-90 mb-4">
+                      <h3 className="font-bold text-lg mb-2 text-white">Need Help?</h3>
+                      <p className="text-sm text-white/90 mb-4">
                         Get expert consultation for your {service.shortTitle}{" "}
                         requirements.
                       </p>
