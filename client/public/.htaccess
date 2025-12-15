@@ -1,14 +1,19 @@
 # DLS Envirotech - Apache Configuration for Static Hosting
-# For Hostinger Premium Web Hosting Plan
+# Updated: December 15, 2025
 
 # Enable Rewrite Engine
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
 
-  # Force HTTPS
+  # Force HTTPS (SEO: Secure site ranking boost)
   RewriteCond %{HTTPS} off
   RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+  # Remove trailing slashes for SEO (except root)
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_URI} (.+)/$
+  RewriteRule ^ %1 [R=301,L]
 
   # Force WWW (optional - uncomment if you want to force www)
   # RewriteCond %{HTTP_HOST} !^www\. [NC]

@@ -1,5 +1,5 @@
 # DLS Envirotech Corporation - Robots.txt
-# Allow all search engines to crawl the site
+# Updated: December 15, 2025
 
 User-agent: *
 Allow: /
@@ -8,8 +8,19 @@ Allow: /
 Disallow: /admin/
 Disallow: /api/
 Disallow: /private/
+Disallow: /_*
 
-# Sitemap location
+# Allow important pages
+Allow: /services/
+Allow: /about
+Allow: /leadership
+Allow: /clients
+Allow: /gallery
+Allow: /contact
+Allow: /quote
+Allow: /sitemap
+
+# Sitemap locations
 Sitemap: https://dlsenvirotech.com/sitemap.xml
 
 # Crawl delay for polite crawling
@@ -18,9 +29,17 @@ Crawl-delay: 1
 # Specific rules for major search engines
 User-agent: Googlebot
 Allow: /
+Crawl-delay: 0
 
 User-agent: Bingbot
 Allow: /
+Crawl-delay: 1
 
 User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Yandex
 Allow: /
