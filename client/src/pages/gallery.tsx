@@ -20,9 +20,35 @@ const Gallery = () => {
     { name: "Gallery", url: "https://dlsenvirotech.com/gallery" },
   ]);
 
+  const imageGallerySchema = {
+    "@context": "https://schema.org",
+    "@type": "ImageGallery",
+    name: "DLS Envirotech Project Gallery",
+    description: "Gallery showcasing water treatment, industrial systems, and waste management project installations by DLS Envirotech Corporation across India and internationally.",
+    url: "https://dlsenvirotech.com/gallery",
+    creator: {
+      "@type": "Organization",
+      name: "DLS Envirotech Corporation",
+      url: "https://dlsenvirotech.com",
+    },
+    about: [
+      { "@type": "Thing", name: "Sewage Treatment Plant (STP)" },
+      { "@type": "Thing", name: "Effluent Treatment Plant (ETP)" },
+      { "@type": "Thing", name: "Solid Waste Management" },
+      { "@type": "Thing", name: "Faecal Sludge Treatment Plant (FSTP)" },
+      { "@type": "Thing", name: "Material Recovery Facility (MRF)" },
+      { "@type": "Thing", name: "Medical Gas Pipeline System (MGPS)" },
+    ],
+    isPartOf: {
+      "@type": "WebSite",
+      name: "DLS Envirotech Corporation",
+      url: "https://dlsenvirotech.com",
+    },
+  };
+
   const combinedSchema = {
     "@context": "https://schema.org",
-    "@graph": [organizationSchema, breadcrumbSchema],
+    "@graph": [organizationSchema, breadcrumbSchema, imageGallerySchema],
   };
 
   return (

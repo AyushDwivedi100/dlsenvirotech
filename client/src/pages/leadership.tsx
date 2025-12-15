@@ -22,9 +22,45 @@ const Leadership = () => {
     { name: "Leadership", url: "https://dlsenvirotech.com/leadership" },
   ]);
 
+  const personSchema = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "S.K. Singh",
+    jobTitle: "Managing Director",
+    worksFor: {
+      "@type": "Organization",
+      name: "DLS Envirotech Corporation Pvt. Ltd.",
+      url: "https://dlsenvirotech.com",
+    },
+    description: `Managing Director with ${yearsExperience} years of professional experience in environmental engineering. Led 120+ Solid Waste Management projects, 60+ large Sewage Treatment Plants (STP), and 32+ Faecal Sludge Treatment Plants (FSTP) worldwide.`,
+    knowsAbout: [
+      "Sewage Treatment Plants (STP)",
+      "Faecal Sludge Treatment Plants (FSTP)",
+      "Solid Waste Management",
+      "Wastewater Treatment",
+      "Environmental Engineering",
+      "MBBR Technology",
+      "Water Treatment",
+      "Industrial Pollution Control",
+    ],
+    alumniOf: {
+      "@type": "Organization",
+      name: "Environmental Engineering Expertise",
+    },
+    nationality: {
+      "@type": "Country",
+      name: "India",
+    },
+    image: "https://dlsenvirotech.com/director-photo.png",
+    url: "https://dlsenvirotech.com/leadership",
+    sameAs: [
+      "https://www.linkedin.com/company/dlsenvirotech",
+    ],
+  };
+
   const combinedSchema = {
     "@context": "https://schema.org",
-    "@graph": [organizationSchema, breadcrumbSchema],
+    "@graph": [organizationSchema, breadcrumbSchema, personSchema],
   };
 
   const achievements = [

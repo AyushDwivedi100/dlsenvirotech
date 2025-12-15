@@ -15,9 +15,44 @@ const Contact = () => {
     { name: "Contact Us", url: "https://dlsenvirotech.com/contact" },
   ]);
 
+  const contactPageSchema = {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    name: "Contact DLS Envirotech Corporation",
+    description: "Get in touch with DLS Envirotech for water treatment, industrial systems, and waste management solutions. 24/7 expert support available.",
+    url: "https://dlsenvirotech.com/contact",
+    mainEntity: {
+      "@type": "Organization",
+      name: "DLS Envirotech Corporation",
+      telephone: "+91-9568572005",
+      email: "info.dlsenvirotech@gmail.com",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "F-25, Sector-6",
+        addressLocality: "Noida",
+        addressRegion: "Uttar Pradesh",
+        postalCode: "201301",
+        addressCountry: "IN",
+      },
+      contactPoint: {
+        "@type": "ContactPoint",
+        telephone: "+91-9568572005",
+        contactType: "customer service",
+        areaServed: ["IN", "Worldwide"],
+        availableLanguage: ["English", "Hindi"],
+        hoursAvailable: {
+          "@type": "OpeningHoursSpecification",
+          dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          opens: "09:00",
+          closes: "18:00",
+        },
+      },
+    },
+  };
+
   const combinedSchema = {
     "@context": "https://schema.org",
-    "@graph": [organizationSchema, breadcrumbSchema],
+    "@graph": [organizationSchema, breadcrumbSchema, contactPageSchema],
   };
 
   return (

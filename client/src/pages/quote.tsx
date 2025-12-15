@@ -105,9 +105,57 @@ export default function Quote() {
     { name: "Get Quote", url: "https://dlsenvirotech.com/quote" },
   ]);
 
+  const quoteActionSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    name: "Request Free Quote - Environmental Solutions",
+    description: "Get a free customized quote for water treatment, industrial systems, and waste management solutions from DLS Envirotech. 24-hour response guaranteed.",
+    url: "https://dlsenvirotech.com/quote",
+    potentialAction: {
+      "@type": "QuoteAction",
+      target: {
+        "@type": "EntryPoint",
+        urlTemplate: "https://dlsenvirotech.com/quote",
+        actionPlatform: [
+          "http://schema.org/DesktopWebPlatform",
+          "http://schema.org/MobileWebPlatform",
+        ],
+      },
+      result: {
+        "@type": "Order",
+        orderStatus: "https://schema.org/OrderProcessing",
+      },
+    },
+    mainEntity: {
+      "@type": "Service",
+      name: "Environmental Technology Consultation",
+      provider: {
+        "@type": "Organization",
+        name: "DLS Envirotech Corporation",
+        telephone: "+91-9568572005",
+      },
+      serviceType: "Environmental Engineering Consultation",
+      areaServed: {
+        "@type": "Country",
+        name: "India",
+      },
+      hasOfferCatalog: {
+        "@type": "OfferCatalog",
+        name: "Environmental Solutions",
+        itemListElement: [
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Sewage Treatment Plant (STP)" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Effluent Treatment Plant (ETP)" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Water Treatment Plant (WTP)" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Solid Waste Management" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "PSA Oxygen Plant" } },
+        ],
+      },
+    },
+  };
+
   const combinedSchema = {
     "@context": "https://schema.org",
-    "@graph": [organizationSchema, breadcrumbSchema],
+    "@graph": [organizationSchema, breadcrumbSchema, quoteActionSchema],
   };
 
   return (
