@@ -109,10 +109,10 @@ const TestimonialsSection = () => {
                   key={index}
                   onClick={() => setCurrentIndex(Math.min(index, maxIndex))}
                   className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                    visibleIndices.includes(index)
-                      ? "bg-primary"
+                    index === currentIndex
+                      ? "bg-primary w-6"
                       : "bg-muted-foreground/30 hover:bg-muted-foreground/50"
-                  } ${index === currentIndex ? "w-6" : ""}`}
+                  }`}
                   data-testid={`button-testimonial-dot-${index}`}
                 />
               ))}
