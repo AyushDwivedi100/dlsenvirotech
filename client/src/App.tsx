@@ -7,6 +7,7 @@ import { ThemeProvider } from "@/contexts/theme-context";
 import FloatingContactWidget from "@/components/ui/floating-contact-widget";
 import NotFound from "@/pages/not-found";
 import Home from "@/pages/home";
+import Services from "@/pages/services";
 import OurClients from "@/pages/our-clients";
 import Gallery from "@/pages/gallery";
 import About from "@/pages/about";
@@ -19,6 +20,7 @@ function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
+      <Route path="/services" component={Services} />
       <Route path="/clients" component={OurClients} />
       <Route path="/gallery" component={Gallery} />
       <Route path="/about" component={About} />
