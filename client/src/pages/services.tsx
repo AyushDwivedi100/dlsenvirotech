@@ -155,16 +155,11 @@ const Services = () => {
                         </CardHeader>
                         <CardContent>
                           <div className="flex flex-wrap gap-2 mb-4">
-                            {division.services.slice(0, 3).map((service) => (
+                            {division.services.map((service) => (
                               <Badge key={service.id} variant="secondary" className="text-xs">
                                 {service.shortTitle}
                               </Badge>
                             ))}
-                            {division.services.length > 3 && (
-                              <Badge variant="outline" className="text-xs">
-                                +{division.services.length - 3} more
-                              </Badge>
-                            )}
                           </div>
                           <div className="flex items-center text-sm text-primary font-medium">
                             Explore Division
