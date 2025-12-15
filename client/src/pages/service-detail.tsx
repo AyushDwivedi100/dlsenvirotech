@@ -340,16 +340,20 @@ const ServiceDetail = () => {
                   )}
 
                   {/* Quick Contact */}
-                  <Card className="bg-primary">
+                  <Card className="bg-muted">
                     <CardContent className="pt-6">
-                      <h3 className="font-bold text-lg mb-2 text-white">Need Help?</h3>
-                      <p className="text-sm text-white/90 mb-4">
+                      <div className="flex items-center gap-3 mb-3">
+                        <div className="p-2 rounded-full bg-primary/10">
+                          <Phone className="h-5 w-5 text-primary" />
+                        </div>
+                        <h3 className="font-bold text-lg text-foreground">Need Help?</h3>
+                      </div>
+                      <p className="text-sm text-muted-foreground mb-4">
                         Get expert consultation for your {service.shortTitle}{" "}
                         requirements.
                       </p>
-                      <Button variant="secondary" className="w-full" asChild>
+                      <Button className="w-full" asChild>
                         <Link href="/contact">
-                          <Phone className="mr-2 h-4 w-4" />
                           Contact Expert
                         </Link>
                       </Button>
