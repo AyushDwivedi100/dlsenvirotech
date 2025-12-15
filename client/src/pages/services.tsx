@@ -1,11 +1,13 @@
 import TopBar from "@/components/layout/top-bar";
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
-import ServiceCard from "@/components/ui/service-card";
-import { SERVICES } from "@/constants/constants";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { DIVISIONS } from "@/constants/constants";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
-import { Phone } from "lucide-react";
+import { Phone, ArrowRight } from "lucide-react";
+import * as LucideIcons from "lucide-react";
 import {
   SEOHead,
   organizationSchema,
@@ -14,6 +16,11 @@ import {
   createServiceSchema,
 } from "@/components/seo/seo-head";
 import { getYearsOfExperienceString } from "@/lib/utils/company-info";
+
+const getIcon = (iconName: string) => {
+  const Icon = (LucideIcons as unknown as Record<string, React.ComponentType<{ className?: string }>>)[iconName];
+  return Icon || LucideIcons.Settings;
+};
 
 const Services = () => {
   const yearsExperience = getYearsOfExperienceString();
@@ -66,6 +73,14 @@ const Services = () => {
     ],
   };
 
+  const colorClasses: Record<string, string> = {
+    blue: "bg-blue-500/10 text-blue-600 dark:text-blue-400",
+    green: "bg-green-500/10 text-green-600 dark:text-green-400",
+    cyan: "bg-cyan-500/10 text-cyan-600 dark:text-cyan-400",
+    purple: "bg-purple-500/10 text-purple-600 dark:text-purple-400",
+    orange: "bg-orange-500/10 text-orange-600 dark:text-orange-400",
+  };
+
   return (
     <>
       <SEOHead
@@ -87,9 +102,9 @@ const Services = () => {
                 Comprehensive Environmental Solutions
               </h1>
               <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-6 md:mb-8">
-                Advanced water treatment, industrial solutions, and waste
-                management systems designed to meet the highest environmental
-                standards for industrial and municipal applications.
+                Our company is organized into 5 specialized divisions to deliver
+                advanced water treatment, industrial solutions, and waste
+                management systems for industrial and municipal applications.
               </p>
               <Button size="lg" className="w-full sm:w-auto" asChild>
                 <Link href="/contact" className="text-white">
@@ -102,22 +117,65 @@ const Services = () => {
             </div>
           </section>
 
-          {/* Services Grid */}
+          {/* Divisions Grid */}
           <section className="py-12 md:py-16 lg:py-20 bg-background">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              {SERVICES.length > 0 ? (
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-                  {SERVICES.map((service) => (
-                    <ServiceCard key={service.id} service={service} />
-                  ))}
-                </div>
-              ) : (
-                <div className="text-center py-16">
-                  <p className="text-lg text-muted-foreground">
-                    Our services are being updated. Please check back soon or contact us for more information.
-                  </p>
-                </div>
-              )}
+              <div className="text-center mb-10">
+                <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-3">
+                  Our 5 Divisions
+                </h2>
+                <p className="text-muted-foreground max-w-2xl mx-auto">
+                  Explore our specialized divisions offering comprehensive environmental solutions
+                </p>
+              </div>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+                {DIVISIONS.map((division) => {
+                  const DivisionIcon = getIcon(division.icon);
+                  return (
+                    <Card
+                      key={division.id}
+                      className="group hover-elevate cursor-pointer h-full"
+                      data-testid={`card-division-${division.id}`}
+                    >
+                      <Link href={`/services/${division.id}`}>
+                        <CardHeader>
+                          <div className="flex items-center gap-3 mb-2">
+                            <div className={`p-3 rounded-lg ${colorClasses[division.color] || colorClasses.blue}`}>
+                              <DivisionIcon className="h-6 w-6" />
+                            </div>
+                            <Badge variant="outline">Division {division.number}</Badge>
+                          </div>
+                          <CardTitle className="text-xl group-hover:text-primary transition-colors">
+                            {division.title}
+                          </CardTitle>
+                          <CardDescription className="line-clamp-3">
+                            {division.description}
+                          </CardDescription>
+                        </CardHeader>
+                        <CardContent>
+                          <div className="flex flex-wrap gap-2 mb-4">
+                            {division.services.slice(0, 3).map((service) => (
+                              <Badge key={service.id} variant="secondary" className="text-xs">
+                                {service.shortTitle}
+                              </Badge>
+                            ))}
+                            {division.services.length > 3 && (
+                              <Badge variant="outline" className="text-xs">
+                                +{division.services.length - 3} more
+                              </Badge>
+                            )}
+                          </div>
+                          <div className="flex items-center text-sm text-primary font-medium">
+                            Explore Division
+                            <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                          </div>
+                        </CardContent>
+                      </Link>
+                    </Card>
+                  );
+                })}
+              </div>
             </div>
           </section>
 
@@ -128,8 +186,8 @@ const Services = () => {
                 Need a Custom Solution?
               </h2>
               <p className="text-base sm:text-lg text-muted-foreground mb-6 md:mb-8">
-                Our expert engineers can design and implement the perfect water
-                treatment system for your specific requirements. Contact us for
+                Our expert engineers can design and implement the perfect
+                environmental system for your specific requirements. Contact us for
                 a free consultation.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center">
@@ -146,9 +204,9 @@ const Services = () => {
                   className="w-full sm:w-auto"
                   asChild
                 >
-                  <Link href="/portfolio">
+                  <Link href="/clients">
                     <span className="text-sm md:text-base">
-                      View Case Studies
+                      View Our Clients
                     </span>
                   </Link>
                 </Button>
