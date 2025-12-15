@@ -8,32 +8,43 @@ const TestimonialsSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
   const totalTestimonials = TESTIMONIALS.length;
+  const visibleCount = 3;
+  const maxIndex = totalTestimonials - visibleCount;
+
+  const canGoNext = currentIndex < maxIndex;
+  const canGoPrev = currentIndex > 0;
 
   const nextSlide = useCallback(() => {
-    setCurrentIndex((prev) => (prev + 1) % totalTestimonials);
-  }, [totalTestimonials]);
+    if (currentIndex < maxIndex) {
+      setCurrentIndex((prev) => prev + 1);
+    }
+  }, [currentIndex, maxIndex]);
 
   const prevSlide = useCallback(() => {
-    setCurrentIndex((prev) => (prev - 1 + totalTestimonials) % totalTestimonials);
-  }, [totalTestimonials]);
+    if (currentIndex > 0) {
+      setCurrentIndex((prev) => prev - 1);
+    }
+  }, [currentIndex]);
 
   useEffect(() => {
-    if (!isAutoPlaying) return;
+    if (!isAutoPlaying || !canGoNext) return;
     
     const interval = setInterval(() => {
       nextSlide();
     }, 4000);
 
     return () => clearInterval(interval);
-  }, [isAutoPlaying, nextSlide]);
+  }, [isAutoPlaying, canGoNext, nextSlide]);
 
   const handleMouseEnter = () => setIsAutoPlaying(false);
   const handleMouseLeave = () => setIsAutoPlaying(true);
 
   const getVisibleIndices = () => {
     const indices = [];
-    for (let i = 0; i < 3; i++) {
-      indices.push((currentIndex + i) % totalTestimonials);
+    for (let i = 0; i < visibleCount; i++) {
+      if (currentIndex + i < totalTestimonials) {
+        indices.push(currentIndex + i);
+      }
     }
     return indices;
   };
@@ -63,10 +74,10 @@ const TestimonialsSection = () => {
               className="flex transition-transform duration-700 ease-in-out"
               style={{
                 transform: `translateX(-${(currentIndex * 100) / totalTestimonials}%)`,
-                width: `${(totalTestimonials * 100) / 3}%`,
+                width: `${(totalTestimonials * 100) / visibleCount}%`,
               }}
             >
-              {TESTIMONIALS.map((testimonial, index) => (
+              {TESTIMONIALS.map((testimonial) => (
                 <div
                   key={testimonial.id}
                   className="px-3 md:px-4"
@@ -86,6 +97,7 @@ const TestimonialsSection = () => {
               variant="outline"
               size="icon"
               onClick={prevSlide}
+              disabled={!canGoPrev}
               data-testid="button-testimonial-prev"
             >
               <ChevronLeft className="h-4 w-4" />
@@ -95,7 +107,7 @@ const TestimonialsSection = () => {
               {TESTIMONIALS.map((_, index) => (
                 <button
                   key={index}
-                  onClick={() => setCurrentIndex(index)}
+                  onClick={() => setCurrentIndex(Math.min(index, maxIndex))}
                   className={`w-2 h-2 rounded-full transition-all duration-300 ${
                     visibleIndices.includes(index)
                       ? "bg-primary"
@@ -110,6 +122,7 @@ const TestimonialsSection = () => {
               variant="outline"
               size="icon"
               onClick={nextSlide}
+              disabled={!canGoNext}
               data-testid="button-testimonial-next"
             >
               <ChevronRight className="h-4 w-4" />
