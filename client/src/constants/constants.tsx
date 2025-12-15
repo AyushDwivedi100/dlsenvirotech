@@ -10,7 +10,7 @@ export const DIVISIONS: Division[] = [
     number: 1,
     title: "Water and Soil Treatment Division",
     shortTitle: "Water & Soil Treatment",
-    description: "Our Water and Soil Treatment Division delivers comprehensive solutions for municipal and industrial water management challenges. We specialize in designing, manufacturing, and installing advanced treatment systems that transform wastewater into reusable water resources while ensuring strict compliance with CPCB and SPCB environmental norms.",
+    description: "Complete solutions for municipal and industrial water challenges. We design, manufacture, and install advanced treatment systems that transform wastewater into reusable resources while ensuring CPCB and SPCB compliance.",
     highlights: [
       "Complete STP, ETP, WTP, FSTP & WBP solutions",
       "Advanced technologies: SBR, MBR, MBBR, ABR, ZLD, UASB",
@@ -127,7 +127,7 @@ export const DIVISIONS: Division[] = [
     number: 2,
     title: "Solid Waste Management Plants",
     shortTitle: "Solid Waste Management",
-    description: "Our Solid Waste Management Division provides end-to-end solutions for handling municipal, industrial, and specialized waste streams. We design and implement integrated waste management systems that maximize resource recovery, minimize landfill dependency, and ensure environmental sustainability through scientific waste processing and treatment methodologies.",
+    description: "End-to-end solutions for municipal, industrial, and specialized waste streams. We implement integrated waste management systems that maximize resource recovery and minimize landfill dependency through scientific processing.",
     highlights: [
       "Handles all 7 waste types: MSW, Industrial, Agricultural, Hazardous, Bio-medical, E-waste, C&D",
       "4 management approaches: Landfills, Incineration, Recycling, Composting",
@@ -206,7 +206,7 @@ export const DIVISIONS: Division[] = [
     number: 3,
     title: "O2 & Air Purification Division",
     shortTitle: "O2 & Air Purification",
-    description: "Our O2 & Air Purification Division specializes in on-site oxygen generation systems and comprehensive air quality management solutions. We serve hospitals, industries, and commercial establishments with reliable oxygen supply systems, medical gas pipelines, and industrial air purification equipment designed for continuous operation and optimal efficiency.",
+    description: "On-site oxygen generation and comprehensive air quality management for hospitals and industries. We provide reliable oxygen supply systems, medical gas pipelines, and industrial air purification equipment.",
     highlights: [
       "PSA & VPSA oxygen generation with up to 95% purity",
       "Complete MGPS for hospitals and healthcare facilities",
@@ -323,7 +323,7 @@ export const DIVISIONS: Division[] = [
     number: 4,
     title: "Chemical & Biochemical Treatment Division",
     shortTitle: "Chemical & Biochemical Treatment",
-    description: "Our Chemical & Biochemical Treatment Division offers innovative bio-remediation solutions that harness the power of microbial technology for waste treatment. We develop specialized bio-culture formulations and biogas systems that accelerate organic waste decomposition, enhance treatment plant performance, and generate renewable energy from waste materials.",
+    description: "Innovative bio-remediation solutions using microbial technology for waste treatment. We develop specialized bio-culture formulations and biogas systems that enhance treatment performance and generate renewable energy.",
     highlights: [
       "Biogas plants for renewable energy generation",
       "Specialized bio-culture for STP, ETP & solid waste",
@@ -460,7 +460,7 @@ export const DIVISIONS: Division[] = [
     number: 5,
     title: "Manufacturing/Fabrication Division",
     shortTitle: "Manufacturing & Fabrication",
-    description: "Our Manufacturing & Fabrication Division operates state-of-the-art production facilities for environmental equipment and machinery. We design and fabricate custom equipment for waste management, water treatment, and renewable energy projects, ensuring quality control and timely delivery with complete in-house capabilities from design to installation.",
+    description: "State-of-the-art production facilities for environmental equipment and machinery. We design and fabricate custom equipment for waste management, water treatment, and renewable energy with complete in-house capabilities.",
     highlights: [
       "Custom MRF equipment and processing machinery",
       "Solar panels, street lights & electrical systems",
