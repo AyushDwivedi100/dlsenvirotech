@@ -135,7 +135,7 @@ const Services = () => {
                   return (
                     <Card
                       key={division.id}
-                      className="group hover-elevate cursor-pointer h-full"
+                      className="group cursor-pointer h-full transition-all duration-300 hover:shadow-xl hover:-translate-y-2 hover:border-primary/50"
                       data-testid={`card-division-${division.id}`}
                     >
                       <Link href={`/services/${division.id}`}>
@@ -153,14 +153,16 @@ const Services = () => {
                             {division.description}
                           </CardDescription>
                           {division.highlights && division.highlights.length > 0 && (
-                            <ul className="mt-3 space-y-1.5">
-                              {division.highlights.map((highlight, idx) => (
-                                <li key={idx} className="flex items-start gap-2 text-sm text-muted-foreground">
-                                  <Check className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
-                                  <span>{highlight}</span>
-                                </li>
-                              ))}
-                            </ul>
+                            <div className="mt-4 p-3 rounded-lg border border-primary/30 bg-primary/5">
+                              <ul className="space-y-2">
+                                {division.highlights.map((highlight, idx) => (
+                                  <li key={idx} className="flex items-start gap-2 text-sm text-foreground">
+                                    <Check className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
+                                    <span>{highlight}</span>
+                                  </li>
+                                ))}
+                              </ul>
+                            </div>
                           )}
                         </CardHeader>
                         <CardContent>
