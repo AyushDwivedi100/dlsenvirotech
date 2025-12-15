@@ -316,7 +316,10 @@ const ServiceDetail = () => {
                       className={`border-2 ${borderColorClasses[division.color] || borderColorClasses.blue}`}
                     >
                       <CardHeader>
-                        <CardTitle>Benefits</CardTitle>
+                        <CardTitle className="flex items-center gap-2">
+                          <Target className="h-5 w-5 text-primary" />
+                          Benefits
+                        </CardTitle>
                       </CardHeader>
                       <CardContent>
                         <ul className="space-y-2">
