@@ -14,7 +14,8 @@ import {
   createBreadcrumbSchema,
 } from "@/components/seo/seo-head";
 
-const PLACEHOLDER_LOGO = "https://www.fmt.se/wp-content/uploads/2023/02/logo-placeholder-image.png";
+const PLACEHOLDER_LOGO =
+  "https://www.fmt.se/wp-content/uploads/2023/02/logo-placeholder-image.png";
 
 const ClientCard = ({
   client,
@@ -36,11 +37,11 @@ const ClientCard = ({
 
   const content = (
     <div className="flex flex-col items-center justify-center text-center">
-      <div className="bg-white rounded-md p-2 flex items-center justify-center mb-3">
+      <div className="bg-white rounded-md p-1 flex items-center justify-center mb-3">
         <img
           src={imageSrc}
           alt={client.name}
-          className="max-h-12 sm:max-h-16 w-auto object-contain"
+          className="max-h-12 sm:max-h-32 w-auto object-contain"
           loading="lazy"
           onError={() => setImageSrc(PLACEHOLDER_LOGO)}
         />
@@ -81,7 +82,7 @@ const CATEGORY_ORDER = ["government", "private", "international", "municipal"];
 const OurClients = () => {
   const [selectedCategory, setSelectedCategory] = useState("all");
   const rawClients = getClientsByCategory(selectedCategory);
-  
+
   const filteredClients = [...rawClients].sort((a, b) => {
     const orderA = CATEGORY_ORDER.indexOf(a.category);
     const orderB = CATEGORY_ORDER.indexOf(b.category);

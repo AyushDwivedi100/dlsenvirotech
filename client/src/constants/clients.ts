@@ -59,7 +59,7 @@ export const CLIENTS: ClientType[] = [
   {
     id: "airports-authority-india",
     name: "Airports Authority of India (AAI)",
-    logo: "https://www.uxdt.nic.in/wp-content/uploads/2020/06/Preview-9.png",
+    logo: "https://upload.wikimedia.org/wikipedia/en/thumb/e/e0/Airports_Authority_of_India_logo.svg/1200px-Airports_Authority_of_India_logo.svg.png",
     category: "government",
     website: "https://www.aai.aero",
   },
@@ -94,19 +94,19 @@ export const CLIENTS: ClientType[] = [
   {
     id: "up-jal-nigam",
     name: "UP Jal Nigam",
-    logo: "/clients/up-jal-nigam.png",
+    logo: "https://upjn.co.in/images/logofav.png",
     category: "government",
   },
   {
     id: "indian-army",
     name: "Indian Army",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Indian_Army_Seal.svg/1200px-Indian_Army_Seal.svg.png",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/ADGPI_Indian_Army.svg/1280px-ADGPI_Indian_Army.svg.png",
     category: "government",
   },
   {
     id: "bhel",
     name: "Bharat Heavy Electricals Limited (BHEL)",
-    logo: "https://upload.wikimedia.org/wikipedia/en/thumb/7/7c/Bharat_Heavy_Electricals_Limited_logo.svg/1200px-Bharat_Heavy_Electricals_Limited_logo.svg.png",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/BHEL_logo.svg/2492px-BHEL_logo.svg.png",
     category: "government",
     website: "https://www.bhel.com",
   },
