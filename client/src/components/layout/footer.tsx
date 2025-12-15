@@ -8,19 +8,11 @@ import { getYearsOfExperienceString } from "@/lib/utils/company-info";
 
 const Footer = () => {
   const yearsExperience = getYearsOfExperienceString();
-  const services = [
-    "Sewage Treatment Plants",
-    "Effluent Treatment Plants",
-    "RO & DM Plants",
-    "Cooling Tower Systems",
-    "Solid Waste Management",
-    "Turnkey Solutions",
-  ];
 
   const company = [
     { name: "About Us", href: "/about" },
-    { name: "Portfolio", href: "/portfolio" },
-    { name: "Services", href: "/services" },
+    { name: "Our Clients", href: "/clients" },
+    { name: "Gallery", href: "/gallery" },
     { name: "Contact Us", href: "/contact" },
   ];
 
@@ -83,26 +75,6 @@ const Footer = () => {
                 <Youtube className="h-4 w-4 sm:h-5 sm:w-5" aria-hidden="true" />
               </a>
             </div>
-          </div>
-
-          {/* Services Links */}
-          <div>
-            <h4 className="text-lg sm:text-xl font-bold mb-4 sm:mb-6">
-              Our Services
-            </h4>
-            <ul className="space-y-2 sm:space-y-3">
-              {services.map((service) => (
-                <li key={service}>
-                  <Link
-                    href="/services"
-                    className="text-foreground/70 hover:text-primary transition-colors text-sm sm:text-base"
-                    aria-label={`Learn more about ${service}`}
-                  >
-                    {service}
-                  </Link>
-                </li>
-              ))}
-            </ul>
           </div>
 
           {/* Quick Links */}

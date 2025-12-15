@@ -3,7 +3,6 @@ import TopBar from "@/components/layout/top-bar";
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
 import HeroSection from "@/components/sections/hero-section";
-import ServicesOverview from "@/components/sections/services-overview";
 import FeaturedClients from "@/components/sections/featured-clients";
 import AboutSection from "@/components/sections/about-section";
 import TestimonialsSection from "@/components/sections/testimonials-section";
