@@ -1,7 +1,13 @@
 import TopBar from "@/components/layout/top-bar";
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { DIVISIONS } from "@/constants/constants";
 import { Button } from "@/components/ui/button";
@@ -18,7 +24,12 @@ import {
 import { getYearsOfExperienceString } from "@/lib/utils/company-info";
 
 const getIcon = (iconName: string) => {
-  const Icon = (LucideIcons as unknown as Record<string, React.ComponentType<{ className?: string }>>)[iconName];
+  const Icon = (
+    LucideIcons as unknown as Record<
+      string,
+      React.ComponentType<{ className?: string }>
+    >
+  )[iconName];
   return Icon || LucideIcons.Settings;
 };
 
@@ -60,7 +71,7 @@ const Services = () => {
   const environmentalSolutionsSchema = createServiceSchema(
     "Environmental Solutions",
     "Comprehensive environmental technology solutions including water treatment (STP, ETP, WTP, WWTP, FSTP, MBBR, RO), industrial systems (cooling towers, PSA oxygen plants, air pollution control, MGPS), waste management (solid waste plants, material recovery facilities, waste to compost systems, C&D waste management), and bio-remediation for industrial and municipal applications",
-    "Environmental Services"
+    "Environmental Services",
   );
 
   const combinedSchema = {
@@ -125,26 +136,31 @@ const Services = () => {
                   Our 5 Divisions
                 </h2>
                 <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Explore our specialized divisions offering comprehensive environmental solutions
+                  Explore our specialized divisions offering comprehensive
+                  environmental solutions
                 </p>
               </div>
-              
+
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
                 {DIVISIONS.map((division) => {
                   const DivisionIcon = getIcon(division.icon);
                   return (
                     <Card
                       key={division.id}
-                      className="group hover-elevate cursor-pointer h-full bg-muted"
+                      className="group bg-muted cursor-pointer h-full transition-all duration-300 hover:shadow-xl hover:-translate-y-2 hover:border-primary/50"
                       data-testid={`card-division-${division.id}`}
                     >
                       <Link href={`/services/${division.id}`}>
                         <CardHeader>
                           <div className="flex items-center gap-3 mb-2">
-                            <div className={`p-3 rounded-lg ${colorClasses[division.color] || colorClasses.blue}`}>
+                            <div
+                              className={`p-3 rounded-lg ${colorClasses[division.color] || colorClasses.blue}`}
+                            >
                               <DivisionIcon className="h-6 w-6" />
                             </div>
-                            <Badge variant="outline">Division {division.number}</Badge>
+                            <Badge variant="outline">
+                              Division {division.number}
+                            </Badge>
                           </div>
                           <CardTitle className="text-xl group-hover:text-primary transition-colors">
                             {division.title}
@@ -152,23 +168,31 @@ const Services = () => {
                           <CardDescription>
                             {division.description}
                           </CardDescription>
-                          {division.highlights && division.highlights.length > 0 && (
-                            <div className="mt-4 p-3 rounded-lg border border-primary/30 bg-primary/5">
-                              <ul className="space-y-2">
-                                {division.highlights.map((highlight, idx) => (
-                                  <li key={idx} className="flex items-start gap-2 text-sm text-foreground">
-                                    <Check className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
-                                    <span>{highlight}</span>
-                                  </li>
-                                ))}
-                              </ul>
-                            </div>
-                          )}
+                          {division.highlights &&
+                            division.highlights.length > 0 && (
+                              <div className="mt-4 p-3 rounded-lg border border-primary">
+                                <ul className="space-y-2">
+                                  {division.highlights.map((highlight, idx) => (
+                                    <li
+                                      key={idx}
+                                      className="flex items-start gap-2 text-sm text-foreground"
+                                    >
+                                      <Check className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
+                                      <span>{highlight}</span>
+                                    </li>
+                                  ))}
+                                </ul>
+                              </div>
+                            )}
                         </CardHeader>
                         <CardContent>
                           <div className="flex flex-wrap gap-2 mb-4">
                             {division.services.map((service) => (
-                              <Badge key={service.id} variant="secondary" className="text-xs">
+                              <Badge
+                                key={service.id}
+                                variant="secondary"
+                                className="text-xs"
+                              >
                                 {service.shortTitle}
                               </Badge>
                             ))}
@@ -194,8 +218,8 @@ const Services = () => {
               </h2>
               <p className="text-base sm:text-lg text-muted-foreground mb-6 md:mb-8">
                 Our expert engineers can design and implement the perfect
-                environmental system for your specific requirements. Contact us for
-                a free consultation.
+                environmental system for your specific requirements. Contact us
+                for a free consultation.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center">
                 <Button size="lg" className="w-full sm:w-auto" asChild>

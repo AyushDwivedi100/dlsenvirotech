@@ -6,7 +6,16 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { DIVISIONS } from "@/constants/constants";
-import { ArrowLeft, Phone, ChevronRight, Check, Cog, Layers, Target, Award } from "lucide-react";
+import {
+  ArrowLeft,
+  Phone,
+  ChevronRight,
+  Check,
+  Cog,
+  Layers,
+  Target,
+  Award,
+} from "lucide-react";
 import * as LucideIcons from "lucide-react";
 import {
   SEOHead,
@@ -15,13 +24,18 @@ import {
 } from "@/components/seo/seo-head";
 
 const getIcon = (iconName: string) => {
-  const Icon = (LucideIcons as Record<string, React.ComponentType<{ className?: string }>>)[iconName];
+  const Icon = (
+    LucideIcons as Record<string, React.ComponentType<{ className?: string }>>
+  )[iconName];
   return Icon || LucideIcons.Settings;
 };
 
 const ServiceDetail = () => {
-  const { divisionId, serviceId } = useParams<{ divisionId: string; serviceId: string }>();
-  
+  const { divisionId, serviceId } = useParams<{
+    divisionId: string;
+    serviceId: string;
+  }>();
+
   const division = DIVISIONS.find((d) => d.id === divisionId);
   const service = division?.services.find((s) => s.id === serviceId);
 
@@ -54,8 +68,14 @@ const ServiceDetail = () => {
   const breadcrumbSchema = createBreadcrumbSchema([
     { name: "Home", url: "https://dlsenvirotech.com/" },
     { name: "Services", url: "https://dlsenvirotech.com/services" },
-    { name: division.shortTitle, url: `https://dlsenvirotech.com/services/${division.id}` },
-    { name: service.shortTitle, url: `https://dlsenvirotech.com/services/${division.id}/${service.id}` },
+    {
+      name: division.shortTitle,
+      url: `https://dlsenvirotech.com/services/${division.id}`,
+    },
+    {
+      name: service.shortTitle,
+      url: `https://dlsenvirotech.com/services/${division.id}/${service.id}`,
+    },
   ]);
 
   const combinedSchema = {
@@ -89,7 +109,7 @@ const ServiceDetail = () => {
           ...(service.technologies || []),
           ...(service.types || []),
           "DLS Envirotech",
-          "India"
+          "India",
         ].join(", ")}
         canonical={`https://dlsenvirotech.com/services/${division.id}/${service.id}`}
         schema={combinedSchema}
@@ -100,22 +120,36 @@ const ServiceDetail = () => {
         <Header />
         <main>
           {/* Breadcrumb */}
-          <div className="bg-muted/50 border-b">
+          <div className="bg-muted border-b">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
               <nav className="flex items-center gap-2 text-sm text-muted-foreground flex-wrap">
-                <Link href="/" className="hover:text-foreground transition-colors" data-testid="link-breadcrumb-home">
+                <Link
+                  href="/"
+                  className="hover:text-foreground transition-colors"
+                  data-testid="link-breadcrumb-home"
+                >
                   Home
                 </Link>
                 <ChevronRight className="h-4 w-4" />
-                <Link href="/services" className="hover:text-foreground transition-colors" data-testid="link-breadcrumb-services">
+                <Link
+                  href="/services"
+                  className="hover:text-foreground transition-colors"
+                  data-testid="link-breadcrumb-services"
+                >
                   Services
                 </Link>
                 <ChevronRight className="h-4 w-4" />
-                <Link href={`/services/${division.id}`} className="hover:text-foreground transition-colors" data-testid="link-breadcrumb-division">
+                <Link
+                  href={`/services/${division.id}`}
+                  className="hover:text-foreground transition-colors"
+                  data-testid="link-breadcrumb-division"
+                >
                   {division.shortTitle}
                 </Link>
                 <ChevronRight className="h-4 w-4" />
-                <span className="text-foreground font-medium">{service.shortTitle}</span>
+                <span className="text-foreground font-medium">
+                  {service.shortTitle}
+                </span>
               </nav>
             </div>
           </div>
@@ -124,7 +158,9 @@ const ServiceDetail = () => {
           <section className="bg-muted py-12 md:py-16 lg:py-20">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="flex flex-col md:flex-row items-start gap-6">
-                <div className={`p-4 rounded-lg ${colorClasses[division.color] || colorClasses.blue}`}>
+                <div
+                  className={`p-4 rounded-lg ${colorClasses[division.color] || colorClasses.blue}`}
+                >
                   <ServiceIcon className="h-12 w-12" />
                 </div>
                 <div className="flex-1">
@@ -145,9 +181,7 @@ const ServiceDetail = () => {
                       </Link>
                     </Button>
                     <Button variant="outline" size="lg" asChild>
-                      <Link href="/contact">
-                        Contact Us
-                      </Link>
+                      <Link href="/contact">Contact Us</Link>
                     </Button>
                   </div>
                 </div>
@@ -175,11 +209,13 @@ const ServiceDetail = () => {
                           {service.types.map((type, idx) => (
                             <div
                               key={idx}
-                              className={`p-4 rounded-lg border ${borderColorClasses[division.color] || borderColorClasses.blue} bg-muted/30`}
+                              className={`p-4 bg-muted rounded-lg border ${borderColorClasses[division.color] || borderColorClasses.blue} bg-muted/30`}
                               data-testid={`type-${idx}`}
                             >
                               <div className="flex items-center gap-2">
-                                <Check className={`h-4 w-4 ${colorClasses[division.color]?.split(' ')[1] || 'text-primary'}`} />
+                                <Check
+                                  className={`h-4 w-4 ${colorClasses[division.color]?.split(" ")[1] || "text-primary"}`}
+                                />
                                 <span className="font-medium">{type}</span>
                               </div>
                             </div>
@@ -227,8 +263,14 @@ const ServiceDetail = () => {
                       <CardContent>
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                           {service.applications.map((app, idx) => (
-                            <div key={idx} className="flex items-center gap-2" data-testid={`app-${idx}`}>
-                              <div className={`h-2 w-2 rounded-full ${colorClasses[division.color]?.split(' ')[0] || 'bg-primary'}`} />
+                            <div
+                              key={idx}
+                              className="flex items-center gap-2"
+                              data-testid={`app-${idx}`}
+                            >
+                              <div
+                                className={`h-2 w-2 rounded-full bg-primary`}
+                              />
                               <span>{app}</span>
                             </div>
                           ))}
@@ -251,8 +293,16 @@ const ServiceDetail = () => {
                     <CardContent>
                       <ul className="space-y-3">
                         {service.features.map((feature, idx) => (
-                          <li key={idx} className="flex items-start gap-2" data-testid={`feature-${idx}`}>
-                            <Check className="h-4 w-4 text-green-500 mt-0.5 shrink-0" />
+                          <li
+                            key={idx}
+                            className="flex items-start gap-2"
+                            data-testid={`feature-${idx}`}
+                          >
+                            <div
+                              className={`p-1 rounded-full ${colorClasses[division.color] || colorClasses.blue}`}
+                            >
+                              <Check className="h-3 w-3" />
+                            </div>
                             <span className="text-sm">{feature}</span>
                           </li>
                         ))}
@@ -262,15 +312,23 @@ const ServiceDetail = () => {
 
                   {/* Benefits */}
                   {service.benefits && service.benefits.length > 0 && (
-                    <Card className={`border-2 ${borderColorClasses[division.color] || borderColorClasses.blue}`}>
+                    <Card
+                      className={`border-2 ${borderColorClasses[division.color] || borderColorClasses.blue}`}
+                    >
                       <CardHeader>
                         <CardTitle>Benefits</CardTitle>
                       </CardHeader>
                       <CardContent>
                         <ul className="space-y-2">
                           {service.benefits.map((benefit, idx) => (
-                            <li key={idx} className="flex items-center gap-2" data-testid={`benefit-${idx}`}>
-                              <div className={`p-1 rounded-full ${colorClasses[division.color] || colorClasses.blue}`}>
+                            <li
+                              key={idx}
+                              className="flex items-center gap-2"
+                              data-testid={`benefit-${idx}`}
+                            >
+                              <div
+                                className={`p-1 rounded-full ${colorClasses[division.color] || colorClasses.blue}`}
+                              >
                                 <Check className="h-3 w-3" />
                               </div>
                               <span className="text-sm">{benefit}</span>
@@ -286,7 +344,8 @@ const ServiceDetail = () => {
                     <CardContent className="pt-6">
                       <h3 className="font-bold text-lg mb-2">Need Help?</h3>
                       <p className="text-sm opacity-90 mb-4">
-                        Get expert consultation for your {service.shortTitle} requirements.
+                        Get expert consultation for your {service.shortTitle}{" "}
+                        requirements.
                       </p>
                       <Button variant="secondary" className="w-full" asChild>
                         <Link href="/contact">
@@ -319,12 +378,18 @@ const ServiceDetail = () => {
                         className="hover-elevate cursor-pointer"
                         data-testid={`other-service-${otherService.id}`}
                       >
-                        <Link href={`/services/${division.id}/${otherService.id}`}>
+                        <Link
+                          href={`/services/${division.id}/${otherService.id}`}
+                        >
                           <CardContent className="pt-6">
-                            <div className={`p-2 rounded-lg w-fit mb-3 ${colorClasses[division.color] || colorClasses.blue}`}>
+                            <div
+                              className={`p-2 rounded-lg w-fit mb-3 ${colorClasses[division.color] || colorClasses.blue}`}
+                            >
                               <OtherIcon className="h-5 w-5" />
                             </div>
-                            <h3 className="font-medium mb-1">{otherService.shortTitle}</h3>
+                            <h3 className="font-medium mb-1">
+                              {otherService.shortTitle}
+                            </h3>
                             <p className="text-sm text-muted-foreground line-clamp-2">
                               {otherService.description}
                             </p>

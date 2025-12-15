@@ -3,7 +3,13 @@ import TopBar from "@/components/layout/top-bar";
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { DIVISIONS } from "@/constants/constants";
 import { ArrowLeft, ArrowRight, Phone, ChevronRight } from "lucide-react";
@@ -15,7 +21,9 @@ import {
 } from "@/components/seo/seo-head";
 
 const getIcon = (iconName: string) => {
-  const Icon = (LucideIcons as Record<string, React.ComponentType<{ className?: string }>>)[iconName];
+  const Icon = (
+    LucideIcons as Record<string, React.ComponentType<{ className?: string }>>
+  )[iconName];
   return Icon || LucideIcons.Settings;
 };
 
@@ -52,7 +60,10 @@ const Division = () => {
   const breadcrumbSchema = createBreadcrumbSchema([
     { name: "Home", url: "https://dlsenvirotech.com/" },
     { name: "Services", url: "https://dlsenvirotech.com/services" },
-    { name: division.shortTitle, url: `https://dlsenvirotech.com/services/${division.id}` },
+    {
+      name: division.shortTitle,
+      url: `https://dlsenvirotech.com/services/${division.id}`,
+    },
   ]);
 
   const combinedSchema = {
@@ -73,7 +84,7 @@ const Division = () => {
       <SEOHead
         title={`${division.title} | DLS Envirotech`}
         description={division.description}
-        keywords={division.services.map(s => s.title).join(", ")}
+        keywords={division.services.map((s) => s.title).join(", ")}
         canonical={`https://dlsenvirotech.com/services/${division.id}`}
         schema={combinedSchema}
       />
@@ -83,18 +94,28 @@ const Division = () => {
         <Header />
         <main>
           {/* Breadcrumb */}
-          <div className="bg-muted/50 border-b">
+          <div className="bg-muted border-b">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
               <nav className="flex items-center gap-2 text-sm text-muted-foreground">
-                <Link href="/" className="hover:text-foreground transition-colors" data-testid="link-breadcrumb-home">
+                <Link
+                  href="/"
+                  className="hover:text-foreground transition-colors"
+                  data-testid="link-breadcrumb-home"
+                >
                   Home
                 </Link>
                 <ChevronRight className="h-4 w-4" />
-                <Link href="/services" className="hover:text-foreground transition-colors" data-testid="link-breadcrumb-services">
+                <Link
+                  href="/services"
+                  className="hover:text-foreground transition-colors"
+                  data-testid="link-breadcrumb-services"
+                >
                   Services
                 </Link>
                 <ChevronRight className="h-4 w-4" />
-                <span className="text-foreground font-medium">{division.shortTitle}</span>
+                <span className="text-foreground font-medium">
+                  {division.shortTitle}
+                </span>
               </nav>
             </div>
           </div>
@@ -103,7 +124,9 @@ const Division = () => {
           <section className="bg-muted py-12 md:py-16 lg:py-20">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="flex flex-col md:flex-row items-start md:items-center gap-6">
-                <div className={`p-4 rounded-lg ${colorClasses[division.color] || colorClasses.blue}`}>
+                <div
+                  className={`p-4 rounded-lg ${colorClasses[division.color] || colorClasses.blue}`}
+                >
                   <DivisionIcon className="h-12 w-12" />
                 </div>
                 <div className="flex-1">
@@ -129,7 +152,8 @@ const Division = () => {
                   Our Services in this Division
                 </h2>
                 <p className="text-muted-foreground">
-                  Explore our comprehensive range of {division.shortTitle.toLowerCase()} solutions
+                  Explore our comprehensive range of{" "}
+                  {division.shortTitle.toLowerCase()} solutions
                 </p>
               </div>
 
@@ -139,12 +163,14 @@ const Division = () => {
                   return (
                     <Card
                       key={service.id}
-                      className="group hover-elevate cursor-pointer"
+                      className="group bg-muted hover-elevate cursor-pointer"
                       data-testid={`card-service-${service.id}`}
                     >
                       <Link href={`/services/${division.id}/${service.id}`}>
                         <CardHeader>
-                          <div className={`p-3 rounded-lg w-fit mb-3 ${colorClasses[division.color] || colorClasses.blue}`}>
+                          <div
+                            className={`p-3 rounded-lg w-fit mb-3 ${colorClasses[division.color] || colorClasses.blue}`}
+                          >
                             <ServiceIcon className="h-6 w-6" />
                           </div>
                           <CardTitle className="text-lg group-hover:text-primary transition-colors">
@@ -156,16 +182,15 @@ const Division = () => {
                         </CardHeader>
                         <CardContent>
                           <div className="flex flex-wrap gap-2 mb-4">
-                            {service.types?.slice(0, 3).map((type, idx) => (
-                              <Badge key={idx} variant="secondary" className="text-xs">
+                            {service.types?.map((type, idx) => (
+                              <Badge
+                                key={idx}
+                                variant="secondary"
+                                className="text-xs"
+                              >
                                 {type}
                               </Badge>
                             ))}
-                            {service.types && service.types.length > 3 && (
-                              <Badge variant="outline" className="text-xs">
-                                +{service.types.length - 3} more
-                              </Badge>
-                            )}
                           </div>
                           <div className="flex items-center text-sm text-primary font-medium">
                             Learn More
@@ -187,7 +212,9 @@ const Division = () => {
                 Need a Custom Solution?
               </h2>
               <p className="text-base sm:text-lg text-muted-foreground mb-6 md:mb-8">
-                Our expert engineers can design and implement the perfect {division.shortTitle.toLowerCase()} system for your specific requirements.
+                Our expert engineers can design and implement the perfect{" "}
+                {division.shortTitle.toLowerCase()} system for your specific
+                requirements.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center">
                 <Button size="lg" className="w-full sm:w-auto" asChild>
@@ -196,7 +223,12 @@ const Division = () => {
                     Get Free Consultation
                   </Link>
                 </Button>
-                <Button variant="outline" size="lg" className="w-full sm:w-auto" asChild>
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="w-full sm:w-auto"
+                  asChild
+                >
                   <Link href="/services">
                     <ArrowLeft className="mr-2 h-4 w-4" />
                     All Divisions
