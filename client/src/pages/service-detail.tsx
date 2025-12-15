@@ -347,17 +347,17 @@ const ServiceDetail = () => {
                   <Card className="bg-muted">
                     <CardContent className="pt-6">
                       <div className="flex items-center gap-3 mb-3">
-                        <div className="p-2 rounded-full bg-primary/10">
-                          <Phone className="h-5 w-5 text-primary" />
-                        </div>
-                        <h3 className="font-bold text-lg text-foreground">Need Help?</h3>
+                        <h3 className="font-bold text-lg text-foreground">
+                          Need Help?
+                        </h3>
                       </div>
                       <p className="text-sm text-muted-foreground mb-4">
                         Get expert consultation for your {service.shortTitle}{" "}
                         requirements.
                       </p>
-                      <Button className="w-full" asChild>
+                      <Button className="w-full text-white" asChild>
                         <Link href="/contact">
+                          <Phone className="h-5 w-5" />
                           Contact Expert
                         </Link>
                       </Button>
